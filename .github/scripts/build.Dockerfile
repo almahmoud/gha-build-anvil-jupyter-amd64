@@ -1,4 +1,4 @@
-FROM &bioc.CONTAINER_BASE_IMAGE as build
+FROM us.gcr.io/broad-dsp-gcr-public/terra-jupyter-bioconductor:2.1.8 as build
 ARG LIBRARY
 ARG PKG
 ARG PLATFORM

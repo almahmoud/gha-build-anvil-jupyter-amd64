@@ -151,7 +151,8 @@ jobs:
 
       - name: Get R, OS, and Bioc versions
         id: versions
-        run: bash .github/scripts/output_versions.sh
+        run: |
+          bash .github/scripts/output_versions.sh
 
       - name: Get deps list
         id: deps
@@ -192,6 +193,7 @@ jobs:
         id: meta
         run: |
           echo image="ghcr.io/${{ github.repository }}:${{ matrix.pkg }}-${{steps.versions.outputs.sanitizedarch}}" >> $GITHUB_OUTPUT
+          echo base="$(cat CONTAINER_BASE_IMAGE.bioc)" >> $GITHUB_OUTPUT
 
       - name: Install rclone & add rclone conf file
         uses: nick-fields/retry@v2
@@ -224,8 +226,8 @@ jobs:
           context: .
           push: false
           load: false
-          cache-to: type=gha
-          cache-from: type=gha
+          cache-from: type=gha,scope=${{ steps.meta.outputs.image }}
+          cache-to: type=gha,mode=max,scope=${{ steps.meta.outputs.image }}
           outputs: type=tar,dest=/tmp/image/${{ matrix.pkg }}.tar
           tags: ${{ steps.meta.outputs.image }}
           platforms: ${{ steps.versions.outputs.platform }}

@@ -41,8 +41,7 @@
         "annotate",
         "genefilter",
         "snapCGH",
-        "tilingArray",
-        "vsn"
+        "tilingArray"
     ],
     "ADAM": [
         "AnnotationDbi",
@@ -613,8 +612,7 @@
         "annotate",
         "beadarray",
         "gcrma",
-        "genefilter",
-        "vsn"
+        "genefilter"
     ],
     "artMS": [
         "AnnotationDbi",
@@ -954,8 +952,7 @@
         "annotate",
         "biomaRt",
         "genefilter",
-        "pRoloc",
-        "vsn"
+        "pRoloc"
     ],
     "barcodetrackR": [
         "DelayedArray",
@@ -1672,8 +1669,7 @@
         "epiNEM",
         "genefilter",
         "mnem",
-        "sva",
-        "vsn"
+        "sva"
     ],
     "BOBaFIT": [
         "AnnotationDbi",
@@ -2031,7 +2027,6 @@
         "MsFeatures",
         "SummarizedExperiment",
         "XVector",
-        "vsn",
         "xcms"
     ],
     "canceR": [
@@ -2288,8 +2283,7 @@
         "XVector",
         "annotate",
         "genefilter",
-        "splots",
-        "vsn"
+        "splots"
     ],
     "CelliD": [
         "BiocNeighbors",
@@ -2973,13 +2967,11 @@
         "MsFeatures",
         "SummarizedExperiment",
         "XVector",
-        "vsn",
         "xcms"
     ],
     "CluMSID": [
         "BiocParallel",
-        "MSnbase",
-        "vsn"
+        "MSnbase"
     ],
     "clusterExperiment": [
         "AnnotationDbi",
@@ -3250,8 +3242,7 @@
         "GenomeInfoDb",
         "GenomicRanges",
         "SummarizedExperiment",
-        "XVector",
-        "vsn"
+        "XVector"
     ],
     "CoGAPS": [
         "BiocParallel",
@@ -3669,7 +3660,6 @@
         "MsFeatures",
         "SummarizedExperiment",
         "XVector",
-        "vsn",
         "xcms"
     ],
     "cosmosR": [
@@ -4209,8 +4199,7 @@
     ],
     "DAPAR": [
         "BiocParallel",
-        "MSnbase",
-        "vsn"
+        "MSnbase"
     ],
     "dasper": [
         "AnnotationDbi",
@@ -4502,8 +4491,7 @@
         "GenomicRanges",
         "MSnbase",
         "SummarizedExperiment",
-        "XVector",
-        "vsn"
+        "XVector"
     ],
     "DepecheR": [
         "BiocParallel",
@@ -4979,9 +4967,7 @@
         "genefilter",
         "sva"
     ],
-    "Doscheda": [
-        "vsn"
-    ],
+    "Doscheda": [],
     "DOSE": [
         "AnnotationDbi",
         "BiocParallel",
@@ -6138,7 +6124,6 @@
         "MsFeatures",
         "SummarizedExperiment",
         "XVector",
-        "vsn",
         "xcms"
     ],
     "FLAMES": [
@@ -6944,8 +6929,7 @@
         "biomaRt",
         "cellHTS2",
         "genefilter",
-        "splots",
-        "vsn"
+        "splots"
     ],
     "getDEE2": [
         "DelayedArray",
@@ -7982,8 +7966,7 @@
         "annotate",
         "cellHTS2",
         "genefilter",
-        "splots",
-        "vsn"
+        "splots"
     ],
     "IMAS": [
         "AnnotationDbi",
@@ -8219,7 +8202,6 @@
         "MsFeatures",
         "SummarizedExperiment",
         "XVector",
-        "vsn",
         "xcms"
     ],
     "IRISFGM": [
@@ -8608,7 +8590,6 @@
         "MsFeatures",
         "SummarizedExperiment",
         "XVector",
-        "vsn",
         "xcms"
     ],
     "loci2path": [
@@ -8841,7 +8822,6 @@
         "MsFeatures",
         "SummarizedExperiment",
         "XVector",
-        "vsn",
         "xcms"
     ],
     "mAPKL": [
@@ -8909,8 +8889,7 @@
         "GenomicRanges",
         "SummarizedExperiment",
         "XVector",
-        "proDA",
-        "vsn"
+        "proDA"
     ],
     "MatrixRider": [
         "AnnotationDbi",
@@ -9187,7 +9166,6 @@
         "MsFeatures",
         "SummarizedExperiment",
         "XVector",
-        "vsn",
         "xcms"
     ],
     "MetaboAnnotation": [
@@ -9284,7 +9262,6 @@
         "MsFeatures",
         "SummarizedExperiment",
         "XVector",
-        "vsn",
         "xcms"
     ],
     "MetaNeighbor": [
@@ -9339,8 +9316,7 @@
         "bsseq",
         "genefilter",
         "geneplotter",
-        "rtracklayer",
-        "vsn"
+        "rtracklayer"
     ],
     "metavizr": [
         "AnnotationDbi",
@@ -10210,7 +10186,6 @@
         "Spectra",
         "SummarizedExperiment",
         "XVector",
-        "vsn",
         "xcms"
     ],
     "MODA": [
@@ -10525,18 +10500,15 @@
     ],
     "msmsEDA": [
         "BiocParallel",
-        "MSnbase",
-        "vsn"
+        "MSnbase"
     ],
     "msmsTests": [
         "BiocParallel",
         "MSnbase",
-        "msmsEDA",
-        "vsn"
+        "msmsEDA"
     ],
     "MSnbase": [
-        "BiocParallel",
-        "vsn"
+        "BiocParallel"
     ],
     "MSnID": [
         "AnnotationDbi",
@@ -10548,8 +10520,7 @@
         "MSnbase",
         "XVector",
         "msmsEDA",
-        "msmsTests",
-        "vsn"
+        "msmsTests"
     ],
     "MSPrep": [
         "AnnotationDbi",
@@ -10590,14 +10561,12 @@
     ],
     "MSstatsQC": [
         "BiocParallel",
-        "MSnbase",
-        "vsn"
+        "MSnbase"
     ],
     "MSstatsQCgui": [
         "BiocParallel",
         "MSnbase",
-        "MSstatsQC",
-        "vsn"
+        "MSstatsQC"
     ],
     "MSstatsSampleSize": [
         "BiocParallel"
@@ -10992,7 +10961,6 @@
         "MsFeatures",
         "SummarizedExperiment",
         "XVector",
-        "vsn",
         "xcms"
     ],
     "NCIgraph": [
@@ -11208,8 +11176,7 @@
         "GenomeInfoDb",
         "GenomicRanges",
         "SummarizedExperiment",
-        "XVector",
-        "vsn"
+        "XVector"
     ],
     "normr": [
         "BiocParallel",
@@ -11910,8 +11877,7 @@
     ],
     "peakPantheR": [
         "BiocParallel",
-        "MSnbase",
-        "vsn"
+        "MSnbase"
     ],
     "PECA": [
         "AnnotationDbi",
@@ -12368,8 +12334,7 @@
     ],
     "PrInCE": [
         "BiocParallel",
-        "MSnbase",
-        "vsn"
+        "MSnbase"
     ],
     "proActiv": [
         "AnnotationDbi",
@@ -12416,8 +12381,7 @@
         "annotate",
         "genefilter",
         "pvca",
-        "sva",
-        "vsn"
+        "sva"
     ],
     "procoil": [
         "Biostrings",
@@ -12444,7 +12408,6 @@
         "SummarizedExperiment",
         "XVector",
         "ropls",
-        "vsn",
         "xcms"
     ],
     "profileplyr": [
@@ -12498,8 +12461,7 @@
         "XVector",
         "annotate",
         "biomaRt",
-        "genefilter",
-        "vsn"
+        "genefilter"
     ],
     "pRolocGUI": [
         "AnnotationDbi",
@@ -12516,8 +12478,7 @@
         "annotate",
         "biomaRt",
         "genefilter",
-        "pRoloc",
-        "vsn"
+        "pRoloc"
     ],
     "PROMISE": [
         "AnnotationDbi",
@@ -12542,8 +12503,7 @@
     "Prostar": [
         "BiocParallel",
         "DAPAR",
-        "MSnbase",
-        "vsn"
+        "MSnbase"
     ],
     "proteasy": [
         "AnnotationDbi",
@@ -12599,8 +12559,7 @@
         "KEGGREST",
         "XVector",
         "annotate",
-        "genefilter",
-        "vsn"
+        "genefilter"
     ],
     "psichomics": [
         "AnnotationDbi",
@@ -12649,8 +12608,7 @@
     ],
     "ptairMS": [
         "BiocParallel",
-        "MSnbase",
-        "vsn"
+        "MSnbase"
     ],
     "puma": [
         "Biostrings",
@@ -12680,9 +12638,7 @@
         "biomaRt",
         "rtracklayer"
     ],
-    "pvca": [
-        "vsn"
-    ],
+    "pvca": [],
     "Pviz": [
         "AnnotationDbi",
         "AnnotationFilter",
@@ -12777,8 +12733,7 @@
         "Biostrings",
         "GenomeInfoDb",
         "MSnbase",
-        "XVector",
-        "vsn"
+        "XVector"
     ],
     "qrqc": [
         "AnnotationDbi",
@@ -13407,8 +13362,7 @@
         "XVector",
         "annotate",
         "genefilter",
-        "rtracklayer",
-        "vsn"
+        "rtracklayer"
     ],
     "ReportingTools": [
         "AnnotationDbi",
@@ -13727,8 +13681,7 @@
         "KEGGREST",
         "XVector",
         "annotate",
-        "genefilter",
-        "vsn"
+        "genefilter"
     ],
     "RIPAT": [
         "AnnotationDbi",
@@ -13764,7 +13717,6 @@
         "SummarizedExperiment",
         "XVector",
         "biocViews",
-        "vsn",
         "xcms"
     ],
     "RITAN": [
@@ -13824,8 +13776,7 @@
     "RMassBank": [
         "BiocParallel",
         "ChemmineOB",
-        "MSnbase",
-        "vsn"
+        "MSnbase"
     ],
     "Rmmquant": [
         "AnnotationDbi",
@@ -13910,8 +13861,7 @@
         "cellHTS2",
         "genefilter",
         "geneplotter",
-        "splots",
-        "vsn"
+        "splots"
     ],
     "RNAmodR": [
         "AnnotationDbi",
@@ -15453,8 +15403,7 @@
         "Ringo",
         "XVector",
         "annotate",
-        "genefilter",
-        "vsn"
+        "genefilter"
     ],
     "SimBu": [
         "BiocParallel",
@@ -15744,8 +15693,7 @@
         "XVector",
         "annotate",
         "genefilter",
-        "tilingArray",
-        "vsn"
+        "tilingArray"
     ],
     "snapcount": [
         "DelayedArray",
@@ -16337,8 +16285,7 @@
         "annotate",
         "cellHTS2",
         "genefilter",
-        "splots",
-        "vsn"
+        "splots"
     ],
     "StarBioTrek": [
         "AnnotationDbi",
@@ -16555,8 +16502,7 @@
         "GenomeInfoDb",
         "MSnbase",
         "XVector",
-        "cleaver",
-        "vsn"
+        "cleaver"
     ],
     "SynExtend": [
         "Biostrings",
@@ -16957,8 +16903,7 @@
         "KEGGREST",
         "XVector",
         "annotate",
-        "genefilter",
-        "vsn"
+        "genefilter"
     ],
     "timeOmics": [
         "BiocParallel",
@@ -17084,8 +17029,7 @@
         "Biostrings",
         "GenomeInfoDb",
         "MSnbase",
-        "XVector",
-        "vsn"
+        "XVector"
     ],
     "topGO": [
         "AnnotationDbi",
@@ -17864,7 +17808,6 @@
         "SummarizedExperiment",
         "XVector"
     ],
-    "vsn": [],
     "vtpnet": [
         "AnnotationDbi",
         "AnnotationHub",
@@ -17972,8 +17915,7 @@
         "KEGGREST",
         "XVector",
         "annaffy",
-        "gcrma",
-        "vsn"
+        "gcrma"
     ],
     "weitrix": [
         "BiocParallel",
@@ -18011,8 +17953,7 @@
         "MSnbase",
         "MsFeatures",
         "SummarizedExperiment",
-        "XVector",
-        "vsn"
+        "XVector"
     ],
     "xcore": [
         "DelayedArray",

@@ -117,7 +117,24 @@ jobs:
         pkg: ${{fromJson(needs.getlistformatrix.outputs.matrix)}}
     runs-on: ubuntu-latest
     steps:
+    
+      - name: Free space check
+        run: |
+          echo "Free space:"
+          df -h
+
+      - name: Maximize build space
+        uses: easimon/maximize-build-space@master
+        with:
+          root-reserve-mb: 512
+          swap-size-mb: 1024
+          remove-dotnet: 'true'
       - uses: actions/checkout@v3
+
+      - name: Free space check
+        run: |
+          echo "Free space:"
+          df -h
 
       - name: Get Current Job Log URL
         uses: Tiryoh/gha-jobid-action@v0
@@ -213,6 +230,11 @@ jobs:
                 exit 1;
             fi
             mkdir -p /tmp/image
+
+      - name: Free space check
+        run: |
+          echo "Free space:"
+          df -h
 
       - name: Build package via docker build and extracting files to scratch
         id: dockerbuild

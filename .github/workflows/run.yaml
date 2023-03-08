@@ -127,6 +127,9 @@ jobs:
         uses: easimon/maximize-build-space@master
         with:
           root-reserve-mb: 32768
+          remove-dotnet: 'true'
+          remove-android: 'true'
+          remove-haskell: 'true'
 
       - uses: actions/checkout@v3
 

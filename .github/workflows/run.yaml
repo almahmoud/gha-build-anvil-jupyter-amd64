@@ -251,7 +251,6 @@ jobs:
           push: false
           load: false
           cache-from: type=gha,scope=${{ steps.meta.outputs.image }}
-          cache-to: type=gha,mode=max,scope=${{ steps.meta.outputs.image }}
           outputs: type=tar,dest=/tmp/image/${{ matrix.pkg }}.tar
           tags: ${{ steps.meta.outputs.image }}
           platforms: ${{ steps.versions.outputs.platform }}

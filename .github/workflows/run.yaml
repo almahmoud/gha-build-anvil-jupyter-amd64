@@ -128,7 +128,7 @@ jobs:
         with:
           root-reserve-mb: 1024
           swap-size-mb: 2048
-          remove-dotnet: 'true'
+
       - uses: actions/checkout@v3
 
       - name: Free space check

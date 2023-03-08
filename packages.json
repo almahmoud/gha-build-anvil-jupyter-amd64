@@ -1044,7 +1044,6 @@
         "KEGGREST",
         "MLInterfaces",
         "MSnbase",
-        "MsCoreUtils",
         "SummarizedExperiment",
         "XVector",
         "annotate",
@@ -2231,7 +2230,6 @@
         "GenomicRanges",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "MsFeatures",
         "RBGL",
         "SummarizedExperiment",
@@ -3262,7 +3260,6 @@
         "GenomicRanges",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "MsFeatures",
         "SummarizedExperiment",
         "XVector",
@@ -3274,7 +3271,6 @@
         "BiocParallel",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "mzR",
         "vsn"
     ],
@@ -3748,7 +3744,6 @@
         "GenomicRanges",
         "IRanges",
         "MetaboCoreUtils",
-        "MsCoreUtils",
         "Spectra",
         "XVector"
     ],
@@ -4027,7 +4022,6 @@
         "GenomicRanges",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "MsFeatures",
         "SummarizedExperiment",
         "XVector",
@@ -4619,7 +4613,6 @@
         "BiocParallel",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "mzR",
         "vsn"
     ],
@@ -4946,7 +4939,6 @@
         "GenomicRanges",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "SummarizedExperiment",
         "XVector",
         "mzR",
@@ -6723,7 +6715,6 @@
         "GenomicRanges",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "MsFeatures",
         "RBGL",
         "SummarizedExperiment",
@@ -9025,7 +9016,6 @@
         "GenomicRanges",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "MsFeatures",
         "RBGL",
         "SummarizedExperiment",
@@ -9455,7 +9445,6 @@
         "GenomicRanges",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "MsFeatures",
         "RBGL",
         "SummarizedExperiment",
@@ -9714,7 +9703,6 @@
         "GenomicRanges",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "MsFeatures",
         "RBGL",
         "SummarizedExperiment",
@@ -10101,7 +10089,6 @@
         "GenomicRanges",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "MsFeatures",
         "SummarizedExperiment",
         "XVector",
@@ -10119,16 +10106,13 @@
         "GenomicRanges",
         "IRanges",
         "MetaboCoreUtils",
-        "MsCoreUtils",
         "MultiAssayExperiment",
         "QFeatures",
         "Spectra",
         "SummarizedExperiment",
         "XVector"
     ],
-    "MetaboCoreUtils": [
-        "MsCoreUtils"
-    ],
+    "MetaboCoreUtils": [],
     "metabolomicsWorkbenchR": [
         "DelayedArray",
         "GenomeInfoDb",
@@ -10211,7 +10195,6 @@
         "GenomicRanges",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "MsFeatures",
         "RBGL",
         "SummarizedExperiment",
@@ -10311,7 +10294,6 @@
     "MetCirc": [
         "BiocParallel",
         "IRanges",
-        "MsCoreUtils",
         "Spectra"
     ],
     "MethCP": [
@@ -11232,7 +11214,6 @@
         "IRanges",
         "MSnbase",
         "MetaboCoreUtils",
-        "MsCoreUtils",
         "MsFeatures",
         "Spectra",
         "SummarizedExperiment",
@@ -11492,29 +11473,24 @@
     "MsBackendMassbank": [
         "BiocParallel",
         "IRanges",
-        "MsCoreUtils",
         "Spectra"
     ],
     "MsBackendMgf": [
         "BiocParallel",
         "IRanges",
-        "MsCoreUtils",
         "Spectra"
     ],
     "MsBackendMsp": [
         "BiocParallel",
         "IRanges",
-        "MsCoreUtils",
         "Spectra"
     ],
     "MsBackendRawFileReader": [
         "BiocParallel",
         "IRanges",
-        "MsCoreUtils",
         "Spectra",
         "rawrr"
     ],
-    "MsCoreUtils": [],
     "MsExperiment": [
         "AnnotationFilter",
         "BiocParallel",
@@ -11522,7 +11498,6 @@
         "GenomeInfoDb",
         "GenomicRanges",
         "IRanges",
-        "MsCoreUtils",
         "MultiAssayExperiment",
         "QFeatures",
         "Spectra",
@@ -11534,7 +11509,6 @@
         "GenomeInfoDb",
         "GenomicRanges",
         "IRanges",
-        "MsCoreUtils",
         "SummarizedExperiment",
         "XVector"
     ],
@@ -11596,7 +11570,6 @@
         "BiocParallel",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "mzR",
         "vsn"
     ],
@@ -11604,7 +11577,6 @@
         "BiocParallel",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "msmsEDA",
         "mzR",
         "vsn"
@@ -11612,7 +11584,6 @@
     "MSnbase": [
         "BiocParallel",
         "IRanges",
-        "MsCoreUtils",
         "mzR",
         "vsn"
     ],
@@ -11625,7 +11596,6 @@
         "IRanges",
         "KEGGREST",
         "MSnbase",
-        "MsCoreUtils",
         "XVector",
         "msmsEDA",
         "msmsTests",
@@ -11657,7 +11627,6 @@
         "GenomeInfoDb",
         "GenomicRanges",
         "IRanges",
-        "MsCoreUtils",
         "MultiAssayExperiment",
         "QFeatures",
         "SummarizedExperiment",
@@ -11682,7 +11651,6 @@
         "BiocParallel",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "mzR",
         "qcmetrics",
         "vsn"
@@ -11692,7 +11660,6 @@
         "IRanges",
         "MSnbase",
         "MSstatsQC",
-        "MsCoreUtils",
         "mzR",
         "qcmetrics",
         "vsn"
@@ -12120,7 +12087,6 @@
         "GenomicRanges",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "MsFeatures",
         "SummarizedExperiment",
         "XVector",
@@ -13154,7 +13120,6 @@
         "BiocParallel",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "mzR",
         "vsn"
     ],
@@ -13669,7 +13634,6 @@
         "BiocParallel",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "mzR",
         "vsn"
     ],
@@ -13746,7 +13710,6 @@
         "GenomicRanges",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "MsFeatures",
         "MultiAssayExperiment",
         "MultiDataSet",
@@ -13807,7 +13770,6 @@
         "KEGGREST",
         "MLInterfaces",
         "MSnbase",
-        "MsCoreUtils",
         "SummarizedExperiment",
         "XVector",
         "annotate",
@@ -13827,7 +13789,6 @@
         "KEGGREST",
         "MLInterfaces",
         "MSnbase",
-        "MsCoreUtils",
         "SummarizedExperiment",
         "XVector",
         "annotate",
@@ -13864,7 +13825,6 @@
         "DAPAR",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "mzR",
         "vsn"
     ],
@@ -13961,7 +13921,6 @@
         "GenomeInfoDb",
         "GenomicRanges",
         "IRanges",
-        "MsCoreUtils",
         "MultiAssayExperiment",
         "QFeatures",
         "SummarizedExperiment",
@@ -13982,7 +13941,6 @@
         "BiocParallel",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "mzR",
         "vsn"
     ],
@@ -14089,7 +14047,6 @@
         "GenomeInfoDb",
         "GenomicRanges",
         "IRanges",
-        "MsCoreUtils",
         "MultiAssayExperiment",
         "SummarizedExperiment",
         "XVector"
@@ -14099,7 +14056,6 @@
         "GenomeInfoDb",
         "GenomicRanges",
         "IRanges",
-        "MsCoreUtils",
         "SummarizedExperiment",
         "XVector"
     ],
@@ -14129,7 +14085,6 @@
         "GenomeInfoDb",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "XVector",
         "mzR",
         "vsn"
@@ -15207,7 +15162,6 @@
         "GenomicRanges",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "MsFeatures",
         "RBGL",
         "SummarizedExperiment",
@@ -15279,7 +15233,6 @@
         "ChemmineOB",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "mzR",
         "vsn"
     ],
@@ -16356,7 +16309,6 @@
         "GenomeInfoDb",
         "GenomicRanges",
         "IRanges",
-        "MsCoreUtils",
         "MultiAssayExperiment",
         "QFeatures",
         "SingleCellExperiment",
@@ -17640,8 +17592,7 @@
     ],
     "Spectra": [
         "BiocParallel",
-        "IRanges",
-        "MsCoreUtils"
+        "IRanges"
     ],
     "SpectralTAD": [
         "BiocParallel",
@@ -18261,7 +18212,6 @@
         "GenomeInfoDb",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "XVector",
         "cleaver",
         "mzR",
@@ -18841,7 +18791,6 @@
         "GenomeInfoDb",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "XVector",
         "mzR",
         "vsn"
@@ -19855,7 +19804,6 @@
         "GenomicRanges",
         "IRanges",
         "MSnbase",
-        "MsCoreUtils",
         "MsFeatures",
         "SummarizedExperiment",
         "XVector",

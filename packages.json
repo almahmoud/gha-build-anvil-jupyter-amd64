@@ -7,7 +7,6 @@
     "affycoretools": [
         "BSgenome",
         "DESeq2",
-        "GOstats",
         "GenomicFeatures",
         "Glimma",
         "OrganismDbi",
@@ -21,7 +20,6 @@
     "AgiMicroRna": [
         "BSgenome",
         "DESeq2",
-        "GOstats",
         "GenomicFeatures",
         "Glimma",
         "OrganismDbi",
@@ -163,9 +161,7 @@
         "motifStack",
         "rtracklayer"
     ],
-    "attract": [
-        "GOstats"
-    ],
+    "attract": [],
     "BadRegionFinder": [
         "BSgenome",
         "GenomicFeatures",
@@ -413,9 +409,7 @@
         "flowCore",
         "scater"
     ],
-    "categoryCompare": [
-        "GOstats"
-    ],
+    "categoryCompare": [],
     "cbaf": [
         "GenomicFeatures",
         "RTCGAToolbox",
@@ -1632,9 +1626,7 @@
         "VariantAnnotation",
         "rtracklayer"
     ],
-    "GmicR": [
-        "GOstats"
-    ],
+    "GmicR": [],
     "gmoviz": [
         "GenomicFeatures",
         "rtracklayer"
@@ -1646,7 +1638,6 @@
     "goSorensen": [
         "clusterProfiler"
     ],
-    "GOstats": [],
     "GOTHiC": [
         "BSgenome",
         "ShortRead",
@@ -1788,7 +1779,6 @@
     ],
     "ideal": [
         "DESeq2",
-        "GOstats",
         "GenomicFeatures",
         "goseq",
         "pcaExplorer",
@@ -2172,14 +2162,11 @@
     "MicrobiomeProfiler": [
         "clusterProfiler"
     ],
-    "MIGSA": [
-        "GOstats"
-    ],
+    "MIGSA": [],
     "mimager": [
         "oligo"
     ],
     "MineICA": [
-        "GOstats",
         "GenomicFeatures",
         "bumphunter",
         "lumi",
@@ -2202,9 +2189,7 @@
         "bsseq",
         "rtracklayer"
     ],
-    "miRLAB": [
-        "GOstats"
-    ],
+    "miRLAB": [],
     "miRSM": [
         "ReactomePA",
         "clusterProfiler",
@@ -2411,7 +2396,6 @@
         "scater"
     ],
     "netZooR": [
-        "GOstats",
         "GenomicFeatures",
         "bumphunter",
         "minfi",
@@ -2542,8 +2526,7 @@
         "DESeq2"
     ],
     "pcaExplorer": [
-        "DESeq2",
-        "GOstats"
+        "DESeq2"
     ],
     "PDATK": [],
     "pdInfoBuilder": [
@@ -2593,9 +2576,7 @@
         "BSgenome",
         "rtracklayer"
     ],
-    "PloGO2": [
-        "GOstats"
-    ],
+    "PloGO2": [],
     "plotgardener": [
         "plyranges",
         "rtracklayer"
@@ -2851,7 +2832,6 @@
     "ReportingTools": [
         "BSgenome",
         "DESeq2",
-        "GOstats",
         "GenomicFeatures",
         "OrganismDbi",
         "VariantAnnotation",
@@ -3162,7 +3142,6 @@
         "rtracklayer"
     ],
     "scTensor": [
-        "GOstats",
         "ReactomePA",
         "meshr"
     ],

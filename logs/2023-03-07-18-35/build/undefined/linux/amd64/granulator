@@ -1,0 +1,1383 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''granulator'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'granulator'
+also installing the dependencies ‘triebeard’, ‘urltools’, ‘httpcode’, ‘crul’, ‘fontBitstreamVera’, ‘fontLiberation’, ‘wk’, ‘gfonts’, ‘fontquiver’, ‘classInt’, ‘s2’, ‘units’, ‘gdtools’, ‘proxy’, ‘BiasedUrn’, ‘pander’, ‘sf’, ‘flextable’, ‘officer’, ‘DEoptimR’, ‘gridGraphics’, ‘yulab.utils’, ‘quadprog’, ‘lpSolve’, ‘e1071’, ‘epiR’, ‘dtangle’, ‘ggplotify’, ‘limSolve’, ‘nnls’, ‘pheatmap’
+
+trying URL 'https://cloud.r-project.org/src/contrib/triebeard_0.4.1.tar.gz'
+Content type 'application/x-gzip' length 31450 bytes (30 KB)
+==================================================
+downloaded 30 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/urltools_1.7.3.tar.gz'
+Content type 'application/x-gzip' length 135778 bytes (132 KB)
+==================================================
+downloaded 132 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/httpcode_0.3.0.tar.gz'
+Content type 'application/x-gzip' length 17821 bytes (17 KB)
+==================================================
+downloaded 17 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/crul_1.3.tar.gz'
+Content type 'application/x-gzip' length 533525 bytes (521 KB)
+==================================================
+downloaded 521 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/fontBitstreamVera_0.1.1.tar.gz'
+Content type 'application/x-gzip' length 693959 bytes (677 KB)
+==================================================
+downloaded 677 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/fontLiberation_0.1.0.tar.gz'
+Content type 'application/x-gzip' length 4527421 bytes (4.3 MB)
+==================================================
+downloaded 4.3 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/wk_0.7.1.tar.gz'
+Content type 'application/x-gzip' length 1001044 bytes (977 KB)
+==================================================
+downloaded 977 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/gfonts_0.2.0.tar.gz'
+Content type 'application/x-gzip' length 2924543 bytes (2.8 MB)
+==================================================
+downloaded 2.8 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/fontquiver_0.2.1.tar.gz'
+Content type 'application/x-gzip' length 2233101 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/classInt_0.4-9.tar.gz'
+Content type 'application/x-gzip' length 439500 bytes (429 KB)
+==================================================
+downloaded 429 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/s2_1.1.2.tar.gz'
+Content type 'application/x-gzip' length 2376713 bytes (2.3 MB)
+==================================================
+downloaded 2.3 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/units_0.8-1.tar.gz'
+Content type 'application/x-gzip' length 850734 bytes (830 KB)
+==================================================
+downloaded 830 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/gdtools_0.3.1.tar.gz'
+Content type 'application/x-gzip' length 40465 bytes (39 KB)
+==================================================
+downloaded 39 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/proxy_0.4-27.tar.gz'
+Content type 'application/x-gzip' length 74622 bytes (72 KB)
+==================================================
+downloaded 72 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/BiasedUrn_2.0.9.tar.gz'
+Content type 'application/x-gzip' length 261831 bytes (255 KB)
+==================================================
+downloaded 255 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/pander_0.6.5.tar.gz'
+Content type 'application/x-gzip' length 393677 bytes (384 KB)
+==================================================
+downloaded 384 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/sf_1.0-9.tar.gz'
+Content type 'application/x-gzip' length 3480774 bytes (3.3 MB)
+==================================================
+downloaded 3.3 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/flextable_0.8.6.tar.gz'
+Content type 'application/x-gzip' length 260210 bytes (254 KB)
+==================================================
+downloaded 254 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/officer_0.6.0.tar.gz'
+Content type 'application/x-gzip' length 727985 bytes (710 KB)
+==================================================
+downloaded 710 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/DEoptimR_1.0-11.tar.gz'
+Content type 'application/x-gzip' length 36979 bytes (36 KB)
+==================================================
+downloaded 36 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/gridGraphics_0.5-1.tar.gz'
+Content type 'application/x-gzip' length 69207 bytes (67 KB)
+==================================================
+downloaded 67 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/yulab.utils_0.0.6.tar.gz'
+Content type 'application/x-gzip' length 7543 bytes
+==================================================
+downloaded 7543 bytes
+
+trying URL 'https://cloud.r-project.org/src/contrib/quadprog_1.5-8.tar.gz'
+Content type 'application/x-gzip' length 36141 bytes (35 KB)
+==================================================
+downloaded 35 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/lpSolve_5.6.18.tar.gz'
+Content type 'application/x-gzip' length 467989 bytes (457 KB)
+==================================================
+downloaded 457 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/e1071_1.7-13.tar.gz'
+Content type 'application/x-gzip' length 314205 bytes (306 KB)
+==================================================
+downloaded 306 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/epiR_2.0.58.tar.gz'
+Content type 'application/x-gzip' length 962234 bytes (939 KB)
+==================================================
+downloaded 939 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/dtangle_2.0.9.tar.gz'
+Content type 'application/x-gzip' length 1604818 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/ggplotify_0.1.0.tar.gz'
+Content type 'application/x-gzip' length 117721 bytes (114 KB)
+==================================================
+downloaded 114 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/limSolve_1.5.6.tar.gz'
+Content type 'application/x-gzip' length 955676 bytes (933 KB)
+==================================================
+downloaded 933 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/nnls_1.4.tar.gz'
+Content type 'application/x-gzip' length 10538 bytes (10 KB)
+==================================================
+downloaded 10 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/pheatmap_1.0.12.tar.gz'
+Content type 'application/x-gzip' length 15071 bytes (14 KB)
+==================================================
+downloaded 14 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/granulator_1.6.0.tar.gz'
+Content type 'application/x-gzip' length 1234647 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+* installing *source* package ‘triebeard’ ...
+** package ‘triebeard’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I../inst/include -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I../inst/include -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c alter.cpp -o alter.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I../inst/include -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c create.cpp -o create.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I../inst/include -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c get.cpp -o get.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I../inst/include -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c greedy_match.cpp -o greedy_match.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I../inst/include -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c length.cpp -o length.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I../inst/include -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c longest_match.cpp -o longest_match.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I../inst/include -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c prefix_match.cpp -o prefix_match.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I../inst/include -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c str.cpp -o str.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o triebeard.so RcppExports.o alter.o create.o get.o greedy_match.o length.o longest_match.o prefix_match.o str.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-triebeard/00new/triebeard/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘triebeard’ as ‘triebeard_0.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (triebeard)
+* installing *source* package ‘httpcode’ ...
+** package ‘httpcode’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘httpcode’ as ‘httpcode_0.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (httpcode)
+* installing *source* package ‘fontBitstreamVera’ ...
+** package ‘fontBitstreamVera’ successfully unpacked and MD5 sums checked
+** using staged installation
+** inst
+** help
+No man pages found in package  ‘fontBitstreamVera’ 
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘fontBitstreamVera’ as ‘fontBitstreamVera_0.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fontBitstreamVera)
+* installing *source* package ‘fontLiberation’ ...
+** package ‘fontLiberation’ successfully unpacked and MD5 sums checked
+** using staged installation
+** inst
+** help
+No man pages found in package  ‘fontLiberation’ 
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘fontLiberation’ as ‘fontLiberation_0.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fontLiberation)
+* installing *source* package ‘wk’ ...
+** package ‘wk’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c bbox-handler.c -o bbox-handler.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c count-handler.c -o count-handler.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c debug-filter.c -o debug-filter.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c flatten-filter.c -o flatten-filter.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c handle-crc.c -o handle-crc.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c handle-rct.c -o handle-rct.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c handle-sfc.c -o handle-sfc.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c handle-wkb.c -o handle-wkb.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c handle-wkt.cpp -o handle-wkt.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c handle-xy.c -o handle-xy.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c identity-filter.c -o identity-filter.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c make-collection-filter.c -o make-collection-filter.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c make-linestring-filter.c -o make-linestring-filter.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c make-polygon-filter.c -o make-polygon-filter.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c meta-handler.c -o meta-handler.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c problems-handler.c -o problems-handler.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c sfc-writer.c -o sfc-writer.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c trans-affine.c -o trans-affine.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c trans-set.c -o trans-set.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c transform.c -o transform.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c vctr.c -o vctr.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c vertex-filter.c -o vertex-filter.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c void-handler.c -o void-handler.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c wk-v1.c -o wk-v1.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c wkb-writer.c -o wkb-writer.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c wkt-writer.cpp -o wkt-writer.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c xy-writer.c -o xy-writer.o
+g++ -std=gnu++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o wk.so bbox-handler.o count-handler.o debug-filter.o flatten-filter.o handle-crc.o handle-rct.o handle-sfc.o handle-wkb.o handle-wkt.o handle-xy.o identity-filter.o init.o make-collection-filter.o make-linestring-filter.o make-polygon-filter.o meta-handler.o problems-handler.o sfc-writer.o trans-affine.o trans-set.o transform.o vctr.o vertex-filter.o void-handler.o wk-v1.o wkb-writer.o wkt-writer.o xy-writer.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-wk/00new/wk/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘wk’ as ‘wk_0.7.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (wk)
+* installing *source* package ‘units’ ...
+** package ‘units’ successfully unpacked and MD5 sums checked
+** using staged installation
+configure: units: 0.8-1
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C++... yes
+checking whether g++ -std=gnu++14 accepts -g... yes
+checking for g++ -std=gnu++14 option to enable C++11 features... none needed
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for _Bool... no
+checking for stdbool.h that conforms to C99... yes
+checking for error_at_line... yes
+checking for gcc... gcc
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking for XML_ParserCreate in -lexpat... yes
+checking for udunits2.h... yes
+checking for ut_read_xml in -ludunits2... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DUDUNITS2_DIR=0    -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DUDUNITS2_DIR=0    -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c udunits.cpp -o udunits.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o units.so RcppExports.o udunits.o -lexpat -lexpat -ludunits2 -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-units/00new/units/libs
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘units’ as ‘units_0.8-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (units)
+* installing *source* package ‘proxy’ ...
+** package ‘proxy’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c apply.c -o apply.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c arrayIndex.c -o arrayIndex.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c distance.c -o distance.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c dll.c -o dll.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c util.c -o util.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o proxy.so apply.o arrayIndex.o distance.o dll.o util.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-proxy/00new/proxy/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘proxy’ as ‘proxy_0.4-27_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (proxy)
+* installing *source* package ‘BiasedUrn’ ...
+** package ‘BiasedUrn’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DR_BUILD=1 -DMAXCOLORS=32     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fnchyppr.cpp -o fnchyppr.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DR_BUILD=1 -DMAXCOLORS=32     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c stoc1.cpp -o stoc1.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DR_BUILD=1 -DMAXCOLORS=32     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c stoc3.cpp -o stoc3.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DR_BUILD=1 -DMAXCOLORS=32     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c stocR.cpp -o stocR.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DR_BUILD=1 -DMAXCOLORS=32     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c urn1.cpp -o urn1.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DR_BUILD=1 -DMAXCOLORS=32     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c urn2.cpp -o urn2.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DR_BUILD=1 -DMAXCOLORS=32     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c wnchyppr.cpp -o wnchyppr.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o BiasedUrn.so fnchyppr.o stoc1.o stoc3.o stocR.o urn1.o urn2.o wnchyppr.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-BiasedUrn/00new/BiasedUrn/libs
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BiasedUrn’ as ‘BiasedUrn_2.0.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BiasedUrn)
+* installing *source* package ‘pander’ ...
+** package ‘pander’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c helpers.cpp -o helpers.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c pandoc.cpp -o pandoc.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o pander.so RcppExports.o helpers.o pandoc.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-pander/00new/pander/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pander’ as ‘pander_0.6.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pander)
+* installing *source* package ‘officer’ ...
+** package ‘officer’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘officer’ as ‘officer_0.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (officer)
+* installing *source* package ‘DEoptimR’ ...
+** package ‘DEoptimR’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DEoptimR’ as ‘DEoptimR_1.0-11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DEoptimR)
+* installing *source* package ‘gridGraphics’ ...
+** package ‘gridGraphics’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘gridGraphics’ as ‘gridGraphics_0.5-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridGraphics)
+* installing *source* package ‘yulab.utils’ ...
+** package ‘yulab.utils’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘yulab.utils’ as ‘yulab.utils_0.0.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (yulab.utils)
+* installing *source* package ‘quadprog’ ...
+** package ‘quadprog’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gfortran -fno-optimize-sibling-calls  -fvisibility=hidden -fpic -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -msse2 -mfpmath=sse   -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c aind.f -o aind.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+gfortran -fno-optimize-sibling-calls  -fvisibility=hidden -fpic -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -msse2 -mfpmath=sse   -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c solve.QP.compact.f -o solve.QP.compact.o
+gfortran -fno-optimize-sibling-calls  -fvisibility=hidden -fpic -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -msse2 -mfpmath=sse   -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c solve.QP.f -o solve.QP.o
+gfortran -fno-optimize-sibling-calls  -fvisibility=hidden -fpic -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -msse2 -mfpmath=sse   -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c util.f -o util.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o quadprog.so aind.o init.o solve.QP.compact.o solve.QP.o util.o -lblas -lgfortran -lm -lquadmath -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-quadprog/00new/quadprog/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘quadprog’ as ‘quadprog_1.5-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (quadprog)
+* installing *source* package ‘lpSolve’ ...
+** package ‘lpSolve’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c colamd.c -o colamd.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c commonlib.c -o commonlib.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c hbio.c -o hbio.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ini.c -o ini.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c isfixedvar.c -o isfixedvar.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lp_Hash.c -o lp_Hash.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lp_LUSOL.c -o lp_LUSOL.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lp_MDO.c -o lp_MDO.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lp_MPS.c -o lp_MPS.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lp_SOS.c -o lp_SOS.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lp_crash.c -o lp_crash.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lp_lib.c -o lp_lib.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lp_matrix.c -o lp_matrix.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lp_mipbb.c -o lp_mipbb.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lp_params.c -o lp_params.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lp_presolve.c -o lp_presolve.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lp_price.c -o lp_price.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lp_pricePSE.c -o lp_pricePSE.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lp_report.c -o lp_report.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lp_rlp.c -o lp_rlp.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lp_scale.c -o lp_scale.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lp_simplex.c -o lp_simplex.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lp_utils.c -o lp_utils.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lp_wlp.c -o lp_wlp.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lpslink56.c -o lpslink56.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lusol.c -o lusol.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lusolio.c -o lusolio.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c mmio.c -o mmio.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c myblas.c -o myblas.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c sparselib.c -o sparselib.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I . -DINTEGERTIME -DPARSER_LP -DBUILDING_FOR_R -DYY_NEVER_INTERACTIVE -DUSRDLL -DCLOCKTIME -DRoleIsExternalInvEngine -DINVERSE_ACTIVE=INVERSE_LUSOL -DINLINE=static -DParanoia     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c yacc_read.c -o yacc_read.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o lpSolve.so colamd.o commonlib.o hbio.o ini.o init.o isfixedvar.o lp_Hash.o lp_LUSOL.o lp_MDO.o lp_MPS.o lp_SOS.o lp_crash.o lp_lib.o lp_matrix.o lp_mipbb.o lp_params.o lp_presolve.o lp_price.o lp_pricePSE.o lp_report.o lp_rlp.o lp_scale.o lp_simplex.o lp_utils.o lp_wlp.o lpslink56.o lusol.o lusolio.o mmio.o myblas.o sparselib.o yacc_read.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-lpSolve/00new/lpSolve/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘lpSolve’ as ‘lpSolve_5.6.18_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lpSolve)
+* installing *source* package ‘nnls’ ...
+** package ‘nnls’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c lawson_hanson_nnls.f -o lawson_hanson_nnls.o
+lawson_hanson_nnls.f:112:72:
+
+  112 |    10     CL=MAX(abs(U(1,J)),CL)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 10 at (1)
+lawson_hanson_nnls.f:113:72:
+
+  113 |       IF (CL) 130,130,20
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: Arithmetic IF statement at (1)
+lawson_hanson_nnls.f:117:72:
+
+  117 |    30     SM=SM+(U(1,J)*CLINV)**2
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 30 at (1)
+lawson_hanson_nnls.f:119:72:
+
+  119 |       IF (U(1,LPIVOT)) 50,50,40
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: Arithmetic IF statement at (1)
+lawson_hanson_nnls.f:126:72:
+
+  126 |    60 IF (CL) 130,130,70
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: Arithmetic IF statement at (1)
+lawson_hanson_nnls.f:131:72:
+
+  131 |       IF (B) 80,130,130
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: Arithmetic IF statement at (1)
+lawson_hanson_nnls.f:142:72:
+
+  142 |    90         I3=I3+ICE
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 90 at (1)
+lawson_hanson_nnls.f:143:72:
+
+  143 |           IF (SM) 100,120,100
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: Arithmetic IF statement at (1)
+lawson_hanson_nnls.f:148:72:
+
+  148 |   110         I4=I4+ICE
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 110 at (1)
+lawson_hanson_nnls.f:227:72:
+
+  227 |    20     INDEX(I)=I
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 20 at (1)
+lawson_hanson_nnls.f:246:72:
+
+  246 |    40        SM=SM+A(L,J)*B(L)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 40 at (1)
+lawson_hanson_nnls.f:276:72:
+
+  276 |    90       UNORM=UNORM+A(L,J)**2
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 90 at (1)
+lawson_hanson_nnls.f:285:72:
+
+  285 |   120        ZZ(L)=B(L)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 120 at (1)
+lawson_hanson_nnls.f:309:72:
+
+  309 |   150    B(L)=ZZ(L)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 150 at (1)
+lawson_hanson_nnls.f:326:72:
+
+  326 |   180       A(L,J)=ZERO
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 180 at (1)
+lawson_hanson_nnls.f:428:72:
+
+  428 |   310     ZZ(I)=B(I)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 310 at (1)
+lawson_hanson_nnls.f:438:72:
+
+  438 |   340     X(I)=ZZ(IP)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 340 at (1)
+lawson_hanson_nnls.f:451:72:
+
+  451 |   360       SM=SM+B(I)**2
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 360 at (1)
+lawson_hanson_nnls.f:454:72:
+
+  454 |   380       W(J)=ZERO
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 380 at (1)
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c nnnpls.f -o nnnpls.o
+nnnpls.f:96:72:
+
+   96 |    20     INDEX(I)=I
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 20 at (1)
+nnnpls.f:115:72:
+
+  115 |    40        SM=SM+A(L,J)*B(L)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 40 at (1)
+nnnpls.f:145:72:
+
+  145 |    90       UNORM=UNORM+A(L,J)**2
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 90 at (1)
+nnnpls.f:154:72:
+
+  154 |   120        ZZ(L)=B(L)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 120 at (1)
+nnnpls.f:178:72:
+
+  178 |   150    B(L)=ZZ(L)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 150 at (1)
+nnnpls.f:195:72:
+
+  195 |   180       A(L,J)=ZERO
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 180 at (1)
+nnnpls.f:297:72:
+
+  297 |   310     ZZ(I)=B(I)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 310 at (1)
+nnnpls.f:307:72:
+
+  307 |   340     X(I)=ZZ(IP)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 340 at (1)
+nnnpls.f:330:72:
+
+  330 |   360       SM=SM+B(I)**2
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 360 at (1)
+nnnpls.f:333:72:
+
+  333 |   380       W(J)=ZERO
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 380 at (1)
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o nnls.so lawson_hanson_nnls.o nnnpls.o -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-nnls/00new/nnls/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘nnls’ as ‘nnls_1.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (nnls)
+* installing *source* package ‘pheatmap’ ...
+** package ‘pheatmap’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pheatmap’ as ‘pheatmap_1.0.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pheatmap)
+* installing *source* package ‘urltools’ ...
+** package ‘urltools’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c compose.cpp -o compose.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c credentials.cpp -o credentials.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c encoding.cpp -o encoding.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c parameter.cpp -o parameter.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c parsing.cpp -o parsing.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c puny.cpp -o puny.o
+gcc -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c punycode.c -o punycode.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c suffix.cpp -o suffix.o
+gcc -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c utf8.c -o utf8.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o urltools.so RcppExports.o compose.o credentials.o encoding.o parameter.o parsing.o puny.o punycode.o suffix.o utf8.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-urltools/00new/urltools/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘urltools’ as ‘urltools_1.7.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (urltools)
+* installing *source* package ‘fontquiver’ ...
+** package ‘fontquiver’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘fontquiver’ as ‘fontquiver_0.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fontquiver)
+* installing *source* package ‘s2’ ...
+** package ‘s2’ successfully unpacked and MD5 sums checked
+** using staged installation
+Found pkg-config cflags and libs!
+Testing compiler using PKG_CFLAGS=
+Using PKG_LIBS=-l:libssl.so.1.1 -l:libcrypto.so.1.1
+Using PKG_CFLAGS= -DIS_LITTLE_ENDIAN
+** libs
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/base/internal/cycleclock.cc -o absl/base/internal/cycleclock.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/base/internal/low_level_alloc.cc -o absl/base/internal/low_level_alloc.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/base/internal/raw_logging.cc -o absl/base/internal/raw_logging.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/base/internal/scoped_set_env.cc -o absl/base/internal/scoped_set_env.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/base/internal/spinlock_wait.cc -o absl/base/internal/spinlock_wait.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/base/internal/spinlock.cc -o absl/base/internal/spinlock.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/base/internal/strerror.cc -o absl/base/internal/strerror.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/base/internal/sysinfo.cc -o absl/base/internal/sysinfo.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/base/internal/thread_identity.cc -o absl/base/internal/thread_identity.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/base/internal/throw_delegate.cc -o absl/base/internal/throw_delegate.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/base/internal/unscaledcycleclock.cc -o absl/base/internal/unscaledcycleclock.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/base/log_severity.cc -o absl/base/log_severity.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/container/internal/hashtablez_sampler_force_weak_definition.cc -o absl/container/internal/hashtablez_sampler_force_weak_definition.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/container/internal/hashtablez_sampler.cc -o absl/container/internal/hashtablez_sampler.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/container/internal/raw_hash_set.cc -o absl/container/internal/raw_hash_set.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/debugging/failure_signal_handler.cc -o absl/debugging/failure_signal_handler.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/debugging/internal/address_is_readable.cc -o absl/debugging/internal/address_is_readable.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/debugging/internal/demangle.cc -o absl/debugging/internal/demangle.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/debugging/internal/elf_mem_image.cc -o absl/debugging/internal/elf_mem_image.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/debugging/internal/examine_stack.cc -o absl/debugging/internal/examine_stack.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/debugging/internal/stack_consumption.cc -o absl/debugging/internal/stack_consumption.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/debugging/internal/vdso_support.cc -o absl/debugging/internal/vdso_support.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/debugging/leak_check.cc -o absl/debugging/leak_check.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/debugging/stacktrace.cc -o absl/debugging/stacktrace.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/debugging/symbolize.cc -o absl/debugging/symbolize.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/numeric/int128.cc -o absl/numeric/int128.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/profiling/internal/exponential_biased.cc -o absl/profiling/internal/exponential_biased.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/profiling/internal/periodic_sampler.cc -o absl/profiling/internal/periodic_sampler.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/ascii.cc -o absl/strings/ascii.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/charconv.cc -o absl/strings/charconv.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/cord_analysis.cc -o absl/strings/cord_analysis.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/cord_buffer.cc -o absl/strings/cord_buffer.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/cord.cc -o absl/strings/cord.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/escaping.cc -o absl/strings/escaping.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/charconv_bigint.cc -o absl/strings/internal/charconv_bigint.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/charconv_parse.cc -o absl/strings/internal/charconv_parse.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/cord_internal.cc -o absl/strings/internal/cord_internal.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/cord_rep_btree_navigator.cc -o absl/strings/internal/cord_rep_btree_navigator.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/cord_rep_btree_reader.cc -o absl/strings/internal/cord_rep_btree_reader.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/cord_rep_btree.cc -o absl/strings/internal/cord_rep_btree.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/cord_rep_consume.cc -o absl/strings/internal/cord_rep_consume.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/cord_rep_crc.cc -o absl/strings/internal/cord_rep_crc.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/cord_rep_ring.cc -o absl/strings/internal/cord_rep_ring.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/cordz_functions.cc -o absl/strings/internal/cordz_functions.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/cordz_handle.cc -o absl/strings/internal/cordz_handle.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/cordz_info.cc -o absl/strings/internal/cordz_info.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/cordz_sample_token.cc -o absl/strings/internal/cordz_sample_token.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/escaping.cc -o absl/strings/internal/escaping.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/memutil.cc -o absl/strings/internal/memutil.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/ostringstream.cc -o absl/strings/internal/ostringstream.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/pow10_helper.cc -o absl/strings/internal/pow10_helper.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/str_format/arg.cc -o absl/strings/internal/str_format/arg.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/str_format/bind.cc -o absl/strings/internal/str_format/bind.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/str_format/extension.cc -o absl/strings/internal/str_format/extension.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/str_format/float_conversion.cc -o absl/strings/internal/str_format/float_conversion.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/str_format/output.cc -o absl/strings/internal/str_format/output.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/str_format/parser.cc -o absl/strings/internal/str_format/parser.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/internal/utf8.cc -o absl/strings/internal/utf8.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/match.cc -o absl/strings/match.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/numbers.cc -o absl/strings/numbers.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/str_cat.cc -o absl/strings/str_cat.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/str_replace.cc -o absl/strings/str_replace.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/str_split.cc -o absl/strings/str_split.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/string_view.cc -o absl/strings/string_view.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/strings/substitute.cc -o absl/strings/substitute.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/synchronization/barrier.cc -o absl/synchronization/barrier.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/synchronization/blocking_counter.cc -o absl/synchronization/blocking_counter.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/synchronization/internal/create_thread_identity.cc -o absl/synchronization/internal/create_thread_identity.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/synchronization/internal/graphcycles.cc -o absl/synchronization/internal/graphcycles.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/synchronization/internal/per_thread_sem.cc -o absl/synchronization/internal/per_thread_sem.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/synchronization/internal/waiter.cc -o absl/synchronization/internal/waiter.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/synchronization/mutex.cc -o absl/synchronization/mutex.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/synchronization/notification.cc -o absl/synchronization/notification.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/time/civil_time.cc -o absl/time/civil_time.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/time/clock.cc -o absl/time/clock.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/time/duration.cc -o absl/time/duration.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/time/format.cc -o absl/time/format.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/time/internal/cctz/src/civil_time_detail.cc -o absl/time/internal/cctz/src/civil_time_detail.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/time/internal/cctz/src/time_zone_fixed.cc -o absl/time/internal/cctz/src/time_zone_fixed.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/time/internal/cctz/src/time_zone_format.cc -o absl/time/internal/cctz/src/time_zone_format.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/time/internal/cctz/src/time_zone_if.cc -o absl/time/internal/cctz/src/time_zone_if.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/time/internal/cctz/src/time_zone_impl.cc -o absl/time/internal/cctz/src/time_zone_impl.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/time/internal/cctz/src/time_zone_info.cc -o absl/time/internal/cctz/src/time_zone_info.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/time/internal/cctz/src/time_zone_libc.cc -o absl/time/internal/cctz/src/time_zone_libc.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/time/internal/cctz/src/time_zone_lookup.cc -o absl/time/internal/cctz/src/time_zone_lookup.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/time/internal/cctz/src/time_zone_posix.cc -o absl/time/internal/cctz/src/time_zone_posix.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/time/internal/cctz/src/zone_info_source.cc -o absl/time/internal/cctz/src/zone_info_source.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/time/time.cc -o absl/time/time.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/types/bad_any_cast.cc -o absl/types/bad_any_cast.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/types/bad_optional_access.cc -o absl/types/bad_optional_access.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c absl/types/bad_variant_access.cc -o absl/types/bad_variant_access.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c cpp-compat.cpp -o cpp-compat.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2-accessors.cpp -o s2-accessors.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2-bounds.cpp -o s2-bounds.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2-cell.cpp -o s2-cell.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2-cell-union.cpp -o s2-cell-union.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2-constructors-formatters.cpp -o s2-constructors-formatters.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2-predicates.cpp -o s2-predicates.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2-transformers.cpp -o s2-transformers.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.cpp -o init.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2-geography.cpp -o s2-geography.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2-lnglat.cpp -o s2-lnglat.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2-matrix.cpp -o s2-matrix.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c wk-impl.c -o wk-impl.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2geography/accessors.cc -o s2geography/accessors.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2geography/accessors-geog.cc -o s2geography/accessors-geog.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2geography/linear-referencing.cc -o s2geography/linear-referencing.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2geography/distance.cc -o s2geography/distance.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2geography/build.cc -o s2geography/build.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2geography/coverings.cc -o s2geography/coverings.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2geography/geography.cc -o s2geography/geography.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2geography/predicates.cc -o s2geography/predicates.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/base/stringprintf.cc -o s2/base/stringprintf.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/base/strtoint.cc -o s2/base/strtoint.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/encoded_s2cell_id_vector.cc -o s2/encoded_s2cell_id_vector.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/encoded_s2point_vector.cc -o s2/encoded_s2point_vector.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/encoded_s2shape_index.cc -o s2/encoded_s2shape_index.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/encoded_string_vector.cc -o s2/encoded_string_vector.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/id_set_lexicon.cc -o s2/id_set_lexicon.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/mutable_s2shape_index.cc -o s2/mutable_s2shape_index.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/r2rect.cc -o s2/r2rect.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s1angle.cc -o s2/s1angle.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s1chord_angle.cc -o s2/s1chord_angle.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s1interval.cc -o s2/s1interval.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2boolean_operation.cc -o s2/s2boolean_operation.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2builder_graph.cc -o s2/s2builder_graph.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2builder.cc -o s2/s2builder.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2builderutil_closed_set_normalizer.cc -o s2/s2builderutil_closed_set_normalizer.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2builderutil_find_polygon_degeneracies.cc -o s2/s2builderutil_find_polygon_degeneracies.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2builderutil_lax_polygon_layer.cc -o s2/s2builderutil_lax_polygon_layer.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2builderutil_s2point_vector_layer.cc -o s2/s2builderutil_s2point_vector_layer.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2builderutil_s2polygon_layer.cc -o s2/s2builderutil_s2polygon_layer.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2builderutil_s2polyline_layer.cc -o s2/s2builderutil_s2polyline_layer.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2builderutil_s2polyline_vector_layer.cc -o s2/s2builderutil_s2polyline_vector_layer.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2builderutil_snap_functions.cc -o s2/s2builderutil_snap_functions.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2builderutil_testing.cc -o s2/s2builderutil_testing.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2cap.cc -o s2/s2cap.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2cell_id.cc -o s2/s2cell_id.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2cell_index.cc -o s2/s2cell_index.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2cell_union.cc -o s2/s2cell_union.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2cell.cc -o s2/s2cell.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2centroids.cc -o s2/s2centroids.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2closest_cell_query.cc -o s2/s2closest_cell_query.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2closest_edge_query.cc -o s2/s2closest_edge_query.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2closest_point_query.cc -o s2/s2closest_point_query.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2contains_vertex_query.cc -o s2/s2contains_vertex_query.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2convex_hull_query.cc -o s2/s2convex_hull_query.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2coords.cc -o s2/s2coords.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2crossing_edge_query.cc -o s2/s2crossing_edge_query.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2debug.cc -o s2/s2debug.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2earth.cc -o s2/s2earth.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2edge_clipping.cc -o s2/s2edge_clipping.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2edge_crosser.cc -o s2/s2edge_crosser.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2edge_crossings.cc -o s2/s2edge_crossings.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2edge_distances.cc -o s2/s2edge_distances.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2edge_tessellator.cc -o s2/s2edge_tessellator.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2error.cc -o s2/s2error.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2furthest_edge_query.cc -o s2/s2furthest_edge_query.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2latlng_rect_bounder.cc -o s2/s2latlng_rect_bounder.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2latlng_rect.cc -o s2/s2latlng_rect.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2latlng.cc -o s2/s2latlng.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2lax_loop_shape.cc -o s2/s2lax_loop_shape.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2lax_polygon_shape.cc -o s2/s2lax_polygon_shape.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2lax_polyline_shape.cc -o s2/s2lax_polyline_shape.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2loop_measures.cc -o s2/s2loop_measures.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2loop.cc -o s2/s2loop.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2max_distance_targets.cc -o s2/s2max_distance_targets.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2measures.cc -o s2/s2measures.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2metrics.cc -o s2/s2metrics.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2min_distance_targets.cc -o s2/s2min_distance_targets.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2padded_cell.cc -o s2/s2padded_cell.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2point_compression.cc -o s2/s2point_compression.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2point_region.cc -o s2/s2point_region.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2pointutil.cc -o s2/s2pointutil.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2polygon.cc -o s2/s2polygon.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2polyline_alignment.cc -o s2/s2polyline_alignment.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2polyline_measures.cc -o s2/s2polyline_measures.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2polyline_simplifier.cc -o s2/s2polyline_simplifier.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2polyline.cc -o s2/s2polyline.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2predicates.cc -o s2/s2predicates.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2projections.cc -o s2/s2projections.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2r2rect.cc -o s2/s2r2rect.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2region_coverer.cc -o s2/s2region_coverer.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2region_intersection.cc -o s2/s2region_intersection.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2region_term_indexer.cc -o s2/s2region_term_indexer.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2region_union.cc -o s2/s2region_union.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2region.cc -o s2/s2region.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2shape_index_buffered_region.cc -o s2/s2shape_index_buffered_region.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2shape_index_measures.cc -o s2/s2shape_index_measures.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2shape_index.cc -o s2/s2shape_index.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2shape_measures.cc -o s2/s2shape_measures.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2shapeutil_build_polygon_boundaries.cc -o s2/s2shapeutil_build_polygon_boundaries.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2shapeutil_coding.cc -o s2/s2shapeutil_coding.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2shapeutil_contains_brute_force.cc -o s2/s2shapeutil_contains_brute_force.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2shapeutil_edge_iterator.cc -o s2/s2shapeutil_edge_iterator.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2shapeutil_get_reference_point.cc -o s2/s2shapeutil_get_reference_point.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2shapeutil_range_iterator.cc -o s2/s2shapeutil_range_iterator.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2shapeutil_visit_crossing_edge_pairs.cc -o s2/s2shapeutil_visit_crossing_edge_pairs.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2testing.cc -o s2/s2testing.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2text_format.cc -o s2/s2text_format.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/s2wedge_relations.cc -o s2/s2wedge_relations.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/strings/ostringstream.cc -o s2/strings/ostringstream.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/strings/serialize.cc -o s2/strings/serialize.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/util/bits/bit-interleave.cc -o s2/util/bits/bit-interleave.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/util/bits/bits.cc -o s2/util/bits/bits.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/util/coding/coder.cc -o s2/util/coding/coder.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/util/coding/varint.cc -o s2/util/coding/varint.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/util/math/exactfloat/exactfloat.cc -o s2/util/math/exactfloat/exactfloat.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/util/math/mathutil.cc -o s2/util/math/mathutil.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I../src -DSTRICT_R_HEADERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/wk/include'   -DIS_LITTLE_ENDIAN -pthread -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c s2/util/units/length-units.cc -o s2/util/units/length-units.o
+g++ -std=gnu++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o s2.so absl/base/internal/cycleclock.o absl/base/internal/low_level_alloc.o absl/base/internal/raw_logging.o absl/base/internal/scoped_set_env.o absl/base/internal/spinlock_wait.o absl/base/internal/spinlock.o absl/base/internal/strerror.o absl/base/internal/sysinfo.o absl/base/internal/thread_identity.o absl/base/internal/throw_delegate.o absl/base/internal/unscaledcycleclock.o absl/base/log_severity.o absl/container/internal/hashtablez_sampler_force_weak_definition.o absl/container/internal/hashtablez_sampler.o absl/container/internal/raw_hash_set.o absl/debugging/failure_signal_handler.o absl/debugging/internal/address_is_readable.o absl/debugging/internal/demangle.o absl/debugging/internal/elf_mem_image.o absl/debugging/internal/examine_stack.o absl/debugging/internal/stack_consumption.o absl/debugging/internal/vdso_support.o absl/debugging/leak_check.o absl/debugging/stacktrace.o absl/debugging/symbolize.o absl/numeric/int128.o absl/profiling/internal/exponential_biased.o absl/profiling/internal/periodic_sampler.o absl/strings/ascii.o absl/strings/charconv.o absl/strings/cord_analysis.o absl/strings/cord_buffer.o absl/strings/cord.o absl/strings/escaping.o absl/strings/internal/charconv_bigint.o absl/strings/internal/charconv_parse.o absl/strings/internal/cord_internal.o absl/strings/internal/cord_rep_btree_navigator.o absl/strings/internal/cord_rep_btree_reader.o absl/strings/internal/cord_rep_btree.o absl/strings/internal/cord_rep_consume.o absl/strings/internal/cord_rep_crc.o absl/strings/internal/cord_rep_ring.o absl/strings/internal/cordz_functions.o absl/strings/internal/cordz_handle.o absl/strings/internal/cordz_info.o absl/strings/internal/cordz_sample_token.o absl/strings/internal/escaping.o absl/strings/internal/memutil.o absl/strings/internal/ostringstream.o absl/strings/internal/pow10_helper.o absl/strings/internal/str_format/arg.o absl/strings/internal/str_format/bind.o absl/strings/internal/str_format/extension.o absl/strings/internal/str_format/float_conversion.o absl/strings/internal/str_format/output.o absl/strings/internal/str_format/parser.o absl/strings/internal/utf8.o absl/strings/match.o absl/strings/numbers.o absl/strings/str_cat.o absl/strings/str_replace.o absl/strings/str_split.o absl/strings/string_view.o absl/strings/substitute.o absl/synchronization/barrier.o absl/synchronization/blocking_counter.o absl/synchronization/internal/create_thread_identity.o absl/synchronization/internal/graphcycles.o absl/synchronization/internal/per_thread_sem.o absl/synchronization/internal/waiter.o absl/synchronization/mutex.o absl/synchronization/notification.o absl/time/civil_time.o absl/time/clock.o absl/time/duration.o absl/time/format.o absl/time/internal/cctz/src/civil_time_detail.o absl/time/internal/cctz/src/time_zone_fixed.o absl/time/internal/cctz/src/time_zone_format.o absl/time/internal/cctz/src/time_zone_if.o absl/time/internal/cctz/src/time_zone_impl.o absl/time/internal/cctz/src/time_zone_info.o absl/time/internal/cctz/src/time_zone_libc.o absl/time/internal/cctz/src/time_zone_lookup.o absl/time/internal/cctz/src/time_zone_posix.o absl/time/internal/cctz/src/zone_info_source.o absl/time/time.o absl/types/bad_any_cast.o absl/types/bad_optional_access.o absl/types/bad_variant_access.o cpp-compat.o s2-accessors.o s2-bounds.o s2-cell.o s2-cell-union.o s2-constructors-formatters.o s2-predicates.o s2-transformers.o init.o RcppExports.o s2-geography.o s2-lnglat.o s2-matrix.o wk-impl.o s2geography/accessors.o s2geography/accessors-geog.o s2geography/linear-referencing.o s2geography/distance.o s2geography/build.o s2geography/coverings.o s2geography/geography.o s2geography/predicates.o s2/base/stringprintf.o s2/base/strtoint.o s2/encoded_s2cell_id_vector.o s2/encoded_s2point_vector.o s2/encoded_s2shape_index.o s2/encoded_string_vector.o s2/id_set_lexicon.o s2/mutable_s2shape_index.o s2/r2rect.o s2/s1angle.o s2/s1chord_angle.o s2/s1interval.o s2/s2boolean_operation.o s2/s2builder_graph.o s2/s2builder.o s2/s2builderutil_closed_set_normalizer.o s2/s2builderutil_find_polygon_degeneracies.o s2/s2builderutil_lax_polygon_layer.o s2/s2builderutil_s2point_vector_layer.o s2/s2builderutil_s2polygon_layer.o s2/s2builderutil_s2polyline_layer.o s2/s2builderutil_s2polyline_vector_layer.o s2/s2builderutil_snap_functions.o s2/s2builderutil_testing.o s2/s2cap.o s2/s2cell_id.o s2/s2cell_index.o s2/s2cell_union.o s2/s2cell.o s2/s2centroids.o s2/s2closest_cell_query.o s2/s2closest_edge_query.o s2/s2closest_point_query.o s2/s2contains_vertex_query.o s2/s2convex_hull_query.o s2/s2coords.o s2/s2crossing_edge_query.o s2/s2debug.o s2/s2earth.o s2/s2edge_clipping.o s2/s2edge_crosser.o s2/s2edge_crossings.o s2/s2edge_distances.o s2/s2edge_tessellator.o s2/s2error.o s2/s2furthest_edge_query.o s2/s2latlng_rect_bounder.o s2/s2latlng_rect.o s2/s2latlng.o s2/s2lax_loop_shape.o s2/s2lax_polygon_shape.o s2/s2lax_polyline_shape.o s2/s2loop_measures.o s2/s2loop.o s2/s2max_distance_targets.o s2/s2measures.o s2/s2metrics.o s2/s2min_distance_targets.o s2/s2padded_cell.o s2/s2point_compression.o s2/s2point_region.o s2/s2pointutil.o s2/s2polygon.o s2/s2polyline_alignment.o s2/s2polyline_measures.o s2/s2polyline_simplifier.o s2/s2polyline.o s2/s2predicates.o s2/s2projections.o s2/s2r2rect.o s2/s2region_coverer.o s2/s2region_intersection.o s2/s2region_term_indexer.o s2/s2region_union.o s2/s2region.o s2/s2shape_index_buffered_region.o s2/s2shape_index_measures.o s2/s2shape_index.o s2/s2shape_measures.o s2/s2shapeutil_build_polygon_boundaries.o s2/s2shapeutil_coding.o s2/s2shapeutil_contains_brute_force.o s2/s2shapeutil_edge_iterator.o s2/s2shapeutil_get_reference_point.o s2/s2shapeutil_range_iterator.o s2/s2shapeutil_visit_crossing_edge_pairs.o s2/s2testing.o s2/s2text_format.o s2/s2wedge_relations.o s2/strings/ostringstream.o s2/strings/serialize.o s2/util/bits/bit-interleave.o s2/util/bits/bits.o s2/util/coding/coder.o s2/util/coding/varint.o s2/util/math/exactfloat/exactfloat.o s2/util/math/mathutil.o s2/util/units/length-units.o -l:libssl.so.1.1 -l:libcrypto.so.1.1 -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-s2/00new/s2/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘s2’ as ‘s2_1.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (s2)
+* installing *source* package ‘e1071’ ...
+** package ‘e1071’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Rsvm.c -o Rsvm.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c cmeans.c -o cmeans.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c cshell.c -o cshell.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c floyd.c -o floyd.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c svm.cpp -o svm.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o e1071.so Rsvm.o cmeans.o cshell.o floyd.o init.o svm.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-e1071/00new/e1071/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘e1071’ as ‘e1071_1.7-13_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (e1071)
+* installing *source* package ‘dtangle’ ...
+** package ‘dtangle’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘dtangle’ as ‘dtangle_2.0.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dtangle)
+* installing *source* package ‘ggplotify’ ...
+** package ‘ggplotify’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ggplotify’ as ‘ggplotify_0.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggplotify)
+* installing *source* package ‘limSolve’ ...
+** package ‘limSolve’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c colrow.f -o colrow.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c inverse.f -o inverse.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c limSolveMethods.c -o limSolveMethods.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c solve.f -o solve.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o limSolve.so colrow.o inverse.o limSolveMethods.o solve.o -lblas -lgfortran -lm -lquadmath -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-limSolve/00new/limSolve/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘limSolve’ as ‘limSolve_1.5.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (limSolve)
+* installing *source* package ‘crul’ ...
+** package ‘crul’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘crul’ as ‘crul_1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (crul)
+* installing *source* package ‘classInt’ ...
+** package ‘classInt’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c fish1.f -o fish1.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o classInt.so fish1.o init.o -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-classInt/00new/classInt/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘classInt’ as ‘classInt_0.4-9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (classInt)
+* installing *source* package ‘gfonts’ ...
+** package ‘gfonts’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘gfonts’ as ‘gfonts_0.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gfonts)
+* installing *source* package ‘sf’ ...
+** package ‘sf’ successfully unpacked and MD5 sums checked
+** using staged installation
+configure: CC: gcc
+configure: CXX: g++ -std=gnu++11
+checking for gdal-config... /usr/bin/gdal-config
+checking gdal-config usability... yes
+configure: GDAL: 3.0.4
+checking GDAL version >= 2.0.1... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for gdal.h... yes
+checking GDAL: linking with --libs only... yes
+checking GDAL: /usr/share/gdal/pcs.csv readable... no
+checking GDAL: checking whether PROJ is available for linking:... yes
+checking GDAL: checking whether PROJ is available fur running:... yes
+configure: GDAL: 3.0.4
+configure: pkg-config proj exists, will use it
+configure: using proj.h.
+configure: PROJ: 6.3.1
+checking PROJ: checking whether PROJ and sqlite3 are available for linking:... yes
+checking for geos-config... /usr/bin/geos-config
+checking geos-config usability... yes
+configure: GEOS: 3.8.0
+checking GEOS version >= 3.4.0... yes
+checking for geos_c.h... yes
+checking geos: linking with -L/usr/lib/x86_64-linux-gnu -lgeos_c... yes
+configure: Package CPP flags:   -DHAVE_PROJ_H -I/usr/include/gdal -I/usr/include
+configure: Package LIBS: -lproj   -L/usr/lib -lgdal -L/usr/lib/x86_64-linux-gnu -lgeos_c
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PROJ_H -I/usr/include/gdal -I/usr/include -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PROJ_H -I/usr/include/gdal -I/usr/include -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c bbox.cpp -o bbox.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PROJ_H -I/usr/include/gdal -I/usr/include -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c gdal.cpp -o gdal.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PROJ_H -I/usr/include/gdal -I/usr/include -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c gdal_geom.cpp -o gdal_geom.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PROJ_H -I/usr/include/gdal -I/usr/include -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c gdal_read.cpp -o gdal_read.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PROJ_H -I/usr/include/gdal -I/usr/include -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c gdal_utils.cpp -o gdal_utils.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PROJ_H -I/usr/include/gdal -I/usr/include -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c gdal_write.cpp -o gdal_write.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PROJ_H -I/usr/include/gdal -I/usr/include -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c geos.cpp -o geos.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PROJ_H -I/usr/include/gdal -I/usr/include -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c hex.cpp -o hex.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PROJ_H -I/usr/include/gdal -I/usr/include -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c mdim.cpp -o mdim.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PROJ_H -I/usr/include/gdal -I/usr/include -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ops.cpp -o ops.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PROJ_H -I/usr/include/gdal -I/usr/include -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c polygonize.cpp -o polygonize.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PROJ_H -I/usr/include/gdal -I/usr/include -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c proj.cpp -o proj.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PROJ_H -I/usr/include/gdal -I/usr/include -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c proj_info.cpp -o proj_info.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PROJ_H -I/usr/include/gdal -I/usr/include -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c raster2sf.cpp -o raster2sf.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PROJ_H -I/usr/include/gdal -I/usr/include -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c sfc-sfg.cpp -o sfc-sfg.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PROJ_H -I/usr/include/gdal -I/usr/include -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c signed_area.cpp -o signed_area.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PROJ_H -I/usr/include/gdal -I/usr/include -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c stars.cpp -o stars.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PROJ_H -I/usr/include/gdal -I/usr/include -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c wkb.cpp -o wkb.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PROJ_H -I/usr/include/gdal -I/usr/include -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c zm_range.cpp -o zm_range.o
+g++ -std=gnu++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o sf.so RcppExports.o bbox.o gdal.o gdal_geom.o gdal_read.o gdal_utils.o gdal_write.o geos.o hex.o mdim.o ops.o polygonize.o proj.o proj_info.o raster2sf.o sfc-sfg.o signed_area.o stars.o wkb.o zm_range.o -lproj -L/usr/lib -lgdal -L/usr/lib/x86_64-linux-gnu -lgeos_c -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-sf/00new/sf/libs
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+in method for ‘dbWriteTable’ with signature ‘"PostgreSQLConnection","character","sf"’: no definition for class “PostgreSQLConnection”
+in method for ‘dbDataType’ with signature ‘"PostgreSQLConnection","sf"’: no definition for class “PostgreSQLConnection”
+in method for ‘coerce’ with signature ‘"Spatial","sf"’: no definition for class “Spatial”
+in method for ‘coerce’ with signature ‘"Spatial","sfc"’: no definition for class “Spatial”
+in method for ‘coerce’ with signature ‘"sf","Spatial"’: no definition for class “Spatial”
+in method for ‘coerce’ with signature ‘"sfc","Spatial"’: no definition for class “Spatial”
+in method for ‘coerce’ with signature ‘"XY","Spatial"’: no definition for class “Spatial”
+in method for ‘coerce’ with signature ‘"crs","CRS"’: no definition for class “CRS”
+in method for ‘coerce’ with signature ‘"sgbp","sparseMatrix"’: no definition for class “sparseMatrix”
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘sf’ as ‘sf_1.0-9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sf)
+* installing *source* package ‘gdtools’ ...
+** package ‘gdtools’ successfully unpacked and MD5 sums checked
+** using staged installation
+Found pkg-config cflags and libs!
+Using PKG_CFLAGS=-I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16
+Using PKG_LIBS=-lcairo -lfreetype
+** libs
+rm -f gdtools.so CairoContext.o RcppExports.o font_metrics.o gdtools.o raster_to_base64.o versions.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c CairoContext.cpp -o CairoContext.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c font_metrics.cpp -o font_metrics.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c gdtools.cpp -o gdtools.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c raster_to_base64.cpp -o raster_to_base64.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c versions.cpp -o versions.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o gdtools.so CairoContext.o RcppExports.o font_metrics.o gdtools.o raster_to_base64.o versions.o -lcairo -lfreetype -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-gdtools/00new/gdtools/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘gdtools’ as ‘gdtools_0.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gdtools)
+* installing *source* package ‘flextable’ ...
+** package ‘flextable’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘flextable’ as ‘flextable_0.8.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (flextable)
+* installing *source* package ‘epiR’ ...
+** package ‘epiR’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+[0;1;31mSystem has not been booted with systemd as init system (PID 1). Can't operate.[0m
+[0;1;31mFailed to create bus connection: Host is down[0m
+Warning in system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+[0;1;31mSystem has not been booted with systemd as init system (PID 1). Can't operate.[0m
+[0;1;31mFailed to create bus connection: Host is down[0m
+Warning in system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1
+** testing if installed package can be loaded from final location
+[0;1;31mSystem has not been booted with systemd as init system (PID 1). Can't operate.[0m
+[0;1;31mFailed to create bus connection: Host is down[0m
+Warning in system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘epiR’ as ‘epiR_2.0.58_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (epiR)
+* installing *source* package ‘granulator’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+[0;1;31mSystem has not been booted with systemd as init system (PID 1). Can't operate.[0m
+[0;1;31mFailed to create bus connection: Host is down[0m
+Warning in system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+[0;1;31mSystem has not been booted with systemd as init system (PID 1). Can't operate.[0m
+[0;1;31mFailed to create bus connection: Host is down[0m
+Warning in system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1
+** testing if installed package can be loaded from final location
+[0;1;31mSystem has not been booted with systemd as init system (PID 1). Can't operate.[0m
+[0;1;31mFailed to create bus connection: Host is down[0m
+Warning in system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘granulator’ as ‘granulator_1.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (granulator)
+
+The downloaded source packages are in
+	‘/tmp/RtmpL6cPyZ/downloaded_packages’
+Old packages: 'BH', 'BiocFileCache', 'BiocManager', 'BiocParallel', 'broom',
+  'bslib', 'cachem', 'class', 'cli', 'codetools', 'colorspace', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'fontawesome', 'forcats', 'formatR', 'fs',
+  'future', 'gargle', 'GenomeInfoDb', 'GenomicFeatures', 'GenomicRanges',
+  'ggplot2', 'ggrepel', 'gh', 'haven', 'highr', 'htmlwidgets', 'httpuv',
+  'httr', 'igraph', 'IRkernel', 'isoband', 'knitr', 'limma', 'listenv',
+  'locfit', 'lubridate', 'MASS', 'mgcv', 'nlme', 'parallelly', 'pbapply',
+  'pbdZMQ', 'pkgdown', 'progressr', 'purrr', 'ragg', 'Rcpp', 'RcppArmadillo',
+  'RcppTOML', 'RCurl', 'readr', 'readxl', 'repr', 'reticulate', 'rmarkdown',
+  'roxygen2', 'RSQLite', 'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny',
+  'sourcetools', 'sp', 'spatial', 'spatstat.explore', 'spatstat.geom',
+  'spatstat.random', 'statmod', 'stringi', 'survival', 'testthat', 'tidyr',
+  'tidyverse', 'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun',
+  'yaml'
+
+real	12m28.537s
+user	11m34.476s
+sys	0m58.509s

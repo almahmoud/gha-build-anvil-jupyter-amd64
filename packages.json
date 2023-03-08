@@ -1415,7 +1415,6 @@
     "hiAnnotator": [
         "BSgenome"
     ],
-    "HiCcompare": [],
     "HiCDCPlus": [
         "BSgenome",
         "GenomicFeatures",
@@ -1426,7 +1425,6 @@
         "ensembldb"
     ],
     "HiCDOC": [
-        "HiCcompare",
         "multiHiCcompare"
     ],
     "HiContacts": [
@@ -1910,9 +1908,7 @@
         "plyranges",
         "regioneR"
     ],
-    "multiHiCcompare": [
-        "HiCcompare"
-    ],
+    "multiHiCcompare": [],
     "multiSight": [
         "DESeq2",
         "ReactomePA"
@@ -2746,9 +2742,7 @@
         "ensembldb",
         "motifmatchr"
     ],
-    "SpectralTAD": [
-        "HiCcompare"
-    ],
+    "SpectralTAD": [],
     "SPIAT": [
         "DropletUtils",
         "SpatialExperiment"
@@ -2836,9 +2830,7 @@
     "systemPipeTools": [
         "DESeq2"
     ],
-    "TADCompare": [
-        "HiCcompare"
-    ],
+    "TADCompare": [],
     "TAPseq": [
         "BSgenome",
         "GenomicFeatures"

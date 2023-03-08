@@ -1,0 +1,627 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''GISPA'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'GISPA'
+also installing the dependencies ‘checkmate’, ‘mvtnorm’, ‘TH.data’, ‘sandwich’, ‘htmlTable’, ‘viridis’, ‘Formula’, ‘gmp’, ‘multcomp’, ‘leaps’, ‘vcd’, ‘Hmisc’, ‘Rmpfr’, ‘changepoint’, ‘HH’, ‘scatterplot3d’
+
+trying URL 'https://cloud.r-project.org/src/contrib/checkmate_2.1.0.tar.gz'
+Content type 'application/x-gzip' length 170034 bytes (166 KB)
+==================================================
+downloaded 166 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/mvtnorm_1.1-3.tar.gz'
+Content type 'application/x-gzip' length 166421 bytes (162 KB)
+==================================================
+downloaded 162 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/TH.data_1.1-1.tar.gz'
+Content type 'application/x-gzip' length 8612708 bytes (8.2 MB)
+==================================================
+downloaded 8.2 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/sandwich_3.0-2.tar.gz'
+Content type 'application/x-gzip' length 1356080 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/htmlTable_2.4.1.tar.gz'
+Content type 'application/x-gzip' length 439117 bytes (428 KB)
+==================================================
+downloaded 428 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/viridis_0.6.2.tar.gz'
+Content type 'application/x-gzip' length 3031731 bytes (2.9 MB)
+==================================================
+downloaded 2.9 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/Formula_1.2-5.tar.gz'
+Content type 'application/x-gzip' length 128259 bytes (125 KB)
+==================================================
+downloaded 125 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/gmp_0.7-1.tar.gz'
+Content type 'application/x-gzip' length 167489 bytes (163 KB)
+==================================================
+downloaded 163 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/multcomp_1.4-22.tar.gz'
+Content type 'application/x-gzip' length 614391 bytes (599 KB)
+==================================================
+downloaded 599 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/leaps_3.1.tar.gz'
+Content type 'application/x-gzip' length 28558 bytes (27 KB)
+==================================================
+downloaded 27 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/vcd_1.4-11.tar.gz'
+Content type 'application/x-gzip' length 652138 bytes (636 KB)
+==================================================
+downloaded 636 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/Hmisc_5.0-1.tar.gz'
+Content type 'application/x-gzip' length 843744 bytes (823 KB)
+==================================================
+downloaded 823 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/Rmpfr_0.9-1.tar.gz'
+Content type 'application/x-gzip' length 603289 bytes (589 KB)
+==================================================
+downloaded 589 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/changepoint_2.2.4.tar.gz'
+Content type 'application/x-gzip' length 255422 bytes (249 KB)
+==================================================
+downloaded 249 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/HH_3.1-49.tar.gz'
+Content type 'application/x-gzip' length 703247 bytes (686 KB)
+==================================================
+downloaded 686 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/scatterplot3d_0.3-42.tar.gz'
+Content type 'application/x-gzip' length 475718 bytes (464 KB)
+==================================================
+downloaded 464 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/GISPA_1.22.0.tar.gz'
+Content type 'application/x-gzip' length 266777 bytes (260 KB)
+==================================================
+downloaded 260 KB
+
+* installing *source* package ‘checkmate’ ...
+** package ‘checkmate’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c all_missing.c -o all_missing.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c any_infinite.c -o any_infinite.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c any_missing.c -o any_missing.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c any_nan.c -o any_nan.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c checks.c -o checks.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c find_nchar.c -o find_nchar.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c guess_type.c -o guess_type.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c helper.c -o helper.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c integerish.c -o integerish.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c is_sorted.c -o is_sorted.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c qassert.c -o qassert.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c which_first.c -o which_first.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o checkmate.so all_missing.o any_infinite.o any_missing.o any_nan.o checks.o find_nchar.o guess_type.o helper.o init.o integerish.o is_sorted.o qassert.o which_first.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-checkmate/00new/checkmate/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘checkmate’ as ‘checkmate_2.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (checkmate)
+* installing *source* package ‘mvtnorm’ ...
+** package ‘mvtnorm’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c C_FORTRAN_interface.c -o C_FORTRAN_interface.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c miwa.c -o miwa.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c mvt.f -o mvt.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c mvtnorm-init.c -o mvtnorm-init.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c tvpack.f -o tvpack.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o mvtnorm.so C_FORTRAN_interface.o miwa.o mvt.o mvtnorm-init.o tvpack.o -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-mvtnorm/00new/mvtnorm/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘mvtnorm’ as ‘mvtnorm_1.1-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mvtnorm)
+* installing *source* package ‘TH.data’ ...
+** package ‘TH.data’ successfully unpacked and MD5 sums checked
+** using staged installation
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TH.data’ as ‘TH.data_1.1-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TH.data)
+* installing *source* package ‘sandwich’ ...
+** package ‘sandwich’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘sandwich’ as ‘sandwich_3.0-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sandwich)
+* installing *source* package ‘viridis’ ...
+** package ‘viridis’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘viridis’ as ‘viridis_0.6.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (viridis)
+* installing *source* package ‘Formula’ ...
+** package ‘Formula’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Formula’ as ‘Formula_1.2-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Formula)
+* installing *source* package ‘gmp’ ...
+** package ‘gmp’ successfully unpacked and MD5 sums checked
+** using staged installation
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ -std=gnu++14 accepts -g... yes
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking gmp.h usability... yes
+checking gmp.h presence... yes
+checking for gmp.h... yes
+checking for __gmpz_ui_sub in -lgmp... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c apply.cc -o apply.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c biginteger.cc -o biginteger.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c bigintegerR.cc -o bigintegerR.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c bigmod.cc -o bigmod.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c bigrational.cc -o bigrational.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c bigrationalR.cc -o bigrationalR.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c bigvec.cc -o bigvec.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c bigvec_q.cc -o bigvec_q.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c extract_matrix.cc -o extract_matrix.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c factor.cc -o factor.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c factorize.cc -o factorize.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.cc -o init.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c matrix.cc -o matrix.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c matrixq.cc -o matrixq.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c solve.cc -o solve.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o gmp.so apply.o biginteger.o bigintegerR.o bigmod.o bigrational.o bigrationalR.o bigvec.o bigvec_q.o extract_matrix.o factor.o factorize.o init.o matrix.o matrixq.o solve.o -lgmp -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-gmp/00new/gmp/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+Creating a generic function for ‘which.max’ from package ‘base’ in package ‘gmp’
+Creating a generic function for ‘which.min’ from package ‘base’ in package ‘gmp’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘gmp’ as ‘gmp_0.7-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gmp)
+* installing *source* package ‘leaps’ ...
+** package ‘leaps’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c leaps.f -o leaps.o
+leaps.f:218:72:
+
+  218 |    20 RBAR(I) = ZERO
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 20 at (1)
+leaps.f:412:72:
+
+  412 |      *            IL, VORDER)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 10 at (1)
+leaps.f:533:72:
+
+  533 |    10 WK(J) = SS(J)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 10 at (1)
+leaps.f:723:72:
+
+  723 |         DO 100 K = 1, POS
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: Shared DO termination label 100 at (1)
+leaps.f:889:72:
+
+  889 |    20 IWK(I) = LAST
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 20 at (1)
+leaps.f:917:72:
+
+  917 |      *             VORDER)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 50 at (1)
+leaps.f:922:72:
+
+  922 |    60 IWK(I) = NEWPOS - 1
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 60 at (1)
+leaps.f:1043:72:
+
+ 1043 |      *        IL, VORDER)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 40 at (1)
+leaps.f:1126:72:
+
+ 1126 |    10 WORK(COL) = SQRT(D(COL))
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 10 at (1)
+leaps.f:1229:72:
+
+ 1229 |    10 WORK(ROW) = SQRT(D(ROW))
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 10 at (1)
+leaps.f:1316:72:
+
+ 1316 |    10 SUMY = SUMY + D(ROW) * THETAB(ROW)**2
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 10 at (1)
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c leapshdr.f -o leapshdr.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o leaps.so leaps.o leapshdr.o -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-leaps/00new/leaps/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘leaps’ as ‘leaps_3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (leaps)
+* installing *source* package ‘vcd’ ...
+** package ‘vcd’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘vcd’ as ‘vcd_1.4-11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (vcd)
+* installing *source* package ‘changepoint’ ...
+** package ‘changepoint’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c BinSeg_one_func_minseglen.c -o BinSeg_one_func_minseglen.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c PELT_one_func_minseglen.c -o PELT_one_func_minseglen.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c changepoint_init.c -o changepoint_init.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c cost_general_functions.c -o cost_general_functions.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o changepoint.so BinSeg_one_func_minseglen.o PELT_one_func_minseglen.o changepoint_init.o cost_general_functions.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-changepoint/00new/changepoint/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a new generic function for ‘acf’ in package ‘changepoint’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘changepoint’ as ‘changepoint_2.2.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (changepoint)
+* installing *source* package ‘scatterplot3d’ ...
+** package ‘scatterplot3d’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘scatterplot3d’ as ‘scatterplot3d_0.3-42_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (scatterplot3d)
+* installing *source* package ‘htmlTable’ ...
+** package ‘htmlTable’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘htmlTable’ as ‘htmlTable_2.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (htmlTable)
+* installing *source* package ‘multcomp’ ...
+** package ‘multcomp’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘multcomp’ as ‘multcomp_1.4-22_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (multcomp)
+* installing *source* package ‘Rmpfr’ ...
+** package ‘Rmpfr’ successfully unpacked and MD5 sums checked
+** using staged installation
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking mpfr.h usability... yes
+checking mpfr.h presence... yes
+checking for mpfr.h... yes
+checking gmp.h usability... yes
+checking gmp.h presence... yes
+checking for gmp.h... yes
+checking for __gmpz_init in -lgmp... yes
+checking for mpfr_init in -lmpfr... yes
+checking for mpfr_digamma in -lmpfr... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG     -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Ops.c -o Ops.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Summary.c -o Summary.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c convert.c -o convert.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c utils.c -o utils.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o Rmpfr.so Ops.o Summary.o convert.o init.o utils.o -lmpfr -lgmp -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-Rmpfr/00new/Rmpfr/libs
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a generic function for ‘factorial’ from package ‘base’ in package ‘Rmpfr’
+Creating a generic function for ‘diag’ from package ‘base’ in package ‘Rmpfr’
+Creating a generic function for ‘diag<-’ from package ‘base’ in package ‘Rmpfr’
+Creating a new generic function for ‘cbind’ in package ‘Rmpfr’
+Creating a new generic function for ‘rbind’ in package ‘Rmpfr’
+Creating a generic function for ‘colSums’ from package ‘base’ in package ‘Rmpfr’
+Creating a generic function for ‘colMeans’ from package ‘base’ in package ‘Rmpfr’
+Creating a generic function for ‘rowSums’ from package ‘base’ in package ‘Rmpfr’
+Creating a generic function for ‘rowMeans’ from package ‘base’ in package ‘Rmpfr’
+Creating a generic function for ‘norm’ from package ‘base’ in package ‘Rmpfr’
+in method for ‘show’ with signature ‘"integrateR"’: no definition for class “integrateR”
+Creating a new generic function for ‘pmin’ in package ‘Rmpfr’
+Creating a new generic function for ‘pmax’ in package ‘Rmpfr’
+Creating a generic function for ‘atan2’ from package ‘base’ in package ‘Rmpfr’
+Creating a generic function for ‘beta’ from package ‘base’ in package ‘Rmpfr’
+Creating a generic function for ‘lbeta’ from package ‘base’ in package ‘Rmpfr’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Rmpfr’ as ‘Rmpfr_0.9-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Rmpfr)
+* installing *source* package ‘Hmisc’ ...
+** package ‘Hmisc’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Hmisc.c -o Hmisc.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c cidxcn.f -o cidxcn.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c cidxcp.f -o cidxcp.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c hoeffd.f -o hoeffd.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c jacklins.f -o jacklins.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c largrec.f -o largrec.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c mChoice.c -o mChoice.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c maxempr.f -o maxempr.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c nstr.c -o nstr.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ranksort.c -o ranksort.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c rcorr.f -o rcorr.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c string_box.c -o string_box.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c wclosest.f -o wclosest.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o Hmisc.so Hmisc.o cidxcn.o cidxcp.o hoeffd.o init.o jacklins.o largrec.o mChoice.o maxempr.o nstr.o ranksort.o rcorr.o string_box.o wclosest.o -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-Hmisc/00new/Hmisc/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Hmisc’ as ‘Hmisc_5.0-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Hmisc)
+* installing *source* package ‘HH’ ...
+** package ‘HH’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘HH’ as ‘HH_3.1-49_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (HH)
+* installing *source* package ‘GISPA’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GISPA’ as ‘GISPA_1.22.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GISPA)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpzhu3nb/downloaded_packages’
+Old packages: 'BH', 'BiocFileCache', 'BiocManager', 'BiocParallel', 'broom',
+  'bslib', 'cachem', 'class', 'cli', 'codetools', 'colorspace', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'fontawesome', 'forcats', 'formatR', 'fs',
+  'future', 'gargle', 'GenomeInfoDb', 'GenomicFeatures', 'GenomicRanges',
+  'ggplot2', 'ggrepel', 'gh', 'haven', 'highr', 'htmlwidgets', 'httpuv',
+  'httr', 'igraph', 'IRkernel', 'isoband', 'knitr', 'limma', 'listenv',
+  'locfit', 'lubridate', 'MASS', 'mgcv', 'nlme', 'parallelly', 'pbapply',
+  'pbdZMQ', 'pkgdown', 'progressr', 'purrr', 'ragg', 'Rcpp', 'RcppArmadillo',
+  'RcppTOML', 'RCurl', 'readr', 'readxl', 'repr', 'reticulate', 'rmarkdown',
+  'roxygen2', 'RSQLite', 'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny',
+  'sourcetools', 'sp', 'spatial', 'spatstat.explore', 'spatstat.geom',
+  'spatstat.random', 'statmod', 'stringi', 'survival', 'testthat', 'tibble',
+  'tidyr', 'tidyverse', 'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom',
+  'xfun', 'yaml'
+
+real	2m54.946s
+user	2m43.071s
+sys	0m15.747s

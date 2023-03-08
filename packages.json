@@ -1,8 +1,6 @@
 {
     "a4": [],
-    "ACE": [
-        "QDNAseq"
-    ],
+    "ACE": [],
     "ADaCGH2": [
         "snapCGH",
         "tilingArray"
@@ -291,7 +289,6 @@
         "BSgenome",
         "GenomicFeatures",
         "OrganismDbi",
-        "QDNAseq",
         "VariantAnnotation",
         "annotatr",
         "bsseq",
@@ -1610,9 +1607,7 @@
         "GenomicFeatures",
         "rtracklayer"
     ],
-    "GeneBreak": [
-        "QDNAseq"
-    ],
+    "GeneBreak": [],
     "GeneStructureTools": [
         "BSgenome",
         "GenomicFeatures",
@@ -1795,9 +1790,7 @@
         "BSgenome",
         "rtracklayer"
     ],
-    "HiCcompare": [
-        "QDNAseq"
-    ],
+    "HiCcompare": [],
     "HiCDCPlus": [
         "BSgenome",
         "GenomicFeatures",
@@ -1810,7 +1803,6 @@
     ],
     "HiCDOC": [
         "HiCcompare",
-        "QDNAseq",
         "multiHiCcompare"
     ],
     "HiContacts": [
@@ -2437,8 +2429,7 @@
         "rtracklayer"
     ],
     "multiHiCcompare": [
-        "HiCcompare",
-        "QDNAseq"
+        "HiCcompare"
     ],
     "multiSight": [
         "DESeq2",
@@ -2841,7 +2832,6 @@
         "ensembldb",
         "rtracklayer"
     ],
-    "QDNAseq": [],
     "qpgraph": [
         "GenomicFeatures",
         "rtracklayer"
@@ -3551,8 +3541,7 @@
         "rtracklayer"
     ],
     "SpectralTAD": [
-        "HiCcompare",
-        "QDNAseq"
+        "HiCcompare"
     ],
     "SPIAT": [
         "DropletUtils",
@@ -3663,8 +3652,7 @@
         "DESeq2"
     ],
     "TADCompare": [
-        "HiCcompare",
-        "QDNAseq"
+        "HiCcompare"
     ],
     "TAPseq": [
         "BSgenome",

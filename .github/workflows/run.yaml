@@ -124,7 +124,7 @@ jobs:
           df -h
 
       - name: Maximize build space
-        uses: almahmoud/maximize-build-space@main
+        uses: easimon/maximize-build-space@v6
         with:
           root-reserve-mb: 41984
           swap-size-mb: 1024

@@ -126,12 +126,11 @@ jobs:
       - name: Maximize build space
         uses: almahmoud/maximize-build-space@main
         with:
-          root-reserve-mb: 43008
+          root-reserve-mb: 41984
           swap-size-mb: 1024
           remove-dotnet: 'true'
           remove-android: 'true'
           remove-haskell: 'true'
-          overprovision-lvm: 'true'
 
       - uses: actions/checkout@v3
 

@@ -240,8 +240,8 @@ jobs:
         run: |
           echo "Free space:"
           df -h
-          sudo du -d 3 /
-          sudo docker images prune --all -f
+          sudo rm -rf /opt/hostedtoolcache/*
+          sudo rm -rf /usr/lib/google-cloud-sdk
           df -h
 
       - name: Build package via docker build and extracting files to scratch

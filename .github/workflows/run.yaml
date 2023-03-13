@@ -253,7 +253,6 @@ jobs:
           context: .
           push: false
           load: false
-          cache-from: type=gha,scope=${{ steps.meta.outputs.base }}
           outputs: type=tar,dest=${{ steps.meta.outputs.workspace }}/tmp/image/${{ matrix.pkg }}.tar
           tags: ${{ steps.meta.outputs.image }}
           platforms: ${{ steps.versions.outputs.platform }}

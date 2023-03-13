@@ -240,7 +240,8 @@ jobs:
         run: |
           echo "Free space:"
           df -h
-          sudo docker system prune --volumes -f
+          sudo du -d 3 /
+          sudo docker images prune --all -f
           df -h
 
       - name: Build package via docker build and extracting files to scratch

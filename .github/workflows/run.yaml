@@ -240,6 +240,8 @@ jobs:
         run: |
           echo "Free space:"
           df -h
+          sudo docker system prune --volumes -f
+          df -h
 
       - name: Build package via docker build and extracting files to scratch
         id: dockerbuild

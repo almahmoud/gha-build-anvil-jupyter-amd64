@@ -1,5 +1,6 @@
 import json, yaml
 from os.path import exists
+import os
 from tabulate import tabulate
 import requests, time, humanize
 
@@ -35,7 +36,7 @@ def get_pkg_status_and_tarname(pkg, name):
     tarname = ""
     if exists(f"lists/failed/{pkg}"):
         status = "Failed"
-        tarname = f"https://github.com/almahmoud/gha-build/blob/main/lists/failed/{pkg}"
+        tarname = f"https://github.com/{os.environ.get('GITHUB_REPOSITORY', 'almahmoud/gha-build')}/blob/main/lists/failed/{pkg}"
     elif exists(f"lists/{pkg}"):
         with open(f"lists/{pkg}", "r") as pf:
             plog = pf.read()

@@ -1,0 +1,718 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''SpliceWiz'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'SpliceWiz'
+also installing the dependencies ‘iterators’, ‘foreach’, ‘TSP’, ‘qap’, ‘gclus’, ‘ca’, ‘registry’, ‘fstcore’, ‘R.oo’, ‘R.methodsS3’, ‘anytime’, ‘viridis’, ‘dendextend’, ‘seriation’, ‘webshot’, ‘egg’, ‘NxtIRFdata’, ‘fst’, ‘R.utils’, ‘shinyFiles’, ‘shinyWidgets’, ‘shinydashboard’, ‘rhandsontable’, ‘heatmaply’, ‘pheatmap’
+
+trying URL 'https://cloud.r-project.org/src/contrib/iterators_1.0.14.tar.gz'
+Content type 'application/x-gzip' length 300266 bytes (293 KB)
+==================================================
+downloaded 293 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/foreach_1.5.2.tar.gz'
+Content type 'application/x-gzip' length 89758 bytes (87 KB)
+==================================================
+downloaded 87 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/TSP_1.2-3.tar.gz'
+Content type 'application/x-gzip' length 898745 bytes (877 KB)
+==================================================
+downloaded 877 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/qap_0.1-2.tar.gz'
+Content type 'application/x-gzip' length 523276 bytes (511 KB)
+==================================================
+downloaded 511 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/gclus_1.3.2.tar.gz'
+Content type 'application/x-gzip' length 339083 bytes (331 KB)
+==================================================
+downloaded 331 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/ca_0.71.1.tar.gz'
+Content type 'application/x-gzip' length 47723 bytes (46 KB)
+==================================================
+downloaded 46 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/registry_0.5-1.tar.gz'
+Content type 'application/x-gzip' length 170969 bytes (166 KB)
+==================================================
+downloaded 166 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/fstcore_0.9.14.tar.gz'
+Content type 'application/x-gzip' length 579301 bytes (565 KB)
+==================================================
+downloaded 565 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/R.oo_1.25.0.tar.gz'
+Content type 'application/x-gzip' length 384384 bytes (375 KB)
+==================================================
+downloaded 375 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/R.methodsS3_1.8.2.tar.gz'
+Content type 'application/x-gzip' length 24131 bytes (23 KB)
+==================================================
+downloaded 23 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/anytime_0.3.9.tar.gz'
+Content type 'application/x-gzip' length 348903 bytes (340 KB)
+==================================================
+downloaded 340 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/viridis_0.6.2.tar.gz'
+Content type 'application/x-gzip' length 3031731 bytes (2.9 MB)
+==================================================
+downloaded 2.9 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/dendextend_1.16.0.tar.gz'
+Content type 'application/x-gzip' length 3543308 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/seriation_1.4.2.tar.gz'
+Content type 'application/x-gzip' length 856625 bytes (836 KB)
+==================================================
+downloaded 836 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/webshot_0.5.4.tar.gz'
+Content type 'application/x-gzip' length 159902 bytes (156 KB)
+==================================================
+downloaded 156 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/egg_0.4.5.tar.gz'
+Content type 'application/x-gzip' length 1041027 bytes (1016 KB)
+==================================================
+downloaded 1016 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/data/experiment/src/contrib/NxtIRFdata_1.4.0.tar.gz'
+Content type 'application/x-gzip' length 310592 bytes (303 KB)
+==================================================
+downloaded 303 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/fst_0.9.8.tar.gz'
+Content type 'application/x-gzip' length 274495 bytes (268 KB)
+==================================================
+downloaded 268 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/R.utils_2.12.2.tar.gz'
+Content type 'application/x-gzip' length 365876 bytes (357 KB)
+==================================================
+downloaded 357 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/shinyFiles_0.9.3.tar.gz'
+Content type 'application/x-gzip' length 356560 bytes (348 KB)
+==================================================
+downloaded 348 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/shinyWidgets_0.7.6.tar.gz'
+Content type 'application/x-gzip' length 789970 bytes (771 KB)
+==================================================
+downloaded 771 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/shinydashboard_0.7.2.tar.gz'
+Content type 'application/x-gzip' length 239254 bytes (233 KB)
+==================================================
+downloaded 233 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/rhandsontable_0.3.8.tar.gz'
+Content type 'application/x-gzip' length 3625884 bytes (3.5 MB)
+==================================================
+downloaded 3.5 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/heatmaply_1.4.2.tar.gz'
+Content type 'application/x-gzip' length 1702747 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/pheatmap_1.0.12.tar.gz'
+Content type 'application/x-gzip' length 15071 bytes (14 KB)
+==================================================
+downloaded 14 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/SpliceWiz_1.0.2.tar.gz'
+Content type 'application/x-gzip' length 4558487 bytes (4.3 MB)
+==================================================
+downloaded 4.3 MB
+
+* installing *source* package ‘iterators’ ...
+** package ‘iterators’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘iterators’ as ‘iterators_1.0.14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (iterators)
+* installing *source* package ‘qap’ ...
+** package ‘qap’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RNG_wrapper.c -o RNG_wrapper.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c qapsim.f -o qapsim.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o qap.so RNG_wrapper.o init.o qapsim.o -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-qap/00new/qap/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘qap’ as ‘qap_0.1-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (qap)
+* installing *source* package ‘gclus’ ...
+** package ‘gclus’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘gclus’ as ‘gclus_1.3.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gclus)
+* installing *source* package ‘ca’ ...
+** package ‘ca’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ca’ as ‘ca_0.71.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ca)
+* installing *source* package ‘registry’ ...
+** package ‘registry’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘registry’ as ‘registry_0.5-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (registry)
+* installing *source* package ‘fstcore’ ...
+** package ‘fstcore’ successfully unpacked and MD5 sums checked
+** using staged installation
+0.29.1
+Package liblz4 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `liblz4.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'liblz4' found
+Package liblz4 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `liblz4.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'liblz4' found
+------------------------------- ANTICONF WARNING ---------------------------------
+Configuration with system library liblz4 failed, falling back to
+liblz4 included in the package code. To use the liblz4
+system library, try installing:
+ * deb: liblz4-dev (Debian, Ubuntu, etc)
+ * rpm: lz4-devel (Fedora, CentOS, RHEL)
+ * csw: liblz4_dev (Solaris)
+ * OSX: lz4 (macOS)
+If liblz4 is already installed, check that 'pkg-config' is in your
+PATH and PKG_CONFIG_PATH contains a liblz4.pc file. If pkg-config
+is unavailable you can set INCLUDE_LZ4_DIR and LIB_LZ4_DIR manually via:
+R CMD INSTALL --configure-vars='INCLUDE_LZ4_DIR=... LIB_LZ4_DIR=...'
+Alternatively, you can force-build the required libraries directly from bundled
+code by setting BUILD_INTERNAL_LIBS to true
+----------------------------------------------------------------------------------
+0.29.1
+Found pkg-config cflags and libs for ZSTD!
+** libs
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c flex_store.cpp -o flex_store.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fst_blockrunner_char.cpp -o fst_blockrunner_char.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fst_compress.cpp -o fst_compress.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fst_error.cpp -o fst_error.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fst_table.cpp -o fst_table.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c openmp.cpp -o openmp.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c versions.cpp -o versions.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fstlib/LZ4/lz4.c -o fstlib/LZ4/lz4.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fstlib/LZ4/xxhash.c -o fstlib/LZ4/xxhash.o
+ar rcs libLZ4.a fstlib/LZ4/lz4.o fstlib/LZ4/xxhash.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fstlib/compression/compression.cpp -o fstlib/compression/compression.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fstlib/compression/compressor.cpp -o fstlib/compression/compressor.o
+ar rcs libCOMPRESSION.a fstlib/compression/compression.o fstlib/compression/compressor.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fstlib/interface/openmphelper.cpp -o fstlib/interface/openmphelper.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fstlib/interface/fststore.cpp -o fstlib/interface/fststore.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fstlib/logical/logical_v10.cpp -o fstlib/logical/logical_v10.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fstlib/integer/integer_v8.cpp -o fstlib/integer/integer_v8.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fstlib/byte/byte_v12.cpp -o fstlib/byte/byte_v12.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fstlib/double/double_v9.cpp -o fstlib/double/double_v9.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fstlib/character/character_v6.cpp -o fstlib/character/character_v6.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fstlib/factor/factor_v7.cpp -o fstlib/factor/factor_v7.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fstlib/blockstreamer/blockstreamer_v2.cpp -o fstlib/blockstreamer/blockstreamer_v2.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fstlib/integer64/integer64_v11.cpp -o fstlib/integer64/integer64_v11.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ifstlib -Ifstlib/LZ4 -Ifstlib/ZSTD -Ifstlib/ZSTD/common -Ifstlib/ZSTD/decompress -Ifstlib/ZSTD/compress -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fstlib/byteblock/byteblock_v13.cpp -o fstlib/byteblock/byteblock_v13.o
+ar rcs libFRAME.a fstlib/interface/openmphelper.o fstlib/interface/fststore.o fstlib/logical/logical_v10.o fstlib/integer/integer_v8.o fstlib/byte/byte_v12.o fstlib/double/double_v9.o fstlib/character/character_v6.o fstlib/factor/factor_v7.o fstlib/blockstreamer/blockstreamer_v2.o fstlib/integer64/integer64_v11.o fstlib/byteblock/byteblock_v13.o fstlib/LZ4/xxhash.o
+g++ -std=gnu++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o fstcore.so RcppExports.o flex_store.o fst_blockrunner_char.o fst_compress.o fst_error.o fst_table.o openmp.o versions.o -fopenmp ./libFRAME.a ./libCOMPRESSION.a ./libLZ4.a -lzstd -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-fstcore/00new/fstcore/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘fstcore’ as ‘fstcore_0.9.14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fstcore)
+* installing *source* package ‘R.methodsS3’ ...
+** package ‘R.methodsS3’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘R.methodsS3’ as ‘R.methodsS3_1.8.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.methodsS3)
+* installing *source* package ‘anytime’ ...
+** package ‘anytime’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/BH/include'   -DRCPP_NO_RTTI -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/BH/include'   -DRCPP_NO_RTTI -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c anytime.cpp -o anytime.o
+g++ -std=gnu++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o anytime.so RcppExports.o anytime.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-anytime/00new/anytime/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+[0;1;31mSystem has not been booted with systemd as init system (PID 1). Can't operate.[0m
+[0;1;31mFailed to create bus connection: Host is down[0m
+Warning in system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+[0;1;31mSystem has not been booted with systemd as init system (PID 1). Can't operate.[0m
+[0;1;31mFailed to create bus connection: Host is down[0m
+Warning in system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘anytime’ as ‘anytime_0.3.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (anytime)
+* installing *source* package ‘viridis’ ...
+** package ‘viridis’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘viridis’ as ‘viridis_0.6.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (viridis)
+* installing *source* package ‘webshot’ ...
+** package ‘webshot’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘webshot’ as ‘webshot_0.5.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (webshot)
+* installing *source* package ‘egg’ ...
+** package ‘egg’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘egg’ as ‘egg_0.4.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (egg)
+* installing *source* package ‘shinyFiles’ ...
+** package ‘shinyFiles’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘shinyFiles’ as ‘shinyFiles_0.9.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyFiles)
+* installing *source* package ‘shinydashboard’ ...
+** package ‘shinydashboard’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘shinydashboard’ as ‘shinydashboard_0.7.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinydashboard)
+* installing *source* package ‘rhandsontable’ ...
+** package ‘rhandsontable’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘rhandsontable’ as ‘rhandsontable_0.3.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rhandsontable)
+* installing *source* package ‘pheatmap’ ...
+** package ‘pheatmap’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pheatmap’ as ‘pheatmap_1.0.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pheatmap)
+* installing *source* package ‘foreach’ ...
+** package ‘foreach’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘foreach’ as ‘foreach_1.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (foreach)
+* installing *source* package ‘R.oo’ ...
+** package ‘R.oo’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Warning in setGenericS3.default(name, export = exportGeneric, envir = envir,  :
+  Renamed the preexisting function getMethods to getMethods.default, which was defined in environment R.oo.
+Warning in setGenericS3.default(name, export = exportGeneric, envir = envir,  :
+  Renamed the preexisting function getClasses to getClasses.default, which was defined in environment R.oo.
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘R.oo’ as ‘R.oo_1.25.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.oo)
+* installing *source* package ‘dendextend’ ...
+** package ‘dendextend’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘dendextend’ as ‘dendextend_1.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dendextend)
+* installing *source* package ‘fst’ ...
+** package ‘fst’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/fstcore/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/fstcore/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c flex_store.cpp -o flex_store.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/fstcore/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fst_compress.cpp -o fst_compress.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/fstcore/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c openmp.cpp -o openmp.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o fst.so RcppExports.o flex_store.o fst_compress.o openmp.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-fst/00new/fst/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘fst’ as ‘fst_0.9.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fst)
+* installing *source* package ‘shinyWidgets’ ...
+** package ‘shinyWidgets’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘shinyWidgets’ as ‘shinyWidgets_0.7.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyWidgets)
+* installing *source* package ‘TSP’ ...
+** package ‘TSP’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c dll.c -o dll.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c insertion_cost.c -o insertion_cost.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c tour_length.c -o tour_length.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c two_opt.c -o two_opt.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o TSP.so dll.o insertion_cost.o tour_length.o two_opt.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-TSP/00new/TSP/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TSP’ as ‘TSP_1.2-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TSP)
+* installing *source* package ‘R.utils’ ...
+** package ‘R.utils’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Warning in setGenericS3.default(name, export = exportGeneric, envir = envir,  :
+  Renamed the preexisting function warnings to warnings.default, which was defined in environment R.utils.
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘R.utils’ as ‘R.utils_2.12.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.utils)
+* installing *source* package ‘seriation’ ...
+** package ‘seriation’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RNG_wrapper.c -o RNG_wrapper.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c arsa.f -o arsa.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c bburcg.f -o bburcg.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c bbwrcg.f -o bbwrcg.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c bea.f -o bea.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c criterion.c -o criterion.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c dist.c -o dist.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c greedy.c -o greedy.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c optimal.c -o optimal.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c pathdist.c -o pathdist.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c stress.c -o stress.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o seriation.so RNG_wrapper.o arsa.o bburcg.o bbwrcg.o bea.o criterion.o dist.o greedy.o init.o optimal.o pathdist.o stress.o -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-seriation/00new/seriation/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘seriation’ as ‘seriation_1.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (seriation)
+* installing *source* package ‘NxtIRFdata’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘NxtIRFdata’ as ‘NxtIRFdata_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (NxtIRFdata)
+* installing *source* package ‘heatmaply’ ...
+** package ‘heatmaply’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘heatmaply’ as ‘heatmaply_1.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (heatmaply)
+* installing *source* package ‘SpliceWiz’ ...
+** using staged installation
+** libs
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/built/ompBAM/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/zlibbioc/include' -I'/usr/local/lib/R/site-library/RcppProgress/include'   -fopenmp -DSPLICEWIZ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c BAM2blocks.cpp -o BAM2blocks.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/built/ompBAM/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/zlibbioc/include' -I'/usr/local/lib/R/site-library/RcppProgress/include'   -fopenmp -DSPLICEWIZ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FastaReader.cpp -o FastaReader.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/built/ompBAM/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/zlibbioc/include' -I'/usr/local/lib/R/site-library/RcppProgress/include'   -fopenmp -DSPLICEWIZ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FragmentBlocks.cpp -o FragmentBlocks.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/built/ompBAM/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/zlibbioc/include' -I'/usr/local/lib/R/site-library/RcppProgress/include'   -fopenmp -DSPLICEWIZ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c GZTools.cpp -o GZTools.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/built/ompBAM/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/zlibbioc/include' -I'/usr/local/lib/R/site-library/RcppProgress/include'   -fopenmp -DSPLICEWIZ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/built/ompBAM/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/zlibbioc/include' -I'/usr/local/lib/R/site-library/RcppProgress/include'   -fopenmp -DSPLICEWIZ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ReadBlockProcessor.cpp -o ReadBlockProcessor.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/built/ompBAM/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/zlibbioc/include' -I'/usr/local/lib/R/site-library/RcppProgress/include'   -fopenmp -DSPLICEWIZ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ReadBlockProcessor_CoverageBlocks.cpp -o ReadBlockProcessor_CoverageBlocks.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/built/ompBAM/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/zlibbioc/include' -I'/usr/local/lib/R/site-library/RcppProgress/include'   -fopenmp -DSPLICEWIZ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ReadBlockProcessor_FragmentsMap.cpp -o ReadBlockProcessor_FragmentsMap.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/built/ompBAM/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/zlibbioc/include' -I'/usr/local/lib/R/site-library/RcppProgress/include'   -fopenmp -DSPLICEWIZ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ReadBlockProcessor_TandemJunctions.cpp -o ReadBlockProcessor_TandemJunctions.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/built/ompBAM/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/zlibbioc/include' -I'/usr/local/lib/R/site-library/RcppProgress/include'   -fopenmp -DSPLICEWIZ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c covTools.cpp -o covTools.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/built/ompBAM/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/zlibbioc/include' -I'/usr/local/lib/R/site-library/RcppProgress/include'   -fopenmp -DSPLICEWIZ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c main.cpp -o main.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/built/ompBAM/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/zlibbioc/include' -I'/usr/local/lib/R/site-library/RcppProgress/include'   -fopenmp -DSPLICEWIZ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c swEngine.cpp -o swEngine.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/built/ompBAM/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/built/zlibbioc/include' -I'/usr/local/lib/R/site-library/RcppProgress/include'   -fopenmp -DSPLICEWIZ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c synthReadGenerator.cpp -o synthReadGenerator.o
+g++ -std=gnu++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o SpliceWiz.so BAM2blocks.o FastaReader.o FragmentBlocks.o GZTools.o RcppExports.o ReadBlockProcessor.o ReadBlockProcessor_CoverageBlocks.o ReadBlockProcessor_FragmentsMap.o ReadBlockProcessor_TandemJunctions.o covTools.o main.o swEngine.o synthReadGenerator.o -fopenmp -DSPLICEWIZ -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-SpliceWiz/00new/SpliceWiz/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘SpliceWiz’ as ‘SpliceWiz_1.0.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SpliceWiz)
+
+The downloaded source packages are in
+	‘/tmp/RtmpMdD87x/downloaded_packages’
+Old packages: 'AnnotationDbi', 'GenomicAlignments', 'BH', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'broom', 'bslib', 'cachem', 'class', 'cli',
+  'codetools', 'colorspace', 'curl', 'data.table', 'dbplyr', 'DESeq2',
+  'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR', 'evaluate', 'fansi', 'fastmap',
+  'fontawesome', 'forcats', 'formatR', 'fs', 'future', 'gargle',
+  'GenomeInfoDb', 'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel',
+  'gh', 'haven', 'highr', 'htmlwidgets', 'httpuv', 'httr', 'igraph',
+  'IRkernel', 'isoband', 'knitr', 'limma', 'listenv', 'locfit', 'lubridate',
+  'MASS', 'mgcv', 'nlme', 'openssl', 'parallelly', 'pbapply', 'pbdZMQ',
+  'pkgdown', 'progressr', 'purrr', 'ragg', 'Rcpp', 'RcppArmadillo', 'RcppTOML',
+  'RCurl', 'readr', 'readxl', 'repr', 'reticulate', 'rmarkdown', 'roxygen2',
+  'RSQLite', 'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'sourcetools',
+  'sp', 'spatial', 'spatstat.data', 'spatstat.explore', 'spatstat.geom',
+  'spatstat.random', 'spatstat.sparse', 'spatstat.utils', 'statmod', 'stringi',
+  'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse', 'timechange',
+  'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'yaml'
+
+real	5m51.046s
+user	5m26.820s
+sys	0m27.988s

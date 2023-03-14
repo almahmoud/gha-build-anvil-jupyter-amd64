@@ -1,0 +1,337 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''DiffBind'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'DiffBind'
+also installing the dependencies ‘truncnorm’, ‘mixsqp’, ‘SQUAREM’, ‘etrunct’, ‘invgamma’, ‘amap’, ‘ashr’
+
+trying URL 'https://cloud.r-project.org/src/contrib/truncnorm_1.0-8.tar.gz'
+Content type 'application/x-gzip' length 11382 bytes (11 KB)
+==================================================
+downloaded 11 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/mixsqp_0.3-48.tar.gz'
+Content type 'application/x-gzip' length 227355 bytes (222 KB)
+==================================================
+downloaded 222 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/SQUAREM_2021.1.tar.gz'
+Content type 'application/x-gzip' length 241534 bytes (235 KB)
+==================================================
+downloaded 235 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/etrunct_0.1.tar.gz'
+Content type 'application/x-gzip' length 2319 bytes
+==================================================
+downloaded 2319 bytes
+
+trying URL 'https://cloud.r-project.org/src/contrib/invgamma_1.1.tar.gz'
+Content type 'application/x-gzip' length 123952 bytes (121 KB)
+==================================================
+downloaded 121 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/amap_0.8-19.tar.gz'
+Content type 'application/x-gzip' length 182018 bytes (177 KB)
+==================================================
+downloaded 177 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/ashr_2.2-54.tar.gz'
+Content type 'application/x-gzip' length 934773 bytes (912 KB)
+==================================================
+downloaded 912 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/DiffBind_3.8.4.tar.gz'
+Content type 'application/x-gzip' length 6874984 bytes (6.6 MB)
+==================================================
+downloaded 6.6 MB
+
+* installing *source* package ‘truncnorm’ ...
+** package ‘truncnorm’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c exports.c -o exports.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c rtruncnorm.c -o rtruncnorm.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c truncnorm.c -o truncnorm.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c zeroin.c -o zeroin.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o truncnorm.so exports.o rtruncnorm.o truncnorm.o zeroin.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-truncnorm/00new/truncnorm/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘truncnorm’ as ‘truncnorm_1.0-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (truncnorm)
+* installing *source* package ‘mixsqp’ ...
+** package ‘mixsqp’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/RcppArmadillo/include'   -fopenmp -DARMA_DONT_PRINT_ERRORS -DARMA_NO_DEBUG -DARMA_USE_BLAS -DARMA_DONT_USE_OPENMP -DARMA_WARN_LEVEL=1 -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+In file included from /usr/local/lib/R/site-library/RcppArmadillo/include/armadillo:22,
+                 from /usr/local/lib/R/site-library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:56,
+                 from /usr/local/lib/R/site-library/RcppArmadillo/include/RcppArmadillo.h:29,
+                 from RcppExports.cpp:4:
+/usr/local/lib/R/site-library/RcppArmadillo/include/armadillo_bits/config.hpp:338:86: note: #pragma message: INFO: support for ARMA_DONT_PRINT_ERRORS option has been removed
+  338 |   #pragma message ("INFO: support for ARMA_DONT_PRINT_ERRORS option has been removed")
+      |                                                                                      ^
+/usr/local/lib/R/site-library/RcppArmadillo/include/armadillo_bits/config.hpp:343:75: note: #pragma message: INFO: suggest to use ARMA_WARN_LEVEL option instead
+  343 |     #pragma message ("INFO: suggest to use ARMA_WARN_LEVEL option instead")
+      |                                                                           ^
+/usr/local/lib/R/site-library/RcppArmadillo/include/armadillo_bits/config.hpp:346:61: note: #pragma message: INFO: see the documentation for details
+  346 |   #pragma message ("INFO: see the documentation for details")
+      |                                                             ^
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/RcppArmadillo/include'   -fopenmp -DARMA_DONT_PRINT_ERRORS -DARMA_NO_DEBUG -DARMA_USE_BLAS -DARMA_DONT_USE_OPENMP -DARMA_WARN_LEVEL=1 -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c misc.cpp -o misc.o
+In file included from /usr/local/lib/R/site-library/RcppArmadillo/include/armadillo:22,
+                 from /usr/local/lib/R/site-library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:56,
+                 from /usr/local/lib/R/site-library/RcppArmadillo/include/RcppArmadillo.h:29,
+                 from misc.h:4,
+                 from misc.cpp:1:
+/usr/local/lib/R/site-library/RcppArmadillo/include/armadillo_bits/config.hpp:338:86: note: #pragma message: INFO: support for ARMA_DONT_PRINT_ERRORS option has been removed
+  338 |   #pragma message ("INFO: support for ARMA_DONT_PRINT_ERRORS option has been removed")
+      |                                                                                      ^
+/usr/local/lib/R/site-library/RcppArmadillo/include/armadillo_bits/config.hpp:343:75: note: #pragma message: INFO: suggest to use ARMA_WARN_LEVEL option instead
+  343 |     #pragma message ("INFO: suggest to use ARMA_WARN_LEVEL option instead")
+      |                                                                           ^
+/usr/local/lib/R/site-library/RcppArmadillo/include/armadillo_bits/config.hpp:346:61: note: #pragma message: INFO: see the documentation for details
+  346 |   #pragma message ("INFO: see the documentation for details")
+      |                                                             ^
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/RcppArmadillo/include'   -fopenmp -DARMA_DONT_PRINT_ERRORS -DARMA_NO_DEBUG -DARMA_USE_BLAS -DARMA_DONT_USE_OPENMP -DARMA_WARN_LEVEL=1 -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c mixem.cpp -o mixem.o
+In file included from /usr/local/lib/R/site-library/RcppArmadillo/include/armadillo:22,
+                 from /usr/local/lib/R/site-library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:56,
+                 from /usr/local/lib/R/site-library/RcppArmadillo/include/RcppArmadillo.h:29,
+                 from mixem.h:4,
+                 from mixem.cpp:1:
+/usr/local/lib/R/site-library/RcppArmadillo/include/armadillo_bits/config.hpp:338:86: note: #pragma message: INFO: support for ARMA_DONT_PRINT_ERRORS option has been removed
+  338 |   #pragma message ("INFO: support for ARMA_DONT_PRINT_ERRORS option has been removed")
+      |                                                                                      ^
+/usr/local/lib/R/site-library/RcppArmadillo/include/armadillo_bits/config.hpp:343:75: note: #pragma message: INFO: suggest to use ARMA_WARN_LEVEL option instead
+  343 |     #pragma message ("INFO: suggest to use ARMA_WARN_LEVEL option instead")
+      |                                                                           ^
+/usr/local/lib/R/site-library/RcppArmadillo/include/armadillo_bits/config.hpp:346:61: note: #pragma message: INFO: see the documentation for details
+  346 |   #pragma message ("INFO: see the documentation for details")
+      |                                                             ^
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/RcppArmadillo/include'   -fopenmp -DARMA_DONT_PRINT_ERRORS -DARMA_NO_DEBUG -DARMA_USE_BLAS -DARMA_DONT_USE_OPENMP -DARMA_WARN_LEVEL=1 -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c mixsqp.cpp -o mixsqp.o
+mixsqp.cpp:3: warning: "ARMA_DONT_PRINT_ERRORS" redefined
+    3 | #define ARMA_DONT_PRINT_ERRORS
+      | 
+<command-line>: note: this is the location of the previous definition
+In file included from /usr/local/lib/R/site-library/RcppArmadillo/include/armadillo:22,
+                 from /usr/local/lib/R/site-library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:56,
+                 from /usr/local/lib/R/site-library/RcppArmadillo/include/RcppArmadillo.h:29,
+                 from objective.h:4,
+                 from mixsqp.cpp:5:
+/usr/local/lib/R/site-library/RcppArmadillo/include/armadillo_bits/config.hpp:338:86: note: #pragma message: INFO: support for ARMA_DONT_PRINT_ERRORS option has been removed
+  338 |   #pragma message ("INFO: support for ARMA_DONT_PRINT_ERRORS option has been removed")
+      |                                                                                      ^
+/usr/local/lib/R/site-library/RcppArmadillo/include/armadillo_bits/config.hpp:343:75: note: #pragma message: INFO: suggest to use ARMA_WARN_LEVEL option instead
+  343 |     #pragma message ("INFO: suggest to use ARMA_WARN_LEVEL option instead")
+      |                                                                           ^
+/usr/local/lib/R/site-library/RcppArmadillo/include/armadillo_bits/config.hpp:346:61: note: #pragma message: INFO: see the documentation for details
+  346 |   #pragma message ("INFO: see the documentation for details")
+      |                                                             ^
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/RcppArmadillo/include'   -fopenmp -DARMA_DONT_PRINT_ERRORS -DARMA_NO_DEBUG -DARMA_USE_BLAS -DARMA_DONT_USE_OPENMP -DARMA_WARN_LEVEL=1 -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c objective.cpp -o objective.o
+In file included from /usr/local/lib/R/site-library/RcppArmadillo/include/armadillo:22,
+                 from /usr/local/lib/R/site-library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:56,
+                 from /usr/local/lib/R/site-library/RcppArmadillo/include/RcppArmadillo.h:29,
+                 from objective.h:4,
+                 from objective.cpp:1:
+/usr/local/lib/R/site-library/RcppArmadillo/include/armadillo_bits/config.hpp:338:86: note: #pragma message: INFO: support for ARMA_DONT_PRINT_ERRORS option has been removed
+  338 |   #pragma message ("INFO: support for ARMA_DONT_PRINT_ERRORS option has been removed")
+      |                                                                                      ^
+/usr/local/lib/R/site-library/RcppArmadillo/include/armadillo_bits/config.hpp:343:75: note: #pragma message: INFO: suggest to use ARMA_WARN_LEVEL option instead
+  343 |     #pragma message ("INFO: suggest to use ARMA_WARN_LEVEL option instead")
+      |                                                                           ^
+/usr/local/lib/R/site-library/RcppArmadillo/include/armadillo_bits/config.hpp:346:61: note: #pragma message: INFO: see the documentation for details
+  346 |   #pragma message ("INFO: see the documentation for details")
+      |                                                             ^
+g++ -std=gnu++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o mixsqp.so RcppExports.o misc.o mixem.o mixsqp.o objective.o -fopenmp -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-mixsqp/00new/mixsqp/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘mixsqp’ as ‘mixsqp_0.3-48_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mixsqp)
+* installing *source* package ‘SQUAREM’ ...
+** package ‘SQUAREM’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘SQUAREM’ as ‘SQUAREM_2021.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SQUAREM)
+* installing *source* package ‘etrunct’ ...
+** package ‘etrunct’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘etrunct’ as ‘etrunct_0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (etrunct)
+* installing *source* package ‘invgamma’ ...
+** package ‘invgamma’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘invgamma’ as ‘invgamma_1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (invgamma)
+* installing *source* package ‘amap’ ...
+** package ‘amap’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c acprob.cpp -o acprob.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c burt.c -o burt.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c diss.c -o diss.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c distance.cpp -o distance.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c hclust.cpp -o hclust.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c kmeans.cpp -o kmeans.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c matrice.cpp -o matrice.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c pop.f -o pop.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o amap.so acprob.o burt.o diss.o distance.o hclust.o init.o kmeans.o matrice.o pop.o -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-amap/00new/amap/libs
+** R
+** data
+** demo
+** exec
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘amap’ as ‘amap_0.8-19_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (amap)
+* installing *source* package ‘ashr’ ...
+** package ‘ashr’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c MixSquarem.cpp -o MixSquarem.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o ashr.so MixSquarem.o RcppExports.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-ashr/00new/ashr/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ashr’ as ‘ashr_2.2-54_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ashr)
+* installing *source* package ‘DiffBind’ ...
+** using staged installation
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/built/Rhtslib/include' -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/built/Rhtslib/include' -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c bamReader.cpp -o bamReader.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/built/Rhtslib/include' -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c bam_plbuf.c -o bam_plbuf.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/built/Rhtslib/include' -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c bedReader.cpp -o bedReader.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/built/Rhtslib/include' -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c bitBucket.cpp -o bitBucket.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/built/Rhtslib/include' -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c croi_func.cpp -o croi_func.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/built/Rhtslib/include' -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c croi_main.cpp -o croi_main.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/built/Rhtslib/include' -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c densitySet.cpp -o densitySet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/built/Rhtslib/include' -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c iBucket.cpp -o iBucket.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/built/Rhtslib/include' -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c interval.cpp -o interval.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/built/Rhtslib/include' -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c intervalDensity.cpp -o intervalDensity.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/built/Rhtslib/include' -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c intervalNode.cpp -o intervalNode.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/built/Rhtslib/include' -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c intervalSet.cpp -o intervalSet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/built/Rhtslib/include' -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c intervalTree.cpp -o intervalTree.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/built/Rhtslib/include' -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c merge.cpp -o merge.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/built/Rhtslib/include' -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c mergeOne.c -o mergeOne.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/built/Rhtslib/include' -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c nodeGroup.cpp -o nodeGroup.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/built/Rhtslib/include' -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c peakOrder.cpp -o peakOrder.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/built/Rhtslib/include' -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c reader.cpp -o reader.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/built/Rhtslib/include' -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c sequence.cpp -o sequence.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/built/Rhtslib/include' -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c util.cpp -o util.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o DiffBind.so RcppExports.o bamReader.o bam_plbuf.o bedReader.o bitBucket.o croi_func.o croi_main.o densitySet.o iBucket.o interval.o intervalDensity.o intervalNode.o intervalSet.o intervalTree.o merge.o mergeOne.o nodeGroup.o peakOrder.o reader.o sequence.o util.o /tmp/built/Rhtslib/usrlib/libhts.a -lcurl -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-DiffBind/00new/DiffBind/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DiffBind’ as ‘DiffBind_3.8.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DiffBind)
+
+The downloaded source packages are in
+	‘/tmp/RtmpYfCrCQ/downloaded_packages’
+Old packages: 'AnnotationDbi', 'GenomicAlignments', 'BH', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'broom', 'bslib', 'cachem', 'class', 'cli',
+  'codetools', 'colorspace', 'curl', 'data.table', 'dbplyr', 'DESeq2',
+  'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR', 'evaluate', 'fansi', 'fastmap',
+  'fontawesome', 'forcats', 'formatR', 'fs', 'future', 'gargle',
+  'GenomeInfoDb', 'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel',
+  'gh', 'haven', 'highr', 'htmlwidgets', 'httpuv', 'httr', 'igraph',
+  'IRkernel', 'isoband', 'knitr', 'limma', 'listenv', 'locfit', 'lubridate',
+  'MASS', 'mgcv', 'nlme', 'openssl', 'parallelly', 'pbapply', 'pbdZMQ',
+  'pkgdown', 'progressr', 'purrr', 'ragg', 'Rcpp', 'RcppArmadillo', 'RcppTOML',
+  'RCurl', 'readr', 'readxl', 'repr', 'reticulate', 'rmarkdown', 'roxygen2',
+  'RSQLite', 'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'sourcetools',
+  'sp', 'spatial', 'spatstat.data', 'spatstat.explore', 'spatstat.geom',
+  'spatstat.random', 'spatstat.sparse', 'spatstat.utils', 'statmod', 'stringi',
+  'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse', 'timechange',
+  'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'yaml'
+
+real	2m54.930s
+user	2m44.168s
+sys	0m15.314s

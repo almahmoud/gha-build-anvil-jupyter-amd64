@@ -255,11 +255,6 @@ jobs:
             fi
             mkdir -p /tmp/image
 
-      - name: Free space
-        run: |
-          df -h
-          sudo du --max-depth=2 /var/lib/docker | sort -n
-          
       - name: du
         run: |
           sudo du --max-depth=2 / | sort -n
@@ -284,7 +279,9 @@ jobs:
         run: |
           echo "Free space:"
           df -h
-          sudo du --max-depth=2 /var/lib/docker | sort -n
+          set -x
+          sudo rm -rf /var/lib/docker/volumes/buildx* || true
+          df -h
 
       - name: du
         run: |

@@ -59,22 +59,24 @@ def add_successful_size_and_url(pkg, status, tarname, container_path_name="rstud
         tartext = f"[{tartext}](https://js2.jetstream-cloud.org:8001/swift/v1/gha-build/{container_path_name}/{arch}/{runstart}/binaries/{tarname})"
     return tartext
 
-def check_cran_archived(pkg, logtext, each):
+def check_cran_archived(pkg, each):
     """Checks if a package has been archived on CRAN"""
-    if f"package ‘{pkg}’ is not available for Bioconductor version" in logtext:
-        cranurl = f"https://cran.r-project.org/web/packages/{pkg}/index.html"
+    #if f"package ‘{pkg}’ is not available for Bioconductor version" in logtext:
+    cranurl = f"https://cran.r-project.org/web/packages/{pkg}/index.html"
+    r = requests.get(cranurl)
+    retries = 0
+    while retries <= 5 and r.status_code != 200:
         r = requests.get(cranurl)
-        retries = 0
-        while retries <= 5 and r.status_code != 200:
-            r = requests.get(cranurl)
-            retries += 1
-            time.sleep(5)
-        if r.status_code == 200:
-            crantext = r.content.decode("utf-8")
-            if "Archived on " in crantext:
-                archivetext = crantext[crantext.find("Archived on"):]
-                archivetext = archivetext[:archivetext.find("\n")]
-                each.append(f"[CRAN Package '{pkg}']({cranurl}) archived. Extracted text: {archivetext}")
+        retries += 1
+        time.sleep(5)
+    if r.status_code == 200:
+        crantext = r.content.decode("utf-8")
+        if "Archived on " in crantext:
+            archivetext = crantext[crantext.find("Archived on"):]
+            archivetext = archivetext[:archivetext.find("\n")]
+            each.append(f"[CRAN Package '{pkg}']({cranurl}) archived. Extracted text: {archivetext}")
+            return True
+    return False
 
 def get_logtext(logurl):
     """Gets the log text for a package by making a request to the log URL"""
@@ -108,13 +110,15 @@ def check_dependency_missing(logtext, each):
     if "there is no package called" in logtext:
         tofind = "there is no package called ‘"
         missingtext = logtext[logtext.find(tofind)+len(tofind):]
-        missingtext = missingtext[:missingtext.find("’")]
-        each.append(f"Undeclared R dependency: '{missingtext}'")
+        pkg = missingtext[:missingtext.find("’")]
+        if not check_cran_archived(pkg, each):
+            each.append(f"Undeclared R dependency: '{pkg}'")
     if "ERROR: dependency" in logtext:
         tofind = "ERROR: dependency ‘"
         missingtext = logtext[logtext.find(tofind)+len(tofind):]
-        missingtext = missingtext[:missingtext.find("’")]
-        each.append(f"Undeclared R dependency: '{missingtext}'")
+        pkg = missingtext[:missingtext.find("’")]
+        if not check_cran_archived(pkg, each):
+            each.append(f"Undeclared R dependency: '{pkg}'")
 
 def add_bbs_status(pkg, each):
     """
@@ -147,7 +151,7 @@ def process_failed_pkgs(tables):
         update_failed_tartext(each)
         pkg = each[0][each[0].find('[')+1:each[0].find(']')]
         logtext = get_failed_log(pkg)
-        check_cran_archived(pkg, logtext, each)
+        # check_cran_archived(pkg, logtext, each)
         check_dependency_missing(logtext, each)
         add_bbs_status(pkg, each)
 

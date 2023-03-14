@@ -236,12 +236,15 @@ jobs:
             fi
             mkdir -p /tmp/image
 
-      - name: Free space check
+      - name: Free space
         run: |
-          echo "Free space:"
           df -h
+          set -x
           sudo rm -rf /opt/hostedtoolcache/*
+          sudo rm -rf /usr/local/.ghcup
           sudo rm -rf /usr/lib/google-cloud-sdk
+          sudo rm -rf /usr/lib/firefox
+          sudo rm -rf /opt/microsoft/powershell
           df -h
 
       - name: Build package via docker build and extracting files to scratch
@@ -259,6 +262,14 @@ jobs:
           outputs: type=tar,dest=${{ steps.meta.outputs.workspace }}/tmp/image/${{ matrix.pkg }}.tar
           tags: ${{ steps.meta.outputs.image }}
           platforms: ${{ steps.versions.outputs.platform }}
+
+      - name: Free space check
+        run: |
+          echo "Free space:"
+          df -h
+          set -x
+          sudo docker rmi ${{ steps.meta.outputs.image }}
+          df -h
 
       - name: Extract files from image and mark failed
         id: pkgbuild

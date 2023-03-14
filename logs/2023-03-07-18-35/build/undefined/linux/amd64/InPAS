@@ -1,0 +1,254 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''InPAS'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'InPAS'
+also installing the dependencies ‘truncnorm’, ‘base64url’, ‘checkmate’, ‘Rsolnp’, ‘batchtools’, ‘depmixS4’, ‘flock’
+
+trying URL 'https://cloud.r-project.org/src/contrib/truncnorm_1.0-8.tar.gz'
+Content type 'application/x-gzip' length 11382 bytes (11 KB)
+==================================================
+downloaded 11 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/base64url_1.4.tar.gz'
+Content type 'application/x-gzip' length 15868 bytes (15 KB)
+==================================================
+downloaded 15 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/checkmate_2.1.0.tar.gz'
+Content type 'application/x-gzip' length 170034 bytes (166 KB)
+==================================================
+downloaded 166 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/Rsolnp_1.16.tar.gz'
+Content type 'application/x-gzip' length 188216 bytes (183 KB)
+==================================================
+downloaded 183 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/batchtools_0.9.16.tar.gz'
+Content type 'application/x-gzip' length 716372 bytes (699 KB)
+==================================================
+downloaded 699 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/depmixS4_1.5-0.tar.gz'
+Content type 'application/x-gzip' length 324714 bytes (317 KB)
+==================================================
+downloaded 317 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/flock_0.7.tar.gz'
+Content type 'application/x-gzip' length 4055 bytes
+==================================================
+downloaded 4055 bytes
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/InPAS_2.6.0.tar.gz'
+Content type 'application/x-gzip' length 1486354 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+* installing *source* package ‘truncnorm’ ...
+** package ‘truncnorm’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c exports.c -o exports.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c rtruncnorm.c -o rtruncnorm.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c truncnorm.c -o truncnorm.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c zeroin.c -o zeroin.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o truncnorm.so exports.o rtruncnorm.o truncnorm.o zeroin.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-truncnorm/00new/truncnorm/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘truncnorm’ as ‘truncnorm_1.0-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (truncnorm)
+* installing *source* package ‘base64url’ ...
+** package ‘base64url’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c base32.c -o base32.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c base64.c -o base64.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o base64url.so base32.o base64.o init.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-base64url/00new/base64url/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘base64url’ as ‘base64url_1.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (base64url)
+* installing *source* package ‘checkmate’ ...
+** package ‘checkmate’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c all_missing.c -o all_missing.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c any_infinite.c -o any_infinite.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c any_missing.c -o any_missing.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c any_nan.c -o any_nan.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c checks.c -o checks.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c find_nchar.c -o find_nchar.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c guess_type.c -o guess_type.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c helper.c -o helper.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c integerish.c -o integerish.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c is_sorted.c -o is_sorted.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c qassert.c -o qassert.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c which_first.c -o which_first.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o checkmate.so all_missing.o any_infinite.o any_missing.o any_nan.o checks.o find_nchar.o guess_type.o helper.o init.o integerish.o is_sorted.o qassert.o which_first.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-checkmate/00new/checkmate/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘checkmate’ as ‘checkmate_2.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (checkmate)
+* installing *source* package ‘flock’ ...
+** package ‘flock’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c flock.cpp -o flock.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o flock.so RcppExports.o flock.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-flock/00new/flock/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘flock’ as ‘flock_0.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (flock)
+* installing *source* package ‘Rsolnp’ ...
+** package ‘Rsolnp’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Rsolnp’ as ‘Rsolnp_1.16_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Rsolnp)
+* installing *source* package ‘batchtools’ ...
+** package ‘batchtools’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c binpack.c -o binpack.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c count_not_missing.c -o count_not_missing.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fill_gaps.c -o fill_gaps.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lpt.c -o lpt.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o batchtools.so binpack.o count_not_missing.o fill_gaps.o init.o lpt.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-batchtools/00new/batchtools/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘batchtools’ as ‘batchtools_0.9.16_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (batchtools)
+* installing *source* package ‘depmixS4’ ...
+** package ‘depmixS4’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c depmixS4_init.c -o depmixS4_init.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fb.c -o fb.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o depmixS4.so depmixS4_init.o fb.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-depmixS4/00new/depmixS4/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+in method for ‘confint’ with signature ‘"mix"’: no definition for class “mix”
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘depmixS4’ as ‘depmixS4_1.5-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (depmixS4)
+* installing *source* package ‘InPAS’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘InPAS’ as ‘InPAS_2.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (InPAS)
+
+The downloaded source packages are in
+	‘/tmp/Rtmplv3nNR/downloaded_packages’
+Old packages: 'AnnotationDbi', 'GenomicAlignments', 'BH', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'broom', 'bslib', 'cachem', 'class', 'cli',
+  'codetools', 'colorspace', 'curl', 'data.table', 'dbplyr', 'DESeq2',
+  'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR', 'evaluate', 'fansi', 'fastmap',
+  'fontawesome', 'forcats', 'formatR', 'fs', 'future', 'gargle',
+  'GenomeInfoDb', 'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel',
+  'gh', 'haven', 'highr', 'htmlwidgets', 'httpuv', 'httr', 'igraph',
+  'IRkernel', 'isoband', 'knitr', 'limma', 'listenv', 'locfit', 'lubridate',
+  'MASS', 'mgcv', 'nlme', 'openssl', 'parallelly', 'pbapply', 'pbdZMQ',
+  'pkgdown', 'progressr', 'purrr', 'ragg', 'Rcpp', 'RcppArmadillo', 'RcppTOML',
+  'RCurl', 'readr', 'readxl', 'repr', 'reticulate', 'rmarkdown', 'roxygen2',
+  'RSQLite', 'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'sourcetools',
+  'sp', 'spatial', 'spatstat.data', 'spatstat.explore', 'spatstat.geom',
+  'spatstat.random', 'spatstat.sparse', 'spatstat.utils', 'statmod', 'stringi',
+  'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse', 'timechange',
+  'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'yaml'
+
+real	1m31.160s
+user	1m23.396s
+sys	0m7.933s

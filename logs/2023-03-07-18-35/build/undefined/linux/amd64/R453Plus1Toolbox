@@ -1,0 +1,104 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''R453Plus1Toolbox'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'R453Plus1Toolbox'
+also installing the dependencies ‘R2HTML’, ‘TeachingDemos’
+
+trying URL 'https://cloud.r-project.org/src/contrib/R2HTML_2.3.3.tar.gz'
+Content type 'application/x-gzip' length 315809 bytes (308 KB)
+==================================================
+downloaded 308 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/TeachingDemos_2.12.tar.gz'
+Content type 'application/x-gzip' length 284717 bytes (278 KB)
+==================================================
+downloaded 278 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/R453Plus1Toolbox_1.48.0.tar.gz'
+Content type 'application/x-gzip' length 853272 bytes (833 KB)
+==================================================
+downloaded 833 KB
+
+* installing *source* package ‘R2HTML’ ...
+** package ‘R2HTML’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘R2HTML’ as ‘R2HTML_2.3.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R2HTML)
+* installing *source* package ‘TeachingDemos’ ...
+** package ‘TeachingDemos’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TeachingDemos’ as ‘TeachingDemos_2.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TeachingDemos)
+* installing *source* package ‘R453Plus1Toolbox’ ...
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c readSFF.c -o readSFF.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c writeSFF.c -o writeSFF.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o R453Plus1Toolbox.so readSFF.o writeSFF.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-R453Plus1Toolbox/00new/R453Plus1Toolbox/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘R453Plus1Toolbox’ as ‘R453Plus1Toolbox_1.48.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R453Plus1Toolbox)
+
+The downloaded source packages are in
+	‘/tmp/RtmpiOQ72P/downloaded_packages’
+Old packages: 'AnnotationDbi', 'GenomicAlignments', 'BH', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'broom', 'bslib', 'cachem', 'class', 'cli',
+  'codetools', 'colorspace', 'curl', 'data.table', 'dbplyr', 'DESeq2',
+  'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR', 'evaluate', 'fansi', 'fastmap',
+  'fontawesome', 'forcats', 'formatR', 'fs', 'future', 'gargle',
+  'GenomeInfoDb', 'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel',
+  'gh', 'haven', 'highr', 'htmlwidgets', 'httpuv', 'httr', 'igraph',
+  'IRkernel', 'isoband', 'knitr', 'limma', 'listenv', 'locfit', 'lubridate',
+  'MASS', 'mgcv', 'nlme', 'openssl', 'parallelly', 'pbapply', 'pbdZMQ',
+  'pkgdown', 'progressr', 'purrr', 'ragg', 'Rcpp', 'RcppArmadillo', 'RcppTOML',
+  'RCurl', 'readr', 'readxl', 'repr', 'reticulate', 'rmarkdown', 'roxygen2',
+  'RSQLite', 'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'sourcetools',
+  'sp', 'spatial', 'spatstat.data', 'spatstat.explore', 'spatstat.geom',
+  'spatstat.random', 'spatstat.sparse', 'spatstat.utils', 'statmod', 'stringi',
+  'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse', 'timechange',
+  'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'yaml'
+
+real	1m16.292s
+user	1m11.648s
+sys	0m3.682s

@@ -1,0 +1,111 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''LowMACA'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'LowMACA'
+also installing the dependencies ‘LowMACAAnnotation’, ‘gridBase’
+
+trying URL 'https://bioconductor.org/packages/3.16/data/annotation/src/contrib/LowMACAAnnotation_0.99.3.tar.gz'
+Content type 'application/x-gzip' length 9373219 bytes (8.9 MB)
+==================================================
+downloaded 8.9 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/gridBase_0.4-7.tar.gz'
+Content type 'application/x-gzip' length 153373 bytes (149 KB)
+==================================================
+downloaded 149 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/LowMACA_1.28.0.tar.gz'
+Content type 'application/x-gzip' length 130492 bytes (127 KB)
+==================================================
+downloaded 127 KB
+
+* installing *source* package ‘LowMACAAnnotation’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘LowMACAAnnotation’ as ‘LowMACAAnnotation_0.99.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (LowMACAAnnotation)
+* installing *source* package ‘gridBase’ ...
+** package ‘gridBase’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘gridBase’ as ‘gridBase_0.4-7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridBase)
+* installing *source* package ‘LowMACA’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Checking if clustalo is in the PATH...
+Warning in .ClustalChecks(ClustalCommand = "clustalo") :
+  Clustal Omega is not in the PATH:
+You can either change clustalo command using lmParams function or use the web service. See ?setup
+Checking perl installation...
+Checking perl modules XML::Simple and LWP...
+** testing if installed package can be loaded from final location
+Checking if clustalo is in the PATH...
+Warning in .ClustalChecks(ClustalCommand = "clustalo") :
+  Clustal Omega is not in the PATH:
+You can either change clustalo command using lmParams function or use the web service. See ?setup
+Checking perl installation...
+Checking perl modules XML::Simple and LWP...
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘LowMACA’ as ‘LowMACA_1.28.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (LowMACA)
+
+The downloaded source packages are in
+	‘/tmp/RtmpDEAHRR/downloaded_packages’
+Old packages: 'AnnotationDbi', 'GenomicAlignments', 'BH', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'broom', 'bslib', 'cachem', 'class', 'cli',
+  'codetools', 'colorspace', 'curl', 'data.table', 'dbplyr', 'DESeq2',
+  'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR', 'evaluate', 'fansi', 'fastmap',
+  'fontawesome', 'forcats', 'formatR', 'fs', 'future', 'gargle',
+  'GenomeInfoDb', 'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel',
+  'gh', 'haven', 'highr', 'htmlwidgets', 'httpuv', 'httr', 'igraph',
+  'IRkernel', 'isoband', 'knitr', 'limma', 'listenv', 'locfit', 'lubridate',
+  'MASS', 'mgcv', 'nlme', 'openssl', 'parallelly', 'pbapply', 'pbdZMQ',
+  'pkgdown', 'progressr', 'purrr', 'ragg', 'Rcpp', 'RcppArmadillo', 'RcppTOML',
+  'RCurl', 'readr', 'readxl', 'repr', 'reticulate', 'rmarkdown', 'roxygen2',
+  'RSQLite', 'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'sourcetools',
+  'sp', 'spatial', 'spatstat.data', 'spatstat.explore', 'spatstat.geom',
+  'spatstat.random', 'spatstat.sparse', 'spatstat.utils', 'statmod', 'stringi',
+  'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse', 'timechange',
+  'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'yaml'
+
+real	0m52.351s
+user	0m45.248s
+sys	0m2.849s

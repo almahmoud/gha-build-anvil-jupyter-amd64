@@ -274,19 +274,17 @@ jobs:
         run: |
           echo "Free space:"
           df -h
-          set -x
-          sudo docker system prune -f
-          df -h
 
       - name: Extract files from image and mark failed
         id: pkgbuild
         run: |
           set -x
           repodir=$(pwd)
+          rm -rf $(pwd)/${{ steps.versions.outputs.library }}
           cd ${{ steps.meta.outputs.workspace }}/tmp/image
           tar -xvf ${{ matrix.pkg }}.tar && rm ${{ matrix.pkg }}.tar
-          mv tmp / || true
-          mv ${{ steps.versions.outputs.library }} $(dirname /${{ steps.versions.outputs.library }})/ || true
+          cp -r tmp / || true
+          cp -r ${{ steps.versions.outputs.library }} $(dirname /${{ steps.versions.outputs.library }})/ || true
           cd ..
           rm -rf image
           if (ls /tmp/tars | grep -q "^${{matrix.pkg}}_"); then exit 0; else exit 1; fi

@@ -1,0 +1,53 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''GenomicFiles'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'GenomicFiles'
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/GenomicFiles_1.34.0.tar.gz'
+Content type 'application/x-gzip' length 684101 bytes (668 KB)
+==================================================
+downloaded 668 KB
+
+* installing *source* package ‘GenomicFiles’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GenomicFiles’ as ‘GenomicFiles_1.34.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GenomicFiles)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp9bRJNa/downloaded_packages’
+Old packages: 'AnnotationDbi', 'GenomicAlignments', 'BH', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'broom', 'bslib', 'cachem', 'class', 'cli',
+  'codetools', 'colorspace', 'curl', 'data.table', 'dbplyr', 'DESeq2',
+  'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR', 'evaluate', 'fansi', 'fastmap',
+  'fontawesome', 'forcats', 'formatR', 'fs', 'future', 'gargle',
+  'GenomeInfoDb', 'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel',
+  'gh', 'haven', 'highr', 'htmlwidgets', 'httpuv', 'httr', 'igraph',
+  'IRkernel', 'isoband', 'knitr', 'limma', 'listenv', 'locfit', 'lubridate',
+  'MASS', 'mgcv', 'nlme', 'openssl', 'parallelly', 'pbapply', 'pbdZMQ',
+  'pkgdown', 'progressr', 'purrr', 'ragg', 'Rcpp', 'RcppArmadillo', 'RcppTOML',
+  'RCurl', 'readr', 'readxl', 'repr', 'reticulate', 'rmarkdown', 'roxygen2',
+  'RSQLite', 'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'sourcetools',
+  'sp', 'spatial', 'spatstat.data', 'spatstat.explore', 'spatstat.geom',
+  'spatstat.random', 'spatstat.sparse', 'spatstat.utils', 'statmod', 'stringi',
+  'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse', 'timechange',
+  'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'yaml'
+
+real	0m38.047s
+user	0m34.794s
+sys	0m1.681s

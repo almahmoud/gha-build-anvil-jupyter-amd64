@@ -122,15 +122,34 @@ jobs:
         run: |
           echo "Free space:"
           df -h
+          
+      - name: Free space
+        run: |
+          df -h
+          set -x
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /usr/local/lib/android
+          sudo rm -rf /opt/ghc
+          sudo rm -rf /opt/hostedtoolcache/*
+          sudo rm -rf /usr/local/.ghcup
+          sudo rm -rf /usr/lib/google-cloud-sdk
+          sudo rm -rf /usr/lib/firefox
+          sudo rm -rf /opt/microsoft/powershell
+          sudo rm -rf /usr/lib/jvm
+          sudo rm -rf /usr/local/graalvm
+          sudo rm -rf /etc/skel/.rustup /home/runner/.rustup /home/runneradmin/.rustup
+          sudo rm -rf /usr/lib/llvm-13
+          sudo rm -rf /usr/local/julia1.8.5
+          sudo rm -rf /opt/microsoft/msedge
+          sudo rm -rf /usr/lib/llvm-14
+          sudo rm -rf /opt/az
+          df -h
 
-#       - name: Maximize build space
-#         uses: easimon/maximize-build-space@v6
-#         with:
-#           root-reserve-mb: 41984
-#           swap-size-mb: 1024
-#           remove-dotnet: 'true'
-#           remove-android: 'true'
-#           remove-haskell: 'true'
+      - name: Maximize build space
+        uses: easimon/maximize-build-space@v6
+        with:
+          root-reserve-mb: 62464
+          swap-size-mb: 1024
 
       - uses: actions/checkout@v3
 
@@ -238,24 +257,6 @@ jobs:
 
       - name: Free space
         run: |
-          df -h
-          set -x
-          sudo rm -rf /usr/share/dotnet
-          sudo rm -rf /usr/local/lib/android
-          sudo rm -rf /opt/ghc
-          sudo rm -rf /opt/hostedtoolcache/*
-          sudo rm -rf /usr/local/.ghcup
-          sudo rm -rf /usr/lib/google-cloud-sdk
-          sudo rm -rf /usr/lib/firefox
-          sudo rm -rf /opt/microsoft/powershell
-          sudo rm -rf /usr/lib/jvm
-          sudo rm -rf /usr/local/graalvm
-          sudo rm -rf /etc/skel/.rustup /home/runner/.rustup /home/runneradmin/.rustup
-          sudo rm -rf /usr/lib/llvm-13
-          sudo rm -rf /usr/local/julia1.8.5
-          sudo rm -rf /opt/microsoft/msedge
-          sudo rm -rf /usr/lib/llvm-14
-          sudo rm -rf /opt/az
           df -h
 
       - name: Build package via docker build and extracting files to scratch

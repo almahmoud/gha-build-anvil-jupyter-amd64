@@ -112,14 +112,14 @@ def check_dependency_missing(logtext, each):
         tofind = "there is no package called ‘"
         missingtext = logtext[logtext.find(tofind)+len(tofind):]
         pkg = missingtext[:missingtext.find("’")]
-        each.append(f"Undeclared R dependency: '{pkg}'")
+        each.append(f"Failed R dependency: '{pkg}'")
         check_cran_archived(pkg, each)
         
     if "ERROR: dependency" in logtext:
         tofind = "ERROR: dependency ‘"
         missingtext = logtext[logtext.find(tofind)+len(tofind):]
         pkg = missingtext[:missingtext.find("’")]
-        each.append(f"Undeclared R dependency: '{pkg}'")
+        each.append(f"Failed R dependency: '{pkg}'")
         check_cran_archived(pkg, each)
 
 def add_bbs_status(pkg, each):

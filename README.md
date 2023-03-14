@@ -1,166 +1,165 @@
 # Summary
 
-2021 built packages
+2022 built packages
 
-0 failed packages
+17 failed packages
 
-144 unclaimed packages
+126 unclaimed packages
 
 
 
-## Failed (0)
-| Package   | Status   | BBS Status   | Log   | Known Error   |
-|-----------|----------|--------------|-------|---------------|
+## Failed (17)
+| Package                                                                                                               | Status   | BBS Status                                                                         | Log                                                                                                            | Known Error                                                                                                                                                                                                                                |
+|-----------------------------------------------------------------------------------------------------------------------|----------|------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [ArrayExpressHTS](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742925967) | Failed   | [ERROR](https://bioconductor.org/checkResults/release/bioc-LATEST/ArrayExpressHTS) | [Build Log](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/blob/76d9795/lists/failed/ArrayExpressHTS) | Error unknown                                                                                                                                                                                                                              |
+| [BitSeq](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742924153)          | Failed   | [ERROR](https://bioconductor.org/checkResults/release/bioc-LATEST/BitSeq)          | [Build Log](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/blob/76d9795/lists/failed/BitSeq)          | Error unknown                                                                                                                                                                                                                              |
+| [cytolib](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742920589)         | Failed   | [OK](https://bioconductor.org/checkResults/release/bioc-LATEST/cytolib)            | [Build Log](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/blob/76d9795/lists/failed/cytolib)         | Error unknown                                                                                                                                                                                                                              |
+| [RareVariantVis](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742919614)  | Failed   | [OK](https://bioconductor.org/checkResults/release/bioc-LATEST/RareVariantVis)     | [Build Log](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/blob/76d9795/lists/failed/RareVariantVis)  | Error unknown                                                                                                                                                                                                                              |
+| [Travel](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742919868)          | Failed   | [OK](https://bioconductor.org/checkResults/release/bioc-LATEST/Travel)             | [Build Log](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/blob/76d9795/lists/failed/Travel)          | Error unknown                                                                                                                                                                                                                              |
+| [epihet](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742921689)          | Failed   | [ERROR](https://bioconductor.org/checkResults/release/bioc-LATEST/epihet)          | [Build Log](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/blob/76d9795/lists/failed/epihet)          | Failed R dependency: 'EntropyExplorer'. [CRAN Package 'EntropyExplorer'](https://cran.r-project.org/web/packages/EntropyExplorer/index.html) archived. Extracted text: Archived on 2022-05-24 as email to the maintainer is undeliverable. |
+| [TDARACNE](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742925396)        | Failed   | [ERROR](https://bioconductor.org/checkResults/release/bioc-LATEST/TDARACNE)        | [Build Log](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/blob/76d9795/lists/failed/TDARACNE)        | Failed R dependency: 'GenKern'. [CRAN Package 'GenKern'](https://cran.r-project.org/web/packages/GenKern/index.html) archived. Extracted text: Archived on 2022-05-23 as check issues were not corrected despite reminders.                |
+| [AneuFinder](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742921130)      | Failed   | [OK](https://bioconductor.org/checkResults/release/bioc-LATEST/AneuFinder)         | [Build Log](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/blob/76d9795/lists/failed/AneuFinder)      | Failed R dependency: 'ReorderCluster'. [CRAN Package 'ReorderCluster'](https://cran.r-project.org/web/packages/ReorderCluster/index.html) archived. Extracted text: Archived on 2022-12-09 as issues were not corrected in time.           |
+| [flowCL](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742923660)          | Failed   | [ERROR](https://bioconductor.org/checkResults/release/bioc-LATEST/flowCL)          | [Build Log](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/blob/76d9795/lists/failed/flowCL)          | Failed R dependency: 'SPARQL'. [CRAN Package 'SPARQL'](https://cran.r-project.org/web/packages/SPARQL/index.html) archived. Extracted text: Archived on 2022-05-23 as email to the maintainer is undeliverable.                            |
+| [tscR](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742924408)            | Failed   | [OK](https://bioconductor.org/checkResults/release/bioc-LATEST/tscR)               | [Build Log](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/blob/76d9795/lists/failed/tscR)            | Failed R dependency: 'kmlShape'. [CRAN Package 'kmlShape'](https://cran.r-project.org/web/packages/kmlShape/index.html) archived. Extracted text: Archived on 2022-12-19 as issues were not corrected despite reminders.                   |
+| [ASpediaFI](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742920108)       | Failed   | [ERROR](https://bioconductor.org/checkResults/release/bioc-LATEST/ASpediaFI)       | [Build Log](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/blob/76d9795/lists/failed/ASpediaFI)       | Failed R dependency: 'mGSZ'. [CRAN Package 'mGSZ'](https://cran.r-project.org/web/packages/mGSZ/index.html) archived. Extracted text: Archived on 2022-05-23 as check issues were not corrected despite reminders.                         |
+| [NBSplice](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742920872)        | Failed   | [ERROR](https://bioconductor.org/checkResults/release/bioc-LATEST/NBSplice)        | [Build Log](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/blob/76d9795/lists/failed/NBSplice)        | Failed R dependency: 'mppa'. [CRAN Package 'mppa'](https://cran.r-project.org/web/packages/mppa/index.html) archived. Extracted text: Archived on 2022-06-24 as check problems were not corrected despite reminders.                       |
+| [CiteFuse](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742921967)        | Failed   | [OK](https://bioconductor.org/checkResults/release/bioc-LATEST/CiteFuse)           | [Build Log](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/blob/76d9795/lists/failed/CiteFuse)        | Failed R dependency: 'propr'. [CRAN Package 'propr'](https://cran.r-project.org/web/packages/propr/index.html) archived. Extracted text: Archived on 2022-11-10 as issues were not corrected in time.                                      |
+| [timeOmics](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742922210)       | Failed   | [OK](https://bioconductor.org/checkResults/release/bioc-LATEST/timeOmics)          | [Build Log](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/blob/76d9795/lists/failed/timeOmics)       | Failed R dependency: 'propr'. [CRAN Package 'propr'](https://cran.r-project.org/web/packages/propr/index.html) archived. Extracted text: Archived on 2022-11-10 as issues were not corrected in time.                                      |
+| [sojourner](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742925053)       | Failed   | [ERROR](https://bioconductor.org/checkResults/release/bioc-LATEST/sojourner)       | [Build Log](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/blob/76d9795/lists/failed/sojourner)       | Failed R dependency: 'sampSurf'. [CRAN Package 'sampSurf'](https://cran.r-project.org/web/packages/sampSurf/index.html) archived. Extracted text: Archived on 2022-05-17 as email to the maintainer is undeliverable.                      |
+| [ChIC](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742924805)            | Failed   | [OK](https://bioconductor.org/checkResults/release/bioc-LATEST/ChIC)               | [Build Log](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/blob/76d9795/lists/failed/ChIC)            | Failed R dependency: 'spp'. [CRAN Package 'spp'](https://cran.r-project.org/web/packages/spp/index.html) archived. Extracted text: Archived on 2022-11-20 as issues were not corrected despite reminders.                                  |
+| [TraRe](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742920351)           | Failed   | [ERROR](https://bioconductor.org/checkResults/release/bioc-LATEST/TraRe)           | [Build Log](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/blob/76d9795/lists/failed/TraRe)           | Failed R dependency: 'vbsr'. [CRAN Package 'vbsr'](https://cran.r-project.org/web/packages/vbsr/index.html) archived. Extracted text: Archived on 2022-05-23 as email to the maintainer is undeliverable.                                  |
 
-## Unclaimed (144)
-| Package                                                                                                               | Status    | Tarball   |
-|-----------------------------------------------------------------------------------------------------------------------|-----------|-----------|
-| [affycoretools](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416878450/jobs/7741802779)   | Unclaimed |           |
-| AgiMicroRna                                                                                                           | Unclaimed |           |
-| airpart                                                                                                               | Unclaimed |           |
-| ANCOMBC                                                                                                               | Unclaimed |           |
-| [AneuFinder](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416878450/jobs/7741800065)      | Unclaimed |           |
-| [appreci8R](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416878450/jobs/7741803102)       | Unclaimed |           |
-| ArrayExpress                                                                                                          | Unclaimed |           |
-| [ArrayExpressHTS](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416878450/jobs/7741804725) | Unclaimed |           |
-| [ASpediaFI](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416878450/jobs/7741807562)       | Unclaimed |           |
-| [ATACseqQC](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416878450/jobs/7741804994)       | Unclaimed |           |
-| [ATACseqTFEA](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416878450/jobs/7741802094)     | Unclaimed |           |
-| BayesSpace                                                                                                            | Unclaimed |           |
-| benchdamic                                                                                                            | Unclaimed |           |
-| [BitSeq](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416878450/jobs/7741806996)          | Unclaimed |           |
-| CATALYST                                                                                                              | Unclaimed |           |
-| CBEA                                                                                                                  | Unclaimed |           |
-| celda                                                                                                                 | Unclaimed |           |
-| CelliD                                                                                                                | Unclaimed |           |
-| CellMixS                                                                                                              | Unclaimed |           |
-| censcyt                                                                                                               | Unclaimed |           |
-| ChAMP                                                                                                                 | Unclaimed |           |
-| [ChIC](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416739097/jobs/7741463915)            | Unclaimed |           |
-| ChIPXpress                                                                                                            | Unclaimed |           |
-| ChromSCape                                                                                                            | Unclaimed |           |
-| [CiteFuse](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416739097/jobs/7741460484)        | Unclaimed |           |
-| clipper                                                                                                               | Unclaimed |           |
-| cmapR                                                                                                                 | Unclaimed |           |
-| cn.farms                                                                                                              | Unclaimed |           |
-| conclus                                                                                                               | Unclaimed |           |
-| condiments                                                                                                            | Unclaimed |           |
-| CONFESS                                                                                                               | Unclaimed |           |
-| crossmeta                                                                                                             | Unclaimed |           |
-| CTSV                                                                                                                  | Unclaimed |           |
-| cyanoFilter                                                                                                           | Unclaimed |           |
-| cydar                                                                                                                 | Unclaimed |           |
-| CytoDx                                                                                                                | Unclaimed |           |
-| CyTOFpower                                                                                                            | Unclaimed |           |
-| [cytolib](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416878450/jobs/7741800711)         | Unclaimed |           |
-| cytomapper                                                                                                            | Unclaimed |           |
-| cytoMEM                                                                                                               | Unclaimed |           |
-| CytoML                                                                                                                | Unclaimed |           |
-| ddPCRclust                                                                                                            | Unclaimed |           |
-| diffcyt                                                                                                               | Unclaimed |           |
-| distinct                                                                                                              | Unclaimed |           |
-| [DMRcate](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416878450/jobs/7741805947)         | Unclaimed |           |
-| DrugVsDisease                                                                                                         | Unclaimed |           |
-| [ELMER](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416739097/jobs/7741461173)           | Unclaimed |           |
-| [epihet](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416878450/jobs/7741801005)          | Unclaimed |           |
-| [epimutacions](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416878450/jobs/7741806632)    | Unclaimed |           |
-| ExperimentSubset                                                                                                      | Unclaimed |           |
-| FLAMES                                                                                                                | Unclaimed |           |
-| flowAI                                                                                                                | Unclaimed |           |
-| flowBeads                                                                                                             | Unclaimed |           |
-| flowBin                                                                                                               | Unclaimed |           |
-| flowCHIC                                                                                                              | Unclaimed |           |
-| [flowCL](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416739097/jobs/7741462531)          | Unclaimed |           |
-| flowClean                                                                                                             | Unclaimed |           |
-| flowClust                                                                                                             | Unclaimed |           |
-| flowCore                                                                                                              | Unclaimed |           |
-| flowCut                                                                                                               | Unclaimed |           |
-| flowDensity                                                                                                           | Unclaimed |           |
-| flowFP                                                                                                                | Unclaimed |           |
-| flowMatch                                                                                                             | Unclaimed |           |
-| flowMeans                                                                                                             | Unclaimed |           |
-| flowMerge                                                                                                             | Unclaimed |           |
-| flowPloidy                                                                                                            | Unclaimed |           |
-| FlowSOM                                                                                                               | Unclaimed |           |
-| flowSpecs                                                                                                             | Unclaimed |           |
-| flowStats                                                                                                             | Unclaimed |           |
-| flowTime                                                                                                              | Unclaimed |           |
-| flowTrans                                                                                                             | Unclaimed |           |
-| flowViz                                                                                                               | Unclaimed |           |
-| flowVS                                                                                                                | Unclaimed |           |
-| flowWorkspace                                                                                                         | Unclaimed |           |
-| frma                                                                                                                  | Unclaimed |           |
-| GateFinder                                                                                                            | Unclaimed |           |
-| ggcyto                                                                                                                | Unclaimed |           |
-| ggspavis                                                                                                              | Unclaimed |           |
-| imcRtools                                                                                                             | Unclaimed |           |
-| ImmuneSpaceR                                                                                                          | Unclaimed |           |
-| immunoClust                                                                                                           | Unclaimed |           |
-| infinityFlow                                                                                                          | Unclaimed |           |
-| IRISFGM                                                                                                               | Unclaimed |           |
-| ITALICS                                                                                                               | Unclaimed |           |
-| lisaClust                                                                                                             | Unclaimed |           |
-| [mCSEA](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416739097/jobs/7741464757)           | Unclaimed |           |
-| [MEAL](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416878450/jobs/7741801271)            | Unclaimed |           |
-| MetaCyto                                                                                                              | Unclaimed |           |
-| miaSim                                                                                                                | Unclaimed |           |
-| miaViz                                                                                                                | Unclaimed |           |
-| microbiomeMarker                                                                                                      | Unclaimed |           |
-| mimager                                                                                                               | Unclaimed |           |
-| mumosa                                                                                                                | Unclaimed |           |
-| muscat                                                                                                                | Unclaimed |           |
-| NADfinder                                                                                                             | Unclaimed |           |
-| [NBSplice](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416739097/jobs/7741459287)        | Unclaimed |           |
-| ncdfFlow                                                                                                              | Unclaimed |           |
-| netSmooth                                                                                                             | Unclaimed |           |
-| nnSVG                                                                                                                 | Unclaimed |           |
-| oneSENSE                                                                                                              | Unclaimed |           |
-| openCyto                                                                                                              | Unclaimed |           |
-| optimalFlow                                                                                                           | Unclaimed |           |
-| pdInfoBuilder                                                                                                         | Unclaimed |           |
-| PeacoQC                                                                                                               | Unclaimed |           |
-| peco                                                                                                                  | Unclaimed |           |
-| pipeComp                                                                                                              | Unclaimed |           |
-| [primirTSS](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416878450/jobs/7741802468)       | Unclaimed |           |
-| puma                                                                                                                  | Unclaimed |           |
-| [RareVariantVis](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416739097/jobs/7741458228)  | Unclaimed |           |
-| SCAN.UPC                                                                                                              | Unclaimed |           |
-| scCB2                                                                                                                 | Unclaimed |           |
-| scDataviz                                                                                                             | Unclaimed |           |
-| scDblFinder                                                                                                           | Unclaimed |           |
-| scifer                                                                                                                | Unclaimed |           |
-| Sconify                                                                                                               | Unclaimed |           |
-| scPipe                                                                                                                | Unclaimed |           |
-| scTreeViz                                                                                                             | Unclaimed |           |
-| simpleSeg                                                                                                             | Unclaimed |           |
-| singleCellTK                                                                                                          | Unclaimed |           |
-| [SNPhood](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416878450/jobs/7741799141)         | Unclaimed |           |
-| [sojourner](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416878450/jobs/7741803795)       | Unclaimed |           |
-| Spaniel                                                                                                               | Unclaimed |           |
-| spaSim                                                                                                                | Unclaimed |           |
-| spatialDE                                                                                                             | Unclaimed |           |
-| SpatialFeatureExperiment                                                                                              | Unclaimed |           |
-| spatialHeatmap                                                                                                        | Unclaimed |           |
-| SPIAT                                                                                                                 | Unclaimed |           |
-| spicyR                                                                                                                | Unclaimed |           |
-| splatter                                                                                                              | Unclaimed |           |
-| SpotClean                                                                                                             | Unclaimed |           |
-| standR                                                                                                                | Unclaimed |           |
-| stJoincount                                                                                                           | Unclaimed |           |
-| TCGAbiolinksGUI                                                                                                       | Unclaimed |           |
-| [TDARACNE](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416878450/jobs/7741799457)        | Unclaimed |           |
-| [timeOmics](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416739097/jobs/7741460886)       | Unclaimed |           |
-| [TraRe](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416739097/jobs/7741458832)           | Unclaimed |           |
-| [Travel](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416739097/jobs/7741458431)          | Unclaimed |           |
-| treekoR                                                                                                               | Unclaimed |           |
-| [trena](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416878450/jobs/7741801502)           | Unclaimed |           |
-| tricycle                                                                                                              | Unclaimed |           |
-| [tscR](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416878450/jobs/7741804147)            | Unclaimed |           |
-| VAExprs                                                                                                               | Unclaimed |           |
-| Voyager                                                                                                               | Unclaimed |           |
-| [YAPSA](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416739097/jobs/7741457759)           | Unclaimed |           |
+## Unclaimed (126)
+| Package                                                                                                            | Status    | Tarball   |
+|--------------------------------------------------------------------------------------------------------------------|-----------|-----------|
+| AgiMicroRna                                                                                                        | Unclaimed |           |
+| airpart                                                                                                            | Unclaimed |           |
+| ANCOMBC                                                                                                            | Unclaimed |           |
+| [appreci8R](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742923902)    | Unclaimed |           |
+| ArrayExpress                                                                                                       | Unclaimed |           |
+| [ATACseqQC](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742922658)    | Unclaimed |           |
+| [ATACseqTFEA](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742919182)  | Unclaimed |           |
+| BayesSpace                                                                                                         | Unclaimed |           |
+| benchdamic                                                                                                         | Unclaimed |           |
+| CATALYST                                                                                                           | Unclaimed |           |
+| CBEA                                                                                                               | Unclaimed |           |
+| celda                                                                                                              | Unclaimed |           |
+| CelliD                                                                                                             | Unclaimed |           |
+| CellMixS                                                                                                           | Unclaimed |           |
+| censcyt                                                                                                            | Unclaimed |           |
+| ChAMP                                                                                                              | Unclaimed |           |
+| ChIPXpress                                                                                                         | Unclaimed |           |
+| ChromSCape                                                                                                         | Unclaimed |           |
+| clipper                                                                                                            | Unclaimed |           |
+| cmapR                                                                                                              | Unclaimed |           |
+| cn.farms                                                                                                           | Unclaimed |           |
+| conclus                                                                                                            | Unclaimed |           |
+| condiments                                                                                                         | Unclaimed |           |
+| CONFESS                                                                                                            | Unclaimed |           |
+| crossmeta                                                                                                          | Unclaimed |           |
+| CTSV                                                                                                               | Unclaimed |           |
+| cyanoFilter                                                                                                        | Unclaimed |           |
+| cydar                                                                                                              | Unclaimed |           |
+| CytoDx                                                                                                             | Unclaimed |           |
+| CyTOFpower                                                                                                         | Unclaimed |           |
+| cytomapper                                                                                                         | Unclaimed |           |
+| cytoMEM                                                                                                            | Unclaimed |           |
+| CytoML                                                                                                             | Unclaimed |           |
+| ddPCRclust                                                                                                         | Unclaimed |           |
+| diffcyt                                                                                                            | Unclaimed |           |
+| distinct                                                                                                           | Unclaimed |           |
+| [DMRcate](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742921415)      | Unclaimed |           |
+| DrugVsDisease                                                                                                      | Unclaimed |           |
+| [ELMER](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742922417)        | Unclaimed |           |
+| [epimutacions](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416878450/jobs/7741806632) | Unclaimed |           |
+| ExperimentSubset                                                                                                   | Unclaimed |           |
+| FLAMES                                                                                                             | Unclaimed |           |
+| flowAI                                                                                                             | Unclaimed |           |
+| flowBeads                                                                                                          | Unclaimed |           |
+| flowBin                                                                                                            | Unclaimed |           |
+| flowCHIC                                                                                                           | Unclaimed |           |
+| flowClean                                                                                                          | Unclaimed |           |
+| flowClust                                                                                                          | Unclaimed |           |
+| flowCore                                                                                                           | Unclaimed |           |
+| flowCut                                                                                                            | Unclaimed |           |
+| flowDensity                                                                                                        | Unclaimed |           |
+| flowFP                                                                                                             | Unclaimed |           |
+| flowMatch                                                                                                          | Unclaimed |           |
+| flowMeans                                                                                                          | Unclaimed |           |
+| flowMerge                                                                                                          | Unclaimed |           |
+| flowPloidy                                                                                                         | Unclaimed |           |
+| FlowSOM                                                                                                            | Unclaimed |           |
+| flowSpecs                                                                                                          | Unclaimed |           |
+| flowStats                                                                                                          | Unclaimed |           |
+| flowTime                                                                                                           | Unclaimed |           |
+| flowTrans                                                                                                          | Unclaimed |           |
+| flowViz                                                                                                            | Unclaimed |           |
+| flowVS                                                                                                             | Unclaimed |           |
+| flowWorkspace                                                                                                      | Unclaimed |           |
+| frma                                                                                                               | Unclaimed |           |
+| GateFinder                                                                                                         | Unclaimed |           |
+| ggcyto                                                                                                             | Unclaimed |           |
+| ggspavis                                                                                                           | Unclaimed |           |
+| imcRtools                                                                                                          | Unclaimed |           |
+| ImmuneSpaceR                                                                                                       | Unclaimed |           |
+| immunoClust                                                                                                        | Unclaimed |           |
+| infinityFlow                                                                                                       | Unclaimed |           |
+| IRISFGM                                                                                                            | Unclaimed |           |
+| ITALICS                                                                                                            | Unclaimed |           |
+| lisaClust                                                                                                          | Unclaimed |           |
+| [mCSEA](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742925651)        | Unclaimed |           |
+| [MEAL](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416878450/jobs/7741801271)         | Unclaimed |           |
+| MetaCyto                                                                                                           | Unclaimed |           |
+| miaSim                                                                                                             | Unclaimed |           |
+| miaViz                                                                                                             | Unclaimed |           |
+| microbiomeMarker                                                                                                   | Unclaimed |           |
+| mimager                                                                                                            | Unclaimed |           |
+| mumosa                                                                                                             | Unclaimed |           |
+| muscat                                                                                                             | Unclaimed |           |
+| NADfinder                                                                                                          | Unclaimed |           |
+| ncdfFlow                                                                                                           | Unclaimed |           |
+| netSmooth                                                                                                          | Unclaimed |           |
+| nnSVG                                                                                                              | Unclaimed |           |
+| oneSENSE                                                                                                           | Unclaimed |           |
+| openCyto                                                                                                           | Unclaimed |           |
+| optimalFlow                                                                                                        | Unclaimed |           |
+| pdInfoBuilder                                                                                                      | Unclaimed |           |
+| PeacoQC                                                                                                            | Unclaimed |           |
+| peco                                                                                                               | Unclaimed |           |
+| pipeComp                                                                                                           | Unclaimed |           |
+| [primirTSS](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4416878450/jobs/7741802468)    | Unclaimed |           |
+| puma                                                                                                               | Unclaimed |           |
+| SCAN.UPC                                                                                                           | Unclaimed |           |
+| scCB2                                                                                                              | Unclaimed |           |
+| scDataviz                                                                                                          | Unclaimed |           |
+| scDblFinder                                                                                                        | Unclaimed |           |
+| scifer                                                                                                             | Unclaimed |           |
+| Sconify                                                                                                            | Unclaimed |           |
+| scPipe                                                                                                             | Unclaimed |           |
+| scTreeViz                                                                                                          | Unclaimed |           |
+| simpleSeg                                                                                                          | Unclaimed |           |
+| singleCellTK                                                                                                       | Unclaimed |           |
+| [SNPhood](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742923328)      | Unclaimed |           |
+| Spaniel                                                                                                            | Unclaimed |           |
+| spaSim                                                                                                             | Unclaimed |           |
+| spatialDE                                                                                                          | Unclaimed |           |
+| SpatialFeatureExperiment                                                                                           | Unclaimed |           |
+| spatialHeatmap                                                                                                     | Unclaimed |           |
+| SPIAT                                                                                                              | Unclaimed |           |
+| spicyR                                                                                                             | Unclaimed |           |
+| splatter                                                                                                           | Unclaimed |           |
+| SpotClean                                                                                                          | Unclaimed |           |
+| standR                                                                                                             | Unclaimed |           |
+| stJoincount                                                                                                        | Unclaimed |           |
+| TCGAbiolinksGUI                                                                                                    | Unclaimed |           |
+| treekoR                                                                                                            | Unclaimed |           |
+| [trena](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742918847)        | Unclaimed |           |
+| tricycle                                                                                                           | Unclaimed |           |
+| VAExprs                                                                                                            | Unclaimed |           |
+| Voyager                                                                                                            | Unclaimed |           |
+| [YAPSA](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742919407)        | Unclaimed |           |
 
-## Succeeded (2021)
+## Succeeded (2022)
 | Package                                                                                                                           | Status    | Tarball                                                                                                                                                                                                                                             |
 |-----------------------------------------------------------------------------------------------------------------------------------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [a4](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4368758023)                                          | Succeeded | [1.1 MB a4_1.46.0_R_x86_64-pc-linux-gnu.tar.gz](https://js2.jetstream-cloud.org:8001/swift/v1/gha-build/undefined/linux/amd64/2023-03-07-18-35/binaries/a4_1.46.0_R_x86_64-pc-linux-gnu.tar.gz)                                                     |
@@ -188,6 +187,7 @@
 | [affycomp](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4360050980/jobs/7622576890)                    | Succeeded | [affycomp_1.74.0_R_x86_64-pc-linux-gnu.tar.gz](https://js2.jetstream-cloud.org:8001/swift/v1/gha-build/undefined/linux/amd64/2023-03-07-18-35/binaries/affycomp_1.74.0_R_x86_64-pc-linux-gnu.tar.gz)                                                |
 | [AffyCompatible](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4360444746/jobs/7623358738)              | Succeeded | [2.0 MB AffyCompatible_1.58.0_R_x86_64-pc-linux-gnu.tar.gz](https://js2.jetstream-cloud.org:8001/swift/v1/gha-build/undefined/linux/amd64/2023-03-07-18-35/binaries/AffyCompatible_1.58.0_R_x86_64-pc-linux-gnu.tar.gz)                             |
 | [affyContam](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4360198315)                                  | Succeeded | [215.1 kB affyContam_1.56.0_R_x86_64-pc-linux-gnu.tar.gz](https://js2.jetstream-cloud.org:8001/swift/v1/gha-build/undefined/linux/amd64/2023-03-07-18-35/binaries/affyContam_1.56.0_R_x86_64-pc-linux-gnu.tar.gz)                                   |
+| [affycoretools](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4417343559/jobs/7742923013)               | Succeeded | [571.6 kB affycoretools_1.70.0_R_x86_64-pc-linux-gnu.tar.gz](https://js2.jetstream-cloud.org:8001/swift/v1/gha-build/undefined/linux/amd64/2023-03-07-18-35/binaries/affycoretools_1.70.0_R_x86_64-pc-linux-gnu.tar.gz)                             |
 | [affyILM](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4360446883)                                     | Succeeded | [affyILM_1.50.0_R_x86_64-pc-linux-gnu.tar.gz](https://js2.jetstream-cloud.org:8001/swift/v1/gha-build/undefined/linux/amd64/2023-03-07-18-35/binaries/affyILM_1.50.0_R_x86_64-pc-linux-gnu.tar.gz)                                                  |
 | [affyio](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4359971138/jobs/7622474997)                      | Succeeded | [306.5 kB affyio_1.68.0_R_x86_64-pc-linux-gnu.tar.gz](https://js2.jetstream-cloud.org:8001/swift/v1/gha-build/undefined/linux/amd64/2023-03-07-18-35/binaries/affyio_1.68.0_R_x86_64-pc-linux-gnu.tar.gz)                                           |
 | [affylmGUI](https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4367821855/jobs/7639629409)                   | Succeeded | [2.1 MB affylmGUI_1.72.0_R_x86_64-pc-linux-gnu.tar.gz](https://js2.jetstream-cloud.org:8001/swift/v1/gha-build/undefined/linux/amd64/2023-03-07-18-35/binaries/affylmGUI_1.72.0_R_x86_64-pc-linux-gnu.tar.gz)                                       |

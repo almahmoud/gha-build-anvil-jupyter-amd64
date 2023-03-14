@@ -258,7 +258,11 @@ jobs:
       - name: Free space
         run: |
           df -h
-          du --max-depth=2 /var/lib/docker
+          sudo du --max-depth=2 /var/lib/docker | awk '{print $2" "$3}' | sort -n
+          
+      - name: du
+        run: |
+          sudo du --max-depth=2 / | awk '{print $2" "$3}' | sort -n
 
       - name: Build package via docker build and extracting files to scratch
         id: dockerbuild
@@ -280,7 +284,11 @@ jobs:
         run: |
           echo "Free space:"
           df -h
-          du --max-depth=2 /var/lib/docker
+          sudo du --max-depth=2 /var/lib/docker | awk '{print $2" "$3}' | sort -n
+
+      - name: du
+        run: |
+          sudo du --max-depth=2 / | awk '{print $2" "$3}' | sort -n
 
       - name: Extract files from image and mark failed
         id: pkgbuild

@@ -123,14 +123,14 @@ jobs:
           echo "Free space:"
           df -h
 
-      - name: Maximize build space
-        uses: easimon/maximize-build-space@v6
-        with:
-          root-reserve-mb: 41984
-          swap-size-mb: 1024
-          remove-dotnet: 'true'
-          remove-android: 'true'
-          remove-haskell: 'true'
+#       - name: Maximize build space
+#         uses: easimon/maximize-build-space@v6
+#         with:
+#           root-reserve-mb: 41984
+#           swap-size-mb: 1024
+#           remove-dotnet: 'true'
+#           remove-android: 'true'
+#           remove-haskell: 'true'
 
       - uses: actions/checkout@v3
 
@@ -240,6 +240,9 @@ jobs:
         run: |
           df -h
           set -x
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /usr/local/lib/android
+          sudo rm -rf /opt/ghc
           sudo rm -rf /opt/hostedtoolcache/*
           sudo rm -rf /usr/local/.ghcup
           sudo rm -rf /usr/lib/google-cloud-sdk
@@ -252,6 +255,7 @@ jobs:
           sudo rm -rf /usr/local/julia1.8.5
           sudo rm -rf /opt/microsoft/msedge
           sudo rm -rf /usr/lib/llvm-14
+          sudo rm -rf /opt/az
           df -h
 
       - name: Build package via docker build and extracting files to scratch

@@ -1,0 +1,593 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''metaseqR2'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'metaseqR2'
+also installing the dependencies ‘iterators’, ‘foreach’, ‘TSP’, ‘qap’, ‘gclus’, ‘ca’, ‘registry’, ‘FMStable’, ‘viridis’, ‘dendextend’, ‘seriation’, ‘webshot’, ‘egg’, ‘bookdown’, ‘corrplot’, ‘harmonicmeanp’, ‘heatmaply’, ‘log4r’, ‘NBPSeq’, ‘pander’, ‘rmdformats’, ‘VennDiagram’
+
+trying URL 'https://cloud.r-project.org/src/contrib/iterators_1.0.14.tar.gz'
+Content type 'application/x-gzip' length 300266 bytes (293 KB)
+==================================================
+downloaded 293 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/foreach_1.5.2.tar.gz'
+Content type 'application/x-gzip' length 89758 bytes (87 KB)
+==================================================
+downloaded 87 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/TSP_1.2-3.tar.gz'
+Content type 'application/x-gzip' length 898745 bytes (877 KB)
+==================================================
+downloaded 877 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/qap_0.1-2.tar.gz'
+Content type 'application/x-gzip' length 523276 bytes (511 KB)
+==================================================
+downloaded 511 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/gclus_1.3.2.tar.gz'
+Content type 'application/x-gzip' length 339083 bytes (331 KB)
+==================================================
+downloaded 331 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/ca_0.71.1.tar.gz'
+Content type 'application/x-gzip' length 47723 bytes (46 KB)
+==================================================
+downloaded 46 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/registry_0.5-1.tar.gz'
+Content type 'application/x-gzip' length 170969 bytes (166 KB)
+==================================================
+downloaded 166 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/FMStable_0.1-4.tar.gz'
+Content type 'application/x-gzip' length 411600 bytes (401 KB)
+==================================================
+downloaded 401 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/viridis_0.6.2.tar.gz'
+Content type 'application/x-gzip' length 3031731 bytes (2.9 MB)
+==================================================
+downloaded 2.9 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/dendextend_1.16.0.tar.gz'
+Content type 'application/x-gzip' length 3543308 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/seriation_1.4.2.tar.gz'
+Content type 'application/x-gzip' length 856625 bytes (836 KB)
+==================================================
+downloaded 836 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/webshot_0.5.4.tar.gz'
+Content type 'application/x-gzip' length 159902 bytes (156 KB)
+==================================================
+downloaded 156 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/egg_0.4.5.tar.gz'
+Content type 'application/x-gzip' length 1041027 bytes (1016 KB)
+==================================================
+downloaded 1016 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/bookdown_0.33.tar.gz'
+Content type 'application/x-gzip' length 854589 bytes (834 KB)
+==================================================
+downloaded 834 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/corrplot_0.92.tar.gz'
+Content type 'application/x-gzip' length 3765850 bytes (3.6 MB)
+==================================================
+downloaded 3.6 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/harmonicmeanp_3.0.tar.gz'
+Content type 'application/x-gzip' length 529605 bytes (517 KB)
+==================================================
+downloaded 517 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/heatmaply_1.4.2.tar.gz'
+Content type 'application/x-gzip' length 1702747 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/log4r_0.4.3.tar.gz'
+Content type 'application/x-gzip' length 45102 bytes (44 KB)
+==================================================
+downloaded 44 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/NBPSeq_0.3.1.tar.gz'
+Content type 'application/x-gzip' length 210219 bytes (205 KB)
+==================================================
+downloaded 205 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/pander_0.6.5.tar.gz'
+Content type 'application/x-gzip' length 393677 bytes (384 KB)
+==================================================
+downloaded 384 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/rmdformats_1.0.4.tar.gz'
+Content type 'application/x-gzip' length 2034791 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/VennDiagram_1.7.3.tar.gz'
+Content type 'application/x-gzip' length 78508 bytes (76 KB)
+==================================================
+downloaded 76 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/metaseqR2_1.10.0.tar.gz'
+Content type 'application/x-gzip' length 2751267 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+* installing *source* package ‘iterators’ ...
+** package ‘iterators’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘iterators’ as ‘iterators_1.0.14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (iterators)
+* installing *source* package ‘qap’ ...
+** package ‘qap’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RNG_wrapper.c -o RNG_wrapper.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c qapsim.f -o qapsim.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o qap.so RNG_wrapper.o init.o qapsim.o -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-qap/00new/qap/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘qap’ as ‘qap_0.1-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (qap)
+* installing *source* package ‘gclus’ ...
+** package ‘gclus’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘gclus’ as ‘gclus_1.3.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gclus)
+* installing *source* package ‘ca’ ...
+** package ‘ca’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ca’ as ‘ca_0.71.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ca)
+* installing *source* package ‘registry’ ...
+** package ‘registry’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘registry’ as ‘registry_0.5-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (registry)
+* installing *source* package ‘FMStable’ ...
+** package ‘FMStable’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FMStable.c -o FMStable.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o FMStable.so FMStable.o init.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-FMStable/00new/FMStable/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘FMStable’ as ‘FMStable_0.1-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (FMStable)
+* installing *source* package ‘viridis’ ...
+** package ‘viridis’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘viridis’ as ‘viridis_0.6.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (viridis)
+* installing *source* package ‘webshot’ ...
+** package ‘webshot’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘webshot’ as ‘webshot_0.5.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (webshot)
+* installing *source* package ‘egg’ ...
+** package ‘egg’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘egg’ as ‘egg_0.4.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (egg)
+* installing *source* package ‘bookdown’ ...
+** package ‘bookdown’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘bookdown’ as ‘bookdown_0.33_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bookdown)
+* installing *source* package ‘corrplot’ ...
+** package ‘corrplot’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘corrplot’ as ‘corrplot_0.92_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (corrplot)
+* installing *source* package ‘log4r’ ...
+** package ‘log4r’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c log4r.c -o log4r.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c logfmt.c -o logfmt.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o log4r.so log4r.o logfmt.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-log4r/00new/log4r/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘log4r’ as ‘log4r_0.4.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (log4r)
+* installing *source* package ‘NBPSeq’ ...
+** package ‘NBPSeq’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lm.c -o lm.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o NBPSeq.so lm.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-NBPSeq/00new/NBPSeq/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘NBPSeq’ as ‘NBPSeq_0.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (NBPSeq)
+* installing *source* package ‘pander’ ...
+** package ‘pander’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c helpers.cpp -o helpers.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c pandoc.cpp -o pandoc.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o pander.so RcppExports.o helpers.o pandoc.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-pander/00new/pander/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pander’ as ‘pander_0.6.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pander)
+* installing *source* package ‘VennDiagram’ ...
+** package ‘VennDiagram’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘VennDiagram’ as ‘VennDiagram_1.7.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (VennDiagram)
+* installing *source* package ‘foreach’ ...
+** package ‘foreach’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘foreach’ as ‘foreach_1.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (foreach)
+* installing *source* package ‘dendextend’ ...
+** package ‘dendextend’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘dendextend’ as ‘dendextend_1.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dendextend)
+* installing *source* package ‘harmonicmeanp’ ...
+** package ‘harmonicmeanp’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘harmonicmeanp’ as ‘harmonicmeanp_3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (harmonicmeanp)
+* installing *source* package ‘rmdformats’ ...
+** package ‘rmdformats’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘rmdformats’ as ‘rmdformats_1.0.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rmdformats)
+* installing *source* package ‘TSP’ ...
+** package ‘TSP’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c dll.c -o dll.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c insertion_cost.c -o insertion_cost.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c tour_length.c -o tour_length.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c two_opt.c -o two_opt.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o TSP.so dll.o insertion_cost.o tour_length.o two_opt.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-TSP/00new/TSP/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TSP’ as ‘TSP_1.2-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TSP)
+* installing *source* package ‘seriation’ ...
+** package ‘seriation’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RNG_wrapper.c -o RNG_wrapper.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c arsa.f -o arsa.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c bburcg.f -o bburcg.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c bbwrcg.f -o bbwrcg.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c bea.f -o bea.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c criterion.c -o criterion.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c dist.c -o dist.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c greedy.c -o greedy.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c optimal.c -o optimal.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c pathdist.c -o pathdist.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c stress.c -o stress.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o seriation.so RNG_wrapper.o arsa.o bburcg.o bbwrcg.o bea.o criterion.o dist.o greedy.o init.o optimal.o pathdist.o stress.o -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-seriation/00new/seriation/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘seriation’ as ‘seriation_1.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (seriation)
+* installing *source* package ‘heatmaply’ ...
+** package ‘heatmaply’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘heatmaply’ as ‘heatmaply_1.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (heatmaply)
+* installing *source* package ‘metaseqR2’ ...
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c pval.c -o pval.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o metaseqR2.so pval.o -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-metaseqR2/00new/metaseqR2/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Warning: replacing previous import ‘GenomicRanges::subtract’ by ‘magrittr::subtract’ when loading ‘metaseqR2’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: replacing previous import ‘GenomicRanges::subtract’ by ‘magrittr::subtract’ when loading ‘metaseqR2’
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+Warning: replacing previous import ‘GenomicRanges::subtract’ by ‘magrittr::subtract’ when loading ‘metaseqR2’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘metaseqR2’ as ‘metaseqR2_1.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (metaseqR2)
+
+The downloaded source packages are in
+	‘/tmp/RtmpKRsEqJ/downloaded_packages’
+Old packages: 'AnnotationDbi', 'GenomicAlignments', 'ipred', 'BH',
+  'BiocFileCache', 'BiocManager', 'BiocParallel', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'curl', 'data.table', 'dbplyr',
+  'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR', 'evaluate', 'fansi',
+  'fastmap', 'fontawesome', 'forcats', 'formatR', 'fs', 'future', 'gargle',
+  'GenomeInfoDb', 'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel',
+  'gh', 'haven', 'highr', 'htmlwidgets', 'httpuv', 'httr', 'igraph',
+  'IRkernel', 'isoband', 'knitr', 'limma', 'listenv', 'locfit', 'lubridate',
+  'MASS', 'mgcv', 'nlme', 'openssl', 'parallelly', 'pbapply', 'pbdZMQ',
+  'pkgdown', 'progressr', 'purrr', 'ragg', 'Rcpp', 'RcppArmadillo', 'RcppTOML',
+  'RCurl', 'readr', 'readxl', 'repr', 'reticulate', 'rmarkdown', 'roxygen2',
+  'RSQLite', 'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'sourcetools',
+  'sp', 'spatial', 'spatstat.data', 'spatstat.explore', 'spatstat.geom',
+  'spatstat.random', 'spatstat.sparse', 'spatstat.utils', 'statmod', 'stringi',
+  'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse', 'timechange',
+  'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'yaml'
+
+real	4m6.393s
+user	3m50.388s
+sys	0m21.817s

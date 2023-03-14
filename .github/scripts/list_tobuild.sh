@@ -21,7 +21,7 @@ if [ ! -s tobuild.txt ]; then
             fi
             counter=$((counter+1))
             echo $counter > "logs/$(cat runstarttime)/retries_counter"
-            if [ $counter -gt 2 ]; then
+            if [ $counter -gt 4 ]; then
                 grep -Ervl "(failed|tar.gz$)" lists | grep -v "failed" > /tmp/resetpkgs || true
                 if [ -s /tmp/resetpkgs ]; then
                     cat /tmp/resetpkgs | xargs rm

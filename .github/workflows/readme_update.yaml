@@ -15,7 +15,7 @@ jobs:
           python -m pip install tabulate humanize
           python .github/scripts/readme_update.py
           mkdir -p /tmp
-          cp $(cat runstarttime)/README.md /tmp/README.md
+          cp README.md /tmp/README.md
           COMMIT=$(git rev-parse --short HEAD)
           sed -i "s#/main/#/$COMMIT/#g" /tmp/README.md
 
@@ -31,7 +31,7 @@ jobs:
             git config user.name github-actions
             git config user.email github-actions@github.com
             git pull origin main || git reset --hard origin/main
-            cp /tmp/README.md $(cat runstarttime)/README.md
-            git add $(cat runstarttime)/README.md
+            cp /tmp/README.md README.md
+            git add README.md
             git commit -m "Update README"
             git push

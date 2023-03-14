@@ -1,0 +1,112 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''GeneStructureTools'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'GeneStructureTools'
+also installing the dependencies ‘stringdist’, ‘BSgenome.Mmusculus.UCSC.mm10’
+
+trying URL 'https://cloud.r-project.org/src/contrib/stringdist_0.9.10.tar.gz'
+Content type 'application/x-gzip' length 862221 bytes (842 KB)
+==================================================
+downloaded 842 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm10_1.4.3.tar.gz'
+Content type 'application/x-gzip' length 649827309 bytes (619.7 MB)
+==================================================
+downloaded 619.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/GeneStructureTools_1.18.0.tar.gz'
+Content type 'application/x-gzip' length 2593726 bytes (2.5 MB)
+==================================================
+downloaded 2.5 MB
+
+* installing *source* package ‘stringdist’ ...
+** package ‘stringdist’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include    -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c R_register_native.c -o R_register_native.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include    -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Rstringdist.c -o Rstringdist.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include    -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c dl.c -o dl.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include    -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c hamming.c -o hamming.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include    -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c jaro.c -o jaro.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include    -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lcs.c -o lcs.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include    -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lv.c -o lv.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include    -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c osa.c -o osa.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include    -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c qgram.c -o qgram.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include    -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c soundex.c -o soundex.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include    -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c stringdist.c -o stringdist.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include    -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c utf8ToInt.c -o utf8ToInt.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include    -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c utils.c -o utils.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o stringdist.so R_register_native.o Rstringdist.o dl.o hamming.o jaro.o lcs.o lv.o osa.o qgram.o soundex.o stringdist.o utf8ToInt.o utils.o -fopenmp -L/usr/lib/R/lib -lR
+installing to /tmp/built/00LOCK-stringdist/00new/stringdist/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘stringdist’ as ‘stringdist_0.9.10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (stringdist)
+* installing *source* package ‘BSgenome.Mmusculus.UCSC.mm10’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Mmusculus.UCSC.mm10’ as ‘BSgenome.Mmusculus.UCSC.mm10_1.4.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Mmusculus.UCSC.mm10)
+* installing *source* package ‘GeneStructureTools’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GeneStructureTools’ as ‘GeneStructureTools_1.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GeneStructureTools)
+
+The downloaded source packages are in
+	‘/tmp/RtmpIBOqgH/downloaded_packages’
+Old packages: 'AnnotationDbi', 'GenomicAlignments', 'BH', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'broom', 'bslib', 'cachem', 'class', 'cli',
+  'codetools', 'colorspace', 'curl', 'data.table', 'dbplyr', 'DESeq2',
+  'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR', 'evaluate', 'fansi', 'fastmap',
+  'fontawesome', 'forcats', 'formatR', 'fs', 'future', 'gargle',
+  'GenomeInfoDb', 'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel',
+  'gh', 'haven', 'highr', 'htmlwidgets', 'httpuv', 'httr', 'igraph',
+  'IRkernel', 'isoband', 'knitr', 'limma', 'listenv', 'locfit', 'lubridate',
+  'MASS', 'mgcv', 'nlme', 'openssl', 'parallelly', 'pbapply', 'pbdZMQ',
+  'pkgdown', 'progressr', 'purrr', 'ragg', 'Rcpp', 'RcppArmadillo', 'RcppTOML',
+  'RCurl', 'readr', 'readxl', 'repr', 'reticulate', 'rmarkdown', 'roxygen2',
+  'RSQLite', 'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'sourcetools',
+  'sp', 'spatial', 'spatstat.data', 'spatstat.explore', 'spatstat.geom',
+  'spatstat.random', 'spatstat.sparse', 'spatstat.utils', 'statmod', 'stringi',
+  'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse', 'timechange',
+  'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'yaml'
+
+real	2m28.792s
+user	2m17.257s
+sys	0m7.390s

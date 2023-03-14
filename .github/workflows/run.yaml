@@ -258,6 +258,7 @@ jobs:
       - name: Free space
         run: |
           df -h
+          du --max-depth=2 /var/lib/docker
 
       - name: Build package via docker build and extracting files to scratch
         id: dockerbuild
@@ -279,6 +280,7 @@ jobs:
         run: |
           echo "Free space:"
           df -h
+          du --max-depth=2 /var/lib/docker
 
       - name: Extract files from image and mark failed
         id: pkgbuild

@@ -176,7 +176,7 @@ def main():
     unclaimed_headers = ["Package", "Status", "Tarball"]
     succeeded_headers = ["Package", "Status", "Tarball"]
 
-    with open(f"{runstart}/README.md", "w") as f:
+    with open("README.md", "w") as f:
         f.write(f"# Summary\n\n{len(tables['Succeeded'])} built packages\n\n{len(tables['Failed'])} failed packages\n\n{len(tables['Unclaimed'])} unclaimed packages\n\n")
         f.write(f"\n\n## Failed ({len(tables['Failed'])})\n")
         f.write(tabulate(tables["Failed"], failed_headers, tablefmt="github"))

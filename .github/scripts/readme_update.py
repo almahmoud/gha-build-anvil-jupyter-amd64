@@ -74,7 +74,8 @@ def check_cran_archived(pkg, each):
         if "Archived on " in crantext:
             archivetext = crantext[crantext.find("Archived on"):]
             archivetext = archivetext[:archivetext.find("\n")]
-            each.append(f"[CRAN Package '{pkg}']({cranurl}) archived. Extracted text: {archivetext}")
+            currtext = each[-1]
+            each[-1] = f"{currtext}. [CRAN Package '{pkg}']({cranurl}) archived. Extracted text: {archivetext}"
             return True
     return False
 
@@ -111,14 +112,15 @@ def check_dependency_missing(logtext, each):
         tofind = "there is no package called ‘"
         missingtext = logtext[logtext.find(tofind)+len(tofind):]
         pkg = missingtext[:missingtext.find("’")]
-        if not check_cran_archived(pkg, each):
-            each.append(f"Undeclared R dependency: '{pkg}'")
+        each.append(f"Undeclared R dependency: '{pkg}'")
+        check_cran_archived(pkg, each)
+        
     if "ERROR: dependency" in logtext:
         tofind = "ERROR: dependency ‘"
         missingtext = logtext[logtext.find(tofind)+len(tofind):]
         pkg = missingtext[:missingtext.find("’")]
-        if not check_cran_archived(pkg, each):
-            each.append(f"Undeclared R dependency: '{pkg}'")
+        each.append(f"Undeclared R dependency: '{pkg}'")
+        check_cran_archived(pkg, each)
 
 def add_bbs_status(pkg, each):
     """
@@ -129,21 +131,18 @@ def add_bbs_status(pkg, each):
     r = requests.get(bbsurl)
     bbs_status = ""
     retries = 0
-    if "CRAN Package" not in each[-1]:
-        while retries <= 5 and r.status_code != 200:
-            r = requests.get(bbsurl)
-            retries += 1
-            time.sleep(5)
-        if r.status_code == 200:
-            bbs_summary = r.content.decode("utf-8")
-            bbs_status = yaml.safe_load(bbs_summary).get("Status", "Unknown")
-        if not bbs_status:
-            bbs_status = "Failed retrieving"
-        else:
-            bbs_status = f"[{bbs_status}]({bbsurl.replace('/raw-results/nebbiolo2/buildsrc-summary.dcf', '')})"
-        each.insert(2, bbs_status)
+    while retries <= 5 and r.status_code != 200:
+        r = requests.get(bbsurl)
+        retries += 1
+        time.sleep(5)
+    if r.status_code == 200:
+        bbs_summary = r.content.decode("utf-8")
+        bbs_status = yaml.safe_load(bbs_summary).get("Status", "Unknown")
+    if not bbs_status:
+        bbs_status = "Failed retrieving"
     else:
-        each.insert(2, 'N/A: CRAN package')
+        bbs_status = f"[{bbs_status}]({bbsurl.replace('/raw-results/nebbiolo2/buildsrc-summary.dcf', '')})"
+    each.insert(2, bbs_status)
 
 def process_failed_pkgs(tables):
     """Updates the tar text for failed packages to include a link to the build log and checks if the package has been archived on CRAN"""

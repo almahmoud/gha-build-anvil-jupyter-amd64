@@ -1,0 +1,93 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''primirTSS'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'primirTSS'
+also installing the dependencies ‘phastCons100way.UCSC.hg38’, ‘JASPAR2018’
+
+trying URL 'https://bioconductor.org/packages/3.16/data/annotation/src/contrib/phastCons100way.UCSC.hg38_3.7.1.tar.gz'
+Content type 'application/x-gzip' length 1073247745 bytes (1023.5 MB)
+==================================================
+downloaded 1023.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.16/data/annotation/src/contrib/JASPAR2018_1.1.1.tar.gz'
+Content type 'application/x-gzip' length 14253704 bytes (13.6 MB)
+==================================================
+downloaded 13.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/primirTSS_1.16.0.tar.gz'
+Content type 'application/x-gzip' length 3840337 bytes (3.7 MB)
+==================================================
+downloaded 3.7 MB
+
+* installing *source* package ‘phastCons100way.UCSC.hg38’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘phastCons100way.UCSC.hg38’ as ‘phastCons100way.UCSC.hg38_3.7.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (phastCons100way.UCSC.hg38)
+* installing *source* package ‘JASPAR2018’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘JASPAR2018’ as ‘JASPAR2018_1.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (JASPAR2018)
+* installing *source* package ‘primirTSS’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘primirTSS’ as ‘primirTSS_1.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (primirTSS)
+
+The downloaded source packages are in
+	‘/tmp/RtmpKmuxP9/downloaded_packages’
+Old packages: 'AnnotationDbi', 'GenomicAlignments', 'BH', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'broom', 'bslib', 'cachem', 'class', 'cli',
+  'codetools', 'colorspace', 'curl', 'data.table', 'dbplyr', 'DESeq2',
+  'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR', 'evaluate', 'fansi', 'fastmap',
+  'fontawesome', 'forcats', 'formatR', 'fs', 'future', 'gargle',
+  'GenomeInfoDb', 'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel',
+  'gh', 'haven', 'highr', 'htmlwidgets', 'httpuv', 'httr', 'igraph',
+  'IRkernel', 'isoband', 'knitr', 'limma', 'listenv', 'locfit', 'lubridate',
+  'MASS', 'mgcv', 'nlme', 'openssl', 'parallelly', 'pbapply', 'pbdZMQ',
+  'pkgdown', 'progressr', 'purrr', 'ragg', 'Rcpp', 'RcppArmadillo', 'RcppTOML',
+  'RCurl', 'readr', 'readxl', 'repr', 'reticulate', 'rlang', 'rmarkdown',
+  'roxygen2', 'RSQLite', 'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'yaml'
+
+real	3m48.552s
+user	3m24.891s
+sys	0m11.614s

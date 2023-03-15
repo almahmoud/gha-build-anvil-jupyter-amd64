@@ -1,0 +1,80 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''Travel'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'Travel'
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/Travel_1.6.0.tar.gz'
+Content type 'application/x-gzip' length 439285 bytes (428 KB)
+==================================================
+downloaded 428 KB
+
+* installing *source* package ‘Travel’ ...
+** using staged installation
+** libs
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Cpp_interface.cpp -o Cpp_interface.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c altfile_operations.cpp -o altfile_operations.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c altmmap_operations.cpp -o altmmap_operations.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c altrep_manager.cpp -o altrep_manager.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c class_Cache_block.cpp -o class_Cache_block.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c class_Filesystem_cache_copier.cpp -o class_Filesystem_cache_copier.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c class_Filesystem_file_data.cpp -o class_Filesystem_file_data.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c class_Memory_mapped.cpp -o class_Memory_mapped.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c class_Protect_guard.cpp -o class_Protect_guard.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c class_Subset_index.cpp -o class_Subset_index.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c class_Timer.cpp -o class_Timer.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c class_Unique_buffer.cpp -o class_Unique_buffer.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c examples.cpp -o examples.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c filesystem_manager.cpp -o filesystem_manager.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c filesystem_operations_dokan.cpp -o filesystem_operations_dokan.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c filesystem_operations_fuse.cpp -o filesystem_operations_fuse.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c memory_mapped_file.cpp -o memory_mapped_file.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c profile.cpp -o profile.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c read_write_operations.cpp -o read_write_operations.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c unit_test_utils.cpp -o unit_test_utils.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c unit_tests.cpp -o unit_tests.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG `pkg-config fuse --cflags` -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c utils.cpp -o utils.o
+g++ -std=gnu++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o Travel.so Cpp_interface.o RcppExports.o altfile_operations.o altmmap_operations.o altrep_manager.o class_Cache_block.o class_Filesystem_cache_copier.o class_Filesystem_file_data.o class_Memory_mapped.o class_Protect_guard.o class_Subset_index.o class_Timer.o class_Unique_buffer.o examples.o filesystem_manager.o filesystem_operations_dokan.o filesystem_operations_fuse.o memory_mapped_file.o profile.o read_write_operations.o unit_test_utils.o unit_tests.o utils.o -lfuse -pthread -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-Travel/00new/Travel/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Travel’ as ‘Travel_1.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Travel)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp7IAB3P/downloaded_packages’
+Old packages: 'AnnotationDbi', 'BH', 'BiocFileCache', 'BiocManager',
+  'BiocParallel', 'broom', 'bslib', 'cachem', 'class', 'cli', 'codetools',
+  'colorspace', 'curl', 'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr',
+  'DT', 'dtplyr', 'edgeR', 'evaluate', 'fansi', 'fastmap', 'fontawesome',
+  'forcats', 'formatR', 'fs', 'future', 'gargle', 'GenomeInfoDb',
+  'GenomicAlignments', 'GenomicFeatures', 'GenomicRanges', 'ggplot2',
+  'ggrepel', 'gh', 'haven', 'highr', 'htmlwidgets', 'httpuv', 'httr', 'igraph',
+  'IRkernel', 'isoband', 'knitr', 'limma', 'listenv', 'locfit', 'lubridate',
+  'MASS', 'mgcv', 'nlme', 'openssl', 'parallelly', 'pbapply', 'pbdZMQ',
+  'pkgdown', 'progressr', 'purrr', 'ragg', 'Rcpp', 'RcppArmadillo', 'RcppTOML',
+  'RCurl', 'readr', 'readxl', 'repr', 'reticulate', 'rlang', 'rmarkdown',
+  'roxygen2', 'RSQLite', 'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'yaml'
+
+real	1m10.033s
+user	1m4.590s
+sys	0m3.755s

@@ -1,0 +1,358 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''epimutacions'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'epimutacions'
+also installing the dependencies ‘DEoptimR’, ‘org.Hs.eg.db’, ‘epimutacionsData’, ‘isotree’, ‘robustbase’, ‘Homo.sapiens’, ‘TxDb.Hsapiens.UCSC.hg19.knownGene’, ‘TxDb.Hsapiens.UCSC.hg18.knownGene’, ‘TxDb.Hsapiens.UCSC.hg38.knownGene’, ‘IlluminaHumanMethylation450kmanifest’, ‘IlluminaHumanMethylationEPICmanifest’, ‘IlluminaHumanMethylation450kanno.ilmn12.hg19’, ‘IlluminaHumanMethylationEPICanno.ilm10b2.hg19’
+
+trying URL 'https://cloud.r-project.org/src/contrib/DEoptimR_1.0-11.tar.gz'
+Content type 'application/x-gzip' length 36979 bytes (36 KB)
+==================================================
+downloaded 36 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/data/annotation/src/contrib/org.Hs.eg.db_3.16.0.tar.gz'
+Content type 'application/x-gzip' length 88437137 bytes (84.3 MB)
+==================================================
+downloaded 84.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.16/data/experiment/src/contrib/epimutacionsData_1.2.0.tar.gz'
+Content type 'application/x-gzip' length 59806308 bytes (57.0 MB)
+==================================================
+downloaded 57.0 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/isotree_0.5.17.tar.gz'
+Content type 'application/x-gzip' length 1179389 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/robustbase_0.95-0.tar.gz'
+Content type 'application/x-gzip' length 2295699 bytes (2.2 MB)
+==================================================
+downloaded 2.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.16/data/annotation/src/contrib/Homo.sapiens_1.3.1.tar.gz'
+Content type 'application/x-gzip' length 1617 bytes
+==================================================
+downloaded 1617 bytes
+
+trying URL 'https://bioconductor.org/packages/3.16/data/annotation/src/contrib/TxDb.Hsapiens.UCSC.hg19.knownGene_3.2.2.tar.gz'
+Content type 'application/x-gzip' length 18669702 bytes (17.8 MB)
+==================================================
+downloaded 17.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.16/data/annotation/src/contrib/TxDb.Hsapiens.UCSC.hg18.knownGene_3.2.2.tar.gz'
+Content type 'application/x-gzip' length 16032792 bytes (15.3 MB)
+==================================================
+downloaded 15.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.16/data/annotation/src/contrib/TxDb.Hsapiens.UCSC.hg38.knownGene_3.16.0.tar.gz'
+Content type 'application/x-gzip' length 46059936 bytes (43.9 MB)
+==================================================
+downloaded 43.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.16/data/annotation/src/contrib/IlluminaHumanMethylation450kmanifest_0.4.0.tar.gz'
+Content type 'application/x-gzip' length 8726870 bytes (8.3 MB)
+==================================================
+downloaded 8.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.16/data/annotation/src/contrib/IlluminaHumanMethylationEPICmanifest_0.3.0.tar.gz'
+Content type 'application/x-gzip' length 17449851 bytes (16.6 MB)
+==================================================
+downloaded 16.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.16/data/annotation/src/contrib/IlluminaHumanMethylation450kanno.ilmn12.hg19_0.6.1.tar.gz'
+Content type 'application/x-gzip' length 57892521 bytes (55.2 MB)
+==================================================
+downloaded 55.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.16/data/annotation/src/contrib/IlluminaHumanMethylationEPICanno.ilm10b2.hg19_0.6.0.tar.gz'
+Content type 'application/x-gzip' length 158636019 bytes (151.3 MB)
+==================================================
+downloaded 151.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/epimutacions_1.2.0.tar.gz'
+Content type 'application/x-gzip' length 1809285 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+* installing *source* package ‘DEoptimR’ ...
+** package ‘DEoptimR’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DEoptimR’ as ‘DEoptimR_1.0-11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DEoptimR)
+* installing *source* package ‘org.Hs.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Hs.eg.db’ as ‘org.Hs.eg.db_3.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Hs.eg.db)
+* installing *source* package ‘epimutacionsData’ ...
+** using staged installation
+** inst
+** help
+No man pages found in package  ‘epimutacionsData’ 
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘epimutacionsData’ as ‘epimutacionsData_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (epimutacionsData)
+* installing *source* package ‘isotree’ ...
+** package ‘isotree’ successfully unpacked and MD5 sums checked
+** using staged installation
+checking for g++... g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG -DRCPP_USE_UNWIND_PROTECT -D_FOR_R -D_USE_XOSHIRO -D_USE_ROBIN_MAP -DSUPPORTS_RESTRICT=1  -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fno-math-errno -fno-trapping-math -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG -DRCPP_USE_UNWIND_PROTECT -D_FOR_R -D_USE_XOSHIRO -D_USE_ROBIN_MAP -DSUPPORTS_RESTRICT=1  -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fno-math-errno -fno-trapping-math -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Rwrapper.cpp -o Rwrapper.o
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG -DRCPP_USE_UNWIND_PROTECT -D_FOR_R -D_USE_XOSHIRO -D_USE_ROBIN_MAP -DSUPPORTS_RESTRICT=1  -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fno-math-errno -fno-trapping-math -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c indexer.cpp -o indexer.o
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG -DRCPP_USE_UNWIND_PROTECT -D_FOR_R -D_USE_XOSHIRO -D_USE_ROBIN_MAP -DSUPPORTS_RESTRICT=1  -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fno-math-errno -fno-trapping-math -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c merge_models.cpp -o merge_models.o
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG -DRCPP_USE_UNWIND_PROTECT -D_FOR_R -D_USE_XOSHIRO -D_USE_ROBIN_MAP -DSUPPORTS_RESTRICT=1  -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fno-math-errno -fno-trapping-math -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c serialize.cpp -o serialize.o
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG -DRCPP_USE_UNWIND_PROTECT -D_FOR_R -D_USE_XOSHIRO -D_USE_ROBIN_MAP -DSUPPORTS_RESTRICT=1  -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fno-math-errno -fno-trapping-math -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c sql.cpp -o sql.o
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG -DRCPP_USE_UNWIND_PROTECT -D_FOR_R -D_USE_XOSHIRO -D_USE_ROBIN_MAP -DSUPPORTS_RESTRICT=1  -I'/usr/local/lib/R/site-library/Rcpp/include'   -fopenmp -fno-math-errno -fno-trapping-math -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c subset_models.cpp -o subset_models.o
+g++ -std=gnu++17 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o isotree.so RcppExports.o Rwrapper.o indexer.o merge_models.o serialize.o sql.o subset_models.o -fopenmp -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-isotree/00new/isotree/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘isotree’ as ‘isotree_0.5.17_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (isotree)
+* installing *source* package ‘TxDb.Hsapiens.UCSC.hg19.knownGene’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TxDb.Hsapiens.UCSC.hg19.knownGene’ as ‘TxDb.Hsapiens.UCSC.hg19.knownGene_3.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TxDb.Hsapiens.UCSC.hg19.knownGene)
+* installing *source* package ‘TxDb.Hsapiens.UCSC.hg18.knownGene’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TxDb.Hsapiens.UCSC.hg18.knownGene’ as ‘TxDb.Hsapiens.UCSC.hg18.knownGene_3.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TxDb.Hsapiens.UCSC.hg18.knownGene)
+* installing *source* package ‘TxDb.Hsapiens.UCSC.hg38.knownGene’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TxDb.Hsapiens.UCSC.hg38.knownGene’ as ‘TxDb.Hsapiens.UCSC.hg38.knownGene_3.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TxDb.Hsapiens.UCSC.hg38.knownGene)
+* installing *source* package ‘IlluminaHumanMethylation450kmanifest’ ...
+** using staged installation
+** data
+*** moving datasets to lazyload DB
+** inst
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘IlluminaHumanMethylation450kmanifest’ as ‘IlluminaHumanMethylation450kmanifest_0.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (IlluminaHumanMethylation450kmanifest)
+* installing *source* package ‘IlluminaHumanMethylationEPICmanifest’ ...
+** using staged installation
+** data
+*** moving datasets to lazyload DB
+** inst
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘IlluminaHumanMethylationEPICmanifest’ as ‘IlluminaHumanMethylationEPICmanifest_0.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (IlluminaHumanMethylationEPICmanifest)
+* installing *source* package ‘IlluminaHumanMethylation450kanno.ilmn12.hg19’ ...
+** using staged installation
+** data
+*** moving datasets to lazyload DB
+** inst
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘IlluminaHumanMethylation450kanno.ilmn12.hg19’ as ‘IlluminaHumanMethylation450kanno.ilmn12.hg19_0.6.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (IlluminaHumanMethylation450kanno.ilmn12.hg19)
+* installing *source* package ‘IlluminaHumanMethylationEPICanno.ilm10b2.hg19’ ...
+** using staged installation
+** data
+*** moving datasets to lazyload DB
+** inst
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘IlluminaHumanMethylationEPICanno.ilm10b2.hg19’ as ‘IlluminaHumanMethylationEPICanno.ilm10b2.hg19_0.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (IlluminaHumanMethylationEPICanno.ilm10b2.hg19)
+* installing *source* package ‘robustbase’ ...
+** package ‘robustbase’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c R-rng4ftn.c -o R-rng4ftn.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c eigen.f -o eigen.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lmrob.c -o lmrob.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c mc.c -o mc.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c monitor.c -o monitor.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c qn_sn.c -o qn_sn.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c rf-common.f -o rf-common.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c rffastmcd.f -o rffastmcd.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c rfltsreg.f -o rfltsreg.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c rllarsbi.f -o rllarsbi.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c rob-utils.c -o rob-utils.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c rowMedians.c -o rowMedians.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c wgt_himed.c -o wgt_himed.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o robustbase.so R-rng4ftn.o eigen.o init.o lmrob.o mc.o monitor.o qn_sn.o rf-common.o rffastmcd.o rfltsreg.o rllarsbi.o rob-utils.o rowMedians.o wgt_himed.o -llapack -lblas -lgfortran -lm -lquadmath -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-robustbase/00new/robustbase/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a generic function from function ‘chgDefaults’ in package ‘robustbase’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘robustbase’ as ‘robustbase_0.95-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (robustbase)
+* installing *source* package ‘Homo.sapiens’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Homo.sapiens’ as ‘Homo.sapiens_1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Homo.sapiens)
+* installing *source* package ‘epimutacions’ ...
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c mlm_init.c -o mlm_init.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ruben.cpp -o ruben.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o epimutacions.so mlm_init.o ruben.o -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-epimutacions/00new/epimutacions/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘epimutacions’ as ‘epimutacions_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (epimutacions)
+
+The downloaded source packages are in
+	‘/tmp/RtmpQFcYQ5/downloaded_packages’
+Old packages: 'AnnotationDbi', 'GenomicAlignments', 'BH', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'broom', 'bslib', 'cachem', 'class', 'cli',
+  'codetools', 'colorspace', 'curl', 'data.table', 'dbplyr', 'DESeq2',
+  'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR', 'evaluate', 'fansi', 'fastmap',
+  'fontawesome', 'forcats', 'formatR', 'fs', 'future', 'gargle',
+  'GenomeInfoDb', 'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel',
+  'gh', 'haven', 'highr', 'htmlwidgets', 'httpuv', 'httr', 'igraph',
+  'IRkernel', 'isoband', 'knitr', 'limma', 'listenv', 'locfit', 'lubridate',
+  'MASS', 'mgcv', 'nlme', 'openssl', 'parallelly', 'pbapply', 'pbdZMQ',
+  'pkgdown', 'progressr', 'purrr', 'ragg', 'Rcpp', 'RcppArmadillo', 'RcppTOML',
+  'RCurl', 'readr', 'readxl', 'repr', 'reticulate', 'rlang', 'rmarkdown',
+  'roxygen2', 'RSQLite', 'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'yaml'
+
+real	17m32.487s
+user	17m0.164s
+sys	0m31.168s

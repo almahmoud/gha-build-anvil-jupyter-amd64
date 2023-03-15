@@ -167,6 +167,7 @@ jobs:
         with:
           root-reserve-mb: 69632
           swap-size-mb: 1024
+          overprovision-lvm: true
 
       - uses: actions/checkout@v3
 
@@ -288,7 +289,7 @@ jobs:
           context: .
           push: false
           load: false
-          outputs: type=tar,dest=${{ steps.meta.outputs.workspace }}/tmp/image/${{ matrix.pkg }}.tar
+          outputs: type=tar,dest=/tmp/image/${{ matrix.pkg }}.tar
           tags: ${{ steps.meta.outputs.image }}
           platforms: ${{ steps.versions.outputs.platform }}
 
@@ -312,7 +313,7 @@ jobs:
           repodir=$(pwd)
           rm -rf $repodir/${{ steps.versions.outputs.library }}
           cd /
-          tar -xvf ${{ steps.meta.outputs.workspace }}/tmp/image/${{ matrix.pkg }}.tar && rm ${{ steps.meta.outputs.workspace }}/tmp/image/${{ matrix.pkg }}.tar
+          tar -xvf /tmp/image/${{ matrix.pkg }}.tar && rm /tmp/image/${{ matrix.pkg }}.tar
           #cp -r tmp / || true
           #cp -r ${{ steps.versions.outputs.library }} $(dirname /${{ steps.versions.outputs.library }})/ || true
           cd $repodir

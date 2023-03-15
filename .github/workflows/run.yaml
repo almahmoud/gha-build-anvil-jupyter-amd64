@@ -152,7 +152,13 @@ jobs:
           sudo rm -rf /var/lib/mysql
           sudo rm -rf /var/lib/gems
           sudo rm -rf /usr/src/*-azure-*
-          sudo rm -rf /usr/share/*
+          sudo rm -rf /usr/share/swift
+          sudo rm -rf /usr/share/az_9.3.0
+          sudo rm -rf /usr/share/miniconda
+          sudo rm -rf /home/runner/.cargo
+          sudo rm -rf /usr/share/gradle-8.0.2
+          sudo rm -rf /usr/local/n
+          sudo rm -rf /usr/local/sqlpackage
           df -h
           sudo du --max-depth=3 / | sort -n
 

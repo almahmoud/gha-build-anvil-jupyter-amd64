@@ -1,0 +1,73 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''BitSeq'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'BitSeq'
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/BitSeq_1.41.0.tar.gz'
+Content type 'application/x-gzip' length 1225409 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+* installing *source* package ‘BitSeq’ ...
+** using staged installation
+configure: Version def: -DBS_VERSION=\"1.41.0\"
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ -std=gnu++14 accepts -g... yes
+checking for g++ -std=gnu++14 option to support OpenMP... -fopenmp
+configure: creating ./config.status
+config.status: creating src/Makevars
+config.status: creating src/Makevars.win
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -DPACKAGE_NAME=\"BitSeq\" -DPACKAGE_TARNAME=\"bitseq\" -DPACKAGE_VERSION=\"1.10.x\" -DPACKAGE_STRING=\"BitSeq\ 1.10.x\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DBS_VERSION=\"1.41.0\" -DSUPPORT_OPENMP=1 -DBIOC_BUILD=1 -I'/tmp/tmp/built/Rhtslib/include'   -I. -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ArgumentParser.cpp -o ArgumentParser.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -DPACKAGE_NAME=\"BitSeq\" -DPACKAGE_TARNAME=\"bitseq\" -DPACKAGE_VERSION=\"1.10.x\" -DPACKAGE_STRING=\"BitSeq\ 1.10.x\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DBS_VERSION=\"1.41.0\" -DSUPPORT_OPENMP=1 -DBIOC_BUILD=1 -I'/tmp/tmp/built/Rhtslib/include'   -I. -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c CollapsedSampler.cpp -o CollapsedSampler.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -DPACKAGE_NAME=\"BitSeq\" -DPACKAGE_TARNAME=\"bitseq\" -DPACKAGE_VERSION=\"1.10.x\" -DPACKAGE_STRING=\"BitSeq\ 1.10.x\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DBS_VERSION=\"1.41.0\" -DSUPPORT_OPENMP=1 -DBIOC_BUILD=1 -I'/tmp/tmp/built/Rhtslib/include'   -I. -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FileHeader.cpp -o FileHeader.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -DPACKAGE_NAME=\"BitSeq\" -DPACKAGE_TARNAME=\"bitseq\" -DPACKAGE_VERSION=\"1.10.x\" -DPACKAGE_STRING=\"BitSeq\ 1.10.x\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DBS_VERSION=\"1.41.0\" -DSUPPORT_OPENMP=1 -DBIOC_BUILD=1 -I'/tmp/tmp/built/Rhtslib/include'   -I. -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c GibbsParameters.cpp -o GibbsParameters.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -DPACKAGE_NAME=\"BitSeq\" -DPACKAGE_TARNAME=\"bitseq\" -DPACKAGE_VERSION=\"1.10.x\" -DPACKAGE_STRING=\"BitSeq\ 1.10.x\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DBS_VERSION=\"1.41.0\" -DSUPPORT_OPENMP=1 -DBIOC_BUILD=1 -I'/tmp/tmp/built/Rhtslib/include'   -I. -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c GibbsSampler.cpp -o GibbsSampler.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -DPACKAGE_NAME=\"BitSeq\" -DPACKAGE_TARNAME=\"bitseq\" -DPACKAGE_VERSION=\"1.10.x\" -DPACKAGE_STRING=\"BitSeq\ 1.10.x\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DBS_VERSION=\"1.41.0\" -DSUPPORT_OPENMP=1 -DBIOC_BUILD=1 -I'/tmp/tmp/built/Rhtslib/include'   -I. -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c MyTimer.cpp -o MyTimer.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -DPACKAGE_NAME=\"BitSeq\" -DPACKAGE_TARNAME=\"bitseq\" -DPACKAGE_VERSION=\"1.10.x\" -DPACKAGE_STRING=\"BitSeq\ 1.10.x\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DBS_VERSION=\"1.41.0\" -DSUPPORT_OPENMP=1 -DBIOC_BUILD=1 -I'/tmp/tmp/built/Rhtslib/include'   -I. -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c PosteriorSamples.cpp -o PosteriorSamples.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -DPACKAGE_NAME=\"BitSeq\" -DPACKAGE_TARNAME=\"bitseq\" -DPACKAGE_VERSION=\"1.10.x\" -DPACKAGE_STRING=\"BitSeq\ 1.10.x\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DBS_VERSION=\"1.41.0\" -DSUPPORT_OPENMP=1 -DBIOC_BUILD=1 -I'/tmp/tmp/built/Rhtslib/include'   -I. -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c R_init_BitSeq.cpp -o R_init_BitSeq.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -DPACKAGE_NAME=\"BitSeq\" -DPACKAGE_TARNAME=\"bitseq\" -DPACKAGE_VERSION=\"1.10.x\" -DPACKAGE_STRING=\"BitSeq\ 1.10.x\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DBS_VERSION=\"1.41.0\" -DSUPPORT_OPENMP=1 -DBIOC_BUILD=1 -I'/tmp/tmp/built/Rhtslib/include'   -I. -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ReadDistribution.cpp -o ReadDistribution.o
+In file included from ReadDistribution.cpp:7:
+ReadDistribution.h:13:10: fatal error: bam.h: No such file or directory
+   13 | #include "bam.h"
+      |          ^~~~~~~
+compilation terminated.
+make: *** [/usr/lib/R/etc/Makeconf:178: ReadDistribution.o] Error 1
+ERROR: compilation failed for package ‘BitSeq’
+* removing ‘/tmp/tmp/built/BitSeq’
+
+The downloaded source packages are in
+	‘/tmp/RtmpJ4LxWT/downloaded_packages’
+Old packages: 'AnnotationDbi', 'BH', 'BiocFileCache', 'BiocManager',
+  'BiocParallel', 'broom', 'bslib', 'cachem', 'class', 'cli', 'codetools',
+  'colorspace', 'curl', 'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr',
+  'DT', 'dtplyr', 'edgeR', 'evaluate', 'fansi', 'fastmap', 'fontawesome',
+  'forcats', 'formatR', 'fs', 'future', 'gargle', 'GenomeInfoDb',
+  'GenomicAlignments', 'GenomicFeatures', 'GenomicRanges', 'ggplot2',
+  'ggrepel', 'gh', 'haven', 'highr', 'htmlwidgets', 'httpuv', 'httr', 'igraph',
+  'IRkernel', 'isoband', 'knitr', 'limma', 'listenv', 'locfit', 'lubridate',
+  'MASS', 'mgcv', 'nlme', 'openssl', 'parallelly', 'pbapply', 'pbdZMQ',
+  'pkgdown', 'progressr', 'purrr', 'ragg', 'Rcpp', 'RcppArmadillo', 'RcppTOML',
+  'RCurl', 'readr', 'readxl', 'repr', 'reticulate', 'rlang', 'rmarkdown',
+  'roxygen2', 'RSQLite', 'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'yaml'
+Warning message:
+In install.packages(...) :
+  installation of package ‘BitSeq’ had non-zero exit status
+
+real	0m23.583s
+user	0m19.748s
+sys	0m2.709s

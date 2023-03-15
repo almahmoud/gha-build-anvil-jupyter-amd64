@@ -159,7 +159,7 @@ def process_unclaimed_pkgs(tables, leftpkgs):
     for each in tables["Unclaimed"]:
         currtext = each[2]
         pkg = each[0][each[0].find('[')+1:each[0].find(']')]
-        if leftpkgs.get(leftpkgs):
+        if leftpkgs.get(pkg):
             each[2] = f"Incomplete Bioc dependencies: {', '.join(leftpkgs[pkg])}. {currtext}"
         
 def get_runmeta(filepath):

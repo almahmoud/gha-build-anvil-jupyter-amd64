@@ -4,9 +4,9 @@ import os
 from tabulate import tabulate
 import requests, time, humanize
 
-def get_pkgs_dict():
+def get_pkgs_dict(jsonfile):
     """Loads package information from 'biocdeps.json' file"""
-    with open("biocdeps.json", "r") as f:
+    with open(jsonfile, "r") as f:
         pkgs = json.load(f)
     return pkgs
 
@@ -154,6 +154,13 @@ def process_failed_pkgs(tables):
         check_dependency_missing(logtext, each)
         add_bbs_status(pkg, each)
 
+def process_unclaimed_pkgs(tables, leftpkgs):
+    """Add blocking packages"""
+    for each in tables["Unclaimed"]:
+        currtext = each[2]
+        pkg = each[0][each[0].find('[')+1:each[0].find(']')]
+        each[2] = f"Incomplete Bioc dependencies: {', '.join(leftpkgs[pkg])}. {currtext}"
+        
 def get_runmeta(filepath):
     """Get timestamp or container name from the start of this run cycle from the given file path"""
     with open(filepath, "r") as f:
@@ -164,7 +171,8 @@ def main():
     runstart = get_runmeta("runstarttime")
     containername = get_runmeta("containername")
     arch = get_runmeta("arch")
-    pkgs = get_pkgs_dict()
+    pkgs = get_pkgs_dict("biocdeps.json")
+    leftpkgs = get_pkgs_dict("packages.json")
     tables = {"Failed": [], "Unclaimed": [], "Succeeded": []}
     for pkg in list(pkgs):
         name = get_pkg_name_and_run_info(pkg, containername, runstart, arch)
@@ -172,12 +180,13 @@ def main():
         tartext = add_successful_size_and_url(pkg, status, tarname, containername, runstart, arch)
         tables[status].append([name, status, tartext])
     process_failed_pkgs(tables)
+    process_unclaimed_pkgs(tables, leftpkgs)
 
     tables["Failed"] = [x if len(x)>4 else x+["Error unknown"] for x in tables["Failed"]]
     tables["Failed"].sort(key=lambda x: x[4])
 
     failed_headers = ["Package", "Status", "BBS Status", "Log", "Known Error"]
-    unclaimed_headers = ["Package", "Status", "Tarball"]
+    unclaimed_headers = ["Package", "Status", "Blocked By"]
     succeeded_headers = ["Package", "Status", "Tarball"]
 
     with open("README.md", "w") as f:

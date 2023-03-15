@@ -148,11 +148,11 @@ jobs:
           sudo rm -rf /opt/google
           sudo rm -rf /usr/lib/gcc
           sudo rm -rf /usr/lib/mono
-          sudo rm -rf /usr/local/aws-cli
+          sudo rm -rf /usr/local/aws-*
           sudo rm -rf /var/lib/mysql
           sudo rm -rf /var/lib/gems
-          sudo rm -rf /usr/local/aws-sam-cli
-          sudo rm -rf /usr/src/linux-azure-*
+          sudo rm -rf /usr/src/*-azure-*
+          sudo rm -rf /usr/share/*
           df -h
           sudo du --max-depth=3 / | sort -n
 

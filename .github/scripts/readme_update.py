@@ -159,13 +159,14 @@ def process_unclaimed_pkgs(tables, leftpkgs):
     for each in tables["Unclaimed"]:
         currtext = each[2]
         pkg = each[0][each[0].find('[')+1:each[0].find(']')]
+        print(pkg)
+        print(leftpkgs.get(pkg))
         if leftpkgs.get(pkg):
             each[2] = f"Incomplete Bioc dependencies: {', '.join(leftpkgs[pkg])}. {currtext}"
             print("in")
             print(each)
             print(each[2])
         print("out")
-        print("in")
         print(each)
         print(each[2])
         
@@ -189,6 +190,7 @@ def main():
         tartext = add_successful_size_and_url(pkg, status, tarname, containername, runstart, arch)
         tables[status].append([name, status, tartext])
     process_failed_pkgs(tables)
+    print(leftpkgs)
     process_unclaimed_pkgs(tables, leftpkgs)
 
     tables["Failed"] = [x if len(x)>4 else x+["Error unknown"] for x in tables["Failed"]]

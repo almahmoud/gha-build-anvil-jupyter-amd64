@@ -258,6 +258,7 @@ jobs:
       - name: du
         run: |
           sudo du --max-depth=2 / | sort -n
+          df -h
 
       - name: Build package via docker build and extracting files to scratch
         id: dockerbuild

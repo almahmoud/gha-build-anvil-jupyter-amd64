@@ -159,7 +159,8 @@ def process_unclaimed_pkgs(tables, leftpkgs):
     for each in tables["Unclaimed"]:
         currtext = each[2]
         pkg = each[0][each[0].find('[')+1:each[0].find(']')]
-        each[2] = f"Incomplete Bioc dependencies: {', '.join(leftpkgs[pkg])}. {currtext}"
+        if leftpkgs.get(leftpkgs):
+            each[2] = f"Incomplete Bioc dependencies: {', '.join(leftpkgs[pkg])}. {currtext}"
         
 def get_runmeta(filepath):
     """Get timestamp or container name from the start of this run cycle from the given file path"""

@@ -295,7 +295,7 @@ jobs:
           sudo docker images -a
           sudo docker ps -a
           repodir=$(pwd)
-          rm -rf $(repodir)/${{ steps.versions.outputs.library }}
+          rm -rf $repodir/${{ steps.versions.outputs.library }}
           cd /
           tar -xvf ${{ steps.meta.outputs.workspace }}/tmp/image/${{ matrix.pkg }}.tar && rm ${{ steps.meta.outputs.workspace }}/tmp/image/${{ matrix.pkg }}.tar
           #cp -r tmp / || true

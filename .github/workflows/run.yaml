@@ -255,9 +255,8 @@ jobs:
             fi
             mkdir -p /tmp/image
 
-      - name: du
+      - name: Free space check
         run: |
-          sudo du --max-depth=2 / | sort -n
           df -h
 
       - name: Build package via docker build and extracting files to scratch
@@ -284,16 +283,15 @@ jobs:
           sudo rm -rf /var/lib/docker/volumes/buildx* || true
           df -h
 
-      - name: du
-        run: |
-          sudo du --max-depth=2 / | sort -n
-
       - name: Extract files from image and mark failed
         id: pkgbuild
         run: |
           set -x
           sudo docker images -a
-          sudo docker ps -a
+          BUILDKIT_CONTAINER_ID=$(sudo docker ps -a | grep 'buildkit' | awk '{print $1}')
+          sudo docker rm $BUILDKIT_CONTAINER_ID -f || true
+          sudo docker system prune --volumes -f || true
+          sudo docker images prune -f || true
           repodir=$(pwd)
           rm -rf $repodir/${{ steps.versions.outputs.library }}
           cd /

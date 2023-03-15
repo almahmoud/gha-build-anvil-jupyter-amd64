@@ -293,6 +293,7 @@ jobs:
         run: |
           set -x
           sudo docker images -a
+          sudo docker ps -a
           repodir=$(pwd)
           rm -rf $(repodir)/${{ steps.versions.outputs.library }}
           cd /

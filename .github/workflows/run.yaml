@@ -140,9 +140,13 @@ jobs:
           sudo rm -rf /etc/skel/.rustup /home/runner/.rustup /home/runneradmin/.rustup
           sudo rm -rf /usr/lib/llvm-13
           sudo rm -rf /usr/local/julia1.8.5
-          sudo rm -rf /opt/microsoft/msedge
+          sudo rm -rf /opt/microsoft
           sudo rm -rf /usr/lib/llvm-14
           sudo rm -rf /opt/az
+          sudo rm -rf /home/linuxbrew
+          sudo rm -rf /opt/pipx
+          sudo rm -rf /snap/lxd
+          sudo rm -rf /opt/google
           df -h
 
       - name: Maximize build space

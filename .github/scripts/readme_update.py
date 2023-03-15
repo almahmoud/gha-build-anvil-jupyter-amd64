@@ -158,18 +158,11 @@ def process_unclaimed_pkgs(tables, leftpkgs):
     """Add blocking packages"""
     for each in tables["Unclaimed"]:
         currtext = each[2]
-        pkg = each[0][each[0].find('[')+1:each[0].find(']')]
-        print(pkg)
-        print(leftpkgs.get(pkg))
+        pkg = each[0]
+        if "[" in pkg:
+            pkg = each[0][each[0].find('[')+1:each[0].find(']')]
         if leftpkgs.get(pkg):
             each[2] = f"Incomplete Bioc dependencies: {', '.join(leftpkgs[pkg])}. {currtext}"
-            print("in")
-            print(each)
-            print(each[2])
-        print("out")
-        print(each)
-        print(each[2])
-        
         
 def get_runmeta(filepath):
     """Get timestamp or container name from the start of this run cycle from the given file path"""

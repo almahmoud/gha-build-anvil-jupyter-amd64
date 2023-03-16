@@ -43,6 +43,7 @@ def get_pkg_status_and_tarname(pkg):
         if plog.endswith("tar.gz\n"):
             status = "Succeeded"
             tarname = plog.strip()
+    print(pkg)
     print(status)
     print(tarname)
     return status, tarname

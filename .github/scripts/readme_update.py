@@ -206,10 +206,10 @@ def main():
     unclaimed_headers = ["Package", "Status", "Blocked By"]
     succeeded_headers = ["Package", "Status", "Tarball"]
 
-    nonsofttables["NonBiocSoft"] = nonsofttables["Succeeded"]
+    tables["NonBiocSoft"] = nonsofttables["Succeeded"]
     
     with open("README.md", "w") as f:
-        f.write(f"# Summary\n\n{len(tables['Succeeded'])} built packages\n\n{len(tables['Failed'])} failed packages\n\n{len(tables['Unclaimed'])} unclaimed packages\n\n")
+        f.write(f"# Summary\n\n{len(tables['Succeeded'])} Bioconductor sotware binaries built\n\n{len(tables['NonBiocSoft'])} Other dependency binaries built\n\n{len(tables['Failed'])} failed packages\n\n{len(tables['Unclaimed'])} unclaimed packages\n\n")
         f.write(f"\n\n## Failed ({len(tables['Failed'])})\n")
         f.write(tabulate(tables["Failed"], failed_headers, tablefmt="github"))
         f.write(f"\n\n## Unclaimed ({len(tables['Unclaimed'])})\n")

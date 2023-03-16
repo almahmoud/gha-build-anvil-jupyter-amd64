@@ -30,7 +30,7 @@ def get_pkg_name_and_run_info(pkg, container_path_name="rstudio-binaries", runst
             name = f"[{pkg}]({runurl})"
     return name
 
-def get_pkg_status_and_tarname(pkg, name):
+def get_pkg_status_and_tarname(pkg):
     """Gets the status and tar name for a package"""
     status = "Unclaimed"
     tarname = ""
@@ -170,10 +170,12 @@ def get_runmeta(filepath):
         meta = f.read()
     return meta.strip()
 
-def process_pkg_list(tables, pkgs, containername, runstart, arch):
+def process_pkg_list(tables, pkgs, biocpkgs, containername, runstart, arch):
     for pkg in list(pkgs):
-        name = get_pkg_name_and_run_info(pkg, containername, runstart, arch)
-        status, tarname = get_pkg_status_and_tarname(pkg, name)
+        name = pkg
+        if pkg in biocpkgs:
+            name = get_pkg_name_and_run_info(pkg, containername, runstart, arch)
+        status, tarname = get_pkg_status_and_tarname(pkg)
         tartext = add_successful_size_and_url(pkg, status, tarname, containername, runstart, arch)
         tables[status].append([name, status, tartext])
 

@@ -40,6 +40,8 @@ def get_pkg_status_and_tarname(pkg):
     elif exists(f"lists/{pkg}"):
         with open(f"lists/{pkg}", "r") as pf:
             plog = pf.read()
+        print(pkg)
+        print(plog)
         if plog.rstrip().endswith("tar.gz"):
             status = "Succeeded"
             tarname = plog.strip()
@@ -196,7 +198,6 @@ def main():
     process_pkg_list(tables, non_biocsoft_pkgs, biocpkgs, containername, runstart, arch)
 
     process_failed_pkgs(tables)
-    print(leftpkgs)
     process_unclaimed_pkgs(tables, leftpkgs)
 
     tables["Failed"] = [x if len(x)>4 else x+["Error unknown"] for x in tables["Failed"]]

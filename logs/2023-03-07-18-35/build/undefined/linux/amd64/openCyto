@@ -1,0 +1,63 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''openCyto'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'openCyto'
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/openCyto_2.10.1.tar.gz'
+Content type 'application/x-gzip' length 1429288 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+* installing *source* package ‘openCyto’ ...
+** using staged installation
+** libs
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Hungarian.cpp -o Hungarian.o
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c cpp11.cpp -o cpp11.o
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c misc.cpp -o misc.o
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c rlm.cpp -o rlm.o
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c solve_LSAP.cpp -o solve_LSAP.o
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c unlockNamespace.cpp -o unlockNamespace.o
+g++ -std=gnu++17 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o openCyto.so Hungarian.o cpp11.o misc.o rlm.o solve_LSAP.o unlockNamespace.o -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-openCyto/00new/openCyto/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘openCyto’ as ‘openCyto_2.10.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (openCyto)
+
+The downloaded source packages are in
+	‘/tmp/RtmpJHPt5r/downloaded_packages’
+Old packages: 'AnnotationDbi', 'BiocFileCache', 'BiocManager', 'BiocParallel',
+  'broom', 'bslib', 'cachem', 'class', 'cli', 'codetools', 'colorspace',
+  'curl', 'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr',
+  'edgeR', 'evaluate', 'fansi', 'fastmap', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh', 'haven',
+  'highr', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'IRkernel', 'isoband',
+  'knitr', 'limma', 'listenv', 'locfit', 'lubridate', 'MASS', 'mgcv', 'nlme',
+  'openssl', 'parallelly', 'pbapply', 'pbdZMQ', 'pkgdown', 'progressr',
+  'purrr', 'ragg', 'Rcpp', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr',
+  'readxl', 'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'sourcetools', 'sp',
+  'spatial', 'spatstat.data', 'spatstat.explore', 'spatstat.geom',
+  'spatstat.random', 'spatstat.sparse', 'spatstat.utils', 'statmod', 'stringi',
+  'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse', 'timechange',
+  'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'yaml'
+
+real	0m29.157s
+user	0m26.851s
+sys	0m1.612s

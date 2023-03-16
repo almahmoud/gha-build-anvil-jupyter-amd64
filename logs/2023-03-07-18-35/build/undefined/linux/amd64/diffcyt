@@ -1,0 +1,171 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''diffcyt'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'diffcyt'
+also installing the dependencies ‘mvtnorm’, ‘TH.data’, ‘sandwich’, ‘multcomp’
+
+trying URL 'https://cloud.r-project.org/src/contrib/mvtnorm_1.1-3.tar.gz'
+Content type 'application/x-gzip' length 166421 bytes (162 KB)
+==================================================
+downloaded 162 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/TH.data_1.1-1.tar.gz'
+Content type 'application/x-gzip' length 8612708 bytes (8.2 MB)
+==================================================
+downloaded 8.2 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/sandwich_3.0-2.tar.gz'
+Content type 'application/x-gzip' length 1356080 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/multcomp_1.4-23.tar.gz'
+Content type 'application/x-gzip' length 614387 bytes (599 KB)
+==================================================
+downloaded 599 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/diffcyt_1.18.0.tar.gz'
+Content type 'application/x-gzip' length 796462 bytes (777 KB)
+==================================================
+downloaded 777 KB
+
+* installing *source* package ‘mvtnorm’ ...
+** package ‘mvtnorm’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c C_FORTRAN_interface.c -o C_FORTRAN_interface.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c miwa.c -o miwa.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c mvt.f -o mvt.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c mvtnorm-init.c -o mvtnorm-init.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c tvpack.f -o tvpack.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o mvtnorm.so C_FORTRAN_interface.o miwa.o mvt.o mvtnorm-init.o tvpack.o -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-mvtnorm/00new/mvtnorm/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘mvtnorm’ as ‘mvtnorm_1.1-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mvtnorm)
+* installing *source* package ‘TH.data’ ...
+** package ‘TH.data’ successfully unpacked and MD5 sums checked
+** using staged installation
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TH.data’ as ‘TH.data_1.1-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TH.data)
+* installing *source* package ‘sandwich’ ...
+** package ‘sandwich’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘sandwich’ as ‘sandwich_3.0-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sandwich)
+* installing *source* package ‘multcomp’ ...
+** package ‘multcomp’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘multcomp’ as ‘multcomp_1.4-23_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (multcomp)
+* installing *source* package ‘diffcyt’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘diffcyt’ as ‘diffcyt_1.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (diffcyt)
+
+The downloaded source packages are in
+	‘/tmp/RtmpOQOg6b/downloaded_packages’
+Old packages: 'AnnotationDbi', 'BiocFileCache', 'BiocManager', 'BiocParallel',
+  'broom', 'bslib', 'cachem', 'class', 'cli', 'codetools', 'colorspace',
+  'curl', 'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr',
+  'edgeR', 'evaluate', 'fansi', 'fastmap', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh', 'haven',
+  'highr', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'IRkernel', 'isoband',
+  'knitr', 'limma', 'listenv', 'locfit', 'lubridate', 'MASS', 'mgcv', 'nlme',
+  'openssl', 'parallelly', 'pbapply', 'pbdZMQ', 'pkgdown', 'progressr',
+  'purrr', 'ragg', 'Rcpp', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr',
+  'readxl', 'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'sourcetools', 'sp',
+  'spatial', 'spatstat.data', 'spatstat.explore', 'spatstat.geom',
+  'spatstat.random', 'spatstat.sparse', 'spatstat.utils', 'statmod', 'stringi',
+  'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse', 'timechange',
+  'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'yaml'
+
+real	0m43.724s
+user	0m39.315s
+sys	0m3.531s
+* installing *source* package ‘HDCytoData’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+snapshotDate(): 2022-10-31
+** testing if installed package can be loaded from final location
+snapshotDate(): 2022-10-31
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘HDCytoData’ as ‘HDCytoData_1.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (HDCytoData)

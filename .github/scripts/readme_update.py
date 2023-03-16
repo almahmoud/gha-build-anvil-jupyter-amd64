@@ -43,6 +43,8 @@ def get_pkg_status_and_tarname(pkg):
         if plog.endswith("tar.gz\n"):
             status = "Succeeded"
             tarname = plog.strip()
+    print(status)
+    print(tarname)
     return status, tarname
 
 def add_successful_size_and_url(pkg, status, tarname, container_path_name="rstudio-binaries", runstart="", arch="linux/amd64"):

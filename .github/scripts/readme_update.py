@@ -34,19 +34,15 @@ def get_pkg_status_and_tarname(pkg):
     """Gets the status and tar name for a package"""
     status = "Unclaimed"
     tarname = ""
-    print(pkg)
-    print(exists(f"lists/{pkg}"))
-    if exists(f"lists/failed/{pkg}"):
+    if exists(f"lists/failed/{pkg.strip()}"):
         status = "Failed"
         tarname = f"https://github.com/{os.environ.get('GITHUB_REPOSITORY', 'almahmoud/gha-build')}/blob/main/lists/failed/{pkg}"
-    elif exists(f"lists/{pkg}"):
-        with open(f"lists/{pkg}", "r") as pf:
-            plog = pf.read()
-        print(pkg)
-        print(plog)
-        if plog.rstrip().endswith("tar.gz"):
+    elif exists(f"lists/{pkg.strip()}"):
+        with open(f"lists/{pkg.strip()}", "r") as pf:
+            plog = pf.read().strip()
+        if plog.endswith("tar.gz"):
             status = "Succeeded"
-            tarname = plog.strip()
+            tarname = plog
     return status, tarname
 
 def add_successful_size_and_url(pkg, status, tarname, container_path_name="rstudio-binaries", runstart="", arch="linux/amd64"):

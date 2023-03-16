@@ -38,7 +38,6 @@ def get_pkg_status_and_tarname(pkg):
         status = "Failed"
         tarname = f"https://github.com/{os.environ.get('GITHUB_REPOSITORY', 'almahmoud/gha-build')}/blob/main/lists/failed/{pkg}"
     elif exists(f"lists/{pkg}"):
-        print(
         with open(f"lists/{pkg}", "r") as pf:
             plog = pf.read()
         if plog.rstrip().endswith("tar.gz"):

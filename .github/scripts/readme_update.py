@@ -191,9 +191,9 @@ def main():
     biocpkgs = get_pkgs_dict("biocdeps.json")
     leftpkgs = get_pkgs_dict("packages.json")
     tables = {"Failed": [], "Unclaimed": [], "Succeeded": []}
-    process_pkg_list(tables, biocpkgs, containername, runstart, arch)
+    process_pkg_list(tables, biocpkgs, biocpkgs, containername, runstart, arch)
     non_biocsoft_pkgs = get_non_bioc_soft_tars(biocpkgs)
-    process_pkg_list(tables, non_biocsoft_pkgs, containername, runstart, arch)
+    process_pkg_list(tables, non_biocsoft_pkgs, biocpkgs, containername, runstart, arch)
 
     process_failed_pkgs(tables)
     print(leftpkgs)

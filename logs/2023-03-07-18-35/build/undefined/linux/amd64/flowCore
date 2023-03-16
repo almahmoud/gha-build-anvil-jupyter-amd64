@@ -1,0 +1,127 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''flowCore'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'flowCore'
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/flowCore_2.10.0.tar.gz'
+Content type 'application/x-gzip' length 7809092 bytes (7.4 MB)
+==================================================
+downloaded 7.4 MB
+
+* installing *source* package ‘flowCore’ ...
+** using staged installation
+** libs
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/cytolib/include' -I'/tmp/tmp/built/RProtoBufLib/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FastLogicle.cpp -o FastLogicle.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/cytolib/include' -I'/tmp/tmp/built/RProtoBufLib/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Hyperlog.cpp -o Hyperlog.o
+Hyperlog.cpp: In constructor ‘Hyperlog::IllegalArgument::IllegalArgument(double)’:
+Hyperlog.cpp:47:47: warning: ‘Illegal argument value ’ directive output truncated writing 23 bytes into a region of size 8 [-Wformat-truncation=]
+   47 |     snprintf(buffer, sizeof(buffer), "Illegal argument value %.17g", value);
+      |                                       ~~~~~~~~^~~~~~~~~~~~~~~
+Hyperlog.cpp:47:38: note: assuming directive output of 23 bytes
+   47 |     snprintf(buffer, sizeof(buffer), "Illegal argument value %.17g", value);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/stdio.h:867,
+                 from /usr/include/c++/9/cstdio:42,
+                 from /usr/share/R/include/R.h:40,
+                 from zeroin.h:14,
+                 from Hyperlog.cpp:4:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35: note: ‘__builtin___snprintf_chk’ output between 25 and 48 bytes into a destination of size 8
+   67 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   68 |        __bos (__s), __fmt, __va_arg_pack ());
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Hyperlog.cpp: In constructor ‘Hyperlog::IllegalArgument::IllegalArgument(int)’:
+Hyperlog.cpp:53:47: warning: ‘Illegal argument value ’ directive output truncated writing 23 bytes into a region of size 8 [-Wformat-truncation=]
+   53 |     snprintf(buffer, sizeof(buffer), "Illegal argument value %d", value);
+      |                                       ~~~~~~~~^~~~~~~~~~~~~~~
+In file included from /usr/include/stdio.h:867,
+                 from /usr/include/c++/9/cstdio:42,
+                 from /usr/share/R/include/R.h:40,
+                 from zeroin.h:14,
+                 from Hyperlog.cpp:4:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:67:35: note: ‘__builtin___snprintf_chk’ output between 25 and 35 bytes into a destination of size 8
+   67 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   68 |        __bos (__s), __fmt, __va_arg_pack ());
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/cytolib/include' -I'/tmp/tmp/built/RProtoBufLib/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Logicle.cpp -o Logicle.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/cytolib/include' -I'/tmp/tmp/built/RProtoBufLib/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c biexponential.cpp -o biexponential.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/cytolib/include' -I'/tmp/tmp/built/RProtoBufLib/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c convertRawBytes.cpp -o convertRawBytes.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/cytolib/include' -I'/tmp/tmp/built/RProtoBufLib/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c cpp11.cpp -o cpp11.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/cytolib/include' -I'/tmp/tmp/built/RProtoBufLib/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fcsTextParse.cpp -o fcsTextParse.o
+In file included from /usr/local/lib/R/site-library/BH/include/boost/bind/mem_fn.hpp:25,
+                 from /usr/local/lib/R/site-library/BH/include/boost/mem_fn.hpp:22,
+                 from /usr/local/lib/R/site-library/BH/include/boost/function/detail/prologue.hpp:18,
+                 from /usr/local/lib/R/site-library/BH/include/boost/function.hpp:30,
+                 from /usr/local/lib/R/site-library/BH/include/boost/algorithm/string/detail/find_iterator.hpp:18,
+                 from /usr/local/lib/R/site-library/BH/include/boost/algorithm/string/find_iterator.hpp:24,
+                 from /usr/local/lib/R/site-library/BH/include/boost/algorithm/string/iter_find.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/algorithm/string/split.hpp:16,
+                 from /usr/local/lib/R/site-library/BH/include/boost/algorithm/string.hpp:23,
+                 from fcsTextParse.cpp:9:
+/usr/local/lib/R/site-library/BH/include/boost/get_pointer.hpp:48:40: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   48 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from /usr/include/c++/9/bits/locale_conv.h:41,
+                 from /usr/include/c++/9/locale:43,
+                 from /usr/local/lib/R/site-library/BH/include/boost/algorithm/string/classification.hpp:15,
+                 from /usr/local/lib/R/site-library/BH/include/boost/algorithm/string/trim.hpp:23,
+                 from /usr/local/lib/R/site-library/BH/include/boost/algorithm/string.hpp:19,
+                 from fcsTextParse.cpp:9:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/cytolib/include' -I'/tmp/tmp/built/RProtoBufLib/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c hyperlogTransform.cpp -o hyperlogTransform.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/cytolib/include' -I'/tmp/tmp/built/RProtoBufLib/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c inPolygon.cpp -o inPolygon.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/cytolib/include' -I'/tmp/tmp/built/RProtoBufLib/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c inPolytope.cpp -o inPolytope.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/cytolib/include' -I'/tmp/tmp/built/RProtoBufLib/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c logicleTransform.cpp -o logicleTransform.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/cytolib/include' -I'/tmp/tmp/built/RProtoBufLib/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c poly_centroid.cpp -o poly_centroid.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/cytolib/include' -I'/tmp/tmp/built/RProtoBufLib/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c sortBytes.cpp -o sortBytes.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/cytolib/include' -I'/tmp/tmp/built/RProtoBufLib/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c uint2double.cpp -o uint2double.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/cytolib/include' -I'/tmp/tmp/built/RProtoBufLib/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c zeroin.cpp -o zeroin.o
+g++ -std=gnu++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o flowCore.so FastLogicle.o Hyperlog.o Logicle.o biexponential.o convertRawBytes.o cpp11.o fcsTextParse.o hyperlogTransform.o inPolygon.o inPolytope.o logicleTransform.o poly_centroid.o sortBytes.o uint2double.o zeroin.o /tmp/tmp/built/cytolib/lib/libcytolib.a -L/usr/lib/R/lib -lR
+if [ `uname -s` = 'Darwin' ]; then install_name_tool -change /usr/local/clang4/lib/libc++.1.dylib /usr/lib/libc++.1.dylib flowCore.so; fi
+installing to /tmp/tmp/built/00LOCK-flowCore/00new/flowCore/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘flowCore’ as ‘flowCore_2.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (flowCore)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp0PFXQ3/downloaded_packages’
+Old packages: 'AnnotationDbi', 'BiocFileCache', 'BiocManager', 'BiocParallel',
+  'broom', 'bslib', 'cachem', 'class', 'cli', 'codetools', 'colorspace',
+  'curl', 'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr',
+  'edgeR', 'evaluate', 'fansi', 'fastmap', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh', 'haven',
+  'highr', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'IRkernel', 'isoband',
+  'knitr', 'limma', 'listenv', 'locfit', 'lubridate', 'MASS', 'mgcv', 'nlme',
+  'openssl', 'parallelly', 'pbapply', 'pbdZMQ', 'pkgdown', 'progressr',
+  'purrr', 'ragg', 'Rcpp', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr',
+  'readxl', 'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'sourcetools', 'sp',
+  'spatial', 'spatstat.data', 'spatstat.explore', 'spatstat.geom',
+  'spatstat.random', 'spatstat.sparse', 'spatstat.utils', 'statmod', 'stringi',
+  'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse', 'timechange',
+  'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'yaml'
+
+real	0m51.587s
+user	0m47.659s
+sys	0m3.313s

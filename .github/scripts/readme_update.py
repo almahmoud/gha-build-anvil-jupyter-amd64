@@ -34,6 +34,8 @@ def get_pkg_status_and_tarname(pkg):
     """Gets the status and tar name for a package"""
     status = "Unclaimed"
     tarname = ""
+    print(pkg)
+    print(exists(f"lists/{pkg}"))
     if exists(f"lists/failed/{pkg}"):
         status = "Failed"
         tarname = f"https://github.com/{os.environ.get('GITHUB_REPOSITORY', 'almahmoud/gha-build')}/blob/main/lists/failed/{pkg}"

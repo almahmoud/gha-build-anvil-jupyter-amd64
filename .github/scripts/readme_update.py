@@ -38,14 +38,12 @@ def get_pkg_status_and_tarname(pkg):
         status = "Failed"
         tarname = f"https://github.com/{os.environ.get('GITHUB_REPOSITORY', 'almahmoud/gha-build')}/blob/main/lists/failed/{pkg}"
     elif exists(f"lists/{pkg}"):
+        print(
         with open(f"lists/{pkg}", "r") as pf:
             plog = pf.read()
-        if plog.endswith("tar.gz\n"):
+        if plog.rstrip().endswith("tar.gz"):
             status = "Succeeded"
             tarname = plog.strip()
-    print(pkg)
-    print(status)
-    print(tarname)
     return status, tarname
 
 def add_successful_size_and_url(pkg, status, tarname, container_path_name="rstudio-binaries", runstart="", arch="linux/amd64"):

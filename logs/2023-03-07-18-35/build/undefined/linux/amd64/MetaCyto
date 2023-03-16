@@ -1,0 +1,153 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''MetaCyto'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'MetaCyto'
+also installing the dependencies ‘metadat’, ‘mathjaxr’, ‘fastcluster’, ‘metafor’
+
+trying URL 'https://cloud.r-project.org/src/contrib/metadat_1.2-0.tar.gz'
+Content type 'application/x-gzip' length 964808 bytes (942 KB)
+==================================================
+downloaded 942 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/mathjaxr_1.6-0.tar.gz'
+Content type 'application/x-gzip' length 1050221 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/fastcluster_1.2.3.tar.gz'
+Content type 'application/x-gzip' length 207483 bytes (202 KB)
+==================================================
+downloaded 202 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/metafor_3.8-1.tar.gz'
+Content type 'application/x-gzip' length 3429473 bytes (3.3 MB)
+==================================================
+downloaded 3.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/MetaCyto_1.20.0.tar.gz'
+Content type 'application/x-gzip' length 996176 bytes (972 KB)
+==================================================
+downloaded 972 KB
+
+* installing *source* package ‘mathjaxr’ ...
+** package ‘mathjaxr’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+** arch - 
+# install.libs.R will minify the Javascript if js is installed
+installing via 'install.libs.R' to /tmp/tmp/built/00LOCK-mathjaxr/00new/mathjaxr
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘mathjaxr’ as ‘mathjaxr_1.6-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mathjaxr)
+* installing *source* package ‘fastcluster’ ...
+** package ‘fastcluster’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fastcluster_R.cpp -o fastcluster_R.o
+In file included from fastcluster_R.cpp:24:
+fastcluster.cpp:53:35: note: #pragma message: Use fenv header.
+   53 | #pragma message("Use fenv header.")
+      |                                   ^
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o fastcluster.so fastcluster_R.o -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-fastcluster/00new/fastcluster/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘fastcluster’ as ‘fastcluster_1.2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fastcluster)
+* installing *source* package ‘metadat’ ...
+** package ‘metadat’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘metadat’ as ‘metadat_1.2-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (metadat)
+* installing *source* package ‘metafor’ ...
+** package ‘metafor’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘metafor’ as ‘metafor_3.8-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (metafor)
+* installing *source* package ‘MetaCyto’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MetaCyto’ as ‘MetaCyto_1.20.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MetaCyto)
+
+The downloaded source packages are in
+	‘/tmp/RtmpKlAfAG/downloaded_packages’
+Old packages: 'AnnotationDbi', 'BiocFileCache', 'BiocManager', 'BiocParallel',
+  'broom', 'bslib', 'cachem', 'class', 'cli', 'codetools', 'colorspace',
+  'curl', 'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr',
+  'edgeR', 'evaluate', 'fansi', 'fastmap', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh', 'haven',
+  'highr', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'IRkernel', 'isoband',
+  'knitr', 'limma', 'listenv', 'locfit', 'lubridate', 'MASS', 'mgcv', 'nlme',
+  'openssl', 'parallelly', 'pbapply', 'pbdZMQ', 'pkgdown', 'progressr',
+  'purrr', 'ragg', 'Rcpp', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr',
+  'readxl', 'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'sourcetools', 'sp',
+  'spatial', 'spatstat.data', 'spatstat.explore', 'spatstat.geom',
+  'spatstat.random', 'spatstat.sparse', 'spatstat.utils', 'statmod', 'stringi',
+  'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse', 'timechange',
+  'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'yaml'
+
+real	1m2.192s
+user	0m58.448s
+sys	0m3.760s

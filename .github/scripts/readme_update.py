@@ -170,18 +170,29 @@ def get_runmeta(filepath):
         meta = f.read()
     return meta.strip()
 
-def main():
-    runstart = get_runmeta("runstarttime")
-    containername = get_runmeta("containername")
-    arch = get_runmeta("arch")
-    pkgs = get_pkgs_dict("biocdeps.json")
-    leftpkgs = get_pkgs_dict("packages.json")
-    tables = {"Failed": [], "Unclaimed": [], "Succeeded": []}
+def process_pkg_list(tables, pkgs, containername, runstart, arch):
     for pkg in list(pkgs):
         name = get_pkg_name_and_run_info(pkg, containername, runstart, arch)
         status, tarname = get_pkg_status_and_tarname(pkg, name)
         tartext = add_successful_size_and_url(pkg, status, tarname, containername, runstart, arch)
         tables[status].append([name, status, tartext])
+
+def get_non_bioc_soft_tars(biocpkgs):
+    with open("/tmp/alltars", "r") as f:
+        tars = f.readlines()
+    return [t for t in tars if t not in biocpkgs]
+
+def main():
+    runstart = get_runmeta("runstarttime")
+    containername = get_runmeta("containername")
+    arch = get_runmeta("arch")
+    biocpkgs = get_pkgs_dict("biocdeps.json")
+    leftpkgs = get_pkgs_dict("packages.json")
+    tables = {"Failed": [], "Unclaimed": [], "Succeeded": []}
+    process_pkg_list(tables, biocpkgs, containername, runstart, arch)
+    non_biocsoft_pkgs = get_non_bioc_soft_tars(biocpkgs)
+    process_pkg_list(tables, non_biocsoft_pkgs, containername, runstart, arch)
+
     process_failed_pkgs(tables)
     print(leftpkgs)
     process_unclaimed_pkgs(tables, leftpkgs)

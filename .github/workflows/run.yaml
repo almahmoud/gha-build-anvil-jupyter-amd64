@@ -188,7 +188,7 @@ jobs:
       - name: Maximize build space
         uses: easimon/maximize-build-space@v6
         with:
-          root-reserve-mb: 69632
+          root-reserve-mb: 71680
           swap-size-mb: 1024
           overprovision-lvm: true
 

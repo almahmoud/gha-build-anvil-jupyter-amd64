@@ -23,11 +23,10 @@ jobs:
           kubectl version
           helm version
           helm repo add wunderio https://storage.googleapis.com/charts.wdr.io
-          echo "$RCLONE_CSI_SECRET" > rclone-secret.yaml
+          echo "$RCLONE_VALS" > rclone-vals.yaml
           kubectl create ns rclone
-          sed -i "s#HOLDERPATH#gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/binaries#g" rclone-secret.yaml
-          kubectl -n rclone apply -f rclone-secret.yaml
-          helm upgrade --install --create-namespace -n rclone wunderio/csi-rclone --wait
+          sed -i "s#HOLDERPATH#gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/binaries#g" rclone-vals.yaml
+          helm upgrade --install --create-namespace -n rclone rclone wunderio/csi-rclone -f rclone-vals.yaml --wait
           kubectl -n rclone apply -f .github/scripts/k8s/k8s-resources.yaml
           while [[ $(kubectl get pods package-file -c sleep -o 'jsonpath={..status.conditions[?(@.type=="Ready")].status}') != "True" ]]; do
             sleep 1
@@ -37,7 +36,7 @@ jobs:
           kubectl cp -c sleep -n rclone package-file:/mnt/results/PACKAGES.rds /tmp/PACKAGES.rds
           kubectl cp -c sleep -n rclone package-file:/mnt/results/PACKAGES /tmp/PACKAGES
         env:
-          RCLONE_CSI_SECRET: ${{secrets.RCLONE_CSI_SECRET}}
+          RCLONE_VALS: ${{secrets.RCLONE_VALS}}
 
       - name: Install rclone & add rclone conf file
         uses: nick-fields/retry@v2

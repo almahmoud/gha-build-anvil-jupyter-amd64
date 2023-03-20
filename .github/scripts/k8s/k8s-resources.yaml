@@ -16,25 +16,25 @@ kind: Pod
 metadata:
   name: package-file
 spec:
-  initContainers:
-  - image: ghcr.io/almahmoud/gha-build-anvil-jupyter-amd64:linux-amd64
-    imagePullPolicy: Always
-    name: copy-packages
-    volumeMounts:
-      - mountPath: /mnt/pkgs
-        name: data-rclone
-      - mountPath: /mnt/results
-        name: results
-    command: ['/bin/sh']
-    args:
-    - "-c"
-    - Rscript -e 'tools::write_PACKAGES("/mnt/pkgs", addFiles = TRUE, verbose = TRUE)' && cp /mnt/pkgs/PACKAGES* /mnt/results/
   volumes:
   - name: data
     persistentVolumeClaim:
       claimName: data-rclone
   - name: results
     emptyDir: {}
+  initContainers:
+  - image: ghcr.io/almahmoud/gha-build-anvil-jupyter-amd64:linux-amd64
+    imagePullPolicy: Always
+    name: copy-packages
+    volumeMounts:
+      - mountPath: /mnt/pkgs
+        name: data
+      - mountPath: /mnt/results
+        name: results
+    command: ['/bin/sh']
+    args:
+    - "-c"
+    - Rscript -e 'tools::write_PACKAGES("/mnt/pkgs", addFiles = TRUE, verbose = TRUE)' && cp /mnt/pkgs/PACKAGES* /mnt/results/
   containers:
   - image: ghcr.io/almahmoud/gha-build-anvil-jupyter-amd64:linux-amd64
     imagePullPolicy: IfNotPresent
@@ -42,11 +42,8 @@ spec:
     volumeMounts:
       - mountPath: /mnt/results
         name: results
-    command: /bin/sh
+    command: ['/bin/sh']
     args:
     - "-c"
     - sleep 3000
-  volumes:
-  - name: results
-    emptyDir: {}
 ---

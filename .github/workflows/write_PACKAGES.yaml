@@ -120,7 +120,7 @@ jobs:
             kubectl logs -n rclone package-file -c copy-packages || true > copy.log
             if [ -f "copy.log" ]; then
               if [ ! -f "oldcopy.log" ]; then cat copy.log && cp copy.log oldcopy.log; fi
-              grep -A 99999999999 "$(tail -n 1 oldcopy.log)" copy.log
+              grep -A 99999999999 "$(tail -n 1 oldcopy.log)" copy.log || true
               cp copy.log oldcopy.log
             fi
             kubectl logs -n rclone package-file -c sleep || true

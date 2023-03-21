@@ -92,6 +92,7 @@ jobs:
 
       - name: Verify function of k8s, kubectl, and helm
         run: |
+          set -x
           kubectl version
           helm version
           
@@ -114,14 +115,10 @@ jobs:
           helm upgrade --install --create-namespace -n rclone rclone wunderio/csi-rclone -f rclone-vals.yaml --wait
           kubectl -n rclone apply -f .github/scripts/k8s/k8s-resources.yaml
           while [[ $(kubectl get pods -n rclone package-file --no-headers -o custom-columns=":status.phase") != "Ready" ]]; do
-            echo $(kubectl get pods -n rclone package-file --no-headers -o custom-columns=":status.phase")
             kubectl get events -n rclone
-            kubectl get all -n rclone
-            echo "\n\n\n\n\n\n"
-            kubectl logs -n rclone pod/csi-controller-rclone-0 -c rclone
-            echo "\n\n\n\n\n\n"
-            kubectl get pods -n rclone package-file -o yaml
-            sleep 1
+            echo $(kubectl get pods -n rclone package-file --no-headers -o custom-columns=":status.phase")
+            kubectl logs -n rclone package-file -c copy-packages
+            sleep 10
           done
           mkdir -p /tmp
           kubectl cp -c sleep -n rclone package-file:/mnt/results/PACKAGES.gz PACKAGES.gz

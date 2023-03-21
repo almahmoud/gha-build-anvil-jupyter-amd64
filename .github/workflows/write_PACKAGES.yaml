@@ -117,10 +117,11 @@ jobs:
           while [[ $(kubectl get pods -n rclone package-file --no-headers -o custom-columns=":status.phase") != "Running" ]]; do
              
             kubectl get events -n rclone > events.log
-            if [ ! -f "oldevents.log" ]; then cat events.log && cp events.log oldevents.log; fi
+            awk '{$1=""}1' events.log > newevents.log
+            if [ ! -f "oldevents.log" ]; then cat events.log && cp newevents.log oldevents.log; fi
             # If different, cat new events
-            cmp --silent oldevents.log events.log || cat events.log
-            cp events.log oldevents.log
+            cmp --silent oldevents.log newevents.log || cat events.log
+            cp newevents.log oldevents.log
             
             kubectl logs -n rclone package-file -c copy-packages > copy.log || true
             if [ -f "copy.log" ]; then

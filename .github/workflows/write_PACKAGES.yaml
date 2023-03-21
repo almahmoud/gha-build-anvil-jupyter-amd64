@@ -115,7 +115,13 @@ jobs:
           helm upgrade --install --create-namespace -n rclone rclone wunderio/csi-rclone -f rclone-vals.yaml --wait
           kubectl -n rclone apply -f .github/scripts/k8s/k8s-resources.yaml
           while [[ $(kubectl get pods -n rclone package-file --no-headers -o custom-columns=":status.phase") != "Running" ]]; do
-            kubectl get events -n rclone
+             
+            kubectl get events -n rclone > events.log
+            if [ ! -f "oldevents.log" ]; then cat events.log && cp events.log oldevents.log; fi
+            # If different, cat new events
+            cmp --silent oldevents.log events.log || cat events.log
+            cp events.log oldevents.log
+            
             kubectl logs -n rclone package-file -c copy-packages > copy.log || true
             if [ -f "copy.log" ]; then
               if [ ! -f "oldcopy.log" ]; then cat copy.log && cp copy.log oldcopy.log; fi

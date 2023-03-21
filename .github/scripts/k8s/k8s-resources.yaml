@@ -52,7 +52,7 @@ spec:
     command: ['/bin/sh']
     args:
     - "-c"
-    - set -x; ls /mnt/pkgs; Rscript -e 'tools::write_PACKAGES("/mnt/pkgs", addFiles = TRUE, verbose = TRUE)' && cp /mnt/pkgs/PACKAGES* /mnt/results/
+    - set -x; Rscript -e 'tools::write_PACKAGES("/mnt/pkgs", addFiles = TRUE, verbose = TRUE)' && cp /mnt/pkgs/PACKAGES* /mnt/results/
   containers:
   - image: ghcr.io/almahmoud/gha-build-anvil-jupyter-amd64:linux-amd64
     imagePullPolicy: IfNotPresent

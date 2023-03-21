@@ -117,14 +117,17 @@ jobs:
           while [[ $(kubectl get pods -n rclone package-file --no-headers -o custom-columns=":status.phase") != "Ready" ]]; do
             kubectl get events -n rclone
             echo $(kubectl get pods -n rclone package-file --no-headers -o custom-columns=":status.phase")
-            kubectl logs -n rclone package-file -c copy-packages || true
+            kubectl logs -n rclone package-file -c copy-packages || true > copy.log
+            if [ ! -f "oldcopy.log" ]; then cat copy.log && cp copy.log oldcopy.log; fi
+            grep -A 99999999999 "$(tail -n 1 oldcopy.log)" copy.log
+            cp copy.log oldcopy.log
             kubectl logs -n rclone package-file -c sleep || true
             sleep 10
           done
           mkdir -p /tmp
-          kubectl cp -c sleep -n rclone package-file:/mnt/results/PACKAGES.gz PACKAGES.gz
-          kubectl cp -c sleep -n rclone package-file:/mnt/results/PACKAGES.rds PACKAGES.rds
-          kubectl cp -c sleep -n rclone package-file:/mnt/results/PACKAGES PACKAGES
+          kubectl cp -c sleep -n rclone package-file:/mnt/results/PACKAGES.gz /tmp/PACKAGES.gz
+          kubectl cp -c sleep -n rclone package-file:/mnt/results/PACKAGES.rds /tmp/PACKAGES.rds
+          kubectl cp -c sleep -n rclone package-file:/mnt/results/PACKAGES /tmp/PACKAGES
         env:
           RCLONE_VALS: ${{secrets.RCLONE_VALS}}
 
@@ -146,7 +149,25 @@ jobs:
                 exit 1;
             fi
 
+      - name: Add write_packages log
+        uses: nick-fields/retry@v2
+        with:
+          timeout_minutes: 10
+          max_attempts: 50
+          shell: bash
+          command: |
+            if [ ! -s /tmp/write_PACKAGES ]; then exit 0; fi
+            set -x
+            git config --global --add safe.directory "$GITHUB_WORKSPACE"
+            git pull origin main || git reset --hard origin/main
+            cp /tmp/PACKAGES* logs/$(cat runstarttime)/
+            git config user.name github-actions
+            git config user.email github-actions@github.com
+            git add logs
+            git commit -m "Add PACKAGES files"
+            git push
+
       - run: |
-          rclone copyto PACKAGES js2:/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/PACKAGES -vvvvv
-          rclone copyto PACKAGES.gz js2:/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/PACKAGES.gz -vvvvv
-          rclone copyto PACKAGES.rds js2:/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/PACKAGES.rds -vvvvv
+          rclone copyto /tmp/PACKAGES js2:/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/PACKAGES -vvvvv
+          rclone copyto /tmp/PACKAGES.gz js2:/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/PACKAGES.gz -vvvvv
+          rclone copyto /tmp/PACKAGES.rds js2:/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/PACKAGES.rds -vvvvv

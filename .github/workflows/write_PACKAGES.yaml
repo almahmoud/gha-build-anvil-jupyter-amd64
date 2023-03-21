@@ -32,6 +32,9 @@ jobs:
             echo $(kubectl get pods -n rclone package-file --no-headers -o custom-columns=":status.phase")
             kubectl get events -n rclone
             kubectl get all -n rclone
+            echo "\n\n\n\n\n\n"
+            kubectl logs -n rclone pod/csi-controller-rclone-0 -c rclone
+            echo "\n\n\n\n\n\n"
             kubectl get pods -n rclone package-file -o yaml
             sleep 1
           done

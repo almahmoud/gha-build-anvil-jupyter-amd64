@@ -36,7 +36,7 @@ jobs:
           EOF
           
           kubectl create ns rclone
-          helm install -n rclone static ./helm/provisioner -f local.yaml
+          helm install -n rclone static ./sig-storage-local-static-provisioner/helm/provisioner -f local.yaml
   
           helm repo add wunderio https://storage.googleapis.com/charts.wdr.io
           echo "$RCLONE_VALS" > rclone-vals.yaml

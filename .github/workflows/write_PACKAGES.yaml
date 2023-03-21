@@ -118,9 +118,11 @@ jobs:
             kubectl get events -n rclone
             echo $(kubectl get pods -n rclone package-file --no-headers -o custom-columns=":status.phase")
             kubectl logs -n rclone package-file -c copy-packages || true > copy.log
-            if [ ! -f "oldcopy.log" ]; then cat copy.log && cp copy.log oldcopy.log; fi
-            grep -A 99999999999 "$(tail -n 1 oldcopy.log)" copy.log
-            cp copy.log oldcopy.log
+            if [ -f "copy.log" ]; then
+              if [ ! -f "oldcopy.log" ]; then cat copy.log && cp copy.log oldcopy.log; fi
+              grep -A 99999999999 "$(tail -n 1 oldcopy.log)" copy.log
+              cp copy.log oldcopy.log
+            fi
             kubectl logs -n rclone package-file -c sleep || true
             sleep 10
           done

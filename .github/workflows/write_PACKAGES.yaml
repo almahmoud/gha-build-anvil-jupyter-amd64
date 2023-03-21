@@ -30,6 +30,9 @@ jobs:
           kubectl -n rclone apply -f .github/scripts/k8s/k8s-resources.yaml
           while [[ $(kubectl get pods -n rclone package-file --no-headers -o custom-columns=":status.phase") != "Ready" ]]; do
             echo $(kubectl get pods -n rclone package-file --no-headers -o custom-columns=":status.phase")
+            kubectl get events -n rclone
+            kubectl get all -n rclone
+            kubectl get pods -n rclone package-file -o yaml
             sleep 1
           done
           mkdir -p /tmp

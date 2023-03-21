@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - uses: actions/checkout@v3
       - name: Free space
         run: |
           df -h
@@ -77,6 +76,8 @@ jobs:
           root-reserve-mb: 71680
           swap-size-mb: 1024
           overprovision-lvm: true
+
+      - uses: actions/checkout@v3
 
       - uses: actions/setup-python@v4
         with:

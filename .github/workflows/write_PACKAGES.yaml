@@ -117,7 +117,8 @@ jobs:
           while [[ $(kubectl get pods -n rclone package-file --no-headers -o custom-columns=":status.phase") != "Ready" ]]; do
             kubectl get events -n rclone
             echo $(kubectl get pods -n rclone package-file --no-headers -o custom-columns=":status.phase")
-            kubectl logs -n rclone package-file -c copy-packages
+            kubectl logs -n rclone package-file -c copy-packages || true
+            kubectl logs -n rclone package-file -c sleep || true
             sleep 10
           done
           mkdir -p /tmp

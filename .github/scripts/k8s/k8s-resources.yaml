@@ -1,3 +1,18 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data-rclone
+  labels:
+    name: data-rclone
+spec:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 50Gi
+  storageClassName: rclone
+  csi:
+    driver: csi-rclone
+    volumeHandle: data
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -8,8 +23,11 @@ spec:
   - ReadWriteMany
   resources:
     requests:
-      storage: 100Gi
+      storage: 50Gi
   storageClassName: rclone
+  selector:
+    matchLabels:
+      name: data-rclone
 ---
 apiVersion: v1
 kind: Pod

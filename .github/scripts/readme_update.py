@@ -50,8 +50,8 @@ def add_successful_size_and_url(pkg, status, tarname, container_path_name="rstud
     tartext = tarname
     if status == "Succeeded":
         sizeinfo = ""
-        if exists(f"logs/{runstart}/sizes/{container_path_name}/{arch}/binaries/src/contrib/{pkg}"):
-            with open(f"logs/{runstart}/sizes/{container_path_name}/{arch}/binaries/src/contrib/{pkg}", "r") as sf:
+        if exists(f"logs/{runstart}/sizes/{container_path_name}/{arch}/binaries/{pkg}"):
+            with open(f"logs/{runstart}/sizes/{container_path_name}/{arch}/binaries/{pkg}", "r") as sf:
                 sizeinfo = sf.read()
         if sizeinfo:
             size_b = int(sizeinfo.split(" ")[0])

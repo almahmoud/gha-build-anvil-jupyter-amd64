@@ -58,7 +58,7 @@ jobs:
         id: dockerbuild
         uses: docker/build-push-action@v3
         with:
-          file: .github/scripts/test.Dockerfile
+          file: test.Dockerfile
           push: false
           load: false
           outputs: type=tar,dest=/tmp/image/bioc_test.tar

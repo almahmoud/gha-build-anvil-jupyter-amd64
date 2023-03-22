@@ -52,41 +52,38 @@ jobs:
           platforms: ${{ steps.variables.outputs.platform }}
 
       - name: Copy old run
-        run: |
-          set -x
-          STARTTIME="$(cat runstarttime)" || true
-          LOGDIR="logs/$(cat runstarttime)" || true
-          mv runstarttime "$LOGDIR"/ || true
-          mv uniquedeps.json "$LOGDIR"/ || true
-          mv packages.json "$LOGDIR"/ || true
-          mv biocdeps.json "$LOGDIR"/ || true
-          mv tobuild.txt "$LOGDIR"/ || true
-          mv lists "$LOGDIR"/lists || true
+        uses: nick-fields/retry@v2
+        with:
+          timeout_minutes: 10
+          max_attempts: 50
+          shell: bash
+          command: |
+            set -x
+            git config --global --add safe.directory "$GITHUB_WORKSPACE"
+            git pull origin main || git reset --hard origin/main
+            STARTTIME="$(cat runstarttime)" || true
+            LOGDIR="logs/$(cat runstarttime)" || true
+            mv runstarttime "$LOGDIR"/ || true
+            mv uniquedeps.json "$LOGDIR"/ || true
+            mv packages.json "$LOGDIR"/ || true
+            mv biocdeps.json "$LOGDIR"/ || true
+            mv tobuild.txt "$LOGDIR"/ || true
+            mv lists "$LOGDIR"/lists || true
 
-          repodir=$(pwd)
-          mkdir -p bioc_build
+            repodir=$(pwd)
+            mkdir -p bioc_build
 
-          (cd /tmp/image && tar -xvf bioc_build.tar && cp -r tmp/bioc_build $repodir/)
+            (cd /tmp/image && tar -xvf bioc_build.tar && cp -r tmp/bioc_build $repodir/)
 
-          mv bioc_build/uniquedeps.json ./
-          mv bioc_build/biocdeps.json ./
-          cp biocdeps.json packages.json
-          cp bioc_build/containername containername
+            mv bioc_build/uniquedeps.json ./
+            mv bioc_build/biocdeps.json ./
+            cp biocdeps.json packages.json
+            cp bioc_build/containername containername
 
-          # ROOTCONTAINER="${{ steps.variables.outputs.rootcontainer }}"
-
-          # docker container run -ti --rm regclient/regctl:latest image get-file $ROOTCONTAINER /tmp/bioc_build/arch > bioc_build/arch
-          # docker container run -ti --rm regclient/regctl:latest image get-file $ROOTCONTAINER /tmp/bioc_build/os > bioc_build/os
-          # docker container run -ti --rm regclient/regctl:latest image get-file $ROOTCONTAINER /tmp/bioc_build/library > bioc_build/library
-          # docker container run -ti --rm regclient/regctl:latest image get-file $ROOTCONTAINER /tmp/bioc_build/bioc > bioc_build/bioc
-          # docker container run -ti --rm regclient/regctl:latest image get-file $ROOTCONTAINER /tmp/bioc_build/r > bioc_build/r
-          # docker container run -ti --rm regclient/regctl:latest image get-file $ROOTCONTAINER /tmp/bioc_build/uniquedeps.json > uniquedeps.json
-          # docker container run -ti --rm regclient/regctl:latest image get-file $ROOTCONTAINER /tmp/bioc_build/biocdeps.json > biocdeps.json
-          
-          bash .github/scripts/reset_packages.sh
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"
-          git config user.email "action@github.com"
-          git config user.name "GitHub Action"
-          git add .
-          git commit -m "Reset packages"
-          git push
+            bash .github/scripts/reset_packages.sh
+            git config --global --add safe.directory "$GITHUB_WORKSPACE"
+            git config user.email "action@github.com"
+            git config user.name "GitHub Action"
+            git add .
+            git commit -m "Reset packages $STARTTIME"
+            git push

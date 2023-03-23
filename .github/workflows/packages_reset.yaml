@@ -101,7 +101,7 @@ jobs:
           COPY containername /tmp/containername
           COPY runstarttime /tmp/runstarttime
           COPY arch /tmp/arch
-          RUN mkdir library && cat /tmp/randompkgs | xargs -i bash -c "curl -o library/{}.tar.gz https://js2.jetstream-cloud.org:8001/swift/v1/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/libraries/{}.tar.gz && (cd library && tar -xvf {}.tar.gz && rm {}.tar.gz && rm -rf {}) && Rscript -e \"p <- .libPaths(); p <- c('$(pwd)/library', p); .libPaths(p); BiocManager::install('{}', site_repository = 'https://js2.jetstream-cloud.org:8001/swift/v1/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/binaries/')\""
+          RUN mkdir library && cat /tmp/randompkgs | xargs -i bash -c "curl -o library/{}.tar.gz https://js2.jetstream-cloud.org:8001/swift/v1/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/libraries/{}.tar.gz && (cd library && tar -xvf {}.tar.gz && rm {}.tar.gz && rm -rf built/{}) && Rscript -e \"p <- .libPaths(); p <- c('$(pwd)/library/built', p); .libPaths(p); BiocManager::install('{}', site_repository = 'https://js2.jetstream-cloud.org:8001/swift/v1/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/binaries/')\""
           EOF
 
       - name: Set up QEMU

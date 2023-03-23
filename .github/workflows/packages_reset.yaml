@@ -88,7 +88,7 @@ jobs:
           if [ ! -f "logs/$(cat runstarttime)/PACKAGES" ]; then exit 1; fi
           echo platform=$(cat PLATFORM.bioc) >> $GITHUB_OUTPUT
           echo testcontainer=$(cat ROOT_CONTAINER.bioc | sed "s#:#:test-#g") >> $GITHUB_OUTPUT
-          mkdir -p /tmp/image
+          mkdir -p /tmp
 
           # Pick 5 random built packages to test installing
           grep -irl "tar.gz$" | awk -F'/' '{print $NF}' > /tmp/alltars
@@ -96,12 +96,12 @@ jobs:
           comm -12 <(sort /tmp/alltars) <(sort /tmp/allbioc) > /tmp/builtbioc
           shuf -n 5 /tmp/builtbioc > randompkgs
           cat << EOF > test.Dockerfile
-          FROM $(cat CONTAINER_BASE_IMAGE.bioc)
+          FROM $(cat CONTAINER_BASE_IMAGE.bioc) as test
           COPY randompkgs /tmp/randompkgs
           COPY containername /tmp/containername
           COPY runstarttime /tmp/runstarttime
           COPY arch /tmp/arch
-          RUN mkdir -p library && cat /tmp/randompkgs | xargs -i bash -c "curl -o library/{}.tar.gz https://js2.jetstream-cloud.org:8001/swift/v1/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/libraries/{}.tar.gz && (cd library && tar -xvf {}.tar.gz && rm {}.tar.gz && rm -rf {}) && Rscript -e \"p <- .libPaths(); p <- c('$(pwd)/library', p); .libPaths(p); BiocManager::install('{}', site_repository = 'https://js2.jetstream-cloud.org:8001/swift/v1/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/binaries/')\""
+          RUN mkdir library && cat /tmp/randompkgs | xargs -i bash -c "curl -o library/{}.tar.gz https://js2.jetstream-cloud.org:8001/swift/v1/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/libraries/{}.tar.gz && (cd library && tar -xvf {}.tar.gz && rm {}.tar.gz && rm -rf {}) && Rscript -e \"p <- .libPaths(); p <- c('$(pwd)/library', p); .libPaths(p); BiocManager::install('{}', site_repository = 'https://js2.jetstream-cloud.org:8001/swift/v1/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/binaries/')\""
           EOF
 
       - name: Set up QEMU
@@ -131,7 +131,6 @@ jobs:
           file: test.Dockerfile
           push: false
           load: false
-          outputs: type=tar,dest=/tmp/image/bioc_test.tar
           context: .
           tags: ${{ steps.variables.outputs.testcontainer }}
           platforms: ${{ steps.variables.outputs.platform }}
@@ -181,6 +180,7 @@ jobs:
           file: .github/scripts/root.Dockerfile
           push: false
           load: false
+          outputs: type=tar,dest=/tmp/image/bioc_build.tar
           context: .
           cache-to: type=gha,mode=max,scope=${{ steps.meta.outputs.image }}
           tags: ${{ steps.variables.outputs.rootcontainer }}

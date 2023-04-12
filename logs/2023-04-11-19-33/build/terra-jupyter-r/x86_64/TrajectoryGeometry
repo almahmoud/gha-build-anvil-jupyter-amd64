@@ -1,0 +1,281 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''TrajectoryGeometry'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'TrajectoryGeometry'
+also installing the dependencies ‘htmlwidgets’, ‘pracma’, ‘rgl’
+
+trying URL 'https://cloud.r-project.org/src/contrib/htmlwidgets_1.6.2.tar.gz'
+Content type 'application/x-gzip' length 867472 bytes (847 KB)
+==================================================
+downloaded 847 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/pracma_2.4.2.tar.gz'
+Content type 'application/x-gzip' length 399611 bytes (390 KB)
+==================================================
+downloaded 390 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/rgl_1.1.3.tar.gz'
+Content type 'application/x-gzip' length 2506680 bytes (2.4 MB)
+==================================================
+downloaded 2.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/TrajectoryGeometry_1.6.0.tar.gz'
+Content type 'application/x-gzip' length 1867754 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+* installing *source* package ‘htmlwidgets’ ...
+** package ‘htmlwidgets’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘htmlwidgets’ as ‘htmlwidgets_1.6.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (htmlwidgets)
+* installing *source* package ‘pracma’ ...
+** package ‘pracma’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pracma’ as ‘pracma_2.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pracma)
+* installing *source* package ‘rgl’ ...
+** package ‘rgl’ successfully unpacked and MD5 sums checked
+** using staged installation
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking how to run the C preprocessor... gcc -E
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C11 features... (cached) none needed
+checking for libpng-config... yes
+configure: using libpng-config
+configure: using libpng dynamic linkage
+checking for X... libraries , headers 
+checking for XAllocClassHint... yes
+checking for GL/gl.h... yes
+checking for GL/glu.h... yes
+checking for glEnd in -lGL... yes
+checking for glEnd... yes
+checking for gluErrorString in -lGLU... yes
+checking for gluErrorString... yes
+checking for pkg-config... yes
+configure: using Freetype and FTGL
+configure: creating ./config.status
+config.status: creating R/noOpenGL.R
+config.status: creating src/useNULL/Makevars
+config.status: creating src/Makevars
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ABCLineSet.cpp -o ABCLineSet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c BBoxDeco.cpp -o BBoxDeco.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Background.cpp -o Background.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ClipPlane.cpp -o ClipPlane.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Color.cpp -o Color.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Disposable.cpp -o Disposable.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Light.cpp -o Light.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c LineSet.cpp -o LineSet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c LineStripSet.cpp -o LineStripSet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Material.cpp -o Material.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c NULLgui.cpp -o NULLgui.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c PlaneSet.cpp -o PlaneSet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c PointSet.cpp -o PointSet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c PrimitiveSet.cpp -o PrimitiveSet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RenderContext.cpp -o RenderContext.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Shape.cpp -o Shape.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c SphereMesh.cpp -o SphereMesh.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c SphereSet.cpp -o SphereSet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c SpriteSet.cpp -o SpriteSet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c String.cpp -o String.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Surface.cpp -o Surface.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c TextSet.cpp -o TextSet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Texture.cpp -o Texture.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Viewpoint.cpp -o Viewpoint.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c api.cpp -o api.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c assert.cpp -o assert.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c callbacks.cpp -o callbacks.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c device.cpp -o device.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c devicemanager.cpp -o devicemanager.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fps.cpp -o fps.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ftgl.cpp -o ftgl.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c geom.cpp -o geom.o
+gcc -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c gl.c -o gl.o
+gcc -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c gl2ps.c -o gl2ps.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c glErrors.cpp -o glErrors.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c glgui.cpp -o glgui.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c gui.cpp -o gui.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.cpp -o init.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c par3d.cpp -o par3d.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c pixmap.cpp -o pixmap.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c platform.cpp -o platform.o
+gcc -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c pretty.c -o pretty.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c render.cpp -o render.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c rglmath.cpp -o rglmath.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c rglview.cpp -o rglview.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c scene.cpp -o scene.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c select.cpp -o select.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c subscene.cpp -o subscene.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c win32gui.cpp -o win32gui.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c win32lib.cpp -o win32lib.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c x11gui.cpp -o x11gui.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DHAVE_FREETYPE -Iext/ftgl -I/usr/include/freetype2 -I/usr/include/libpng16 -Iext -Iext/glad/include     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c x11lib.cpp -o x11lib.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o rgl.so ABCLineSet.o BBoxDeco.o Background.o ClipPlane.o Color.o Disposable.o Light.o LineSet.o LineStripSet.o Material.o NULLgui.o PlaneSet.o PointSet.o PrimitiveSet.o RenderContext.o Shape.o SphereMesh.o SphereSet.o SpriteSet.o String.o Surface.o TextSet.o Texture.o Viewpoint.o api.o assert.o callbacks.o device.o devicemanager.o fps.o ftgl.o geom.o gl.o gl2ps.o glErrors.o glgui.o gui.o init.o par3d.o pixmap.o platform.o pretty.o render.o rglmath.o rglview.o scene.o select.o subscene.o win32gui.o win32lib.o x11gui.o x11lib.o -lGLU -lGL -L/opt/conda/lib -lpng16 -lX11 -lfreetype -lpng16 -lm -lz -lm -lz -L/usr/lib/R/lib -lR
+cp -Rp OpenGL useNULL && \
+cp -p *.c *.h *.cpp useNULL/ && \
+cd useNULL && \
+/usr/lib/R/bin/R CMD SHLIB -o useNULL.so *.cpp *.c && \
+cd .. && \
+mkdir -p ../inst/useNULL && \
+mv useNULL/useNULL.so ../inst/useNULL/rgl.so && \
+rm useNULL/*.cpp useNULL/*.c useNULL/*.h useNULL/OpenGL/*
+make[1]: Entering directory '/tmp/RtmpXEwxW9/R.INSTALL12a66ed95f85/rgl/src/useNULL'
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ABCLineSet.cpp -o ABCLineSet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c api.cpp -o api.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c assert.cpp -o assert.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Background.cpp -o Background.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c BBoxDeco.cpp -o BBoxDeco.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c callbacks.cpp -o callbacks.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ClipPlane.cpp -o ClipPlane.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Color.cpp -o Color.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c device.cpp -o device.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c devicemanager.cpp -o devicemanager.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Disposable.cpp -o Disposable.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fps.cpp -o fps.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ftgl.cpp -o ftgl.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c geom.cpp -o geom.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c glErrors.cpp -o glErrors.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c glgui.cpp -o glgui.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c gui.cpp -o gui.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.cpp -o init.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Light.cpp -o Light.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c LineSet.cpp -o LineSet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c LineStripSet.cpp -o LineStripSet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Material.cpp -o Material.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c NULLgui.cpp -o NULLgui.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c par3d.cpp -o par3d.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c pixmap.cpp -o pixmap.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c PlaneSet.cpp -o PlaneSet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c platform.cpp -o platform.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c PointSet.cpp -o PointSet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c PrimitiveSet.cpp -o PrimitiveSet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RenderContext.cpp -o RenderContext.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c render.cpp -o render.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c rglmath.cpp -o rglmath.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c rglview.cpp -o rglview.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c scene.cpp -o scene.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c select.cpp -o select.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Shape.cpp -o Shape.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c SphereMesh.cpp -o SphereMesh.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c SphereSet.cpp -o SphereSet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c SpriteSet.cpp -o SpriteSet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c String.cpp -o String.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c subscene.cpp -o subscene.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Surface.cpp -o Surface.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c TextSet.cpp -o TextSet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Texture.cpp -o Texture.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Viewpoint.cpp -o Viewpoint.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c win32gui.cpp -o win32gui.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c win32lib.cpp -o win32lib.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c x11gui.cpp -o x11gui.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c x11lib.cpp -o x11lib.o
+gcc -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c gl2ps.c -o gl2ps.o
+gcc -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c gl.c -o gl.o
+gcc -I"/usr/share/R/include" -DNDEBUG -DHAVE_PNG_H -I/opt/conda/include/libpng16 -DRGL_NO_OPENGL    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c pretty.c -o pretty.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o useNULL.so ABCLineSet.o api.o assert.o Background.o BBoxDeco.o callbacks.o ClipPlane.o Color.o device.o devicemanager.o Disposable.o fps.o ftgl.o geom.o glErrors.o glgui.o gui.o init.o Light.o LineSet.o LineStripSet.o Material.o NULLgui.o par3d.o pixmap.o PlaneSet.o platform.o PointSet.o PrimitiveSet.o RenderContext.o render.o rglmath.o rglview.o scene.o select.o Shape.o SphereMesh.o SphereSet.o SpriteSet.o String.o subscene.o Surface.o TextSet.o Texture.o Viewpoint.o win32gui.o win32lib.o x11gui.o x11lib.o gl2ps.o gl.o pretty.o -L/opt/conda/lib -lpng16 -L/usr/lib/R/lib -lR
+make[1]: Leaving directory '/tmp/RtmpXEwxW9/R.INSTALL12a66ed95f85/rgl/src/useNULL'
+installing to /tmp/tmp/built/00LOCK-rgl/00new/rgl/libs
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: 'rgl.init' failed, running with 'rgl.useNULL = TRUE'.
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+Warning: 'rgl.init' failed, running with 'rgl.useNULL = TRUE'.
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘rgl’ as ‘rgl_1.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rgl)
+* installing *source* package ‘TrajectoryGeometry’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+Warning: 'rgl.init' failed, running with 'rgl.useNULL = TRUE'.
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: 'rgl.init' failed, running with 'rgl.useNULL = TRUE'.
+** testing if installed package can be loaded from final location
+Warning: 'rgl.init' failed, running with 'rgl.useNULL = TRUE'.
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TrajectoryGeometry’ as ‘TrajectoryGeometry_1.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TrajectoryGeometry)
+
+The downloaded source packages are in
+	‘/tmp/RtmpkPXzRd/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'progressr', 'ps',
+  'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr', 'readxl',
+  'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'SingleCellExperiment',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'XML', 'yaml'
+
+real	1m23.241s
+user	1m16.103s
+sys	0m7.935s

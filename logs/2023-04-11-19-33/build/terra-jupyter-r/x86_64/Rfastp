@@ -1,0 +1,89 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''Rfastp'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'Rfastp'
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/Rfastp_1.8.0.tar.gz'
+Content type 'application/x-gzip' length 2798057 bytes (2.7 MB)
+==================================================
+downloaded 2.7 MB
+
+* installing *source* package ‘Rfastp’ ...
+** using staged installation
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c main_fastp.cpp -o main_fastp.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/adaptertrimmer.cpp -o FASTP/adaptertrimmer.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/basecorrector.cpp -o FASTP/basecorrector.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/duplicate.cpp -o FASTP/duplicate.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/evaluator.cpp -o FASTP/evaluator.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/fastareader.cpp -o FASTP/fastareader.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/fastqreader.cpp -o FASTP/fastqreader.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/filter.cpp -o FASTP/filter.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/filterresult.cpp -o FASTP/filterresult.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/htmlreporter.cpp -o FASTP/htmlreporter.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/jsonreporter.cpp -o FASTP/jsonreporter.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/nucleotidetree.cpp -o FASTP/nucleotidetree.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/options.cpp -o FASTP/options.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/overlapanalysis.cpp -o FASTP/overlapanalysis.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/peprocessor.cpp -o FASTP/peprocessor.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/polyx.cpp -o FASTP/polyx.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/processor.cpp -o FASTP/processor.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/read.cpp -o FASTP/read.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/seprocessor.cpp -o FASTP/seprocessor.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/sequence.cpp -o FASTP/sequence.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/stats.cpp -o FASTP/stats.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/threadconfig.cpp -o FASTP/threadconfig.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/umiprocessor.cpp -o FASTP/umiprocessor.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/unittest.cpp -o FASTP/unittest.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/writer.cpp -o FASTP/writer.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I. -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c FASTP/writerthread.cpp -o FASTP/writerthread.o
+/bin/bash:  /usr/lib/R/bin/R: No such file or directory
+/bin/bash:  /usr/lib/R/bin/R: No such file or directory
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o Rfastp.so ./RcppExports.o ./main_fastp.o ./FASTP/adaptertrimmer.o ./FASTP/basecorrector.o ./FASTP/duplicate.o ./FASTP/evaluator.o ./FASTP/fastareader.o ./FASTP/fastqreader.o ./FASTP/filter.o ./FASTP/filterresult.o ./FASTP/htmlreporter.o ./FASTP/jsonreporter.o ./FASTP/nucleotidetree.o ./FASTP/options.o ./FASTP/overlapanalysis.o ./FASTP/peprocessor.o ./FASTP/polyx.o ./FASTP/processor.o ./FASTP/read.o ./FASTP/seprocessor.o ./FASTP/sequence.o ./FASTP/stats.o ./FASTP/threadconfig.o ./FASTP/umiprocessor.o ./FASTP/unittest.o ./FASTP/writer.o ./FASTP/writerthread.o /tmp/tmp/built/Rhtslib/usrlib/libhts.a -lcurl -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-Rfastp/00new/Rfastp/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Rfastp’ as ‘Rfastp_1.8.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Rfastp)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp2XJ2QB/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'progressr', 'ps',
+  'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr', 'readxl',
+  'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'SingleCellExperiment',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'XML', 'yaml'
+
+real	1m47.706s
+user	1m41.146s
+sys	0m9.001s

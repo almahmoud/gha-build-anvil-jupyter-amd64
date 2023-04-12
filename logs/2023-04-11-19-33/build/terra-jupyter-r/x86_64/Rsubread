@@ -1,0 +1,114 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''Rsubread'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'Rsubread'
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/Rsubread_2.12.3.tar.gz'
+Content type 'application/x-gzip' length 13440505 bytes (12.8 MB)
+==================================================
+downloaded 12.8 MB
+
+* installing *source* package ‘Rsubread’ ...
+** using staged installation
+@@@@@ The operating system is Linux.
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c HelperFunctions.c -o HelperFunctions.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c LRMbase-index.c -o LRMbase-index.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c LRMchro-event.c -o LRMchro-event.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c LRMfile-io.c -o LRMfile-io.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c LRMhashtable.c -o LRMhashtable.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c LRMhelper.c -o LRMhelper.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c LRMseek-zlib.c -o LRMseek-zlib.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c LRMsorted-hashtable.c -o LRMsorted-hashtable.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c R_wrapper.c -o R_wrapper.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RsimReads.c -o RsimReads.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c SNPCalling.c -o SNPCalling.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c aligner.c -o aligner.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c atgcContent.c -o atgcContent.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c build-sam-index.c -o build-sam-index.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c cell-counts.c -o cell-counts.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c core-bigtable.c -o core-bigtable.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c core-indel.c -o core-indel.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c core-interface-aligner.c -o core-interface-aligner.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c core-interface-subjunc.c -o core-interface-subjunc.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c core-junction.c -o core-junction.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c core.c -o core.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c detection-calls.c -o detection-calls.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c detectionCall.c -o detectionCall.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c detectionCallAnnotation.c -o detectionCallAnnotation.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c exon-algorithms.c -o exon-algorithms.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c exon-align-indel.c -o exon-align-indel.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c exon-align.c -o exon-align.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c flattenAnnotations.c -o flattenAnnotations.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fullscan.c -o fullscan.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fusion-align.c -o fusion-align.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c gen_rand_reads.c -o gen_rand_reads.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c gene-algorithms.c -o gene-algorithms.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c gene-value-index.c -o gene-value-index.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c hashtable.c -o hashtable.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c index-builder.c -o index-builder.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c input-blc.c -o input-blc.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c input-files.c -o input-files.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c interval_merge.c -o interval_merge.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c long-hashtable.c -o long-hashtable.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c longread-mapping.c -o longread-mapping.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c mergeVCF.c -o mergeVCF.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c processExons.c -o processExons.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c propmapped.c -o propmapped.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c qualityScores.c -o qualityScores.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c read-repair.c -o read-repair.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c readSummary.c -o readSummary.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c removeDupReads.c -o removeDupReads.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c sam2bed.c -o sam2bed.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c sambam-file.c -o sambam-file.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c seek-zlib.c -o seek-zlib.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c sorted-hashtable.c -o sorted-hashtable.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c sublog.c -o sublog.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.12.3\""  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c tx-unique.c -o tx-unique.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o Rsubread.so HelperFunctions.o LRMbase-index.o LRMchro-event.o LRMfile-io.o LRMhashtable.o LRMhelper.o LRMseek-zlib.o LRMsorted-hashtable.o R_wrapper.o RsimReads.o SNPCalling.o aligner.o atgcContent.o build-sam-index.o cell-counts.o core-bigtable.o core-indel.o core-interface-aligner.o core-interface-subjunc.o core-junction.o core.o detection-calls.o detectionCall.o detectionCallAnnotation.o exon-algorithms.o exon-align-indel.o exon-align.o flattenAnnotations.o fullscan.o fusion-align.o gen_rand_reads.o gene-algorithms.o gene-value-index.o hashtable.o index-builder.o input-blc.o input-files.o interval_merge.o long-hashtable.o longread-mapping.o mergeVCF.o processExons.o propmapped.o qualityScores.o read-repair.o readSummary.o removeDupReads.o sam2bed.o sambam-file.o seek-zlib.o sorted-hashtable.o sublog.o tx-unique.o -lz -lpthread -DMAKE_FOR_EXON -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-Rsubread/00new/Rsubread/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Rsubread’ as ‘Rsubread_2.12.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Rsubread)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp0ERm6h/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'progressr', 'ps',
+  'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr', 'readxl',
+  'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'SingleCellExperiment',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'XML', 'yaml'
+
+real	0m47.942s
+user	0m43.916s
+sys	0m2.089s

@@ -1,0 +1,223 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''msPurity'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'msPurity'
+also installing the dependencies ‘iterators’, ‘foreach’, ‘doSNOW’, ‘fastcluster’
+
+trying URL 'https://cloud.r-project.org/src/contrib/iterators_1.0.14.tar.gz'
+Content type 'application/x-gzip' length 300266 bytes (293 KB)
+==================================================
+downloaded 293 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/foreach_1.5.2.tar.gz'
+Content type 'application/x-gzip' length 89758 bytes (87 KB)
+==================================================
+downloaded 87 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/doSNOW_1.0.20.tar.gz'
+Content type 'application/x-gzip' length 8085 bytes
+==================================================
+downloaded 8085 bytes
+
+trying URL 'https://cloud.r-project.org/src/contrib/fastcluster_1.2.3.tar.gz'
+Content type 'application/x-gzip' length 207483 bytes (202 KB)
+==================================================
+downloaded 202 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/msPurity_1.24.0.tar.gz'
+Content type 'application/x-gzip' length 11789268 bytes (11.2 MB)
+==================================================
+downloaded 11.2 MB
+
+* installing *source* package ‘iterators’ ...
+** package ‘iterators’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘iterators’ as ‘iterators_1.0.14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (iterators)
+* installing *source* package ‘fastcluster’ ...
+** package ‘fastcluster’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fastcluster_R.cpp -o fastcluster_R.o
+In file included from fastcluster_R.cpp:24:
+fastcluster.cpp:53:35: note: #pragma message: Use fenv header.
+   53 | #pragma message("Use fenv header.")
+      |                                   ^
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o fastcluster.so fastcluster_R.o -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-fastcluster/00new/fastcluster/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘fastcluster’ as ‘fastcluster_1.2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fastcluster)
+* installing *source* package ‘foreach’ ...
+** package ‘foreach’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘foreach’ as ‘foreach_1.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (foreach)
+* installing *source* package ‘doSNOW’ ...
+** package ‘doSNOW’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘doSNOW’ as ‘doSNOW_1.0.20_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (doSNOW)
+* installing *source* package ‘msPurity’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘msPurity’ as ‘msPurity_1.24.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (msPurity)
+
+The downloaded source packages are in
+	‘/tmp/RtmpgPIpd5/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'progressr', 'ps',
+  'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr', 'readxl',
+  'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'SingleCellExperiment',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'XML', 'yaml'
+
+real	0m32.602s
+user	0m30.539s
+sys	0m2.794s
+* installing *source* package ‘msPurityData’ ...
+** using staged installation
+** inst
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘msPurityData’ as ‘msPurityData_1.26.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (msPurityData)
+* installing *source* package ‘RPostgres’ ...
+** package ‘RPostgres’ successfully unpacked and MD5 sums checked
+** using staged installation
+Found pkg-config cflags and libs (libpq 12.12)!
+Using PKG_CFLAGS=-I/usr/include/postgresql
+Using PKG_LIBS=-lpq
+Using PKG_PLOGR=
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/postgresql -Ivendor -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/plogr/include' -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c DbColumn.cpp -o DbColumn.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/postgresql -Ivendor -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/plogr/include' -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c DbColumnDataSource.cpp -o DbColumnDataSource.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/postgresql -Ivendor -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/plogr/include' -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c DbColumnDataSourceFactory.cpp -o DbColumnDataSourceFactory.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/postgresql -Ivendor -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/plogr/include' -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c DbColumnStorage.cpp -o DbColumnStorage.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/postgresql -Ivendor -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/plogr/include' -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c DbConnection.cpp -o DbConnection.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/postgresql -Ivendor -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/plogr/include' -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c DbDataFrame.cpp -o DbDataFrame.o
+In file included from vendor/boost/smart_ptr/detail/sp_thread_sleep.hpp:22,
+                 from vendor/boost/smart_ptr/detail/yield_k.hpp:23,
+                 from vendor/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14,
+                 from vendor/boost/smart_ptr/detail/spinlock.hpp:42,
+                 from vendor/boost/smart_ptr/detail/spinlock_pool.hpp:25,
+                 from vendor/boost/smart_ptr/shared_ptr.hpp:29,
+                 from vendor/boost/shared_ptr.hpp:17,
+                 from DbColumn.h:7,
+                 from DbDataFrame.cpp:3:
+vendor/boost/config/pragma_message.hpp:24:34: note: #pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+   24 | # define BOOST_PRAGMA_MESSAGE(x) _Pragma(BOOST_STRINGIZE(message(x)))
+      |                                  ^~~~~~~
+vendor/boost/config/pragma_message.hpp:24:34: note: in definition of macro ‘BOOST_PRAGMA_MESSAGE’
+   24 | # define BOOST_PRAGMA_MESSAGE(x) _Pragma(BOOST_STRINGIZE(message(x)))
+      |                                  ^~~~~~~
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/postgresql -Ivendor -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/plogr/include' -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c DbResult.cpp -o DbResult.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/postgresql -Ivendor -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/plogr/include' -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c PqColumnDataSource.cpp -o PqColumnDataSource.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/postgresql -Ivendor -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/plogr/include' -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c PqColumnDataSourceFactory.cpp -o PqColumnDataSourceFactory.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/postgresql -Ivendor -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/plogr/include' -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c PqDataFrame.cpp -o PqDataFrame.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/postgresql -Ivendor -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/plogr/include' -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c PqResult.cpp -o PqResult.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/postgresql -Ivendor -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/plogr/include' -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c PqResultImpl.cpp -o PqResultImpl.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/postgresql -Ivendor -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/plogr/include' -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c PqResultSource.cpp -o PqResultSource.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/postgresql -Ivendor -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/plogr/include' -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c PqUtils.cpp -o PqUtils.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/usr/include/postgresql -Ivendor -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/plogr/include' -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RPostgres-init.c -o RPostgres-init.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/postgresql -Ivendor -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/plogr/include' -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/postgresql -Ivendor -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/plogr/include' -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c connection.cpp -o connection.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/postgresql -Ivendor -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/plogr/include' -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c encode.cpp -o encode.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/postgresql -Ivendor -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/plogr/include' -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c encrypt.cpp -o encrypt.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/postgresql -Ivendor -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/plogr/include' -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c logging.cpp -o logging.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I/usr/include/postgresql -Ivendor -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/plogr/include' -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c result.cpp -o result.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o RPostgres.so DbColumn.o DbColumnDataSource.o DbColumnDataSourceFactory.o DbColumnStorage.o DbConnection.o DbDataFrame.o DbResult.o PqColumnDataSource.o PqColumnDataSourceFactory.o PqDataFrame.o PqResult.o PqResultImpl.o PqResultSource.o PqUtils.o RPostgres-init.o RcppExports.o connection.o encode.o encrypt.o logging.o result.o -lpq -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-RPostgres/00new/RPostgres/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘RPostgres’ as ‘RPostgres_1.4.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RPostgres)

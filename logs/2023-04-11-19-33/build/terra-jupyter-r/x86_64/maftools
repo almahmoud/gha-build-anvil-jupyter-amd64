@@ -1,0 +1,93 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''maftools'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'maftools'
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/maftools_2.14.0.tar.gz'
+Content type 'application/x-gzip' length 10994281 bytes (10.5 MB)
+==================================================
+downloaded 10.5 MB
+
+* installing *source* package ‘maftools’ ...
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ntcounts.c -o ntcounts.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c snpcounts.c -o snpcounts.o
+snpcounts.c: In function ‘snpcounts’:
+snpcounts.c:56:26: warning: passing argument 1 of ‘countlines’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   56 |   int nloci = countlines(bedfile);
+      |                          ^~~~~~~
+snpcounts.c:13:22: note: expected ‘char *’ but argument is of type ‘const char *’
+   13 | int countlines(char *filename){
+      |                ~~~~~~^~~~~~~~
+snpcounts.c:89:47: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘uint64_t’ {aka ‘long unsigned int’} [-Wformat=]
+   89 |   fprintf(tsv_fp, "#idxstats_mapped_reads\t%llu\n", tot_mapped);
+      |                                            ~~~^     ~~~~~~~~~~
+      |                                               |     |
+      |                                               |     uint64_t {aka long unsigned int}
+      |                                               long long unsigned int
+      |                                            %lu
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c somaticfreq.c -o somaticfreq.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o maftools.so ntcounts.o snpcounts.o somaticfreq.o /tmp/tmp/built/Rhtslib/usrlib/libhts.a -lcurl -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-maftools/00new/maftools/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘maftools’ as ‘maftools_2.14.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (maftools)
+
+The downloaded source packages are in
+	‘/tmp/RtmpL8i39D/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'progressr', 'ps',
+  'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr', 'readxl',
+  'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'SingleCellExperiment',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'XML', 'yaml'
+
+real	0m29.206s
+user	0m26.341s
+sys	0m1.925s
+* installing *source* package ‘berryFunctions’ ...
+** package ‘berryFunctions’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘berryFunctions’ as ‘berryFunctions_1.21.14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (berryFunctions)

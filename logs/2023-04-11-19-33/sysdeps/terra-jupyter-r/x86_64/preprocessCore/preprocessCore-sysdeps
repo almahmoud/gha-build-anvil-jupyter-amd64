@@ -1,0 +1,18 @@
+[
+    {
+        "shlib": "libpthread-2.31.so",
+        "package": "libc6",
+        "headers": "libc6",
+        "source": "glibc",
+        "version": "2.31-0ubuntu9.2",
+        "url": "https://packages.ubuntu.com/focal/libc6"
+    },
+    {
+        "shlib": "liblapack.so.3",
+        "package": "libopenblas0-pthread",
+        "source": "openblas",
+        "version": "0.3.8+ds-1ubuntu0.20.04.1",
+        "url": "https://packages.ubuntu.com/focal/libopenblas0-pthread"
+    }
+]
+

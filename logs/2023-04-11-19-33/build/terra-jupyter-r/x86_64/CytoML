@@ -1,0 +1,140 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''CytoML'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'CytoML'
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/CytoML_2.10.0.tar.gz'
+Content type 'application/x-gzip' length 8264570 bytes (7.9 MB)
+==================================================
+downloaded 7.9 MB
+
+* installing *source* package ‘CytoML’ ...
+** using staged installation
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ -std=gnu++11 accepts -g... yes
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+configure: setting xml2 flags...
+configure: No directory was specified for --with-xml2. Trying to find xml2 using other methods.
+checking for xml2-config... /usr/bin/xml2-config
+configure: setting cytolib-ml commandline tool path...
+configure: Using the following compilation and linking flags
+configure:    PKG_CPPFLAGS=-I/usr/include/libxml2
+configure:    PKG_LIBS=-lxml2 
+configure:    CYTOLIBML_BIN=/usr/local/bin
+configure: creating ./config.status
+config.status: creating src/Makevars
+config.status: creating R/cytolibml_bin_path.R
+** libs
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -DROUT -I../inst/include/ -I/usr/include/libxml2 -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/RProtoBufLib/include' -I'/tmp/tmp/built/cytolib/include' -I'/tmp/tmp/built/Rhdf5lib/include' -I'/tmp/tmp/built/flowWorkspace/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c cpp11.cpp -o cpp11.o
+In file included from ../inst/include/CytoML/workspace.hpp:10,
+                 from ../inst/include/CytoML/flowJoWorkspace.hpp:11,
+                 from ../inst/include/CytoML/macFlowJoWorkspace.hpp:10,
+                 from ../inst/include/CytoML/openWorkspace.hpp:11,
+                 from CytoML_types.h:5,
+                 from cpp11.cpp:4:
+../inst/include/CytoML/workspace_type.hpp: In function ‘std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > CytoML::list_files(const string&, const string&)’:
+../inst/include/CytoML/workspace_type.hpp:67:124: warning: ‘boost::filesystem::recursive_directory_iterator::recursive_directory_iterator(const boost::filesystem::path&, boost::filesystem::symlink_option)’ is deprecated: Use directory_options instead of symlink_option [-Wdeprecated-declarations]
+   67 |         for(const fs::directory_entry & i: fs::recursive_directory_iterator(fs::path(data_dir), fs::symlink_option::recurse))
+      |                                                                                                                            ^
+In file included from /usr/local/lib/R/site-library/BH/include/boost/filesystem.hpp:18,
+                 from /tmp/tmp/built/cytolib/include/cytolib/CytoVFS.hpp:17,
+                 from /tmp/tmp/built/cytolib/include/cytolib/global.hpp:21,
+                 from /tmp/tmp/built/cytolib/include/cytolib/compensation.hpp:19,
+                 from /tmp/tmp/built/cytolib/include/cytolib/CytoFrame.hpp:14,
+                 from /tmp/tmp/built/cytolib/include/cytolib/MemCytoFrame.hpp:12,
+                 from /tmp/tmp/built/cytolib/include/cytolib/gate.hpp:12,
+                 from /tmp/tmp/built/cytolib/include/cytolib/POPINDICES.hpp:14,
+                 from /tmp/tmp/built/cytolib/include/cytolib/nodeProperties.hpp:13,
+                 from /tmp/tmp/built/cytolib/include/cytolib/populationTree.hpp:13,
+                 from /tmp/tmp/built/cytolib/include/cytolib/GatingHierarchy.hpp:17,
+                 from /tmp/tmp/built/cytolib/include/cytolib/GatingSet.hpp:14,
+                 from /tmp/tmp/built/flowWorkspace/include/flowWorkspace.h:5,
+                 from CytoML_types.h:4,
+                 from cpp11.cpp:4:
+/usr/local/lib/R/site-library/BH/include/boost/filesystem/directory.hpp:577:5: note: declared here
+  577 |     recursive_directory_iterator(path const& dir_path, BOOST_SCOPED_ENUM_NATIVE(symlink_option) opts)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -DROUT -I../inst/include/ -I/usr/include/libxml2 -DBOOST_NO_AUTO_PTR  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/RProtoBufLib/include' -I'/tmp/tmp/built/cytolib/include' -I'/tmp/tmp/built/Rhdf5lib/include' -I'/tmp/tmp/built/flowWorkspace/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c parseFlowJoWorkspace.cpp -o parseFlowJoWorkspace.o
+In file included from ../inst/include/CytoML/workspace.hpp:10,
+                 from ../inst/include/CytoML/flowJoWorkspace.hpp:11,
+                 from ../inst/include/CytoML/macFlowJoWorkspace.hpp:10,
+                 from ../inst/include/CytoML/openWorkspace.hpp:11,
+                 from parseFlowJoWorkspace.cpp:10:
+../inst/include/CytoML/workspace_type.hpp: In function ‘std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > CytoML::list_files(const string&, const string&)’:
+../inst/include/CytoML/workspace_type.hpp:67:124: warning: ‘boost::filesystem::recursive_directory_iterator::recursive_directory_iterator(const boost::filesystem::path&, boost::filesystem::symlink_option)’ is deprecated: Use directory_options instead of symlink_option [-Wdeprecated-declarations]
+   67 |         for(const fs::directory_entry & i: fs::recursive_directory_iterator(fs::path(data_dir), fs::symlink_option::recurse))
+      |                                                                                                                            ^
+In file included from /usr/local/lib/R/site-library/BH/include/boost/filesystem.hpp:18,
+                 from /tmp/tmp/built/cytolib/include/cytolib/CytoVFS.hpp:17,
+                 from /tmp/tmp/built/cytolib/include/cytolib/global.hpp:21,
+                 from /tmp/tmp/built/cytolib/include/cytolib/compensation.hpp:19,
+                 from /tmp/tmp/built/cytolib/include/cytolib/CytoFrame.hpp:14,
+                 from /tmp/tmp/built/cytolib/include/cytolib/MemCytoFrame.hpp:12,
+                 from /tmp/tmp/built/cytolib/include/cytolib/gate.hpp:12,
+                 from /tmp/tmp/built/cytolib/include/cytolib/POPINDICES.hpp:14,
+                 from /tmp/tmp/built/cytolib/include/cytolib/nodeProperties.hpp:13,
+                 from ../inst/include/CytoML/wsNode.hpp:13,
+                 from ../inst/include/CytoML/workspace_type.hpp:4,
+                 from ../inst/include/CytoML/workspace.hpp:10,
+                 from ../inst/include/CytoML/flowJoWorkspace.hpp:11,
+                 from ../inst/include/CytoML/macFlowJoWorkspace.hpp:10,
+                 from ../inst/include/CytoML/openWorkspace.hpp:11,
+                 from parseFlowJoWorkspace.cpp:10:
+/usr/local/lib/R/site-library/BH/include/boost/filesystem/directory.hpp:577:5: note: declared here
+  577 |     recursive_directory_iterator(path const& dir_path, BOOST_SCOPED_ENUM_NATIVE(symlink_option) opts)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+g++ -std=gnu++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o CytoML.so cpp11.o parseFlowJoWorkspace.o /tmp/tmp/built/cytolib/lib/libcytolib.a /tmp/tmp/built/Rhdf5lib/lib/libhdf5_cpp.a /tmp/tmp/built/Rhdf5lib/lib/libhdf5.a -lcrypto -lcurl -lsz -laec -lz -ldl -lm -llapack -lblas -lxml2 -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-CytoML/00new/CytoML/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘CytoML’ as ‘CytoML_2.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (CytoML)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp4kyPEY/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'progressr', 'ps',
+  'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr', 'readxl',
+  'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'SingleCellExperiment',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'XML', 'yaml'
+
+real	1m37.410s
+user	1m31.056s
+sys	0m4.683s

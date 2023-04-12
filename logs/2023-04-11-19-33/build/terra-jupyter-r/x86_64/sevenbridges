@@ -1,0 +1,118 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''sevenbridges'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'sevenbridges'
+also installing the dependencies ‘objectSignals’, ‘objectProperties’, ‘docopt’
+
+trying URL 'https://cloud.r-project.org/src/contrib/objectSignals_0.10.3.tar.gz'
+Content type 'application/x-gzip' length 5385 bytes
+==================================================
+downloaded 5385 bytes
+
+trying URL 'https://cloud.r-project.org/src/contrib/objectProperties_0.6.8.tar.gz'
+Content type 'application/x-gzip' length 10238 bytes
+==================================================
+downloaded 10238 bytes
+
+trying URL 'https://cloud.r-project.org/src/contrib/docopt_0.7.1.tar.gz'
+Content type 'application/x-gzip' length 29465 bytes (28 KB)
+==================================================
+downloaded 28 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/sevenbridges_1.28.0.tar.gz'
+Content type 'application/x-gzip' length 4790694 bytes (4.6 MB)
+==================================================
+downloaded 4.6 MB
+
+* installing *source* package ‘objectSignals’ ...
+** package ‘objectSignals’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘objectSignals’ as ‘objectSignals_0.10.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (objectSignals)
+* installing *source* package ‘docopt’ ...
+** package ‘docopt’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘docopt’ as ‘docopt_0.7.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (docopt)
+* installing *source* package ‘objectProperties’ ...
+** package ‘objectProperties’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘objectProperties’ as ‘objectProperties_0.6.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (objectProperties)
+* installing *source* package ‘sevenbridges’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘sevenbridges’ as ‘sevenbridges_1.28.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sevenbridges)
+
+The downloaded source packages are in
+	‘/tmp/RtmpxlUToA/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'progressr', 'ps',
+  'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr', 'readxl',
+  'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'SingleCellExperiment',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'XML', 'yaml'
+
+real	0m42.626s
+user	0m39.366s
+sys	0m2.794s

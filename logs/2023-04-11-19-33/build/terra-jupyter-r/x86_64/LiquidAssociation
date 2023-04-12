@@ -1,0 +1,132 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''LiquidAssociation'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'LiquidAssociation'
+also installing the dependencies ‘geepack’, ‘yeastCC’, ‘org.Sc.sgd.db’
+
+trying URL 'https://cloud.r-project.org/src/contrib/geepack_1.3.9.tar.gz'
+Content type 'application/x-gzip' length 359851 bytes (351 KB)
+==================================================
+downloaded 351 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/data/experiment/src/contrib/yeastCC_1.38.0.tar.gz'
+Content type 'application/x-gzip' length 6126046 bytes (5.8 MB)
+==================================================
+downloaded 5.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.16/data/annotation/src/contrib/org.Sc.sgd.db_3.16.0.tar.gz'
+Content type 'application/x-gzip' length 20933566 bytes (20.0 MB)
+==================================================
+downloaded 20.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/LiquidAssociation_1.52.0.tar.gz'
+Content type 'application/x-gzip' length 172646 bytes (168 KB)
+==================================================
+downloaded 168 KB
+
+* installing *source* package ‘geepack’ ...
+** package ‘geepack’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I../inst/include -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c famstr.cc -o famstr.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I../inst/include -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c gee2.cc -o gee2.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I../inst/include -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c geesubs.cc -o geesubs.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I../inst/include -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I../inst/include -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c inter.cc -o inter.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I../inst/include -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ordgee.cc -o ordgee.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I../inst/include -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c param.cc -o param.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I../inst/include -DNDEBUG     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c utils.cc -o utils.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o geepack.so famstr.o gee2.o geesubs.o init.o inter.o ordgee.o param.o utils.o -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-geepack/00new/geepack/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘geepack’ as ‘geepack_1.3.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (geepack)
+* installing *source* package ‘yeastCC’ ...
+** using staged installation
+** data
+*** moving datasets to lazyload DB
+** inst
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘yeastCC’ as ‘yeastCC_1.38.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (yeastCC)
+* installing *source* package ‘org.Sc.sgd.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Sc.sgd.db’ as ‘org.Sc.sgd.db_3.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Sc.sgd.db)
+* installing *source* package ‘LiquidAssociation’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘LiquidAssociation’ as ‘LiquidAssociation_1.52.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (LiquidAssociation)
+
+The downloaded source packages are in
+	‘/tmp/RtmpgQMZkN/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'progressr', 'ps',
+  'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr', 'readxl',
+  'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'SingleCellExperiment',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'XML', 'yaml'
+
+real	1m44.343s
+user	1m40.691s
+sys	0m4.104s

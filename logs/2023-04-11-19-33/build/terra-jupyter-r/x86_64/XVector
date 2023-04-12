@@ -1,0 +1,78 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''XVector'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'XVector'
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/XVector_0.38.0.tar.gz'
+Content type 'application/x-gzip' length 67821 bytes (66 KB)
+==================================================
+downloaded 66 KB
+
+* installing *source* package ‘XVector’ ...
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c IRanges_stubs.c -o IRanges_stubs.o
+gcc -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Ocopy_byteblocks.c -o Ocopy_byteblocks.o
+gcc -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RDS_random_access.c -o RDS_random_access.o
+gcc -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c R_init_XVector.c -o R_init_XVector.o
+gcc -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c S4Vectors_stubs.c -o S4Vectors_stubs.o
+gcc -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c SharedDouble_class.c -o SharedDouble_class.o
+gcc -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c SharedInteger_class.c -o SharedInteger_class.o
+gcc -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c SharedRaw_class.c -o SharedRaw_class.o
+gcc -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c SharedVector_class.c -o SharedVector_class.o
+gcc -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c XDouble_class.c -o XDouble_class.o
+gcc -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c XInteger_class.c -o XInteger_class.o
+gcc -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c XRawList_comparison.c -o XRawList_comparison.o
+gcc -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c XRaw_class.c -o XRaw_class.o
+gcc -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c XVectorList_class.c -o XVectorList_class.o
+gcc -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c XVector_class.c -o XVector_class.o
+gcc -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c io_utils.c -o io_utils.o
+gcc -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c slice_methods.c -o slice_methods.o
+gcc -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c vector_copy.c -o vector_copy.o
+gcc -I"/usr/share/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c view_summarization_methods.c -o view_summarization_methods.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o XVector.so IRanges_stubs.o Ocopy_byteblocks.o RDS_random_access.o R_init_XVector.o S4Vectors_stubs.o SharedDouble_class.o SharedInteger_class.o SharedRaw_class.o SharedVector_class.o XDouble_class.o XInteger_class.o XRawList_comparison.o XRaw_class.o XVectorList_class.o XVector_class.o io_utils.o slice_methods.o vector_copy.o view_summarization_methods.o -lz -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-XVector/00new/XVector/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘XVector’ as ‘XVector_0.38.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (XVector)
+
+The downloaded source packages are in
+	‘/tmp/RtmpAa0xbH/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'progressr', 'ps',
+  'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr', 'readxl',
+  'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'SingleCellExperiment',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'XML', 'yaml'
+
+real	0m16.628s
+user	0m14.354s
+sys	0m1.130s

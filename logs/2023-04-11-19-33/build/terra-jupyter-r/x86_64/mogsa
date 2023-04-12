@@ -1,0 +1,126 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''mogsa'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'mogsa'
+also installing the dependencies ‘corpcor’, ‘svd’
+
+trying URL 'https://cloud.r-project.org/src/contrib/corpcor_1.6.10.tar.gz'
+Content type 'application/x-gzip' length 22678 bytes (22 KB)
+==================================================
+downloaded 22 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/svd_0.5.4.tar.gz'
+Content type 'application/x-gzip' length 122776 bytes (119 KB)
+==================================================
+downloaded 119 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/mogsa_1.32.0.tar.gz'
+Content type 'application/x-gzip' length 773150 bytes (755 KB)
+==================================================
+downloaded 755 KB
+
+* installing *source* package ‘corpcor’ ...
+** package ‘corpcor’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘corpcor’ as ‘corpcor_1.6.10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (corpcor)
+* installing *source* package ‘svd’ ...
+** package ‘svd’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG     -I../inst/include -DUSE_FC_LEN_T -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c extmat.c -o extmat.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -I../inst/include -DUSE_FC_LEN_T -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c svd_init.c -o svd_init.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c propack/dlansvd_irl.f -o propack/dlansvd_irl.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c  propack/printstat.f90 -o propack/printstat.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c propack/second.f -o propack/second.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -I../inst/include -DUSE_FC_LEN_T -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c propack/propack_svd.c -o propack/propack_svd.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -I../inst/include -DUSE_FC_LEN_T -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c trlan/dsort2.c -o trlan/dsort2.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -I../inst/include -DUSE_FC_LEN_T -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c trlan/dstqrb.c -o trlan/dstqrb.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -I../inst/include -DUSE_FC_LEN_T -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c trlan/trlcore.c -o trlan/trlcore.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -I../inst/include -DUSE_FC_LEN_T -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c trlan/trlaux.c -o trlan/trlaux.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -I../inst/include -DUSE_FC_LEN_T -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c trlan/trlan.c -o trlan/trlan.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -I../inst/include -DUSE_FC_LEN_T -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c trlan/trl_comm_none.c -o trlan/trl_comm_none.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -I../inst/include -DUSE_FC_LEN_T -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c trlan/trlmap.c -o trlan/trlmap.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -I../inst/include -DUSE_FC_LEN_T -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c trlan/restart.c -o trlan/restart.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -I../inst/include -DUSE_FC_LEN_T -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c trlan/ztrl_comm_none.c -o trlan/ztrl_comm_none.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -I../inst/include -DUSE_FC_LEN_T -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c trlan/ztrlan.c -o trlan/ztrlan.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -I../inst/include -DUSE_FC_LEN_T -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c trlan/ztrlcore.c -o trlan/ztrlcore.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -I../inst/include -DUSE_FC_LEN_T -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c trlan/ztrlaux.c -o trlan/ztrlaux.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -I../inst/include -DUSE_FC_LEN_T -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c trlan/zdaxpy.c -o trlan/zdaxpy.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -I../inst/include -DUSE_FC_LEN_T -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c trlan/zdgemv.c -o trlan/zdgemv.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -I../inst/include -DUSE_FC_LEN_T -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c trlan/trlan_R.c -o trlan/trlan_R.o
+gcc -I"/usr/share/R/include" -DNDEBUG     -I../inst/include -DUSE_FC_LEN_T -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c trlan/ztrlan_R.c -o trlan/ztrlan_R.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o svd.so extmat.o svd_init.o propack/dlansvd_irl.o propack/printstat.o propack/second.o propack/propack_svd.o trlan/dsort2.o trlan/dstqrb.o trlan/trlcore.o trlan/trlaux.o trlan/trlan.o trlan/trl_comm_none.o trlan/trlmap.o trlan/restart.o trlan/ztrl_comm_none.o trlan/ztrlan.o trlan/ztrlcore.o trlan/ztrlaux.o trlan/zdaxpy.o trlan/zdgemv.o trlan/trlan_R.o trlan/ztrlan_R.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-svd/00new/svd/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a generic function for ‘crossprod’ from package ‘base’ in package ‘svd’
+Creating a generic function for ‘tcrossprod’ from package ‘base’ in package ‘svd’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘svd’ as ‘svd_0.5.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (svd)
+* installing *source* package ‘mogsa’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘mogsa’ as ‘mogsa_1.32.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mogsa)
+
+The downloaded source packages are in
+	‘/tmp/RtmpVO3hKo/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'progressr', 'ps',
+  'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr', 'readxl',
+  'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'SingleCellExperiment',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'XML', 'yaml'
+
+real	0m31.879s
+user	0m28.564s
+sys	0m2.342s

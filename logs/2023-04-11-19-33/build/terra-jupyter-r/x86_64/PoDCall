@@ -1,0 +1,183 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''PoDCall'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'PoDCall'
+also installing the dependencies ‘mclust’, ‘diptest’, ‘rlist’, ‘LaplacesDemon’, ‘shinyjs’
+
+trying URL 'https://cloud.r-project.org/src/contrib/mclust_6.0.0.tar.gz'
+Content type 'application/x-gzip' length 2744043 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/diptest_0.76-0.tar.gz'
+Content type 'application/x-gzip' length 165867 bytes (161 KB)
+==================================================
+downloaded 161 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/rlist_0.4.6.2.tar.gz'
+Content type 'application/x-gzip' length 72870 bytes (71 KB)
+==================================================
+downloaded 71 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/LaplacesDemon_16.1.6.tar.gz'
+Content type 'application/x-gzip' length 2085023 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/shinyjs_2.1.0.tar.gz'
+Content type 'application/x-gzip' length 1019936 bytes (996 KB)
+==================================================
+downloaded 996 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/PoDCall_1.6.0.tar.gz'
+Content type 'application/x-gzip' length 3115324 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+* installing *source* package ‘mclust’ ...
+** package ‘mclust’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c dmvnorm.f -o dmvnorm.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c mclust.f -o mclust.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c mclustaddson.f -o mclustaddson.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o mclust.so dmvnorm.o init.o mclust.o mclustaddson.o -llapack -lblas -lgfortran -lm -lquadmath -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-mclust/00new/mclust/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘mclust’ as ‘mclust_6.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mclust)
+* installing *source* package ‘diptest’ ...
+** package ‘diptest’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c dip.c -o dip.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o diptest.so dip.o -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-diptest/00new/diptest/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘diptest’ as ‘diptest_0.76-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (diptest)
+* installing *source* package ‘rlist’ ...
+** package ‘rlist’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘rlist’ as ‘rlist_0.4.6.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rlist)
+* installing *source* package ‘LaplacesDemon’ ...
+** package ‘LaplacesDemon’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘LaplacesDemon’ as ‘LaplacesDemon_16.1.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (LaplacesDemon)
+* installing *source* package ‘shinyjs’ ...
+** package ‘shinyjs’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘shinyjs’ as ‘shinyjs_2.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyjs)
+* installing *source* package ‘PoDCall’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘PoDCall’ as ‘PoDCall_1.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (PoDCall)
+
+The downloaded source packages are in
+	‘/tmp/RtmpHEwzhg/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'progressr', 'ps',
+  'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr', 'readxl',
+  'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'SingleCellExperiment',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'XML', 'yaml'
+
+real	1m20.001s
+user	1m15.452s
+sys	0m4.889s

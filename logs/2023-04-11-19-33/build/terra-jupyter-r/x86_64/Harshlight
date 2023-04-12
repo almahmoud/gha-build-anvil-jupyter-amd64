@@ -1,0 +1,83 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''Harshlight'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'Harshlight'
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/Harshlight_1.70.0.tar.gz'
+Content type 'application/x-gzip' length 176590 bytes (172 KB)
+==================================================
+downloaded 172 KB
+
+* installing *source* package ‘Harshlight’ ...
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Harshlight.c -o Harshlight.o
+Harshlight.c: In function ‘report_overall_header’:
+Harshlight.c:1471:26: warning: unknown conversion type character ‘)’ in format [-Wformat=]
+ 1471 |   PP "%d %d moveto (%.2f%) show\n", x_text_val, y_text - 215, *diff_br);
+      |                          ^
+Harshlight.c:1474:26: warning: unknown conversion type character ‘)’ in format [-Wformat=]
+ 1474 |   PP "%d %d moveto (%.2f%) show\n", x_text_val, y_text - 230, *diff_dr);
+      |                          ^
+Harshlight.c: In function ‘chip_summary’:
+Harshlight.c:1532:107: warning: unknown conversion type character ‘)’ in format [-Wformat=]
+ 1532 |   PP "%d %d moveto (Extended defects: the variance of the Error Image explained by the background is %.2f%) show\n", x_text, y_text - 30, *var);
+      |                                                                                                           ^
+Harshlight.c:1542:26: warning: unknown conversion type character ‘)’ in format [-Wformat=]
+ 1542 |   PP "%d %d moveto (%.2f%) show\n", x_val_1, y_text - 100, *perc_c);
+      |                          ^
+Harshlight.c:1543:26: warning: unknown conversion type character ‘)’ in format [-Wformat=]
+ 1543 |   PP "%d %d moveto (%.2f%) show\n", x_val_2, y_text - 100, *perc_d);
+      |                          ^
+Harshlight.c: In function ‘extended_stop’:
+Harshlight.c:1555:107: warning: unknown conversion type character ‘)’ in format [-Wformat=]
+ 1555 |   PP "%d %d moveto (Extended defects: the variance of the Error Image explained by the background is %.2f%) show\n", x_text, y_text - 30, *var);
+      |                                                                                                           ^
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o Harshlight.so Harshlight.o -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-Harshlight/00new/Harshlight/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Harshlight’ as ‘Harshlight_1.70.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Harshlight)
+
+The downloaded source packages are in
+	‘/tmp/RtmphIBf7y/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'progressr', 'ps',
+  'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr', 'readxl',
+  'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'SingleCellExperiment',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'XML', 'yaml'
+
+real	0m19.909s
+user	0m16.815s
+sys	0m1.354s

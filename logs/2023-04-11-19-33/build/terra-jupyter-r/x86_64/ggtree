@@ -1,0 +1,272 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''ggtree'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'ggtree'
+also installing the dependencies ‘gridGraphics’, ‘ggplotify’, ‘aplot’, ‘ggfun’
+
+trying URL 'https://cloud.r-project.org/src/contrib/gridGraphics_0.5-1.tar.gz'
+Content type 'application/x-gzip' length 69207 bytes (67 KB)
+==================================================
+downloaded 67 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/ggplotify_0.1.0.tar.gz'
+Content type 'application/x-gzip' length 117721 bytes (114 KB)
+==================================================
+downloaded 114 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/aplot_0.1.10.tar.gz'
+Content type 'application/x-gzip' length 23158 bytes (22 KB)
+==================================================
+downloaded 22 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/ggfun_0.0.9.tar.gz'
+Content type 'application/x-gzip' length 216726 bytes (211 KB)
+==================================================
+downloaded 211 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/ggtree_3.6.2.tar.gz'
+Content type 'application/x-gzip' length 359692 bytes (351 KB)
+==================================================
+downloaded 351 KB
+
+* installing *source* package ‘gridGraphics’ ...
+** package ‘gridGraphics’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘gridGraphics’ as ‘gridGraphics_0.5-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridGraphics)
+* installing *source* package ‘ggfun’ ...
+** package ‘ggfun’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ggfun’ as ‘ggfun_0.0.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggfun)
+* installing *source* package ‘ggplotify’ ...
+** package ‘ggplotify’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ggplotify’ as ‘ggplotify_0.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggplotify)
+* installing *source* package ‘aplot’ ...
+** package ‘aplot’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘aplot’ as ‘aplot_0.1.10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (aplot)
+* installing *source* package ‘ggtree’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ggtree’ as ‘ggtree_3.6.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggtree)
+
+The downloaded source packages are in
+	‘/tmp/RtmpwtmnEr/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'progressr', 'ps',
+  'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr', 'readxl',
+  'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'SingleCellExperiment',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'XML', 'yaml'
+
+real	0m32.092s
+user	0m30.078s
+sys	0m3.731s
+* installing *source* package ‘proto’ ...
+** package ‘proto’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘proto’ as ‘proto_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (proto)
+* installing *source* package ‘sysfonts’ ...
+** package ‘sysfonts’ successfully unpacked and MD5 sums checked
+** using staged installation
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for pkg-config... /usr/bin/pkg-config
+checking whether pkg-config could find zlib... yes
+checking whether pkg-config could find libpng... yes
+checking whether pkg-config could find freetype2... yes
+checking whether freetype2 flags work... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c font_name.c -o font_name.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c register_routines.c -o register_routines.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c sysfonts.c -o sysfonts.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o sysfonts.so font_name.o register_routines.o sysfonts.o -lfreetype -lpng16 -lz -lz -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-sysfonts/00new/sysfonts/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘sysfonts’ as ‘sysfonts_0.8.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sysfonts)
+* installing *source* package ‘showtextdb’ ...
+** package ‘showtextdb’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘showtextdb’ as ‘showtextdb_3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (showtextdb)
+* installing *source* package ‘showtext’ ...
+** package ‘showtext’ successfully unpacked and MD5 sums checked
+** using staged installation
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for pkg-config... /usr/bin/pkg-config
+checking whether pkg-config could find zlib... yes
+checking whether pkg-config could find libpng... yes
+checking whether pkg-config could find freetype2... yes
+checking whether freetype2 flags work... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c array.c -o array.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c cairodev.c -o cairodev.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c devfuns.c -o devfuns.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c fonts.c -o fonts.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c outline.c -o outline.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c raster.c -o raster.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c register_routines.c -o register_routines.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c showtext.c -o showtext.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c utf8.c -o utf8.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c util.c -o util.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o showtext.so array.o cairodev.o devfuns.o fonts.o outline.o raster.o register_routines.o showtext.o utf8.o util.o -lfreetype -lpng16 -lz -lz -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-showtext/00new/showtext/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘showtext’ as ‘showtext_0.9-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (showtext)
+* installing *source* package ‘emojifont’ ...
+** package ‘emojifont’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘emojifont’ as ‘emojifont_0.5.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (emojifont)

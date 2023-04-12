@@ -1,0 +1,529 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''mosbi'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'mosbi'
+also installing the dependencies ‘RcppParallel’, ‘isa2’, ‘akmbiclust’
+
+trying URL 'https://cloud.r-project.org/src/contrib/RcppParallel_5.1.7.tar.gz'
+Content type 'application/x-gzip' length 1629119 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/isa2_0.3.6.tar.gz'
+Content type 'application/x-gzip' length 32130 bytes (31 KB)
+==================================================
+downloaded 31 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/akmbiclust_0.1.0.tar.gz'
+Content type 'application/x-gzip' length 3134 bytes
+==================================================
+downloaded 3134 bytes
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/mosbi_1.4.0.tar.gz'
+Content type 'application/x-gzip' length 2419623 bytes (2.3 MB)
+==================================================
+downloaded 2.3 MB
+
+* installing *source* package ‘RcppParallel’ ...
+** package ‘RcppParallel’ successfully unpacked and MD5 sums checked
+** using staged installation
+** preparing to configure package 'RcppParallel' ...
+*** configured file: 'R/tbb-autodetected.R.in' => 'R/tbb-autodetected.R'
+*** configured file: 'src/install.libs.R.in' => 'src/install.libs.R'
+*** configured file: 'src/Makevars.in' => 'src/Makevars'
+** finished configure for package 'RcppParallel'
+** libs
+(tbb) Building TBB using bundled sources ...
+make[1]: Entering directory '/tmp/Rtmps8hO82/R.INSTALL1255349538ec/RcppParallel/src/tbb/src'
+OS: linux
+arch=intel64
+compiler=gcc
+runtime=cc9.4.0_libc2.31_kernel5.15.0
+tbb_build_prefix=linux_intel64_gcc_cc9.4.0_libc2.31_kernel5.15.0
+work_dir=/tmp/Rtmps8hO82/R.INSTALL1255349538ec/RcppParallel/src/build/linux_intel64_gcc_cc9.4.0_libc2.31_kernel5.15.0_release
+make[1]: Leaving directory '/tmp/Rtmps8hO82/R.INSTALL1255349538ec/RcppParallel/src/tbb/src'
+(tbb) TBB compilation finished successfully.
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I../inst/include    -std=gnu++11 -DRCPP_PARALLEL_USE_TBB=1 -DTBB_SUPPRESS_DEPRECATED_MESSAGES=1 -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.cpp -o init.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG -I../inst/include    -std=gnu++11 -DRCPP_PARALLEL_USE_TBB=1 -DTBB_SUPPRESS_DEPRECATED_MESSAGES=1 -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c options.cpp -o options.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o RcppParallel.so init.o options.o -L/usr/lib/R/lib -lR
+installing via 'install.libs.R' to /tmp/tmp/built/00LOCK-RcppParallel/00new/RcppParallel
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘RcppParallel’ as ‘RcppParallel_5.1.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppParallel)
+* installing *source* package ‘isa2’ ...
+** package ‘isa2’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c isa.c -o isa.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o isa2.so isa.o -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-isa2/00new/isa2/libs
+** R
+** byte-compile and prepare package for lazy loading
+Creating a new generic function for ‘isa’ in package ‘isa2’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘isa2’ as ‘isa2_0.3.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (isa2)
+* installing *source* package ‘akmbiclust’ ...
+** package ‘akmbiclust’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘akmbiclust’ as ‘akmbiclust_0.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (akmbiclust)
+* installing *source* package ‘mosbi’ ...
+** using staged installation
+** libs
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/RcppParallel/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/RcppParallel/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c attr_graph.cpp -o attr_graph.o
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/RcppParallel/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c attributeConnector.cpp -o attributeConnector.o
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/RcppParallel/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c attribute_overlap.cpp -o attribute_overlap.o
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/RcppParallel/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c bicluster_methods.cpp -o bicluster_methods.o
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/RcppParallel/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c boost_graph.cpp -o boost_graph.o
+In file included from /usr/local/lib/R/site-library/BH/include/boost/scoped_ptr.hpp:13,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:22,
+                 from boost_graph.cpp:2:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/scoped_ptr.hpp:74:31: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   74 |     explicit scoped_ptr( std::auto_ptr<T> p ) BOOST_SP_NOEXCEPT : px( p.release() )
+      |                               ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/container_hash/hash.hpp:47,
+                 from /usr/local/lib/R/site-library/BH/include/boost/functional/hash.hpp:6,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered/unordered_set.hpp:19,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered_set.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:20,
+                 from boost_graph.cpp:2:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/property_map/vector_property_map.hpp:14,
+                 from /usr/local/lib/R/site-library/BH/include/boost/property_map/property_map.hpp:598,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:27,
+                 from boost_graph.cpp:2:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:361:33: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  361 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/container_hash/hash.hpp:47,
+                 from /usr/local/lib/R/site-library/BH/include/boost/functional/hash.hpp:6,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered/unordered_set.hpp:19,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered_set.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:20,
+                 from boost_graph.cpp:2:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/property_map/vector_property_map.hpp:14,
+                 from /usr/local/lib/R/site-library/BH/include/boost/property_map/property_map.hpp:598,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:27,
+                 from boost_graph.cpp:2:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:250:65: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  250 | template< class T, class R > struct sp_enable_if_auto_ptr< std::auto_ptr< T >, R >
+      |                                                                 ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/container_hash/hash.hpp:47,
+                 from /usr/local/lib/R/site-library/BH/include/boost/functional/hash.hpp:6,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered/unordered_set.hpp:19,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered_set.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:20,
+                 from boost_graph.cpp:2:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/property_map/vector_property_map.hpp:14,
+                 from /usr/local/lib/R/site-library/BH/include/boost/property_map/property_map.hpp:598,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:27,
+                 from boost_graph.cpp:2:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:507:31: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  507 |     explicit shared_ptr( std::auto_ptr<Y> & r ): px(r.get()), pn()
+      |                               ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/container_hash/hash.hpp:47,
+                 from /usr/local/lib/R/site-library/BH/include/boost/functional/hash.hpp:6,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered/unordered_set.hpp:19,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered_set.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:20,
+                 from boost_graph.cpp:2:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/property_map/vector_property_map.hpp:14,
+                 from /usr/local/lib/R/site-library/BH/include/boost/property_map/property_map.hpp:598,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:27,
+                 from boost_graph.cpp:2:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:520:22: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  520 |     shared_ptr( std::auto_ptr<Y> && r ): px(r.get()), pn()
+      |                      ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/container_hash/hash.hpp:47,
+                 from /usr/local/lib/R/site-library/BH/include/boost/functional/hash.hpp:6,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered/unordered_set.hpp:19,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered_set.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:20,
+                 from boost_graph.cpp:2:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/property_map/vector_property_map.hpp:14,
+                 from /usr/local/lib/R/site-library/BH/include/boost/property_map/property_map.hpp:598,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:27,
+                 from boost_graph.cpp:2:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:603:34: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  603 |     shared_ptr & operator=( std::auto_ptr<Y> & r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/container_hash/hash.hpp:47,
+                 from /usr/local/lib/R/site-library/BH/include/boost/functional/hash.hpp:6,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered/unordered_set.hpp:19,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered_set.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:20,
+                 from boost_graph.cpp:2:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/property_map/vector_property_map.hpp:14,
+                 from /usr/local/lib/R/site-library/BH/include/boost/property_map/property_map.hpp:598,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:27,
+                 from boost_graph.cpp:2:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:612:34: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  612 |     shared_ptr & operator=( std::auto_ptr<Y> && r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/container_hash/hash.hpp:47,
+                 from /usr/local/lib/R/site-library/BH/include/boost/functional/hash.hpp:6,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered/unordered_set.hpp:19,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered_set.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:20,
+                 from boost_graph.cpp:2:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/property_map/vector_property_map.hpp:14,
+                 from /usr/local/lib/R/site-library/BH/include/boost/property_map/property_map.hpp:598,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:27,
+                 from boost_graph.cpp:2:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp: In member function ‘boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&&)’:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:614:38: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  614 |         this_type( static_cast< std::auto_ptr<Y> && >( r ) ).swap( *this );
+      |                                      ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/container_hash/hash.hpp:47,
+                 from /usr/local/lib/R/site-library/BH/include/boost/functional/hash.hpp:6,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered/unordered_set.hpp:19,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered_set.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:20,
+                 from boost_graph.cpp:2:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/bind/mem_fn.hpp:25,
+                 from /usr/local/lib/R/site-library/BH/include/boost/mem_fn.hpp:22,
+                 from /usr/local/lib/R/site-library/BH/include/boost/function/detail/prologue.hpp:18,
+                 from /usr/local/lib/R/site-library/BH/include/boost/function/function_template.hpp:13,
+                 from /usr/local/lib/R/site-library/BH/include/boost/function/detail/maybe_include.hpp:36,
+                 from /usr/local/lib/R/site-library/BH/include/boost/function/function3.hpp:11,
+                 from /usr/local/lib/R/site-library/BH/include/boost/property_map/dynamic_property_map.hpp:25,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/graphviz.hpp:25,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/graphml.hpp:20,
+                 from boost_graph.cpp:3:
+/usr/local/lib/R/site-library/BH/include/boost/get_pointer.hpp: At global scope:
+/usr/local/lib/R/site-library/BH/include/boost/get_pointer.hpp:48:40: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   48 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/container_hash/hash.hpp:47,
+                 from /usr/local/lib/R/site-library/BH/include/boost/functional/hash.hpp:6,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered/unordered_set.hpp:19,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered_set.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:20,
+                 from boost_graph.cpp:2:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/RcppParallel/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c boost_write.cpp -o boost_write.o
+In file included from /usr/local/lib/R/site-library/BH/include/boost/scoped_ptr.hpp:13,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:22,
+                 from boost_write.cpp:2:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/scoped_ptr.hpp:74:31: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   74 |     explicit scoped_ptr( std::auto_ptr<T> p ) BOOST_SP_NOEXCEPT : px( p.release() )
+      |                               ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/container_hash/hash.hpp:47,
+                 from /usr/local/lib/R/site-library/BH/include/boost/functional/hash.hpp:6,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered/unordered_set.hpp:19,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered_set.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:20,
+                 from boost_write.cpp:2:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/property_map/vector_property_map.hpp:14,
+                 from /usr/local/lib/R/site-library/BH/include/boost/property_map/property_map.hpp:598,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:27,
+                 from boost_write.cpp:2:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:361:33: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  361 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/container_hash/hash.hpp:47,
+                 from /usr/local/lib/R/site-library/BH/include/boost/functional/hash.hpp:6,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered/unordered_set.hpp:19,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered_set.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:20,
+                 from boost_write.cpp:2:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/property_map/vector_property_map.hpp:14,
+                 from /usr/local/lib/R/site-library/BH/include/boost/property_map/property_map.hpp:598,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:27,
+                 from boost_write.cpp:2:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:250:65: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  250 | template< class T, class R > struct sp_enable_if_auto_ptr< std::auto_ptr< T >, R >
+      |                                                                 ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/container_hash/hash.hpp:47,
+                 from /usr/local/lib/R/site-library/BH/include/boost/functional/hash.hpp:6,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered/unordered_set.hpp:19,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered_set.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:20,
+                 from boost_write.cpp:2:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/property_map/vector_property_map.hpp:14,
+                 from /usr/local/lib/R/site-library/BH/include/boost/property_map/property_map.hpp:598,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:27,
+                 from boost_write.cpp:2:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:507:31: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  507 |     explicit shared_ptr( std::auto_ptr<Y> & r ): px(r.get()), pn()
+      |                               ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/container_hash/hash.hpp:47,
+                 from /usr/local/lib/R/site-library/BH/include/boost/functional/hash.hpp:6,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered/unordered_set.hpp:19,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered_set.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:20,
+                 from boost_write.cpp:2:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/property_map/vector_property_map.hpp:14,
+                 from /usr/local/lib/R/site-library/BH/include/boost/property_map/property_map.hpp:598,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:27,
+                 from boost_write.cpp:2:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:520:22: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  520 |     shared_ptr( std::auto_ptr<Y> && r ): px(r.get()), pn()
+      |                      ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/container_hash/hash.hpp:47,
+                 from /usr/local/lib/R/site-library/BH/include/boost/functional/hash.hpp:6,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered/unordered_set.hpp:19,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered_set.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:20,
+                 from boost_write.cpp:2:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/property_map/vector_property_map.hpp:14,
+                 from /usr/local/lib/R/site-library/BH/include/boost/property_map/property_map.hpp:598,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:27,
+                 from boost_write.cpp:2:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:603:34: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  603 |     shared_ptr & operator=( std::auto_ptr<Y> & r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/container_hash/hash.hpp:47,
+                 from /usr/local/lib/R/site-library/BH/include/boost/functional/hash.hpp:6,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered/unordered_set.hpp:19,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered_set.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:20,
+                 from boost_write.cpp:2:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/property_map/vector_property_map.hpp:14,
+                 from /usr/local/lib/R/site-library/BH/include/boost/property_map/property_map.hpp:598,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:27,
+                 from boost_write.cpp:2:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:612:34: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  612 |     shared_ptr & operator=( std::auto_ptr<Y> && r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/container_hash/hash.hpp:47,
+                 from /usr/local/lib/R/site-library/BH/include/boost/functional/hash.hpp:6,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered/unordered_set.hpp:19,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered_set.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:20,
+                 from boost_write.cpp:2:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/property_map/vector_property_map.hpp:14,
+                 from /usr/local/lib/R/site-library/BH/include/boost/property_map/property_map.hpp:598,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:27,
+                 from boost_write.cpp:2:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp: In member function ‘boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&&)’:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:614:38: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  614 |         this_type( static_cast< std::auto_ptr<Y> && >( r ) ).swap( *this );
+      |                                      ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/container_hash/hash.hpp:47,
+                 from /usr/local/lib/R/site-library/BH/include/boost/functional/hash.hpp:6,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered/unordered_set.hpp:19,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered_set.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:20,
+                 from boost_write.cpp:2:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/bind/mem_fn.hpp:25,
+                 from /usr/local/lib/R/site-library/BH/include/boost/mem_fn.hpp:22,
+                 from /usr/local/lib/R/site-library/BH/include/boost/function/detail/prologue.hpp:18,
+                 from /usr/local/lib/R/site-library/BH/include/boost/function/function_template.hpp:13,
+                 from /usr/local/lib/R/site-library/BH/include/boost/function/detail/maybe_include.hpp:36,
+                 from /usr/local/lib/R/site-library/BH/include/boost/function/function3.hpp:11,
+                 from /usr/local/lib/R/site-library/BH/include/boost/property_map/dynamic_property_map.hpp:25,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/graphviz.hpp:25,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/graphml.hpp:20,
+                 from boost_write.cpp:3:
+/usr/local/lib/R/site-library/BH/include/boost/get_pointer.hpp: At global scope:
+/usr/local/lib/R/site-library/BH/include/boost/get_pointer.hpp:48:40: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   48 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/container_hash/hash.hpp:47,
+                 from /usr/local/lib/R/site-library/BH/include/boost/functional/hash.hpp:6,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered/unordered_set.hpp:19,
+                 from /usr/local/lib/R/site-library/BH/include/boost/unordered_set.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/graph/adjacency_list.hpp:20,
+                 from boost_write.cpp:2:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/RcppParallel/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c distance_matrix.cpp -o distance_matrix.o
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/RcppParallel/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c extractBF.cpp -o extractBF.o
+In file included from /usr/local/lib/R/site-library/BH/include/boost/bind/mem_fn.hpp:25,
+                 from /usr/local/lib/R/site-library/BH/include/boost/mem_fn.hpp:22,
+                 from /usr/local/lib/R/site-library/BH/include/boost/function/detail/prologue.hpp:18,
+                 from /usr/local/lib/R/site-library/BH/include/boost/function.hpp:30,
+                 from /usr/local/lib/R/site-library/BH/include/boost/algorithm/string/detail/find_iterator.hpp:18,
+                 from /usr/local/lib/R/site-library/BH/include/boost/algorithm/string/find_iterator.hpp:24,
+                 from /usr/local/lib/R/site-library/BH/include/boost/algorithm/string/iter_find.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/algorithm/string/split.hpp:16,
+                 from /usr/local/lib/R/site-library/BH/include/boost/algorithm/string.hpp:23,
+                 from extractBF.cpp:3:
+/usr/local/lib/R/site-library/BH/include/boost/get_pointer.hpp:48:40: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   48 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from /usr/include/c++/9/bits/locale_conv.h:41,
+                 from /usr/include/c++/9/locale:43,
+                 from /usr/include/c++/9/iomanip:43,
+                 from /usr/local/lib/R/site-library/Rcpp/include/RcppCommon.h:53,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:27,
+                 from extractBF.cpp:2:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/RcppParallel/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c extractQUBIC2.cpp -o extractQUBIC2.o
+In file included from /usr/local/lib/R/site-library/BH/include/boost/bind/mem_fn.hpp:25,
+                 from /usr/local/lib/R/site-library/BH/include/boost/mem_fn.hpp:22,
+                 from /usr/local/lib/R/site-library/BH/include/boost/function/detail/prologue.hpp:18,
+                 from /usr/local/lib/R/site-library/BH/include/boost/function.hpp:30,
+                 from /usr/local/lib/R/site-library/BH/include/boost/algorithm/string/detail/find_iterator.hpp:18,
+                 from /usr/local/lib/R/site-library/BH/include/boost/algorithm/string/find_iterator.hpp:24,
+                 from /usr/local/lib/R/site-library/BH/include/boost/algorithm/string/iter_find.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/algorithm/string/split.hpp:16,
+                 from /usr/local/lib/R/site-library/BH/include/boost/algorithm/string.hpp:23,
+                 from extractQUBIC2.cpp:7:
+/usr/local/lib/R/site-library/BH/include/boost/get_pointer.hpp:48:40: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   48 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from /usr/include/c++/9/bits/locale_conv.h:41,
+                 from /usr/include/c++/9/locale:43,
+                 from /usr/include/c++/9/iomanip:43,
+                 from /usr/local/lib/R/site-library/Rcpp/include/RcppCommon.h:53,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:27,
+                 from extractQUBIC2.cpp:2:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/RcppParallel/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c full_graph.cpp -o full_graph.o
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/RcppParallel/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c misc.cpp -o misc.o
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/RcppParallel/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c network_edge_strength.cpp -o network_edge_strength.o
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/RcppParallel/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c sample_biclusters.cpp -o sample_biclusters.o
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/BH/include' -I'/tmp/tmp/built/RcppParallel/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c write_matrix.cpp -o write_matrix.o
+g++ -std=gnu++17 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o mosbi.so RcppExports.o attr_graph.o attributeConnector.o attribute_overlap.o bicluster_methods.o boost_graph.o boost_write.o distance_matrix.o extractBF.o extractQUBIC2.o full_graph.o misc.o network_edge_strength.o sample_biclusters.o write_matrix.o -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-mosbi/00new/mosbi/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘mosbi’ as ‘mosbi_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mosbi)
+
+The downloaded source packages are in
+	‘/tmp/RtmpxRXZtM/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'progressr', 'ps',
+  'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr', 'readxl',
+  'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'SingleCellExperiment',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'XML', 'yaml'
+
+real	3m28.272s
+user	3m13.520s
+sys	0m15.662s

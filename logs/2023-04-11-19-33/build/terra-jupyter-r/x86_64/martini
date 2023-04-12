@@ -1,0 +1,796 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''martini'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'martini'
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/martini_1.18.1.tar.gz'
+Content type 'application/x-gzip' length 3122305 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+* installing *source* package ‘martini’ ...
+** using staged installation
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/RcppEigen/include'   -std=c++11 -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -DBGZF_CACHE -I./lib `/usr/lib/R/bin/Rscript -e "Rcpp:::CxxFlags()"` -DEIGEN_PERMANENTLY_DISABLE_STUPID_WARNINGS -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Core:397,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Dense:1,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:30,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from ../inst/include/martini_RcppExports.h:7,
+                 from ../inst/include/martini.h:7,
+                 from RcppExports.cpp:4:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:60:39: warning: ignoring attributes on template argument ‘__m128’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+   60 | template<> struct is_arithmetic<__m128>  { enum { value = true }; };
+      |                                       ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:61:40: warning: ignoring attributes on template argument ‘__m128i’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+   61 | template<> struct is_arithmetic<__m128i> { enum { value = true }; };
+      |                                        ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:62:40: warning: ignoring attributes on template argument ‘__m128d’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+   62 | template<> struct is_arithmetic<__m128d> { enum { value = true }; };
+      |                                        ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:161:43: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4f’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+  161 | template<> struct unpacket_traits<Packet4f> { typedef float  type; enum {size=4, alignment=Aligned16}; typedef Packet4f half; };
+      |                                           ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:162:43: warning: ignoring attributes on template argument ‘Eigen::internal::Packet2d’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+  162 | template<> struct unpacket_traits<Packet2d> { typedef double type; enum {size=2, alignment=Aligned16}; typedef Packet2d half; };
+      |                                           ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:163:43: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4i’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+  163 | template<> struct unpacket_traits<Packet4i> { typedef int    type; enum {size=4, alignment=Aligned16}; typedef Packet4i half; };
+      |                                           ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:718:35: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4f’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+  718 | struct palign_impl<Offset,Packet4f>
+      |                                   ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:741:35: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4i’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+  741 | struct palign_impl<Offset,Packet4i>
+      |                                   ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:764:35: warning: ignoring attributes on template argument ‘Eigen::internal::Packet2d’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+  764 | struct palign_impl<Offset,Packet2d>
+      |                                   ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:778:34: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4f’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+  778 | ptranspose(PacketBlock<Packet4f,4>& kernel) {
+      |                                  ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:783:34: warning: ignoring attributes on template argument ‘Eigen::internal::Packet2d’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+  783 | ptranspose(PacketBlock<Packet2d,2>& kernel) {
+      |                                  ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:790:34: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4i’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+  790 | ptranspose(PacketBlock<Packet4i,4>& kernel) {
+      |                                  ^
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Core:377,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Dense:1,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:30,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from ../inst/include/martini_RcppExports.h:7,
+                 from ../inst/include/martini.h:7,
+                 from RcppExports.cpp:4:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/Default/ConjHelper.h:15:70: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4f’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+   15 |   template<> struct conj_helper<PACKET_REAL, PACKET_CPLX, false,false> {                                          \
+      |                                                                      ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/Complex.h:232:1: note: in expansion of macro ‘EIGEN_MAKE_CONJ_HELPER_CPLX_REAL’
+  232 | EIGEN_MAKE_CONJ_HELPER_CPLX_REAL(Packet2cf,Packet4f)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/Default/ConjHelper.h:22:70: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4f’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+   22 |   template<> struct conj_helper<PACKET_CPLX, PACKET_REAL, false,false> {                                          \
+      |                                                                      ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/Complex.h:232:1: note: in expansion of macro ‘EIGEN_MAKE_CONJ_HELPER_CPLX_REAL’
+  232 | EIGEN_MAKE_CONJ_HELPER_CPLX_REAL(Packet2cf,Packet4f)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/Default/ConjHelper.h:15:70: warning: ignoring attributes on template argument ‘Eigen::internal::Packet2d’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+   15 |   template<> struct conj_helper<PACKET_REAL, PACKET_CPLX, false,false> {                                          \
+      |                                                                      ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/Complex.h:417:1: note: in expansion of macro ‘EIGEN_MAKE_CONJ_HELPER_CPLX_REAL’
+  417 | EIGEN_MAKE_CONJ_HELPER_CPLX_REAL(Packet1cd,Packet2d)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/Default/ConjHelper.h:22:70: warning: ignoring attributes on template argument ‘Eigen::internal::Packet2d’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+   22 |   template<> struct conj_helper<PACKET_CPLX, PACKET_REAL, false,false> {                                          \
+      |                                                                      ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/Complex.h:417:1: note: in expansion of macro ‘EIGEN_MAKE_CONJ_HELPER_CPLX_REAL’
+  417 | EIGEN_MAKE_CONJ_HELPER_CPLX_REAL(Packet1cd,Packet2d)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Core:370,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Dense:1,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:30,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from ../inst/include/martini_RcppExports.h:7,
+                 from ../inst/include/martini.h:7,
+                 from RcppExports.cpp:4:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h: In instantiation of ‘struct Eigen::internal::find_best_packet<float, 4>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Matrix.h:22:57:   required from ‘struct Eigen::internal::traits<Eigen::Matrix<float, 4, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Geometry/Quaternion.h:242:7:   required from ‘struct Eigen::internal::traits<Eigen::Quaternion<float> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Geometry/arch/Geometry_SSE.h:24:46:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:44: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<float>::type’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+  187 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                                       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<float>::type’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+  187 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<float>::type’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::unpacket_traits<__vector(4) float>::half’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:205:88: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<float>::type’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+  205 |   typedef typename find_best_packet_helper<Size,typename packet_traits<T>::type>::type type;
+      |                                                                                        ^~~~
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Core:439,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Dense:1,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:30,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from ../inst/include/martini_RcppExports.h:7,
+                 from ../inst/include/martini.h:7,
+                 from RcppExports.cpp:4:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<float, 4, 1>, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:300:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<float, 4, 1>, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:551:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<float, 4, 1>, 3>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Matrix<float, 4, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Matrix<float, 4, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/PlainObjectBase.h:98:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<float, 4, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Matrix.h:178:7:   required from ‘class Eigen::Matrix<float, 4, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Geometry/Quaternion.h:46:50:   required from ‘class Eigen::QuaternionBase<Eigen::Quaternion<float> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Geometry/Quaternion.h:250:7:   required from ‘class Eigen::Quaternion<float>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Geometry/arch/Geometry_SSE.h:27:3:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<float>::type’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+   55 |                      >::type PacketReturnType;
+      |                              ^~~~~~~~~~~~~~~~
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Core:370,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Dense:1,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:30,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from ../inst/include/martini_RcppExports.h:7,
+                 from ../inst/include/martini.h:7,
+                 from RcppExports.cpp:4:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h: In instantiation of ‘struct Eigen::internal::find_best_packet<double, 4>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Matrix.h:22:57:   required from ‘struct Eigen::internal::traits<Eigen::Matrix<double, 4, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Geometry/Quaternion.h:242:7:   required from ‘struct Eigen::internal::traits<Eigen::Quaternion<double> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Geometry/arch/Geometry_SSE.h:88:47:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:44: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+  187 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                                       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+  187 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::unpacket_traits<__vector(2) double>::half’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:205:88: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+  205 |   typedef typename find_best_packet_helper<Size,typename packet_traits<T>::type>::type type;
+      |                                                                                        ^~~~
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Core:439,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Dense:1,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:30,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from ../inst/include/martini_RcppExports.h:7,
+                 from ../inst/include/martini.h:7,
+                 from RcppExports.cpp:4:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, 4, 1>, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:300:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, 4, 1>, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:551:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, 4, 1>, 3>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Matrix<double, 4, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Matrix<double, 4, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/PlainObjectBase.h:98:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<double, 4, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Matrix.h:178:7:   required from ‘class Eigen::Matrix<double, 4, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Geometry/Quaternion.h:46:50:   required from ‘class Eigen::QuaternionBase<Eigen::Quaternion<double> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Geometry/Quaternion.h:250:7:   required from ‘class Eigen::Quaternion<double>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Geometry/arch/Geometry_SSE.h:92:3:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+   55 |                      >::type PacketReturnType;
+      |                              ^~~~~~~~~~~~~~~~
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/SparseCore:37,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Sparse:26,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:31,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from ../inst/include/martini_RcppExports.h:7,
+                 from ../inst/include/martini.h:7,
+                 from RcppExports.cpp:4:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseMatrixBase.h: In instantiation of ‘class Eigen::SparseMatrixBase<Eigen::SparseMatrix<double, 0, int> >’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseCompressedBase.h:36:7:   required from ‘class Eigen::SparseCompressedBase<Eigen::SparseMatrix<double, 0, int> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseMatrix.h:96:7:   required from ‘class Eigen::SparseMatrix<double, 0, int>’
+/usr/local/lib/R/site-library/RcppEigen/include/unsupported/Eigen/src/IterativeSolvers/ConstrainedConjGrad.h:61:25:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseMatrixBase.h:47:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+   47 |                      >::type PacketReturnType;
+      |                              ^~~~~~~~~~~~~~~~
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Core:370,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Dense:1,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:30,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from ../inst/include/martini_RcppExports.h:7,
+                 from ../inst/include/martini.h:7,
+                 from RcppExports.cpp:4:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h: In instantiation of ‘struct Eigen::internal::find_best_packet<int, -1>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Matrix.h:22:57:   required from ‘struct Eigen::internal::traits<Eigen::Matrix<int, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/PlainObjectBase.h:98:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<int, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Matrix.h:178:7:   required from ‘class Eigen::Matrix<int, -1, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/unsupported/Eigen/src/KroneckerProduct/KroneckerTensorProduct.h:168:29:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:44: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<int>::type’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+  187 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                                       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<int>::type’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+  187 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<int>::type’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::unpacket_traits<__vector(2) long long int>::half’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:205:88: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<int>::type’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+  205 |   typedef typename find_best_packet_helper<Size,typename packet_traits<T>::type>::type type;
+      |                                                                                        ^~~~
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Core:439,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Dense:1,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:30,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from ../inst/include/martini_RcppExports.h:7,
+                 from ../inst/include/martini.h:7,
+                 from RcppExports.cpp:4:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<int, -1, 1>, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:300:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<int, -1, 1>, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:551:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<int, -1, 1>, 3>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Matrix<int, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Matrix<int, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/PlainObjectBase.h:98:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<int, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Matrix.h:178:7:   required from ‘class Eigen::Matrix<int, -1, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/unsupported/Eigen/src/KroneckerProduct/KroneckerTensorProduct.h:168:29:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<int>::type’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+   55 |                      >::type PacketReturnType;
+      |                              ^~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Transpose<Eigen::Matrix<int, -1, 1> >, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:300:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Transpose<Eigen::Matrix<int, -1, 1> >, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:551:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Transpose<Eigen::Matrix<int, -1, 1> >, 3>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Transpose<Eigen::Matrix<int, -1, 1> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Transpose<Eigen::Matrix<int, -1, 1> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Transpose.h:115:37:   required from ‘class Eigen::TransposeImpl<Eigen::Matrix<int, -1, 1>, Eigen::Dense>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Transpose.h:52:37:   required from ‘class Eigen::Transpose<Eigen::Matrix<int, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/unsupported/Eigen/src/KroneckerProduct/KroneckerTensorProduct.h:178:72:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<int>::type’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<int, -1, -1>, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:300:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<int, -1, -1>, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:551:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<int, -1, -1>, 3>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Matrix<int, -1, -1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Matrix<int, -1, -1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/PlainObjectBase.h:98:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<int, -1, -1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Matrix.h:178:7:   required from ‘class Eigen::Matrix<int, -1, -1>’
+/usr/local/lib/R/site-library/RcppEigen/include/unsupported/Eigen/src/KroneckerProduct/KroneckerTensorProduct.h:179:36:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<int>::type’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Core:370,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Dense:1,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:30,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from ../inst/include/martini_RcppExports.h:7,
+                 from ../inst/include/martini.h:7,
+                 from RcppExports.cpp:4:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h: In instantiation of ‘struct Eigen::internal::find_best_packet<double, -1>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Matrix.h:22:57:   required from ‘struct Eigen::internal::traits<Eigen::Matrix<double, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/PlainObjectBase.h:98:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<double, -1, 1> >’
+../inst/include/martini_RcppExports.h:38:96:   recursively required by substitution of ‘template<class T> SEXPREC* Rcpp::wrap(const Eigen::CholmodDecomposition<Eigen::SparseMatrix<Scalar> >&) [with T = <missing>]’
+../inst/include/martini_RcppExports.h:38:96:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:44: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+  187 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                                       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+  187 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::unpacket_traits<__vector(2) double>::half’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:205:88: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+  205 |   typedef typename find_best_packet_helper<Size,typename packet_traits<T>::type>::type type;
+      |                                                                                        ^~~~
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Core:439,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Dense:1,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:30,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from ../inst/include/martini_RcppExports.h:7,
+                 from ../inst/include/martini.h:7,
+                 from RcppExports.cpp:4:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:300:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:551:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 3>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Matrix<double, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Matrix<double, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/PlainObjectBase.h:98:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<double, -1, 1> >’
+../inst/include/martini_RcppExports.h:38:96:   recursively required by substitution of ‘template<class T> SEXPREC* Rcpp::wrap(const Eigen::CholmodDecomposition<Eigen::SparseMatrix<Scalar> >&) [with T = <missing>]’
+../inst/include/martini_RcppExports.h:38:96:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+   55 |                      >::type PacketReturnType;
+      |                              ^~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::SparseMatrix<double, 0, int>, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseCompressedBase.h:298:80:   required from ‘struct Eigen::internal::evaluator<Eigen::SparseCompressedBase<Eigen::SparseMatrix<double, 0, int> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseMatrix.h:1391:8:   required from ‘struct Eigen::internal::evaluator<Eigen::SparseMatrix<double, 0, int> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseAssign.h:77:20:   required from ‘void Eigen::internal::assign_sparse_to_sparse(DstXprType&, const SrcXprType&) [with DstXprType = Eigen::SparseMatrix<double, 0, int>; SrcXprType = Eigen::SparseMatrix<double, 0, int>]’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseAssign.h:132:28:   required from ‘static void Eigen::internal::Assignment<DstXprType, SrcXprType, Functor, Eigen::internal::Sparse2Sparse>::run(DstXprType&, const SrcXprType&, const Eigen::internal::assign_op<typename DstXprType::Scalar, typename SrcXprType::Scalar>&) [with DstXprType = Eigen::SparseMatrix<double, 0, int>; SrcXprType = Eigen::SparseMatrix<double, 0, int>; Functor = Eigen::internal::assign_op<double, double>; typename SrcXprType::Scalar = double; typename DstXprType::Scalar = double]’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/AssignEvaluator.h:836:49:   required from ‘void Eigen::internal::call_assignment_no_alias(Dst&, const Src&, const Func&) [with Dst = Eigen::SparseMatrix<double, 0, int>; Src = Eigen::SparseMatrix<double, 0, int>; Func = Eigen::internal::assign_op<double, double>]’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/AssignEvaluator.h:842:27:   required from ‘void Eigen::internal::call_assignment_no_alias(Dst&, const Src&) [with Dst = Eigen::SparseMatrix<double, 0, int>; Src = Eigen::SparseMatrix<double, 0, int>]’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseAssign.h:45:37:   required from ‘Derived& Eigen::SparseMatrixBase<Derived>::operator=(const Derived&) [with Derived = Eigen::SparseMatrix<double, 0, int>]’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseMatrix.h:774:26:   required from ‘Eigen::SparseMatrix<_Scalar, _Flags, _StorageIndex>& Eigen::SparseMatrix<_Scalar, _Flags, _StorageIndex>::operator=(const Eigen::SparseMatrix<_Scalar, _Flags, _StorageIndex>&) [with _Scalar = double; int _Options = 0; _StorageIndex = int]’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseMatrix.h:709:13:   required from ‘Eigen::SparseMatrix<_Scalar, _Flags, _StorageIndex>::SparseMatrix(const Eigen::SparseMatrix<_Scalar, _Flags, _StorageIndex>&) [with _Scalar = double; int _Options = 0; _StorageIndex = int]’
+RcppExports.cpp:62:60:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Map<const Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> >, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:478:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Map<const Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> >, 2>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Map<const Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Map<const Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MapBase.h:37:34:   required from ‘class Eigen::MapBase<Eigen::Map<const Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> >, 0>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Map.h:94:79:   required from ‘class Eigen::Map<const Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseCompressedBase.h:65:32:   [ skipping 3 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+/usr/local/lib/R/site-library/RcppEigen/include/RcppEigenWrap.h:155:39:   required from ‘SEXPREC* Rcpp::RcppEigen::eigen_wrap(const T&) [with T = Eigen::SparseMatrix<double, 0, int>; SEXP = SEXPREC*]’
+/usr/local/lib/R/site-library/Rcpp/include/Rcpp/internal/wrap.h:776:49:   required from ‘SEXPREC* Rcpp::internal::wrap_dispatch_eigen(const T&, Rcpp::traits::true_type) [with T = Eigen::SparseMatrix<double, 0, int>; SEXP = SEXPREC*; Rcpp::traits::true_type = Rcpp::traits::integral_constant<bool, true>]’
+/usr/local/lib/R/site-library/Rcpp/include/Rcpp/internal/wrap.h:787:39:   required from ‘SEXPREC* Rcpp::internal::wrap_dispatch_unknown_importable(const T&, Rcpp::traits::false_type) [with T = Eigen::SparseMatrix<double, 0, int>; SEXP = SEXPREC*; Rcpp::traits::false_type = Rcpp::traits::integral_constant<bool, false>]’
+/usr/local/lib/R/site-library/Rcpp/include/Rcpp/internal/wrap.h:807:52:   required from ‘SEXPREC* Rcpp::internal::wrap_dispatch(const T&, Rcpp::traits::wrap_type_unknown_tag) [with T = Eigen::SparseMatrix<double, 0, int>; SEXP = SEXPREC*]’
+/usr/local/lib/R/site-library/Rcpp/include/Rcpp/internal/wrap_end.h:30:38:   required from ‘SEXPREC* Rcpp::wrap(const T&) [with T = Eigen::SparseMatrix<double, 0, int>; SEXP = SEXPREC*]’
+../inst/include/martini_RcppExports.h:38:66:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<int>::type’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘Eigen::Index Eigen::internal::first_default_aligned(const Eigen::DenseBase<Derived>&) [with Derived = Eigen::Map<const Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> >; Eigen::Index = long int]’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Redux.h:225:63:   required from ‘static Eigen::internal::redux_impl<Func, Derived, 3, 0>::Scalar Eigen::internal::redux_impl<Func, Derived, 3, 0>::run(const Derived&, const Func&) [with Func = Eigen::internal::scalar_sum_op<int, int>; Derived = Eigen::internal::redux_evaluator<Eigen::Map<const Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> > >; Eigen::internal::redux_impl<Func, Derived, 3, 0>::Scalar = int]’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Redux.h:418:56:   required from ‘typename Eigen::internal::traits<T>::Scalar Eigen::DenseBase<Derived>::redux(const Func&) const [with BinaryOp = Eigen::internal::scalar_sum_op<int, int>; Derived = Eigen::Map<const Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> >; typename Eigen::internal::traits<T>::Scalar = int]’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Redux.h:453:73:   required from ‘typename Eigen::internal::traits<T>::Scalar Eigen::DenseBase<Derived>::sum() const [with Derived = Eigen::Map<const Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> >; typename Eigen::internal::traits<T>::Scalar = int]’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseCompressedBase.h:65:36:   required from ‘Eigen::Index Eigen::SparseCompressedBase<Derived>::nonZeros() const [with Derived = Eigen::SparseMatrix<double, 0, int>; Eigen::Index = long int]’
+/usr/local/lib/R/site-library/RcppEigen/include/RcppEigenWrap.h:125:26:   [ skipping 2 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+/usr/local/lib/R/site-library/RcppEigen/include/RcppEigenWrap.h:155:39:   required from ‘SEXPREC* Rcpp::RcppEigen::eigen_wrap(const T&) [with T = Eigen::SparseMatrix<double, 0, int>; SEXP = SEXPREC*]’
+/usr/local/lib/R/site-library/Rcpp/include/Rcpp/internal/wrap.h:776:49:   required from ‘SEXPREC* Rcpp::internal::wrap_dispatch_eigen(const T&, Rcpp::traits::true_type) [with T = Eigen::SparseMatrix<double, 0, int>; SEXP = SEXPREC*; Rcpp::traits::true_type = Rcpp::traits::integral_constant<bool, true>]’
+/usr/local/lib/R/site-library/Rcpp/include/Rcpp/internal/wrap.h:787:39:   required from ‘SEXPREC* Rcpp::internal::wrap_dispatch_unknown_importable(const T&, Rcpp::traits::false_type) [with T = Eigen::SparseMatrix<double, 0, int>; SEXP = SEXPREC*; Rcpp::traits::false_type = Rcpp::traits::integral_constant<bool, false>]’
+/usr/local/lib/R/site-library/Rcpp/include/Rcpp/internal/wrap.h:807:52:   required from ‘SEXPREC* Rcpp::internal::wrap_dispatch(const T&, Rcpp::traits::wrap_type_unknown_tag) [with T = Eigen::SparseMatrix<double, 0, int>; SEXP = SEXPREC*]’
+/usr/local/lib/R/site-library/Rcpp/include/Rcpp/internal/wrap_end.h:30:38:   required from ‘SEXPREC* Rcpp::wrap(const T&) [with T = Eigen::SparseMatrix<double, 0, int>; SEXP = SEXPREC*]’
+../inst/include/martini_RcppExports.h:38:66:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:650:34: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<int>::type’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+  650 |   return internal::first_aligned<int(unpacket_traits<DefaultPacketType>::alignment),Derived>(m);
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/RcppEigen/include'   -std=c++11 -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -DBGZF_CACHE -I./lib `/usr/lib/R/bin/Rscript -e "Rcpp:::CxxFlags()"` -DEIGEN_PERMANENTLY_DISABLE_STUPID_WARNINGS -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c mincut.cpp -o mincut.o
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Core:397,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Dense:1,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:30,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from mincut.cpp:7:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:60:39: warning: ignoring attributes on template argument ‘__m128’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+   60 | template<> struct is_arithmetic<__m128>  { enum { value = true }; };
+      |                                       ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:61:40: warning: ignoring attributes on template argument ‘__m128i’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+   61 | template<> struct is_arithmetic<__m128i> { enum { value = true }; };
+      |                                        ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:62:40: warning: ignoring attributes on template argument ‘__m128d’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+   62 | template<> struct is_arithmetic<__m128d> { enum { value = true }; };
+      |                                        ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:161:43: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4f’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+  161 | template<> struct unpacket_traits<Packet4f> { typedef float  type; enum {size=4, alignment=Aligned16}; typedef Packet4f half; };
+      |                                           ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:162:43: warning: ignoring attributes on template argument ‘Eigen::internal::Packet2d’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+  162 | template<> struct unpacket_traits<Packet2d> { typedef double type; enum {size=2, alignment=Aligned16}; typedef Packet2d half; };
+      |                                           ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:163:43: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4i’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+  163 | template<> struct unpacket_traits<Packet4i> { typedef int    type; enum {size=4, alignment=Aligned16}; typedef Packet4i half; };
+      |                                           ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:718:35: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4f’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+  718 | struct palign_impl<Offset,Packet4f>
+      |                                   ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:741:35: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4i’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+  741 | struct palign_impl<Offset,Packet4i>
+      |                                   ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:764:35: warning: ignoring attributes on template argument ‘Eigen::internal::Packet2d’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+  764 | struct palign_impl<Offset,Packet2d>
+      |                                   ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:778:34: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4f’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+  778 | ptranspose(PacketBlock<Packet4f,4>& kernel) {
+      |                                  ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:783:34: warning: ignoring attributes on template argument ‘Eigen::internal::Packet2d’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+  783 | ptranspose(PacketBlock<Packet2d,2>& kernel) {
+      |                                  ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/PacketMath.h:790:34: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4i’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+  790 | ptranspose(PacketBlock<Packet4i,4>& kernel) {
+      |                                  ^
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Core:377,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Dense:1,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:30,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from mincut.cpp:7:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/Default/ConjHelper.h:15:70: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4f’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+   15 |   template<> struct conj_helper<PACKET_REAL, PACKET_CPLX, false,false> {                                          \
+      |                                                                      ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/Complex.h:232:1: note: in expansion of macro ‘EIGEN_MAKE_CONJ_HELPER_CPLX_REAL’
+  232 | EIGEN_MAKE_CONJ_HELPER_CPLX_REAL(Packet2cf,Packet4f)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/Default/ConjHelper.h:22:70: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4f’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+   22 |   template<> struct conj_helper<PACKET_CPLX, PACKET_REAL, false,false> {                                          \
+      |                                                                      ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/Complex.h:232:1: note: in expansion of macro ‘EIGEN_MAKE_CONJ_HELPER_CPLX_REAL’
+  232 | EIGEN_MAKE_CONJ_HELPER_CPLX_REAL(Packet2cf,Packet4f)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/Default/ConjHelper.h:15:70: warning: ignoring attributes on template argument ‘Eigen::internal::Packet2d’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+   15 |   template<> struct conj_helper<PACKET_REAL, PACKET_CPLX, false,false> {                                          \
+      |                                                                      ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/Complex.h:417:1: note: in expansion of macro ‘EIGEN_MAKE_CONJ_HELPER_CPLX_REAL’
+  417 | EIGEN_MAKE_CONJ_HELPER_CPLX_REAL(Packet1cd,Packet2d)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/Default/ConjHelper.h:22:70: warning: ignoring attributes on template argument ‘Eigen::internal::Packet2d’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+   22 |   template<> struct conj_helper<PACKET_CPLX, PACKET_REAL, false,false> {                                          \
+      |                                                                      ^
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/arch/SSE/Complex.h:417:1: note: in expansion of macro ‘EIGEN_MAKE_CONJ_HELPER_CPLX_REAL’
+  417 | EIGEN_MAKE_CONJ_HELPER_CPLX_REAL(Packet1cd,Packet2d)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Core:370,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Dense:1,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:30,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from mincut.cpp:7:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h: In instantiation of ‘struct Eigen::internal::find_best_packet<float, 4>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Matrix.h:22:57:   required from ‘struct Eigen::internal::traits<Eigen::Matrix<float, 4, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Geometry/Quaternion.h:242:7:   required from ‘struct Eigen::internal::traits<Eigen::Quaternion<float> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Geometry/arch/Geometry_SSE.h:24:46:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:44: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<float>::type’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+  187 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                                       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<float>::type’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+  187 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<float>::type’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::unpacket_traits<__vector(4) float>::half’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:205:88: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<float>::type’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+  205 |   typedef typename find_best_packet_helper<Size,typename packet_traits<T>::type>::type type;
+      |                                                                                        ^~~~
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Core:439,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Dense:1,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:30,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from mincut.cpp:7:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<float, 4, 1>, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:300:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<float, 4, 1>, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:551:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<float, 4, 1>, 3>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Matrix<float, 4, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Matrix<float, 4, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/PlainObjectBase.h:98:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<float, 4, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Matrix.h:178:7:   required from ‘class Eigen::Matrix<float, 4, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Geometry/Quaternion.h:46:50:   required from ‘class Eigen::QuaternionBase<Eigen::Quaternion<float> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Geometry/Quaternion.h:250:7:   required from ‘class Eigen::Quaternion<float>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Geometry/arch/Geometry_SSE.h:27:3:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<float>::type’ {aka ‘__vector(4) float’} [-Wignored-attributes]
+   55 |                      >::type PacketReturnType;
+      |                              ^~~~~~~~~~~~~~~~
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Core:370,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Dense:1,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:30,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from mincut.cpp:7:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h: In instantiation of ‘struct Eigen::internal::find_best_packet<double, 4>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Matrix.h:22:57:   required from ‘struct Eigen::internal::traits<Eigen::Matrix<double, 4, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Geometry/Quaternion.h:242:7:   required from ‘struct Eigen::internal::traits<Eigen::Quaternion<double> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Geometry/arch/Geometry_SSE.h:88:47:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:44: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+  187 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                                       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+  187 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::unpacket_traits<__vector(2) double>::half’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:205:88: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+  205 |   typedef typename find_best_packet_helper<Size,typename packet_traits<T>::type>::type type;
+      |                                                                                        ^~~~
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Core:439,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Dense:1,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:30,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from mincut.cpp:7:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, 4, 1>, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:300:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, 4, 1>, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:551:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, 4, 1>, 3>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Matrix<double, 4, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Matrix<double, 4, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/PlainObjectBase.h:98:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<double, 4, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Matrix.h:178:7:   required from ‘class Eigen::Matrix<double, 4, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Geometry/Quaternion.h:46:50:   required from ‘class Eigen::QuaternionBase<Eigen::Quaternion<double> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Geometry/Quaternion.h:250:7:   required from ‘class Eigen::Quaternion<double>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Geometry/arch/Geometry_SSE.h:92:3:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+   55 |                      >::type PacketReturnType;
+      |                              ^~~~~~~~~~~~~~~~
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/SparseCore:37,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Sparse:26,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:31,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from mincut.cpp:7:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseMatrixBase.h: In instantiation of ‘class Eigen::SparseMatrixBase<Eigen::SparseMatrix<double, 0, int> >’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseCompressedBase.h:36:7:   required from ‘class Eigen::SparseCompressedBase<Eigen::SparseMatrix<double, 0, int> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseMatrix.h:96:7:   required from ‘class Eigen::SparseMatrix<double, 0, int>’
+/usr/local/lib/R/site-library/RcppEigen/include/unsupported/Eigen/src/IterativeSolvers/ConstrainedConjGrad.h:61:25:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseMatrixBase.h:47:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+   47 |                      >::type PacketReturnType;
+      |                              ^~~~~~~~~~~~~~~~
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Core:370,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Dense:1,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:30,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from mincut.cpp:7:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h: In instantiation of ‘struct Eigen::internal::find_best_packet<int, -1>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Matrix.h:22:57:   required from ‘struct Eigen::internal::traits<Eigen::Matrix<int, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/PlainObjectBase.h:98:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<int, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Matrix.h:178:7:   required from ‘class Eigen::Matrix<int, -1, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/unsupported/Eigen/src/KroneckerProduct/KroneckerTensorProduct.h:168:29:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:44: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<int>::type’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+  187 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                                       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<int>::type’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+  187 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<int>::type’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::unpacket_traits<__vector(2) long long int>::half’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:205:88: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<int>::type’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+  205 |   typedef typename find_best_packet_helper<Size,typename packet_traits<T>::type>::type type;
+      |                                                                                        ^~~~
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Core:439,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Dense:1,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:30,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from mincut.cpp:7:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<int, -1, 1>, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:300:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<int, -1, 1>, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:551:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<int, -1, 1>, 3>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Matrix<int, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Matrix<int, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/PlainObjectBase.h:98:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<int, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Matrix.h:178:7:   required from ‘class Eigen::Matrix<int, -1, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/unsupported/Eigen/src/KroneckerProduct/KroneckerTensorProduct.h:168:29:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<int>::type’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+   55 |                      >::type PacketReturnType;
+      |                              ^~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Transpose<Eigen::Matrix<int, -1, 1> >, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:300:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Transpose<Eigen::Matrix<int, -1, 1> >, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:551:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Transpose<Eigen::Matrix<int, -1, 1> >, 3>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Transpose<Eigen::Matrix<int, -1, 1> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Transpose<Eigen::Matrix<int, -1, 1> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Transpose.h:115:37:   required from ‘class Eigen::TransposeImpl<Eigen::Matrix<int, -1, 1>, Eigen::Dense>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Transpose.h:52:37:   required from ‘class Eigen::Transpose<Eigen::Matrix<int, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/unsupported/Eigen/src/KroneckerProduct/KroneckerTensorProduct.h:178:72:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<int>::type’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<int, -1, -1>, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:300:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<int, -1, -1>, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:551:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<int, -1, -1>, 3>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Matrix<int, -1, -1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Matrix<int, -1, -1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/PlainObjectBase.h:98:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<int, -1, -1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Matrix.h:178:7:   required from ‘class Eigen::Matrix<int, -1, -1>’
+/usr/local/lib/R/site-library/RcppEigen/include/unsupported/Eigen/src/KroneckerProduct/KroneckerTensorProduct.h:179:36:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<int>::type’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Core:370,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Dense:1,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:30,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from mincut.cpp:7:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h: In instantiation of ‘struct Eigen::internal::find_best_packet<double, -1>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Matrix.h:22:57:   required from ‘struct Eigen::internal::traits<Eigen::Matrix<double, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/PlainObjectBase.h:98:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<double, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Matrix.h:178:7:   required from ‘class Eigen::Matrix<double, -1, 1>’
+mincut.cpp:41:12:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:44: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+  187 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                                       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+  187 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:187:83: warning: ignoring attributes on template argument ‘Eigen::internal::unpacket_traits<__vector(2) double>::half’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/util/XprHelper.h:205:88: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+  205 |   typedef typename find_best_packet_helper<Size,typename packet_traits<T>::type>::type type;
+      |                                                                                        ^~~~
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Core:439,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Dense:1,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:30,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from mincut.cpp:7:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:300:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:551:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 3>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Matrix<double, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Matrix<double, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/PlainObjectBase.h:98:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<double, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Matrix.h:178:7:   required from ‘class Eigen::Matrix<double, -1, 1>’
+mincut.cpp:41:12:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+   55 |                      >::type PacketReturnType;
+      |                              ^~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> >, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CwiseNullaryOp.h:60:7:   required from ‘class Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CwiseBinaryOp.h:38:28:   required from ‘struct Eigen::internal::traits<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> >, const Eigen::SparseMatrix<double, 0, int> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/EigenBase.h:41:59:   required from ‘struct Eigen::EigenBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> >, const Eigen::SparseMatrix<double, 0, int> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseMatrixBase.h:26:34:   required from ‘class Eigen::SparseMatrixBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> >, const Eigen::SparseMatrix<double, 0, int> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseCwiseBinaryOp.h:36:7:   required from ‘class Eigen::CwiseBinaryOpImpl<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> >, const Eigen::SparseMatrix<double, 0, int>, Eigen::Sparse>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CwiseBinaryOp.h:77:7:   required from ‘class Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> >, const Eigen::SparseMatrix<double, 0, int> >’
+mincut.cpp:76:60:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/SparseCore:37,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Sparse:26,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:31,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from mincut.cpp:7:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseMatrixBase.h: In instantiation of ‘class Eigen::SparseMatrixBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> >, const Eigen::SparseMatrix<double, 0, int> > >’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseCwiseBinaryOp.h:36:7:   required from ‘class Eigen::CwiseBinaryOpImpl<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> >, const Eigen::SparseMatrix<double, 0, int>, Eigen::Sparse>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CwiseBinaryOp.h:77:7:   required from ‘class Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> >, const Eigen::SparseMatrix<double, 0, int> >’
+mincut.cpp:76:60:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseMatrixBase.h:47:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+   47 |                      >::type PacketReturnType;
+      |                              ^~~~~~~~~~~~~~~~
+In file included from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Core:439,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/Eigen/Dense:1,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigenForward.h:30,
+                 from /usr/local/lib/R/site-library/RcppEigen/include/RcppEigen.h:25,
+                 from mincut.cpp:7:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> >, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:300:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> >, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:551:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> >, 3>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/ArrayBase.h:39:34:   required from ‘class Eigen::ArrayBase<Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/ArrayWrapper.h:42:7:   required from ‘class Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> >’
+mincut.cpp:77:33:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+   55 |                      >::type PacketReturnType;
+      |                              ^~~~~~~~~~~~~~~~
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Array<double, -1, 1> >, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Array<double, -1, 1> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/ArrayBase.h:39:34:   required from ‘class Eigen::ArrayBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Array<double, -1, 1> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CwiseNullaryOp.h:60:7:   required from ‘class Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Array<double, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CwiseBinaryOp.h:38:28:   required from ‘struct Eigen::internal::traits<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double, double>, const Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> >, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Array<double, -1, 1> > > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CwiseBinaryOp.h:148:7:   required from ‘class Eigen::CwiseBinaryOpImpl<Eigen::internal::scalar_difference_op<double, double>, const Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> >, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Array<double, -1, 1> >, Eigen::Dense>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CwiseBinaryOp.h:77:7:   required from ‘class Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double, double>, const Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> >, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Array<double, -1, 1> > >’
+mincut.cpp:77:37:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double, double>, const Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> >, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Array<double, -1, 1> > >, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double, double>, const Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> >, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Array<double, -1, 1> > > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/ArrayBase.h:39:34:   required from ‘class Eigen::ArrayBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double, double>, const Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> >, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Array<double, -1, 1> > > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CwiseBinaryOp.h:148:7:   required from ‘class Eigen::CwiseBinaryOpImpl<Eigen::internal::scalar_difference_op<double, double>, const Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> >, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Array<double, -1, 1> >, Eigen::Dense>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CwiseBinaryOp.h:77:7:   required from ‘class Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double, double>, const Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> >, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Array<double, -1, 1> > >’
+mincut.cpp:77:37:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Array<double, -1, 1> >, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Array<double, -1, 1> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/ArrayBase.h:39:34:   required from ‘class Eigen::ArrayBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Array<double, -1, 1> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CwiseNullaryOp.h:60:7:   required from ‘class Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Array<double, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CwiseBinaryOp.h:38:28:   required from ‘struct Eigen::internal::traits<Eigen::CwiseBinaryOp<Eigen::internal::scalar_cmp_op<double, double, Eigen::internal::cmp_LT>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Array<double, -1, 1> >, const Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> > > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CwiseBinaryOp.h:148:7:   required from ‘class Eigen::CwiseBinaryOpImpl<Eigen::internal::scalar_cmp_op<double, double, Eigen::internal::cmp_LT>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Array<double, -1, 1> >, const Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> >, Eigen::Dense>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CwiseBinaryOp.h:77:7:   required from ‘class Eigen::CwiseBinaryOp<Eigen::internal::scalar_cmp_op<double, double, Eigen::internal::cmp_LT>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Array<double, -1, 1> >, const Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> > >’
+mincut.cpp:81:39:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<double>, const Eigen::Matrix<double, -1, 1> >, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<double>, const Eigen::Matrix<double, -1, 1> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<double>, const Eigen::Matrix<double, -1, 1> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CwiseUnaryOp.h:94:7:   required from ‘class Eigen::CwiseUnaryOpImpl<Eigen::internal::scalar_opposite_op<double>, const Eigen::Matrix<double, -1, 1>, Eigen::Dense>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CwiseUnaryOp.h:55:7:   required from ‘class Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<double>, const Eigen::Matrix<double, -1, 1> >’
+mincut.cpp:81:53:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, 1> >, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, 1> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, 1> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CwiseNullaryOp.h:60:7:   required from ‘class Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Select.h:39:43:   required from ‘struct Eigen::internal::traits<Eigen::Select<Eigen::CwiseBinaryOp<Eigen::internal::scalar_cmp_op<double, double, Eigen::internal::cmp_LT>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Array<double, -1, 1> >, const Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> > >, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, 1> >, Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<double>, const Eigen::Matrix<double, -1, 1> > > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Select.h:52:7:   required from ‘class Eigen::Select<Eigen::CwiseBinaryOp<Eigen::internal::scalar_cmp_op<double, double, Eigen::internal::cmp_LT>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Array<double, -1, 1> >, const Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> > >, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, 1> >, Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<double>, const Eigen::Matrix<double, -1, 1> > >’
+mincut.cpp:81:56:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Select<Eigen::CwiseBinaryOp<Eigen::internal::scalar_cmp_op<double, double, Eigen::internal::cmp_LT>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Array<double, -1, 1> >, const Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> > >, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, 1> >, Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<double>, const Eigen::Matrix<double, -1, 1> > >, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Select<Eigen::CwiseBinaryOp<Eigen::internal::scalar_cmp_op<double, double, Eigen::internal::cmp_LT>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Array<double, -1, 1> >, const Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> > >, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, 1> >, Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<double>, const Eigen::Matrix<double, -1, 1> > > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Select<Eigen::CwiseBinaryOp<Eigen::internal::scalar_cmp_op<double, double, Eigen::internal::cmp_LT>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Array<double, -1, 1> >, const Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> > >, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, 1> >, Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<double>, const Eigen::Matrix<double, -1, 1> > > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Select.h:52:7:   required from ‘class Eigen::Select<Eigen::CwiseBinaryOp<Eigen::internal::scalar_cmp_op<double, double, Eigen::internal::cmp_LT>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Array<double, -1, 1> >, const Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> > >, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, 1> >, Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<double>, const Eigen::Matrix<double, -1, 1> > >’
+mincut.cpp:81:56:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Select<Eigen::CwiseBinaryOp<Eigen::internal::scalar_cmp_op<double, double, Eigen::internal::cmp_LE>, const Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> >, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Array<double, -1, 1> > >, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, 1> >, Eigen::Matrix<double, -1, 1> >, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Select<Eigen::CwiseBinaryOp<Eigen::internal::scalar_cmp_op<double, double, Eigen::internal::cmp_LE>, const Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> >, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Array<double, -1, 1> > >, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, 1> >, Eigen::Matrix<double, -1, 1> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Select<Eigen::CwiseBinaryOp<Eigen::internal::scalar_cmp_op<double, double, Eigen::internal::cmp_LE>, const Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> >, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Array<double, -1, 1> > >, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, 1> >, Eigen::Matrix<double, -1, 1> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Select.h:52:7:   required from ‘class Eigen::Select<Eigen::CwiseBinaryOp<Eigen::internal::scalar_cmp_op<double, double, Eigen::internal::cmp_LE>, const Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> >, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Array<double, -1, 1> > >, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, 1> >, Eigen::Matrix<double, -1, 1> >’
+mincut.cpp:83:56:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Map<const Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> >, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:478:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Map<const Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> >, 2>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Map<const Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Map<const Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MapBase.h:37:34:   required from ‘class Eigen::MapBase<Eigen::Map<const Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> >, 0>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Map.h:94:79:   required from ‘class Eigen::Map<const Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseCompressedBase.h:65:32:   required from ‘Eigen::Index Eigen::SparseCompressedBase<Derived>::nonZeros() const [with Derived = Eigen::SparseMatrix<double, 0, int>; Eigen::Index = long int]’
+mincut.cpp:29:51:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<int>::type’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::SparseMatrix<double, 0, int>, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseCompressedBase.h:298:80:   required from ‘struct Eigen::internal::evaluator<Eigen::SparseCompressedBase<Eigen::SparseMatrix<double, 0, int> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseMatrix.h:1391:8:   required from ‘struct Eigen::internal::evaluator<Eigen::SparseMatrix<double, 0, int> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseCwiseBinaryOp.h:495:54:   required from ‘struct Eigen::internal::sparse_conjunction_evaluator<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> >, const Eigen::SparseMatrix<double, 0, int> >, Eigen::internal::IndexBased, Eigen::internal::IteratorBased, double, double>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseCwiseBinaryOp.h:345:8:   required from ‘struct Eigen::internal::binary_evaluator<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> >, const Eigen::SparseMatrix<double, 0, int> >, Eigen::internal::IndexBased, Eigen::internal::IteratorBased, double, double>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CoreEvaluators.h:665:8:   required from ‘struct Eigen::internal::evaluator<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> >, const Eigen::SparseMatrix<double, 0, int> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseMatrix.h:683:103:   required from ‘Eigen::SparseMatrix<_Scalar, _Flags, _StorageIndex>::SparseMatrix(const Eigen::SparseMatrixBase<OtherDerived>&) [with OtherDerived = Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> >, const Eigen::SparseMatrix<double, 0, int> >; _Scalar = double; int _Options = 0; _StorageIndex = int]’
+mincut.cpp:76:60:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, -1>, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:300:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, -1>, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:551:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, -1>, 3>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Matrix<double, -1, -1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Matrix<double, -1, -1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/PlainObjectBase.h:98:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<double, -1, -1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CoreEvaluators.h:131:44:   [ skipping 2 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CoreEvaluators.h:465:11:   required from ‘struct Eigen::internal::evaluator<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseCwiseBinaryOp.h:535:54:   required from ‘struct Eigen::internal::sparse_conjunction_evaluator<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> >, const Eigen::SparseMatrix<double, 0, int> >, Eigen::internal::IndexBased, Eigen::internal::IteratorBased, double, double>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseCwiseBinaryOp.h:345:8:   required from ‘struct Eigen::internal::binary_evaluator<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> >, const Eigen::SparseMatrix<double, 0, int> >, Eigen::internal::IndexBased, Eigen::internal::IteratorBased, double, double>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CoreEvaluators.h:665:8:   required from ‘struct Eigen::internal::evaluator<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> >, const Eigen::SparseMatrix<double, 0, int> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseMatrix.h:683:103:   required from ‘Eigen::SparseMatrix<_Scalar, _Flags, _StorageIndex>::SparseMatrix(const Eigen::SparseMatrixBase<OtherDerived>&) [with OtherDerived = Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> >, const Eigen::SparseMatrix<double, 0, int> >; _Scalar = double; int _Options = 0; _StorageIndex = int]’
+mincut.cpp:76:60:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Array<double, -1, 1>, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:300:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Array<double, -1, 1>, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:551:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Array<double, -1, 1>, 3>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Array<double, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/ArrayBase.h:39:34:   required from ‘class Eigen::ArrayBase<Eigen::Array<double, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/PlainObjectBase.h:98:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Array<double, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Array.h:45:7:   required from ‘class Eigen::Array<double, -1, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/../plugins/ArrayCwiseBinaryOps.h:170:1:   required from ‘const RCmpLTReturnType Eigen::ArrayBase<Derived>::operator>(const Scalar&) const [with Derived = Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> >; Eigen::ArrayBase<Derived>::RCmpLTReturnType = Eigen::CwiseBinaryOp<Eigen::internal::scalar_cmp_op<double, double, Eigen::internal::cmp_LT>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Array<double, -1, 1> >, const Eigen::ArrayWrapper<Eigen::Matrix<double, -1, 1> > >; typename Eigen::DenseBase<Derived>::PlainObject = Eigen::Array<double, -1, 1>; typename Eigen::internal::traits<T>::Scalar = double; Eigen::ArrayBase<Derived>::Scalar = double]’
+mincut.cpp:81:39:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__vector(2) double’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Map<Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> >, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:300:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Map<Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> >, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:551:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Map<Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> >, 3>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Map<Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Map<Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MapBase.h:37:34:   required from ‘class Eigen::MapBase<Eigen::Map<Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> >, 0>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MapBase.h:221:34:   required from ‘class Eigen::MapBase<Eigen::Map<Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> >, 1>’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Map.h:94:79:   required from ‘class Eigen::Map<Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseMatrix.h:1084:12:   required from ‘Eigen::SparseMatrix<_Scalar, _Options, _StorageIndex>& Eigen::SparseMatrix<_Scalar, _Flags, _StorageIndex>::operator=(const Eigen::SparseMatrixBase<OtherDerived>&) [with OtherDerived = Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> >, const Eigen::SparseMatrix<double, 0, int> >; _Scalar = double; int _Options = 0; _StorageIndex = int]’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseMatrix.h:685:15:   required from ‘Eigen::SparseMatrix<_Scalar, _Flags, _StorageIndex>::SparseMatrix(const Eigen::SparseMatrixBase<OtherDerived>&) [with OtherDerived = Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> >, const Eigen::SparseMatrix<double, 0, int> >; _Scalar = double; int _Options = 0; _StorageIndex = int]’
+mincut.cpp:76:60:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<int>::type’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<int>, Eigen::Matrix<int, -1, 1> >, 0>’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<int>, Eigen::Matrix<int, -1, 1> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<int>, Eigen::Matrix<int, -1, 1> > >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CwiseNullaryOp.h:60:7:   required from ‘class Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<int>, Eigen::Matrix<int, -1, 1> >’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CwiseNullaryOp.h:327:30:   required from ‘Derived& Eigen::DenseBase<Derived>::setConstant(const Scalar&) [with Derived = Eigen::Map<Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> >; Eigen::DenseBase<Derived>::Scalar = int]’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/CwiseNullaryOp.h:501:10:   required from ‘Derived& Eigen::DenseBase<Derived>::setZero() [with Derived = Eigen::Map<Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> >]’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseMatrix.h:1084:5:   required from ‘Eigen::SparseMatrix<_Scalar, _Options, _StorageIndex>& Eigen::SparseMatrix<_Scalar, _Flags, _StorageIndex>::operator=(const Eigen::SparseMatrixBase<OtherDerived>&) [with OtherDerived = Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> >, const Eigen::SparseMatrix<double, 0, int> >; _Scalar = double; int _Options = 0; _StorageIndex = int]’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseMatrix.h:685:15:   required from ‘Eigen::SparseMatrix<_Scalar, _Flags, _StorageIndex>::SparseMatrix(const Eigen::SparseMatrixBase<OtherDerived>&) [with OtherDerived = Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, -1, -1> >, const Eigen::SparseMatrix<double, 0, int> >; _Scalar = double; int _Options = 0; _StorageIndex = int]’
+mincut.cpp:76:60:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<int>::type’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘Eigen::Index Eigen::internal::first_default_aligned(const Eigen::DenseBase<Derived>&) [with Derived = Eigen::Map<const Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> >; Eigen::Index = long int]’:
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Redux.h:225:63:   required from ‘static Eigen::internal::redux_impl<Func, Derived, 3, 0>::Scalar Eigen::internal::redux_impl<Func, Derived, 3, 0>::run(const Derived&, const Func&) [with Func = Eigen::internal::scalar_sum_op<int, int>; Derived = Eigen::internal::redux_evaluator<Eigen::Map<const Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> > >; Eigen::internal::redux_impl<Func, Derived, 3, 0>::Scalar = int]’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Redux.h:418:56:   required from ‘typename Eigen::internal::traits<T>::Scalar Eigen::DenseBase<Derived>::redux(const Func&) const [with BinaryOp = Eigen::internal::scalar_sum_op<int, int>; Derived = Eigen::Map<const Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> >; typename Eigen::internal::traits<T>::Scalar = int]’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/Redux.h:453:73:   required from ‘typename Eigen::internal::traits<T>::Scalar Eigen::DenseBase<Derived>::sum() const [with Derived = Eigen::Map<const Eigen::Matrix<int, -1, 1>, 0, Eigen::Stride<0, 0> >; typename Eigen::internal::traits<T>::Scalar = int]’
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/SparseCore/SparseCompressedBase.h:65:36:   required from ‘Eigen::Index Eigen::SparseCompressedBase<Derived>::nonZeros() const [with Derived = Eigen::SparseMatrix<double, 0, int>; Eigen::Index = long int]’
+mincut.cpp:29:51:   required from here
+/usr/local/lib/R/site-library/RcppEigen/include/Eigen/src/Core/DenseCoeffsBase.h:650:34: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<int>::type’ {aka ‘__vector(2) long long int’} [-Wignored-attributes]
+  650 |   return internal::first_aligned<int(unpacket_traits<DefaultPacketType>::alignment),Derived>(m);
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/RcppEigen/include'   -std=c++11 -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -DBGZF_CACHE -I./lib `/usr/lib/R/bin/Rscript -e "Rcpp:::CxxFlags()"` -DEIGEN_PERMANENTLY_DISABLE_STUPID_WARNINGS -fopenmp -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lib/maxflow/maxflow.cpp -o lib/maxflow/maxflow.o
+ar -crus libmaxflow.a lib/maxflow/maxflow.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+cp -r lib/maxflow "/tmp/tmp/built/00LOCK-martini/00new/martini/include"
+mkdir -p "/tmp/tmp/built/00LOCK-martini/00new/martini/usrlib"
+cp libmaxflow.a "/tmp/tmp/built/00LOCK-martini/00new/martini/usrlib"
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o martini.so RcppExports.o mincut.o -pthread -fopenmp /tmp/tmp/built/00LOCK-martini/00new/martini/usrlib/libmaxflow.a -fopenmp -pthread -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-martini/00new/martini/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘martini’ as ‘martini_1.18.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (martini)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpm29QRO/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'progressr', 'ps',
+  'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr', 'readxl',
+  'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'SingleCellExperiment',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'XML', 'yaml'
+
+real	0m29.777s
+user	0m27.279s
+sys	0m2.418s

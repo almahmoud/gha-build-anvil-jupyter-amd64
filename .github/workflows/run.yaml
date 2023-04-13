@@ -6,7 +6,7 @@ on:
       - tobuild.txt
       - packages.json
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '0 */3 * * *'
 
 jobs:
   getlistformatrix:

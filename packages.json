@@ -47,23 +47,19 @@
         "biovizBase"
     ],
     "ATACCoGAPS": [
-        "TFBSTools",
         "chromVAR",
         "motifmatchr",
         "projectR"
     ],
     "ATACseqQC": [
         "ChIPpeakAnno",
-        "TFBSTools",
         "motifStack",
         "regioneR"
     ],
     "ATACseqTFEA": [
-        "TFBSTools",
         "motifmatchr"
     ],
     "atSNP": [
-        "TFBSTools",
         "motifStack"
     ],
     "BadRegionFinder": [
@@ -189,9 +185,7 @@
     "ChIPQC": [
         "DiffBind"
     ],
-    "chromVAR": [
-        "TFBSTools"
-    ],
+    "chromVAR": [],
     "cicero": [
         "Gviz",
         "VariantAnnotation",
@@ -296,7 +290,6 @@
     "CytoGLMM": [],
     "cytomapper": [],
     "dagLogo": [
-        "TFBSTools",
         "motifStack"
     ],
     "DAMEfinder": [
@@ -362,12 +355,10 @@
         "biovizBase"
     ],
     "enhancerHomologSearch": [
-        "TFBSTools",
         "motifmatchr"
     ],
     "ENmix": [],
     "enrichTF": [
-        "TFBSTools",
         "motifmatchr"
     ],
     "ensemblVEP": [
@@ -401,7 +392,6 @@
         "VariantAnnotation"
     ],
     "esATAC": [
-        "TFBSTools",
         "motifmatchr"
     ],
     "EventPointer": [],
@@ -564,7 +554,6 @@
     "LOBSTAHS": [],
     "LowMACA": [
         "RTCGAToolbox",
-        "TFBSTools",
         "cBioPortalData",
         "motifStack"
     ],
@@ -584,9 +573,7 @@
         "VariantAnnotation",
         "biovizBase"
     ],
-    "MatrixRider": [
-        "TFBSTools"
-    ],
+    "MatrixRider": [],
     "mCSEA": [
         "Gviz",
         "VariantAnnotation",
@@ -662,22 +649,15 @@
         "ensemblVEP",
         "gmapR"
     ],
-    "monaLisa": [
-        "TFBSTools"
-    ],
+    "monaLisa": [],
     "motifbreakR": [
         "Gviz",
-        "TFBSTools",
         "VariantAnnotation",
         "biovizBase",
         "motifStack"
     ],
-    "motifmatchr": [
-        "TFBSTools"
-    ],
-    "motifStack": [
-        "TFBSTools"
-    ],
+    "motifmatchr": [],
+    "motifStack": [],
     "msgbsR": [
         "VariantAnnotation",
         "biovizBase",
@@ -711,7 +691,6 @@
         "ATACseqQC",
         "ChIPpeakAnno",
         "Gviz",
-        "TFBSTools",
         "VariantAnnotation",
         "biovizBase",
         "motifStack",
@@ -744,7 +723,6 @@
         "VariantAnnotation"
     ],
     "pageRank": [
-        "TFBSTools",
         "motifmatchr"
     ],
     "panelcn.mops": [],
@@ -763,7 +741,6 @@
     "preciseTAD": [],
     "primirTSS": [
         "Gviz",
-        "TFBSTools",
         "VariantAnnotation",
         "biovizBase"
     ],
@@ -854,7 +831,6 @@
         "ggbio"
     ],
     "ribosomeProfilingQC": [
-        "TFBSTools",
         "motifStack"
     ],
     "RIPAT": [
@@ -985,7 +961,6 @@
     "spatzie": [
         "GenomicInteractions",
         "Gviz",
-        "TFBSTools",
         "VariantAnnotation",
         "biovizBase",
         "motifmatchr"
@@ -1031,7 +1006,6 @@
     ],
     "TDARACNE": [],
     "terraTCGAdata": [],
-    "TFBSTools": [],
     "TFHAZ": [],
     "timeOmics": [],
     "TitanCNA": [

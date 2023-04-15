@@ -1,0 +1,466 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''NetPathMiner'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'NetPathMiner'
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/NetPathMiner_1.34.2.tar.gz'
+Content type 'application/x-gzip' length 2704310 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+* installing *source* package ‘NetPathMiner’ ...
+** using staged installation
+'config' variable 'CPP' is defunct
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for xmlParseFile in -lxml2... yes
+checking for readSBML in -lsbml... yes
+untarring boost include tree...
+libSBML found, finding configuration...
+pkg-config tool found
+Couldn't find libsbml.pc. Searching for libsbml in candidate directories.
+checking for xml2-config... /usr/bin/xml2-config
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG     -I .  -DHAVE_XML -I/usr/include/libxml2 -DHAVE_SBML -I/usr/include/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c PathRanker.cpp -o PathRanker.o
+PathRanker.cpp:17:32: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
+   17 | #pragma GCC diagnostic ignored "-Wunused-local-typedef"
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ./boost/smart_ptr/shared_ptr.hpp:32,
+                 from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from PathRanker.cpp:23:
+./boost/smart_ptr/detail/shared_count.hpp:323:33: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  323 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./boost/config/no_tr1/memory.hpp:21,
+                 from ./boost/smart_ptr/shared_ptr.hpp:27,
+                 from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from PathRanker.cpp:23:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from PathRanker.cpp:23:
+./boost/smart_ptr/shared_ptr.hpp:247:65: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  247 | template< class T, class R > struct sp_enable_if_auto_ptr< std::auto_ptr< T >, R >
+      |                                                                 ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./boost/config/no_tr1/memory.hpp:21,
+                 from ./boost/smart_ptr/shared_ptr.hpp:27,
+                 from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from PathRanker.cpp:23:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from PathRanker.cpp:23:
+./boost/smart_ptr/shared_ptr.hpp:446:31: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  446 |     explicit shared_ptr( std::auto_ptr<Y> & r ): px(r.get()), pn()
+      |                               ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./boost/config/no_tr1/memory.hpp:21,
+                 from ./boost/smart_ptr/shared_ptr.hpp:27,
+                 from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from PathRanker.cpp:23:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from PathRanker.cpp:23:
+./boost/smart_ptr/shared_ptr.hpp:459:22: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  459 |     shared_ptr( std::auto_ptr<Y> && r ): px(r.get()), pn()
+      |                      ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./boost/config/no_tr1/memory.hpp:21,
+                 from ./boost/smart_ptr/shared_ptr.hpp:27,
+                 from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from PathRanker.cpp:23:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from PathRanker.cpp:23:
+./boost/smart_ptr/shared_ptr.hpp:525:34: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  525 |     shared_ptr & operator=( std::auto_ptr<Y> & r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./boost/config/no_tr1/memory.hpp:21,
+                 from ./boost/smart_ptr/shared_ptr.hpp:27,
+                 from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from PathRanker.cpp:23:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from PathRanker.cpp:23:
+./boost/smart_ptr/shared_ptr.hpp:534:34: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  534 |     shared_ptr & operator=( std::auto_ptr<Y> && r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./boost/config/no_tr1/memory.hpp:21,
+                 from ./boost/smart_ptr/shared_ptr.hpp:27,
+                 from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from PathRanker.cpp:23:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from PathRanker.cpp:23:
+./boost/smart_ptr/shared_ptr.hpp: In member function ‘boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&&)’:
+./boost/smart_ptr/shared_ptr.hpp:536:38: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  536 |         this_type( static_cast< std::auto_ptr<Y> && >( r ) ).swap( *this );
+      |                                      ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./boost/config/no_tr1/memory.hpp:21,
+                 from ./boost/smart_ptr/shared_ptr.hpp:27,
+                 from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from PathRanker.cpp:23:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from ./boost/scoped_ptr.hpp:14,
+                 from ./boost/graph/adjacency_list.hpp:31,
+                 from PathRanker.cpp:24:
+./boost/smart_ptr/scoped_ptr.hpp: At global scope:
+./boost/smart_ptr/scoped_ptr.hpp:68:31: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   68 |     explicit scoped_ptr( std::auto_ptr<T> p ) BOOST_NOEXCEPT : px( p.release() )
+      |                               ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./boost/config/no_tr1/memory.hpp:21,
+                 from ./boost/smart_ptr/shared_ptr.hpp:27,
+                 from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from PathRanker.cpp:23:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from ./boost/graph/adjacency_list.hpp:246,
+                 from PathRanker.cpp:24:
+./boost/graph/detail/adjacency_list.hpp:278:12: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  278 |       std::auto_ptr<Property> m_property;
+      |            ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./boost/config/no_tr1/memory.hpp:21,
+                 from ./boost/smart_ptr/shared_ptr.hpp:27,
+                 from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from PathRanker.cpp:23:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c handlesegfault.c -o handlesegfault.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c hme3m.c -o hme3m.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG     -I .  -DHAVE_XML -I/usr/include/libxml2 -DHAVE_SBML -I/usr/include/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c kgml_interface.cpp -o kgml_interface.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG     -I .  -DHAVE_XML -I/usr/include/libxml2 -DHAVE_SBML -I/usr/include/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c methods.cpp -o methods.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG     -I .  -DHAVE_XML -I/usr/include/libxml2 -DHAVE_SBML -I/usr/include/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c pathScope.cpp -o pathScope.o
+pathScope.cpp:23:32: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
+   23 | #pragma GCC diagnostic ignored "-Wunused-local-typedef"
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ./boost/smart_ptr/shared_ptr.hpp:32,
+                 from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from pathScope.cpp:28:
+./boost/smart_ptr/detail/shared_count.hpp:323:33: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  323 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./boost/config/no_tr1/memory.hpp:21,
+                 from ./boost/smart_ptr/shared_ptr.hpp:27,
+                 from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from pathScope.cpp:28:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from pathScope.cpp:28:
+./boost/smart_ptr/shared_ptr.hpp:247:65: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  247 | template< class T, class R > struct sp_enable_if_auto_ptr< std::auto_ptr< T >, R >
+      |                                                                 ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./boost/config/no_tr1/memory.hpp:21,
+                 from ./boost/smart_ptr/shared_ptr.hpp:27,
+                 from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from pathScope.cpp:28:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from pathScope.cpp:28:
+./boost/smart_ptr/shared_ptr.hpp:446:31: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  446 |     explicit shared_ptr( std::auto_ptr<Y> & r ): px(r.get()), pn()
+      |                               ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./boost/config/no_tr1/memory.hpp:21,
+                 from ./boost/smart_ptr/shared_ptr.hpp:27,
+                 from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from pathScope.cpp:28:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from pathScope.cpp:28:
+./boost/smart_ptr/shared_ptr.hpp:459:22: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  459 |     shared_ptr( std::auto_ptr<Y> && r ): px(r.get()), pn()
+      |                      ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./boost/config/no_tr1/memory.hpp:21,
+                 from ./boost/smart_ptr/shared_ptr.hpp:27,
+                 from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from pathScope.cpp:28:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from pathScope.cpp:28:
+./boost/smart_ptr/shared_ptr.hpp:525:34: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  525 |     shared_ptr & operator=( std::auto_ptr<Y> & r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./boost/config/no_tr1/memory.hpp:21,
+                 from ./boost/smart_ptr/shared_ptr.hpp:27,
+                 from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from pathScope.cpp:28:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from pathScope.cpp:28:
+./boost/smart_ptr/shared_ptr.hpp:534:34: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  534 |     shared_ptr & operator=( std::auto_ptr<Y> && r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./boost/config/no_tr1/memory.hpp:21,
+                 from ./boost/smart_ptr/shared_ptr.hpp:27,
+                 from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from pathScope.cpp:28:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from pathScope.cpp:28:
+./boost/smart_ptr/shared_ptr.hpp: In member function ‘boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&&)’:
+./boost/smart_ptr/shared_ptr.hpp:536:38: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  536 |         this_type( static_cast< std::auto_ptr<Y> && >( r ) ).swap( *this );
+      |                                      ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./boost/config/no_tr1/memory.hpp:21,
+                 from ./boost/smart_ptr/shared_ptr.hpp:27,
+                 from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from pathScope.cpp:28:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from ./boost/scoped_ptr.hpp:14,
+                 from ./boost/graph/adjacency_list.hpp:31,
+                 from pathScope.cpp:29:
+./boost/smart_ptr/scoped_ptr.hpp: At global scope:
+./boost/smart_ptr/scoped_ptr.hpp:68:31: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   68 |     explicit scoped_ptr( std::auto_ptr<T> p ) BOOST_NOEXCEPT : px( p.release() )
+      |                               ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./boost/config/no_tr1/memory.hpp:21,
+                 from ./boost/smart_ptr/shared_ptr.hpp:27,
+                 from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from pathScope.cpp:28:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from ./boost/graph/adjacency_list.hpp:246,
+                 from pathScope.cpp:29:
+./boost/graph/detail/adjacency_list.hpp:278:12: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  278 |       std::auto_ptr<Property> m_property;
+      |            ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./boost/config/no_tr1/memory.hpp:21,
+                 from ./boost/smart_ptr/shared_ptr.hpp:27,
+                 from ./boost/shared_ptr.hpp:17,
+                 from ./boost/property_map/vector_property_map.hpp:14,
+                 from ./boost/property_map/property_map.hpp:844,
+                 from ./boost/graph/properties.hpp:19,
+                 from ./boost/graph/graph_utility.hpp:30,
+                 from pathScope.cpp:28:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG     -I .  -DHAVE_XML -I/usr/include/libxml2 -DHAVE_SBML -I/usr/include/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c sbml_interface.cpp -o sbml_interface.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o NetPathMiner.so PathRanker.o handlesegfault.o hme3m.o init.o kgml_interface.o methods.o pathScope.o sbml_interface.o -lsbml -lxml2 -lxml2 -lsbml -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-NetPathMiner/00new/NetPathMiner/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘NetPathMiner’ as ‘NetPathMiner_1.34.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (NetPathMiner)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp7vakSu/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BH', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'progressr', 'ps',
+  'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr', 'readxl',
+  'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'SingleCellExperiment',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'XML', 'yaml',
+  'zoo'
+
+real	0m29.815s
+user	0m26.390s
+sys	0m1.977s

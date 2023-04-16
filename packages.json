@@ -771,7 +771,6 @@
         "GenomicRanges",
         "KEGGREST",
         "MLInterfaces",
-        "MSnbase",
         "SummarizedExperiment",
         "annotate",
         "biomaRt",
@@ -1624,7 +1623,6 @@
     "CAMERA": [
         "GenomeInfoDb",
         "GenomicRanges",
-        "MSnbase",
         "MsFeatures",
         "SummarizedExperiment",
         "xcms"
@@ -2381,14 +2379,11 @@
     "cliqueMS": [
         "GenomeInfoDb",
         "GenomicRanges",
-        "MSnbase",
         "MsFeatures",
         "SummarizedExperiment",
         "xcms"
     ],
-    "CluMSID": [
-        "MSnbase"
-    ],
+    "CluMSID": [],
     "clusterExperiment": [
         "AnnotationDbi",
         "BiocSingular",
@@ -2936,7 +2931,6 @@
     "cosmiq": [
         "GenomeInfoDb",
         "GenomicRanges",
-        "MSnbase",
         "MsFeatures",
         "SummarizedExperiment",
         "xcms"
@@ -3382,9 +3376,7 @@
         "rtracklayer",
         "sva"
     ],
-    "DAPAR": [
-        "MSnbase"
-    ],
+    "DAPAR": [],
     "dasper": [
         "AnnotationDbi",
         "Biostrings",
@@ -3605,7 +3597,6 @@
         "ComplexHeatmap",
         "GenomeInfoDb",
         "GenomicRanges",
-        "MSnbase",
         "SummarizedExperiment"
     ],
     "derfinder": [
@@ -4912,7 +4903,6 @@
         "CAMERA",
         "GenomeInfoDb",
         "GenomicRanges",
-        "MSnbase",
         "MsFeatures",
         "SummarizedExperiment",
         "xcms"
@@ -6623,7 +6613,6 @@
         "CAMERA",
         "GenomeInfoDb",
         "GenomicRanges",
-        "MSnbase",
         "MsFeatures",
         "SummarizedExperiment",
         "xcms"
@@ -6933,7 +6922,6 @@
         "CAMERA",
         "GenomeInfoDb",
         "GenomicRanges",
-        "MSnbase",
         "MsFeatures",
         "SummarizedExperiment",
         "xcms"
@@ -7119,7 +7107,6 @@
         "CAMERA",
         "GenomeInfoDb",
         "GenomicRanges",
-        "MSnbase",
         "MsFeatures",
         "SummarizedExperiment",
         "xcms"
@@ -7394,7 +7381,6 @@
     "Metab": [
         "GenomeInfoDb",
         "GenomicRanges",
-        "MSnbase",
         "MsFeatures",
         "SummarizedExperiment",
         "xcms"
@@ -7467,7 +7453,6 @@
         "CAMERA",
         "GenomeInfoDb",
         "GenomicRanges",
-        "MSnbase",
         "MsFeatures",
         "SummarizedExperiment",
         "xcms"
@@ -8216,7 +8201,6 @@
     "MobilityTransformR": [
         "GenomeInfoDb",
         "GenomicRanges",
-        "MSnbase",
         "MsFeatures",
         "Spectra",
         "SummarizedExperiment",
@@ -8463,21 +8447,16 @@
         "GenomeInfoDb",
         "KEGGREST"
     ],
-    "msmsEDA": [
-        "MSnbase"
-    ],
+    "msmsEDA": [],
     "msmsTests": [
-        "MSnbase",
         "msmsEDA"
     ],
-    "MSnbase": [],
     "MSnID": [
         "AnnotationDbi",
         "AnnotationHub",
         "Biostrings",
         "GenomeInfoDb",
         "KEGGREST",
-        "MSnbase",
         "msmsEDA",
         "msmsTests"
     ],
@@ -8509,11 +8488,8 @@
         "Biostrings",
         "GenomeInfoDb"
     ],
-    "MSstatsQC": [
-        "MSnbase"
-    ],
+    "MSstatsQC": [],
     "MSstatsQCgui": [
-        "MSnbase",
         "MSstatsQC"
     ],
     "MSstatsShiny": [
@@ -8827,7 +8803,6 @@
     "ncGTW": [
         "GenomeInfoDb",
         "GenomicRanges",
-        "MSnbase",
         "MsFeatures",
         "SummarizedExperiment",
         "xcms"
@@ -9547,9 +9522,7 @@
         "flowWorkspace",
         "ncdfFlow"
     ],
-    "peakPantheR": [
-        "MSnbase"
-    ],
+    "peakPantheR": [],
     "PECA": [
         "AnnotationDbi",
         "Biostrings",
@@ -9906,9 +9879,7 @@
         "ensembldb",
         "rtracklayer"
     ],
-    "PrInCE": [
-        "MSnbase"
-    ],
+    "PrInCE": [],
     "proActiv": [
         "AnnotationDbi",
         "Biostrings",
@@ -9960,7 +9931,6 @@
     "proFIA": [
         "GenomeInfoDb",
         "GenomicRanges",
-        "MSnbase",
         "MsFeatures",
         "MultiAssayExperiment",
         "MultiDataSet",
@@ -10005,7 +9975,6 @@
         "GenomicRanges",
         "KEGGREST",
         "MLInterfaces",
-        "MSnbase",
         "SummarizedExperiment",
         "annotate",
         "biomaRt",
@@ -10018,7 +9987,6 @@
         "GenomicRanges",
         "KEGGREST",
         "MLInterfaces",
-        "MSnbase",
         "SummarizedExperiment",
         "annotate",
         "biomaRt",
@@ -10043,8 +10011,7 @@
         "sva"
     ],
     "Prostar": [
-        "DAPAR",
-        "MSnbase"
+        "DAPAR"
     ],
     "proteasy": [
         "AnnotationDbi",
@@ -10131,9 +10098,7 @@
         "biomaRt",
         "topGO"
     ],
-    "ptairMS": [
-        "MSnbase"
-    ],
+    "ptairMS": [],
     "puma": [
         "Biostrings",
         "GenomeInfoDb",
@@ -10233,8 +10198,7 @@
     ],
     "qPLEXanalyzer": [
         "Biostrings",
-        "GenomeInfoDb",
-        "MSnbase"
+        "GenomeInfoDb"
     ],
     "qrqc": [
         "AnnotationDbi",
@@ -11023,7 +10987,6 @@
     "Risa": [
         "GenomeInfoDb",
         "GenomicRanges",
-        "MSnbase",
         "MsFeatures",
         "SummarizedExperiment",
         "xcms"
@@ -11073,9 +11036,7 @@
         "regioneR",
         "rtracklayer"
     ],
-    "RMassBank": [
-        "MSnbase"
-    ],
+    "RMassBank": [],
     "Rmmquant": [
         "AnnotationDbi",
         "Biostrings",
@@ -13259,7 +13220,6 @@
     "synapter": [
         "Biostrings",
         "GenomeInfoDb",
-        "MSnbase",
         "cleaver"
     ],
     "SynExtend": [
@@ -13677,8 +13637,7 @@
     ],
     "topdownr": [
         "Biostrings",
-        "GenomeInfoDb",
-        "MSnbase"
+        "GenomeInfoDb"
     ],
     "topGO": [
         "AnnotationDbi",
@@ -14410,7 +14369,6 @@
     "xcms": [
         "GenomeInfoDb",
         "GenomicRanges",
-        "MSnbase",
         "MsFeatures",
         "SummarizedExperiment"
     ],

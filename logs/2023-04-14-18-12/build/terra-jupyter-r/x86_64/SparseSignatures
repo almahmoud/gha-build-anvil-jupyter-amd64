@@ -1,0 +1,443 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''SparseSignatures'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'SparseSignatures'
+also installing the dependencies ‘iterators’, ‘registry’, ‘rngtools’, ‘gridBase’, ‘foreach’, ‘doParallel’, ‘NMF’, ‘nnlasso’, ‘nnls’
+
+trying URL 'https://cloud.r-project.org/src/contrib/iterators_1.0.14.tar.gz'
+Content type 'application/x-gzip' length 300266 bytes (293 KB)
+==================================================
+downloaded 293 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/registry_0.5-1.tar.gz'
+Content type 'application/x-gzip' length 170969 bytes (166 KB)
+==================================================
+downloaded 166 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/rngtools_1.5.2.tar.gz'
+Content type 'application/x-gzip' length 22753 bytes (22 KB)
+==================================================
+downloaded 22 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/gridBase_0.4-7.tar.gz'
+Content type 'application/x-gzip' length 153373 bytes (149 KB)
+==================================================
+downloaded 149 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/foreach_1.5.2.tar.gz'
+Content type 'application/x-gzip' length 89758 bytes (87 KB)
+==================================================
+downloaded 87 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/doParallel_1.0.17.tar.gz'
+Content type 'application/x-gzip' length 164254 bytes (160 KB)
+==================================================
+downloaded 160 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/NMF_0.26.tar.gz'
+Content type 'application/x-gzip' length 1672812 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/nnlasso_0.3.tar.gz'
+Content type 'application/x-gzip' length 18173 bytes (17 KB)
+==================================================
+downloaded 17 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/nnls_1.4.tar.gz'
+Content type 'application/x-gzip' length 10538 bytes (10 KB)
+==================================================
+downloaded 10 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/SparseSignatures_2.8.0.tar.gz'
+Content type 'application/x-gzip' length 996330 bytes (972 KB)
+==================================================
+downloaded 972 KB
+
+* installing *source* package ‘iterators’ ...
+** package ‘iterators’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘iterators’ as ‘iterators_1.0.14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (iterators)
+* installing *source* package ‘registry’ ...
+** package ‘registry’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘registry’ as ‘registry_0.5-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (registry)
+* installing *source* package ‘rngtools’ ...
+** package ‘rngtools’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘rngtools’ as ‘rngtools_1.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rngtools)
+* installing *source* package ‘gridBase’ ...
+** package ‘gridBase’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘gridBase’ as ‘gridBase_0.4-7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridBase)
+* installing *source* package ‘nnlasso’ ...
+** package ‘nnlasso’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘nnlasso’ as ‘nnlasso_0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (nnlasso)
+* installing *source* package ‘nnls’ ...
+** package ‘nnls’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c lawson_hanson_nnls.f -o lawson_hanson_nnls.o
+lawson_hanson_nnls.f:112:72:
+
+  112 |    10     CL=MAX(abs(U(1,J)),CL)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 10 at (1)
+lawson_hanson_nnls.f:113:72:
+
+  113 |       IF (CL) 130,130,20
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: Arithmetic IF statement at (1)
+lawson_hanson_nnls.f:117:72:
+
+  117 |    30     SM=SM+(U(1,J)*CLINV)**2
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 30 at (1)
+lawson_hanson_nnls.f:119:72:
+
+  119 |       IF (U(1,LPIVOT)) 50,50,40
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: Arithmetic IF statement at (1)
+lawson_hanson_nnls.f:126:72:
+
+  126 |    60 IF (CL) 130,130,70
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: Arithmetic IF statement at (1)
+lawson_hanson_nnls.f:131:72:
+
+  131 |       IF (B) 80,130,130
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: Arithmetic IF statement at (1)
+lawson_hanson_nnls.f:142:72:
+
+  142 |    90         I3=I3+ICE
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 90 at (1)
+lawson_hanson_nnls.f:143:72:
+
+  143 |           IF (SM) 100,120,100
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: Arithmetic IF statement at (1)
+lawson_hanson_nnls.f:148:72:
+
+  148 |   110         I4=I4+ICE
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 110 at (1)
+lawson_hanson_nnls.f:227:72:
+
+  227 |    20     INDEX(I)=I
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 20 at (1)
+lawson_hanson_nnls.f:246:72:
+
+  246 |    40        SM=SM+A(L,J)*B(L)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 40 at (1)
+lawson_hanson_nnls.f:276:72:
+
+  276 |    90       UNORM=UNORM+A(L,J)**2
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 90 at (1)
+lawson_hanson_nnls.f:285:72:
+
+  285 |   120        ZZ(L)=B(L)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 120 at (1)
+lawson_hanson_nnls.f:309:72:
+
+  309 |   150    B(L)=ZZ(L)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 150 at (1)
+lawson_hanson_nnls.f:326:72:
+
+  326 |   180       A(L,J)=ZERO
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 180 at (1)
+lawson_hanson_nnls.f:428:72:
+
+  428 |   310     ZZ(I)=B(I)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 310 at (1)
+lawson_hanson_nnls.f:438:72:
+
+  438 |   340     X(I)=ZZ(IP)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 340 at (1)
+lawson_hanson_nnls.f:451:72:
+
+  451 |   360       SM=SM+B(I)**2
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 360 at (1)
+lawson_hanson_nnls.f:454:72:
+
+  454 |   380       W(J)=ZERO
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 380 at (1)
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c nnnpls.f -o nnnpls.o
+nnnpls.f:96:72:
+
+   96 |    20     INDEX(I)=I
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 20 at (1)
+nnnpls.f:115:72:
+
+  115 |    40        SM=SM+A(L,J)*B(L)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 40 at (1)
+nnnpls.f:145:72:
+
+  145 |    90       UNORM=UNORM+A(L,J)**2
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 90 at (1)
+nnnpls.f:154:72:
+
+  154 |   120        ZZ(L)=B(L)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 120 at (1)
+nnnpls.f:178:72:
+
+  178 |   150    B(L)=ZZ(L)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 150 at (1)
+nnnpls.f:195:72:
+
+  195 |   180       A(L,J)=ZERO
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 180 at (1)
+nnnpls.f:297:72:
+
+  297 |   310     ZZ(I)=B(I)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 310 at (1)
+nnnpls.f:307:72:
+
+  307 |   340     X(I)=ZZ(IP)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 340 at (1)
+nnnpls.f:330:72:
+
+  330 |   360       SM=SM+B(I)**2
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 360 at (1)
+nnnpls.f:333:72:
+
+  333 |   380       W(J)=ZERO
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 380 at (1)
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o nnls.so lawson_hanson_nnls.o nnnpls.o -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-nnls/00new/nnls/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘nnls’ as ‘nnls_1.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (nnls)
+* installing *source* package ‘foreach’ ...
+** package ‘foreach’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘foreach’ as ‘foreach_1.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (foreach)
+* installing *source* package ‘doParallel’ ...
+** package ‘doParallel’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘doParallel’ as ‘doParallel_1.0.17_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (doParallel)
+* installing *source* package ‘NMF’ ...
+** package ‘NMF’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c distance.cpp -o distance.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c divergence.cpp -o divergence.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c euclidean.cpp -o euclidean.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c registerDynamicSymbol.c -o registerDynamicSymbol.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c utils.cpp -o utils.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o NMF.so distance.o divergence.o euclidean.o registerDynamicSymbol.o utils.o -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-NMF/00new/NMF/libs
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+Setting package specific options: package:NMF:logger (1 default option(s))
+Setting package specific options: package:NMF (10 default option(s))
+Creating a generic function for ‘plot’ from ‘graphics’ in package ‘NMF’
+    (from the saved implicit definition)
+Creating meta registry in package 'NMF' ... OK
+Creating registry 'extra_handler' in package 'NMF' ... OK
+Creating registry 'extra_action' in package 'NMF' ... OK
+Registering extra handler 'install.packages' [function] ... OK
+Creating registry 'algorithm' in package 'NMF' ... OK
+Registering NMF algorithm '.R#brunet' [NMFStrategyIterative] ... OK
+Registering NMF algorithm 'brunet' [NMFStrategyIterative] based on template '.R#brunet' ... OK
+Registering NMF algorithm 'KL' [NMFStrategyIterative] ... OK
+Registering NMF algorithm '.R#lee' [NMFStrategyIterative] ... OK
+Registering NMF algorithm 'lee' [NMFStrategyIterative] based on template '.R#lee' ... OK
+Registering NMF algorithm 'Frobenius' [NMFStrategyIterative] ... OK
+Registering NMF algorithm '.R#offset' [NMFStrategyIterative] ... OK
+Registering NMF algorithm 'offset' [NMFStrategyIterative] based on template '.R#offset' ... OK
+Registering NMF algorithm '.R#nsNMF' [NMFStrategyIterative] ... OK
+Registering NMF algorithm 'nsNMF' [NMFStrategyIterative] based on template '.R#nsNMF' ... OK
+Registering NMF algorithm 'ls-nmf' [NMFStrategyIterative] ... OK
+Registering NMF algorithm 'pe-nmf' [NMFStrategyIterative] ... OK
+Registering NMF algorithm '.siNMF' [NMFStrategyIterative] based on template 'lee' ... OK
+Registering NMF algorithm 'siNMF' [NMFStrategyIterative] based on template 'lee' ... OK
+Registering NMF algorithm 'snmf/r' [NMFStrategyFunction] ... OK
+Registering NMF algorithm 'snmf/l' [NMFStrategyFunction] ... OK
+Registering extra action 'bigmemory' for handler 'install.packages' ... OK
+Registering extra action 'synchronicity' for handler 'install.packages' ... OK
+Creating registry 'seed' in package 'NMF' ... OK
+Registering NMF seeding method 'none' [NMFSeed] ... OK
+Registering NMF seeding method 'random' [NMFSeed] ... OK
+Registering NMF seeding method 'ica' [NMFSeed] ... OK
+Registering NMF seeding method 'nndsvd' [NMFSeed] ... OK
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘NMF’ as ‘NMF_0.26_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (NMF)
+* installing *source* package ‘SparseSignatures’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘SparseSignatures’ as ‘SparseSignatures_2.8.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SparseSignatures)
+
+The downloaded source packages are in
+	‘/tmp/RtmpH9AtRd/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BH', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'progressr', 'ps',
+  'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr', 'readxl',
+  'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'SingleCellExperiment',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'XML', 'yaml',
+  'zoo'
+
+real	1m8.066s
+user	1m3.024s
+sys	0m6.867s

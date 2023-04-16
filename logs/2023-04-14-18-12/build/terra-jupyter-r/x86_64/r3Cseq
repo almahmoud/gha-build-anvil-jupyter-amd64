@@ -1,0 +1,294 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''r3Cseq'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'r3Cseq'
+also installing the dependencies ‘gsubfn’, ‘proto’, ‘chron’, ‘VGAM’, ‘sqldf’
+
+trying URL 'https://cloud.r-project.org/src/contrib/gsubfn_0.7.tar.gz'
+Content type 'application/x-gzip' length 311271 bytes (303 KB)
+==================================================
+downloaded 303 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/proto_1.0.0.tar.gz'
+Content type 'application/x-gzip' length 541398 bytes (528 KB)
+==================================================
+downloaded 528 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/chron_2.3-60.tar.gz'
+Content type 'application/x-gzip' length 37322 bytes (36 KB)
+==================================================
+downloaded 36 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/VGAM_1.1-8.tar.gz'
+Content type 'application/x-gzip' length 1638263 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/sqldf_0.4-11.tar.gz'
+Content type 'application/x-gzip' length 63097 bytes (61 KB)
+==================================================
+downloaded 61 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/r3Cseq_1.44.0.tar.gz'
+Content type 'application/x-gzip' length 4358981 bytes (4.2 MB)
+==================================================
+downloaded 4.2 MB
+
+* installing *source* package ‘proto’ ...
+** package ‘proto’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘proto’ as ‘proto_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (proto)
+* installing *source* package ‘chron’ ...
+** package ‘chron’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c chron_strs.c -o chron_strs.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c unpaste.c -o unpaste.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o chron.so chron_strs.o init.o unpaste.o -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-chron/00new/chron/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘chron’ as ‘chron_2.3-60_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (chron)
+* installing *source* package ‘VGAM’ ...
+** package ‘VGAM’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c VGAM_init.c -o VGAM_init.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c caqo3.c -o caqo3.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c ei.f -o ei.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c fgam.f -o fgam.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c gautr.c -o gautr.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lerchphi.c -o lerchphi.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c lms.f -o lms.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c muxr3.c -o muxr3.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c rgam.f -o rgam.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c rgam3.c -o rgam3.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c specfun3.c -o specfun3.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c tyeepolygamma.f -o tyeepolygamma.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c tyeepolygamma3.c -o tyeepolygamma3.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c vdigami.f -o vdigami.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c veigen.f -o veigen.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c vgam.f -o vgam.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c vgam3.c -o vgam3.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c vlinpack1.f -o vlinpack1.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c vlinpack2.f -o vlinpack2.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c vlinpack3.f -o vlinpack3.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c vmux.f -o vmux.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c vmux3.c -o vmux3.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c zeta3.c -o zeta3.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o VGAM.so VGAM_init.o caqo3.o ei.o fgam.o gautr.o lerchphi.o lms.o muxr3.o rgam.o rgam3.o specfun3.o tyeepolygamma.o tyeepolygamma3.o vdigami.o veigen.o vgam.o vgam3.o vlinpack1.o vlinpack2.o vlinpack3.o vmux.o vmux3.o zeta3.o -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-VGAM/00new/VGAM/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘VGAM’ as ‘VGAM_1.1-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (VGAM)
+* installing *source* package ‘gsubfn’ ...
+** package ‘gsubfn’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: no DISPLAY variable so Tk is not available
+** testing if installed package can be loaded from final location
+Warning: no DISPLAY variable so Tk is not available
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘gsubfn’ as ‘gsubfn_0.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gsubfn)
+* installing *source* package ‘sqldf’ ...
+** package ‘sqldf’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+Warning message:
+no DISPLAY variable so Tk is not available 
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Warning: no DISPLAY variable so Tk is not available
+** testing if installed package can be loaded from final location
+Warning: no DISPLAY variable so Tk is not available
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘sqldf’ as ‘sqldf_0.4-11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sqldf)
+* installing *source* package ‘r3Cseq’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+No methods found in package ‘Biostrings’ for request: ‘DNAString’ when loading ‘r3Cseq’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+No methods found in package ‘Biostrings’ for request: ‘DNAString’ when loading ‘r3Cseq’
+** testing if installed package can be loaded from final location
+No methods found in package ‘Biostrings’ for request: ‘DNAString’ when loading ‘r3Cseq’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘r3Cseq’ as ‘r3Cseq_1.44.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (r3Cseq)
+
+The downloaded source packages are in
+	‘/tmp/RtmptR4FY5/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BH', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'progressr', 'ps',
+  'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr', 'readxl',
+  'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'SingleCellExperiment',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'XML', 'yaml',
+  'zoo'
+
+real	1m46.899s
+user	1m41.521s
+sys	0m6.443s
+* installing *source* package ‘BSgenome.Hsapiens.UCSC.hg18’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Hsapiens.UCSC.hg18’ as ‘BSgenome.Hsapiens.UCSC.hg18_1.3.1000_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Hsapiens.UCSC.hg18)
+* installing *source* package ‘BSgenome.Hsapiens.UCSC.hg18.masked’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Hsapiens.UCSC.hg18.masked’ as ‘BSgenome.Hsapiens.UCSC.hg18.masked_1.3.99_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Hsapiens.UCSC.hg18.masked)
+* installing *source* package ‘BSgenome.Mmusculus.UCSC.mm9’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Mmusculus.UCSC.mm9’ as ‘BSgenome.Mmusculus.UCSC.mm9_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Mmusculus.UCSC.mm9)
+* installing *source* package ‘BSgenome.Mmusculus.UCSC.mm9.masked’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Mmusculus.UCSC.mm9.masked’ as ‘BSgenome.Mmusculus.UCSC.mm9.masked_1.3.99_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Mmusculus.UCSC.mm9.masked)
+* installing *source* package ‘BSgenome.Rnorvegicus.UCSC.rn5’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Rnorvegicus.UCSC.rn5’ as ‘BSgenome.Rnorvegicus.UCSC.rn5_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Rnorvegicus.UCSC.rn5)
+* installing *source* package ‘BSgenome.Rnorvegicus.UCSC.rn5.masked’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Rnorvegicus.UCSC.rn5.masked’ as ‘BSgenome.Rnorvegicus.UCSC.rn5.masked_1.3.99_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Rnorvegicus.UCSC.rn5.masked)

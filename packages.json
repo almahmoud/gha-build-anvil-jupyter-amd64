@@ -99,7 +99,6 @@
         "geneplotter"
     ],
     "ANCOMBC": [
-        "TreeSummarizedExperiment",
         "mia",
         "scater"
     ],
@@ -331,7 +330,6 @@
     "benchdamic": [
         "ANCOMBC",
         "DESeq2",
-        "TreeSummarizedExperiment",
         "annotate",
         "genefilter",
         "geneplotter",
@@ -652,8 +650,7 @@
         "rtracklayer"
     ],
     "CBEA": [
-        "BiocSet",
-        "TreeSummarizedExperiment"
+        "BiocSet"
     ],
     "cBioPortalData": [
         "GenomicFeatures",
@@ -1886,8 +1883,7 @@
     ],
     "ExperimentSubset": [
         "DropletUtils",
-        "SpatialExperiment",
-        "TreeSummarizedExperiment"
+        "SpatialExperiment"
     ],
     "extraChIPs": [
         "BSgenome",
@@ -3123,14 +3119,10 @@
         "biomaRt"
     ],
     "mia": [
-        "TreeSummarizedExperiment",
         "scater"
     ],
-    "miaSim": [
-        "TreeSummarizedExperiment"
-    ],
+    "miaSim": [],
     "miaViz": [
-        "TreeSummarizedExperiment",
         "mia",
         "scater"
     ],
@@ -3142,7 +3134,6 @@
     "microbiomeMarker": [
         "ANCOMBC",
         "DESeq2",
-        "TreeSummarizedExperiment",
         "annotate",
         "geneplotter",
         "mia",
@@ -5296,7 +5287,6 @@
         "diffcyt",
         "flowCore"
     ],
-    "TreeSummarizedExperiment": [],
     "trena": [
         "BSgenome",
         "MotifDb",

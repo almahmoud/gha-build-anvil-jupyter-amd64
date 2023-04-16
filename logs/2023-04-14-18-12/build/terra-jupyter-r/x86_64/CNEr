@@ -1,0 +1,259 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''CNEr'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'CNEr'
+also installing the dependencies ‘pracma’, ‘R.oo’, ‘R.methodsS3’, ‘poweRlaw’, ‘GO.db’, ‘R.utils’
+
+trying URL 'https://cloud.r-project.org/src/contrib/pracma_2.4.2.tar.gz'
+Content type 'application/x-gzip' length 399611 bytes (390 KB)
+==================================================
+downloaded 390 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/R.oo_1.25.0.tar.gz'
+Content type 'application/x-gzip' length 384384 bytes (375 KB)
+==================================================
+downloaded 375 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/R.methodsS3_1.8.2.tar.gz'
+Content type 'application/x-gzip' length 24131 bytes (23 KB)
+==================================================
+downloaded 23 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/poweRlaw_0.70.6.tar.gz'
+Content type 'application/x-gzip' length 4267620 bytes (4.1 MB)
+==================================================
+downloaded 4.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.16/data/annotation/src/contrib/GO.db_3.16.0.tar.gz'
+Content type 'application/x-gzip' length 29540685 bytes (28.2 MB)
+==================================================
+downloaded 28.2 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/R.utils_2.12.2.tar.gz'
+Content type 'application/x-gzip' length 365876 bytes (357 KB)
+==================================================
+downloaded 357 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/CNEr_1.34.0.tar.gz'
+Content type 'application/x-gzip' length 9935246 bytes (9.5 MB)
+==================================================
+downloaded 9.5 MB
+
+* installing *source* package ‘pracma’ ...
+** package ‘pracma’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pracma’ as ‘pracma_2.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pracma)
+* installing *source* package ‘R.methodsS3’ ...
+** package ‘R.methodsS3’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘R.methodsS3’ as ‘R.methodsS3_1.8.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.methodsS3)
+* installing *source* package ‘GO.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GO.db’ as ‘GO.db_3.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GO.db)
+* installing *source* package ‘R.oo’ ...
+** package ‘R.oo’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Warning in setGenericS3.default(name, export = exportGeneric, envir = envir,  :
+  Renamed the preexisting function getMethods to getMethods.default, which was defined in environment R.oo.
+Warning in setGenericS3.default(name, export = exportGeneric, envir = envir,  :
+  Renamed the preexisting function getClasses to getClasses.default, which was defined in environment R.oo.
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘R.oo’ as ‘R.oo_1.25.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.oo)
+* installing *source* package ‘poweRlaw’ ...
+** package ‘poweRlaw’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘poweRlaw’ as ‘poweRlaw_0.70.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (poweRlaw)
+* installing *source* package ‘R.utils’ ...
+** package ‘R.utils’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Warning in setGenericS3.default(name, export = exportGeneric, envir = envir,  :
+  Renamed the preexisting function warnings to warnings.default, which was defined in environment R.utils.
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘R.utils’ as ‘R.utils_2.12.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.utils)
+* installing *source* package ‘CNEr’ ...
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c S4Vectors_stubs.c -o S4Vectors_stubs.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c IRanges_stubs.c -o IRanges_stubs.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c XVector_stubs.c -o XVector_stubs.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c R_init_CNEr.c -o R_init_CNEr.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c utils.c -o utils.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c io.c -o io.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ceScan.c -o ceScan.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/axt.c -o ucsc/axt.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/base64.c -o ucsc/base64.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/binRange.c -o ucsc/binRange.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/bits.c -o ucsc/bits.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/chain.c -o ucsc/chain.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/_cheapcgi.c -o ucsc/_cheapcgi.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/cirTree.c -o ucsc/cirTree.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/common.c -o ucsc/common.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/dlist.c -o ucsc/dlist.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/dnaseq.c -o ucsc/dnaseq.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/dnautil.c -o ucsc/dnautil.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/dystring.c -o ucsc/dystring.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/errabort.c -o ucsc/errabort.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/hash.c -o ucsc/hash.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/https.c -o ucsc/https.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/intExp.c -o ucsc/intExp.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/kxTok.c -o ucsc/kxTok.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/linefile.c -o ucsc/linefile.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/localmem.c -o ucsc/localmem.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/memalloc.c -o ucsc/memalloc.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/obscure.c -o ucsc/obscure.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/options.c -o ucsc/options.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/pipeline.c -o ucsc/pipeline.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/_portimpl.c -o ucsc/_portimpl.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/sqlList.c -o ucsc/sqlList.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/sqlNum.c -o ucsc/sqlNum.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/verbose.c -o ucsc/verbose.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/os.c -o ucsc/os.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include'   -g -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c ucsc/wildcmp.c -o ucsc/wildcmp.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o CNEr.so S4Vectors_stubs.o IRanges_stubs.o XVector_stubs.o R_init_CNEr.o utils.o io.o ceScan.o ucsc/axt.o ucsc/base64.o ucsc/binRange.o ucsc/bits.o ucsc/chain.o ucsc/_cheapcgi.o ucsc/cirTree.o ucsc/common.o ucsc/dlist.o ucsc/dnaseq.o ucsc/dnautil.o ucsc/dystring.o ucsc/errabort.o ucsc/hash.o ucsc/https.o ucsc/intExp.o ucsc/kxTok.o ucsc/linefile.o ucsc/localmem.o ucsc/memalloc.o ucsc/obscure.o ucsc/options.o ucsc/pipeline.o ucsc/_portimpl.o ucsc/sqlList.o ucsc/sqlNum.o ucsc/verbose.o ucsc/os.o ucsc/wildcmp.o -lz -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-CNEr/00new/CNEr/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘CNEr’ as ‘CNEr_1.34.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (CNEr)
+
+The downloaded source packages are in
+	‘/tmp/RtmpWFEzxr/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BH', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'progressr', 'ps',
+  'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr', 'readxl',
+  'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'SingleCellExperiment',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'XML', 'yaml',
+  'zoo'
+
+real	2m17.240s
+user	2m10.349s
+sys	0m6.342s
+* installing *source* package ‘BSgenome.Ggallus.UCSC.galGal3’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Ggallus.UCSC.galGal3’ as ‘BSgenome.Ggallus.UCSC.galGal3_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Ggallus.UCSC.galGal3)
+* installing *source* package ‘TxDb.Drerio.UCSC.danRer10.refGene’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TxDb.Drerio.UCSC.danRer10.refGene’ as ‘TxDb.Drerio.UCSC.danRer10.refGene_3.4.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TxDb.Drerio.UCSC.danRer10.refGene)

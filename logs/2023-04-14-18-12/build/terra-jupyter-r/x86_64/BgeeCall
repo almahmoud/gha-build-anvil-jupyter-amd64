@@ -1,0 +1,173 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''BgeeCall'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'BgeeCall'
+also installing the dependencies ‘datawizard’, ‘insight’, ‘sjlabelled’, ‘sjmisc’, ‘rslurm’
+
+trying URL 'https://cloud.r-project.org/src/contrib/datawizard_0.7.1.tar.gz'
+Content type 'application/x-gzip' length 484246 bytes (472 KB)
+==================================================
+downloaded 472 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/insight_0.19.1.tar.gz'
+Content type 'application/x-gzip' length 927573 bytes (905 KB)
+==================================================
+downloaded 905 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/sjlabelled_1.2.0.tar.gz'
+Content type 'application/x-gzip' length 155265 bytes (151 KB)
+==================================================
+downloaded 151 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/sjmisc_2.8.9.tar.gz'
+Content type 'application/x-gzip' length 236957 bytes (231 KB)
+==================================================
+downloaded 231 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/rslurm_0.6.2.tar.gz'
+Content type 'application/x-gzip' length 110477 bytes (107 KB)
+==================================================
+downloaded 107 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/BgeeCall_1.14.0.tar.gz'
+Content type 'application/x-gzip' length 5939182 bytes (5.7 MB)
+==================================================
+downloaded 5.7 MB
+
+* installing *source* package ‘insight’ ...
+** package ‘insight’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘insight’ as ‘insight_0.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (insight)
+* installing *source* package ‘rslurm’ ...
+** package ‘rslurm’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘rslurm’ as ‘rslurm_0.6.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rslurm)
+* installing *source* package ‘datawizard’ ...
+** package ‘datawizard’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘datawizard’ as ‘datawizard_0.7.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (datawizard)
+* installing *source* package ‘sjlabelled’ ...
+** package ‘sjlabelled’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘sjlabelled’ as ‘sjlabelled_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sjlabelled)
+* installing *source* package ‘sjmisc’ ...
+** package ‘sjmisc’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘sjmisc’ as ‘sjmisc_2.8.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sjmisc)
+* installing *source* package ‘BgeeCall’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BgeeCall’ as ‘BgeeCall_1.14.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BgeeCall)
+
+The downloaded source packages are in
+	‘/tmp/RtmpZQpJhu/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BH', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'progressr', 'ps',
+  'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr', 'readxl',
+  'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'SingleCellExperiment',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'XML', 'yaml',
+  'zoo'
+
+real	1m16.856s
+user	1m10.478s
+sys	0m5.083s

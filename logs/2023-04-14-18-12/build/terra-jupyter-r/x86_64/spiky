@@ -1,0 +1,825 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''spiky'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'spiky'
+also installing the dependencies ‘coda’, ‘Formula’, ‘MBA’, ‘mvtnorm’, ‘bamlss’, ‘BlandAltmanLeh’
+
+trying URL 'https://cloud.r-project.org/src/contrib/coda_0.19-4.tar.gz'
+Content type 'application/x-gzip' length 74239 bytes (72 KB)
+==================================================
+downloaded 72 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/Formula_1.2-5.tar.gz'
+Content type 'application/x-gzip' length 128259 bytes (125 KB)
+==================================================
+downloaded 125 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/MBA_0.1-0.tar.gz'
+Content type 'application/x-gzip' length 140852 bytes (137 KB)
+==================================================
+downloaded 137 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/mvtnorm_1.1-3.tar.gz'
+Content type 'application/x-gzip' length 166421 bytes (162 KB)
+==================================================
+downloaded 162 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/bamlss_1.1-9.tar.gz'
+Content type 'application/x-gzip' length 2824475 bytes (2.7 MB)
+==================================================
+downloaded 2.7 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/BlandAltmanLeh_0.3.1.tar.gz'
+Content type 'application/x-gzip' length 387698 bytes (378 KB)
+==================================================
+downloaded 378 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/spiky_1.4.0.tar.gz'
+Content type 'application/x-gzip' length 15003949 bytes (14.3 MB)
+==================================================
+downloaded 14.3 MB
+
+* installing *source* package ‘coda’ ...
+** package ‘coda’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘coda’ as ‘coda_0.19-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (coda)
+* installing *source* package ‘Formula’ ...
+** package ‘Formula’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Formula’ as ‘Formula_1.2-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Formula)
+* installing *source* package ‘MBA’ ...
+** package ‘MBA’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/BH/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c MBA.cpp -o MBA.o
+In file included from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBA.cpp:50:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:361:33: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  361 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBA.cpp:50:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBA.cpp:50:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:250:65: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  250 | template< class T, class R > struct sp_enable_if_auto_ptr< std::auto_ptr< T >, R >
+      |                                                                 ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBA.cpp:50:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBA.cpp:50:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:507:31: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  507 |     explicit shared_ptr( std::auto_ptr<Y> & r ): px(r.get()), pn()
+      |                               ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBA.cpp:50:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBA.cpp:50:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:520:22: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  520 |     shared_ptr( std::auto_ptr<Y> && r ): px(r.get()), pn()
+      |                      ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBA.cpp:50:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBA.cpp:50:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:603:34: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  603 |     shared_ptr & operator=( std::auto_ptr<Y> & r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBA.cpp:50:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBA.cpp:50:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:612:34: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  612 |     shared_ptr & operator=( std::auto_ptr<Y> && r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBA.cpp:50:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBA.cpp:50:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp: In member function ‘boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&&)’:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:614:38: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  614 |         this_type( static_cast< std::auto_ptr<Y> && >( r ) ).swap( *this );
+      |                                      ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBA.cpp:50:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/BH/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c MBAPoints.cpp -o MBAPoints.o
+In file included from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBAPoints.cpp:1:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:361:33: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  361 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBAPoints.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBAPoints.cpp:1:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:250:65: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  250 | template< class T, class R > struct sp_enable_if_auto_ptr< std::auto_ptr< T >, R >
+      |                                                                 ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBAPoints.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBAPoints.cpp:1:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:507:31: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  507 |     explicit shared_ptr( std::auto_ptr<Y> & r ): px(r.get()), pn()
+      |                               ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBAPoints.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBAPoints.cpp:1:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:520:22: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  520 |     shared_ptr( std::auto_ptr<Y> && r ): px(r.get()), pn()
+      |                      ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBAPoints.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBAPoints.cpp:1:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:603:34: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  603 |     shared_ptr & operator=( std::auto_ptr<Y> & r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBAPoints.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBAPoints.cpp:1:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:612:34: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  612 |     shared_ptr & operator=( std::auto_ptr<Y> && r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBAPoints.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBAPoints.cpp:1:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp: In member function ‘boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&&)’:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:614:38: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  614 |         this_type( static_cast< std::auto_ptr<Y> && >( r ) ).swap( *this );
+      |                                      ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBAPoints.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/BH/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c MBASurf.cpp -o MBASurf.o
+In file included from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBASurf.cpp:1:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:361:33: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  361 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBASurf.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBASurf.cpp:1:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:250:65: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  250 | template< class T, class R > struct sp_enable_if_auto_ptr< std::auto_ptr< T >, R >
+      |                                                                 ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBASurf.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBASurf.cpp:1:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:507:31: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  507 |     explicit shared_ptr( std::auto_ptr<Y> & r ): px(r.get()), pn()
+      |                               ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBASurf.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBASurf.cpp:1:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:520:22: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  520 |     shared_ptr( std::auto_ptr<Y> && r ): px(r.get()), pn()
+      |                      ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBASurf.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBASurf.cpp:1:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:603:34: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  603 |     shared_ptr & operator=( std::auto_ptr<Y> & r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBASurf.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBASurf.cpp:1:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:612:34: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  612 |     shared_ptr & operator=( std::auto_ptr<Y> && r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBASurf.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBASurf.cpp:1:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp: In member function ‘boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&&)’:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:614:38: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  614 |         this_type( static_cast< std::auto_ptr<Y> && >( r ) ).swap( *this );
+      |                                      ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from include/MBA.h:39,
+                 from MBASurf.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/BH/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c MBAdata.cpp -o MBAdata.o
+In file included from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from MBAdata.cpp:35:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:361:33: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  361 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from MBAdata.cpp:35:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from MBAdata.cpp:35:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:250:65: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  250 | template< class T, class R > struct sp_enable_if_auto_ptr< std::auto_ptr< T >, R >
+      |                                                                 ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from MBAdata.cpp:35:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from MBAdata.cpp:35:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:507:31: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  507 |     explicit shared_ptr( std::auto_ptr<Y> & r ): px(r.get()), pn()
+      |                               ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from MBAdata.cpp:35:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from MBAdata.cpp:35:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:520:22: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  520 |     shared_ptr( std::auto_ptr<Y> && r ): px(r.get()), pn()
+      |                      ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from MBAdata.cpp:35:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from MBAdata.cpp:35:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:603:34: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  603 |     shared_ptr & operator=( std::auto_ptr<Y> & r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from MBAdata.cpp:35:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from MBAdata.cpp:35:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:612:34: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  612 |     shared_ptr & operator=( std::auto_ptr<Y> && r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from MBAdata.cpp:35:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from MBAdata.cpp:35:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp: In member function ‘boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&&)’:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:614:38: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  614 |         this_type( static_cast< std::auto_ptr<Y> && >( r ) ).swap( *this );
+      |                                      ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/MBAdata.h:38,
+                 from MBAdata.cpp:35:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/BH/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c UCBsplineSurface.cpp -o UCBsplineSurface.o
+In file included from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/UCBsplineSurface.h:36,
+                 from UCBsplineSurface.cpp:36:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:361:33: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  361 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/UCBsplineSurface.h:36,
+                 from UCBsplineSurface.cpp:36:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/UCBsplineSurface.h:36,
+                 from UCBsplineSurface.cpp:36:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:250:65: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  250 | template< class T, class R > struct sp_enable_if_auto_ptr< std::auto_ptr< T >, R >
+      |                                                                 ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/UCBsplineSurface.h:36,
+                 from UCBsplineSurface.cpp:36:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/UCBsplineSurface.h:36,
+                 from UCBsplineSurface.cpp:36:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:507:31: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  507 |     explicit shared_ptr( std::auto_ptr<Y> & r ): px(r.get()), pn()
+      |                               ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/UCBsplineSurface.h:36,
+                 from UCBsplineSurface.cpp:36:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/UCBsplineSurface.h:36,
+                 from UCBsplineSurface.cpp:36:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:520:22: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  520 |     shared_ptr( std::auto_ptr<Y> && r ): px(r.get()), pn()
+      |                      ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/UCBsplineSurface.h:36,
+                 from UCBsplineSurface.cpp:36:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/UCBsplineSurface.h:36,
+                 from UCBsplineSurface.cpp:36:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:603:34: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  603 |     shared_ptr & operator=( std::auto_ptr<Y> & r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/UCBsplineSurface.h:36,
+                 from UCBsplineSurface.cpp:36:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/UCBsplineSurface.h:36,
+                 from UCBsplineSurface.cpp:36:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:612:34: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  612 |     shared_ptr & operator=( std::auto_ptr<Y> && r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/UCBsplineSurface.h:36,
+                 from UCBsplineSurface.cpp:36:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/UCBsplineSurface.h:36,
+                 from UCBsplineSurface.cpp:36:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp: In member function ‘boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&&)’:
+/usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:614:38: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  614 |         this_type( static_cast< std::auto_ptr<Y> && >( r ) ).swap( *this );
+      |                                      ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/sp_counted_impl.hpp:35,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/detail/shared_count.hpp:27,
+                 from /usr/local/lib/R/site-library/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/local/lib/R/site-library/BH/include/boost/shared_ptr.hpp:17,
+                 from include/UCBsplineSurface.h:36,
+                 from UCBsplineSurface.cpp:36:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/BH/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c UCBsplines.cpp -o UCBsplines.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/BH/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c init.cpp -o init.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o MBA.so MBA.o MBAPoints.o MBASurf.o MBAdata.o UCBsplineSurface.o UCBsplines.o init.o -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-MBA/00new/MBA/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MBA’ as ‘MBA_0.1-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MBA)
+* installing *source* package ‘mvtnorm’ ...
+** package ‘mvtnorm’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c C_FORTRAN_interface.c -o C_FORTRAN_interface.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c miwa.c -o miwa.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c mvt.f -o mvt.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c mvtnorm-init.c -o mvtnorm-init.o
+gfortran -fno-optimize-sibling-calls  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong  -c tvpack.f -o tvpack.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o mvtnorm.so C_FORTRAN_interface.o miwa.o mvt.o mvtnorm-init.o tvpack.o -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-mvtnorm/00new/mvtnorm/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘mvtnorm’ as ‘mvtnorm_1.1-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mvtnorm)
+* installing *source* package ‘BlandAltmanLeh’ ...
+** package ‘BlandAltmanLeh’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BlandAltmanLeh’ as ‘BlandAltmanLeh_0.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BlandAltmanLeh)
+* installing *source* package ‘bamlss’ ...
+** package ‘bamlss’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c bamlss_functions.c -o bamlss_functions.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c bamlss_init.c -o bamlss_init.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o bamlss.so bamlss_functions.o bamlss_init.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-bamlss/00new/bamlss/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘bamlss’ as ‘bamlss_1.1-9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bamlss)
+* installing *source* package ‘spiky’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘spiky’ as ‘spiky_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spiky)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp0tDX8c/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BH', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'progressr', 'ps',
+  'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr', 'readxl',
+  'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'SingleCellExperiment',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'XML', 'yaml',
+  'zoo'
+
+real	1m35.022s
+user	1m29.314s
+sys	0m6.389s

@@ -1,0 +1,246 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''EpiMix'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'EpiMix'
+also installing the dependencies ‘iterators’, ‘EpiMix.data’, ‘doParallel’, ‘doSNOW’, ‘downloader’, ‘ELMER.data’, ‘foreach’, ‘R.matlab’, ‘RPMM’
+
+trying URL 'https://cloud.r-project.org/src/contrib/iterators_1.0.14.tar.gz'
+Content type 'application/x-gzip' length 300266 bytes (293 KB)
+==================================================
+downloaded 293 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/data/experiment/src/contrib/EpiMix.data_1.0.0.tar.gz'
+Content type 'application/x-gzip' length 5174539 bytes (4.9 MB)
+==================================================
+downloaded 4.9 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/doParallel_1.0.17.tar.gz'
+Content type 'application/x-gzip' length 164254 bytes (160 KB)
+==================================================
+downloaded 160 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/doSNOW_1.0.20.tar.gz'
+Content type 'application/x-gzip' length 8085 bytes
+==================================================
+downloaded 8085 bytes
+
+trying URL 'https://cloud.r-project.org/src/contrib/downloader_0.4.tar.gz'
+Content type 'application/x-gzip' length 6808 bytes
+==================================================
+downloaded 6808 bytes
+
+trying URL 'https://bioconductor.org/packages/3.16/data/experiment/src/contrib/ELMER.data_2.22.0.tar.gz'
+Content type 'application/x-gzip' length 307647729 bytes (293.4 MB)
+==================================================
+downloaded 293.4 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/foreach_1.5.2.tar.gz'
+Content type 'application/x-gzip' length 89758 bytes (87 KB)
+==================================================
+downloaded 87 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/R.matlab_3.7.0.tar.gz'
+Content type 'application/x-gzip' length 109258 bytes (106 KB)
+==================================================
+downloaded 106 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/RPMM_1.25.tar.gz'
+Content type 'application/x-gzip' length 118097 bytes (115 KB)
+==================================================
+downloaded 115 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/EpiMix_1.0.1.tar.gz'
+Content type 'application/x-gzip' length 2858322 bytes (2.7 MB)
+==================================================
+downloaded 2.7 MB
+
+* installing *source* package ‘iterators’ ...
+** package ‘iterators’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘iterators’ as ‘iterators_1.0.14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (iterators)
+* installing *source* package ‘EpiMix.data’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘EpiMix.data’ as ‘EpiMix.data_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (EpiMix.data)
+* installing *source* package ‘downloader’ ...
+** package ‘downloader’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘downloader’ as ‘downloader_0.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (downloader)
+* installing *source* package ‘ELMER.data’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ELMER.data’ as ‘ELMER.data_2.22.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ELMER.data)
+* installing *source* package ‘R.matlab’ ...
+** package ‘R.matlab’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘R.matlab’ as ‘R.matlab_3.7.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.matlab)
+* installing *source* package ‘RPMM’ ...
+** package ‘RPMM’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘RPMM’ as ‘RPMM_1.25_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RPMM)
+* installing *source* package ‘foreach’ ...
+** package ‘foreach’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘foreach’ as ‘foreach_1.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (foreach)
+* installing *source* package ‘doParallel’ ...
+** package ‘doParallel’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘doParallel’ as ‘doParallel_1.0.17_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (doParallel)
+* installing *source* package ‘doSNOW’ ...
+** package ‘doSNOW’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘doSNOW’ as ‘doSNOW_1.0.20_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (doSNOW)
+* installing *source* package ‘EpiMix’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘EpiMix’ as ‘EpiMix_1.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (EpiMix)
+
+The downloaded source packages are in
+	‘/tmp/RtmpEXL85z/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BH', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'progressr', 'ps',
+  'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl', 'readr', 'readxl',
+  'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2', 'RSQLite',
+  'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny', 'SingleCellExperiment',
+  'sourcetools', 'sp', 'spatial', 'spatstat.data', 'spatstat.explore',
+  'spatstat.geom', 'spatstat.random', 'spatstat.sparse', 'spatstat.utils',
+  'statmod', 'stringi', 'survival', 'testthat', 'tibble', 'tidyr', 'tidyverse',
+  'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom', 'xfun', 'XML', 'yaml',
+  'zoo'
+
+real	1m42.606s
+user	1m33.147s
+sys	0m7.741s

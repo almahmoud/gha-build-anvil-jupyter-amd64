@@ -2,3 +2,5 @@ https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/47129419
 almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4712941988
 https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4717063484/jobs/8365345870
 almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4717063484
+https://github.com/almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4725866904/jobs/8384820476
+almahmoud/gha-build-anvil-jupyter-amd64/actions/runs/4725866904

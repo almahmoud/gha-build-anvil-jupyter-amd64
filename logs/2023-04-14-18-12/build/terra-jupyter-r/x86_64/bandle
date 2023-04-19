@@ -1,0 +1,253 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''bandle'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'bandle'
+also installing the dependencies ‘GlobalOptions’, ‘pRolocdata’, ‘lbfgs’, ‘ggalluvial’, ‘circlize’
+
+trying URL 'https://cloud.r-project.org/src/contrib/GlobalOptions_0.1.2.tar.gz'
+Content type 'application/x-gzip' length 305898 bytes (298 KB)
+==================================================
+downloaded 298 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/data/experiment/src/contrib/pRolocdata_1.36.0.tar.gz'
+Content type 'application/x-gzip' length 529395641 bytes (504.9 MB)
+==================================================
+downloaded 504.9 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/lbfgs_1.2.1.2.tar.gz'
+Content type 'application/x-gzip' length 2232568 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/ggalluvial_0.12.5.tar.gz'
+Content type 'application/x-gzip' length 2850813 bytes (2.7 MB)
+==================================================
+downloaded 2.7 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/circlize_0.4.15.tar.gz'
+Content type 'application/x-gzip' length 2497140 bytes (2.4 MB)
+==================================================
+downloaded 2.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/bandle_1.2.2.tar.gz'
+Content type 'application/x-gzip' length 1577173 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+* installing *source* package ‘GlobalOptions’ ...
+** package ‘GlobalOptions’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GlobalOptions’ as ‘GlobalOptions_0.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GlobalOptions)
+* installing *source* package ‘pRolocdata’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pRolocdata’ as ‘pRolocdata_1.36.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pRolocdata)
+* installing *source* package ‘lbfgs’ ...
+** package ‘lbfgs’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+gcc -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RegisterDynamicSymbol.c -o RegisterDynamicSymbol.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c lbfgs.cc -o lbfgs.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o lbfgs.so RcppExports.o RegisterDynamicSymbol.o lbfgs.o -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-lbfgs/00new/lbfgs/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘lbfgs’ as ‘lbfgs_1.2.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lbfgs)
+* installing *source* package ‘ggalluvial’ ...
+** package ‘ggalluvial’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ggalluvial’ as ‘ggalluvial_0.12.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggalluvial)
+* installing *source* package ‘circlize’ ...
+** package ‘circlize’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘circlize’ as ‘circlize_0.4.15_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (circlize)
+* installing *source* package ‘bandle’ ...
+** using staged installation
+** libs
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/RcppArmadillo/include' -I'/usr/local/lib/R/site-library/BH/include'   -fopenmp  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c Bessel2ndKind.cpp -o Bessel2ndKind.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/RcppArmadillo/include' -I'/usr/local/lib/R/site-library/BH/include'   -fopenmp  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/RcppArmadillo/include' -I'/usr/local/lib/R/site-library/BH/include'   -fopenmp  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c dmvtCpp.cpp -o dmvtCpp.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/RcppArmadillo/include' -I'/usr/local/lib/R/site-library/BH/include'   -fopenmp  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c leapfrogGPcpp.cpp -o leapfrogGPcpp.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/RcppArmadillo/include' -I'/usr/local/lib/R/site-library/BH/include'   -fopenmp  -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c pg_sample.cpp -o pg_sample.o
+g++ -std=gnu++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o bandle.so Bessel2ndKind.o RcppExports.o dmvtCpp.o leapfrogGPcpp.o pg_sample.o -fopenmp -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-bandle/00new/bandle/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+[0;1;31mSystem has not been booted with systemd as init system (PID 1). Can't operate.[0m
+[0;1;31mFailed to create bus connection: Host is down[0m
+Warning message:
+In system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1
+Creating a generic function from function ‘posteriorEstimates’ in package ‘bandle’
+Creating a generic function from function ‘bandleJoint’ in package ‘bandle’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+[0;1;31mSystem has not been booted with systemd as init system (PID 1). Can't operate.[0m
+[0;1;31mFailed to create bus connection: Host is down[0m
+Warning in system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+[0;1;31mSystem has not been booted with systemd as init system (PID 1). Can't operate.[0m
+[0;1;31mFailed to create bus connection: Host is down[0m
+Warning in system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘bandle’ as ‘bandle_1.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bandle)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpd2St2s/downloaded_packages’
+Old packages: 'TH.data', 'AnnotationDbi', 'AnVIL', 'beachmat', 'BH',
+  'BiocFileCache', 'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom',
+  'bslib', 'cachem', 'class', 'cli', 'codetools', 'colorspace', 'commonmark',
+  'curl', 'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr',
+  'edgeR', 'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats',
+  'formatR', 'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'processx',
+  'progressr', 'ps', 'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl',
+  'readr', 'readxl', 'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2',
+  'RSQLite', 'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny',
+  'SingleCellExperiment', 'sourcetools', 'sp', 'spatial', 'spatstat.data',
+  'spatstat.explore', 'spatstat.geom', 'spatstat.random', 'spatstat.sparse',
+  'spatstat.utils', 'statmod', 'stringi', 'survival', 'testthat', 'tibble',
+  'tidyr', 'tidyverse', 'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom',
+  'xfun', 'XML', 'yaml', 'zip', 'zoo'
+
+real	3m27.880s
+user	3m13.872s
+sys	0m10.066s
+* installing *source* package ‘hunspell’ ...
+** package ‘hunspell’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ihunspell -DBUILDING_LIBHUNSPELL -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ihunspell -DBUILDING_LIBHUNSPELL -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c dictionary.cpp -o dictionary.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ihunspell -DBUILDING_LIBHUNSPELL -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c parser.cpp -o parser.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ihunspell -DBUILDING_LIBHUNSPELL -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c parsers/textparser.cc -o parsers/textparser.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ihunspell -DBUILDING_LIBHUNSPELL -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c parsers/latexparser.cc -o parsers/latexparser.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ihunspell -DBUILDING_LIBHUNSPELL -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c parsers/manparser.cc -o parsers/manparser.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ihunspell -DBUILDING_LIBHUNSPELL -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c parsers/xmlparser.cc -o parsers/xmlparser.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ihunspell -DBUILDING_LIBHUNSPELL -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c parsers/htmlparser.cc -o parsers/htmlparser.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ihunspell -DBUILDING_LIBHUNSPELL -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c hunspell/affentry.cc -o hunspell/affentry.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ihunspell -DBUILDING_LIBHUNSPELL -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c hunspell/affixmgr.cc -o hunspell/affixmgr.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ihunspell -DBUILDING_LIBHUNSPELL -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c hunspell/filemgr.cc -o hunspell/filemgr.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ihunspell -DBUILDING_LIBHUNSPELL -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c hunspell/hashmgr.cc -o hunspell/hashmgr.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ihunspell -DBUILDING_LIBHUNSPELL -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c hunspell/hunspell.cc -o hunspell/hunspell.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ihunspell -DBUILDING_LIBHUNSPELL -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c hunspell/hunzip.cc -o hunspell/hunzip.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ihunspell -DBUILDING_LIBHUNSPELL -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c hunspell/phonet.cc -o hunspell/phonet.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ihunspell -DBUILDING_LIBHUNSPELL -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c hunspell/replist.cc -o hunspell/replist.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ihunspell -DBUILDING_LIBHUNSPELL -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c hunspell/suggestmgr.cc -o hunspell/suggestmgr.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG -I. -Ihunspell -DBUILDING_LIBHUNSPELL -I'/usr/local/lib/R/site-library/Rcpp/include'   -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c hunspell/csutil.cc -o hunspell/csutil.o
+ar rcs hunspell/libstathunspell.a parsers/textparser.o parsers/latexparser.o parsers/manparser.o parsers/xmlparser.o parsers/htmlparser.o hunspell/affentry.o hunspell/affixmgr.o hunspell/filemgr.o hunspell/hashmgr.o hunspell/hunspell.o hunspell/hunzip.o hunspell/phonet.o hunspell/replist.o hunspell/suggestmgr.o hunspell/csutil.o
+g++ -std=gnu++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o hunspell.so RcppExports.o dictionary.o parser.o -Lhunspell -lstathunspell -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-hunspell/00new/hunspell/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘hunspell’ as ‘hunspell_3.0.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hunspell)
+* installing *source* package ‘spelling’ ...
+** package ‘spelling’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘spelling’ as ‘spelling_2.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spelling)

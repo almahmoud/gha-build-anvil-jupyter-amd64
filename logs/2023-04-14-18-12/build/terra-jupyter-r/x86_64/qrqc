@@ -1,0 +1,141 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''qrqc'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'qrqc'
+also installing the dependency ‘reshape’
+
+trying URL 'https://cloud.r-project.org/src/contrib/reshape_0.8.9.tar.gz'
+Content type 'application/x-gzip' length 41843 bytes (40 KB)
+==================================================
+downloaded 40 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/qrqc_1.52.0.tar.gz'
+Content type 'application/x-gzip' length 288877 bytes (282 KB)
+==================================================
+downloaded 282 KB
+
+* installing *source* package ‘reshape’ ...
+** package ‘reshape’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘reshape’ as ‘reshape_0.8.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reshape)
+* installing *source* package ‘qrqc’ ...
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/Rhtslib/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c R_init_io.c -o R_init_io.o
+gcc -I"/usr/share/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/Rhtslib/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c io.c -o io.o
+io.c: In function ‘summarize_file’:
+io.c:33:25: warning: initialization of ‘struct gzFile_s **’ from incompatible pointer type ‘gzFile’ {aka ‘struct gzFile_s *’} [-Wincompatible-pointer-types]
+   33 | #define FILE_OPEN(x, m) (gzopen(x, m))
+      |                         ^
+io.c:348:19: note: in expansion of macro ‘FILE_OPEN’
+  348 |   FILE_TYPE *fp = FILE_OPEN(CHAR(STRING_ELT(filename, 0)), "r");
+      |                   ^~~~~~~~~
+io.c:351:21: warning: passing argument 1 of ‘kseq_init’ from incompatible pointer type [-Wincompatible-pointer-types]
+  351 |   block = kseq_init(fp);
+      |                     ^~
+      |                     |
+      |                     struct gzFile_s **
+In file included from io.c:12:
+/tmp/tmp/built/Rhtslib/include/htslib/kseq.h:165:33: note: expected ‘gzFile’ {aka ‘struct gzFile_s *’} but argument is of type ‘struct gzFile_s **’
+  165 |  SCOPE kseq_t *kseq_init(type_t fd)         \
+/tmp/tmp/built/Rhtslib/include/htslib/kseq.h:237:2: note: in expansion of macro ‘__KSEQ_BASIC’
+  237 |  __KSEQ_BASIC(SCOPE, type_t)     \
+      |  ^~~~~~~~~~~~
+/tmp/tmp/built/Rhtslib/include/htslib/kseq.h:240:35: note: in expansion of macro ‘KSEQ_INIT2’
+  240 | #define KSEQ_INIT(type_t, __read) KSEQ_INIT2(static, type_t, __read)
+      |                                   ^~~~~~~~~~
+io.c:35:1: note: in expansion of macro ‘KSEQ_INIT’
+   35 | KSEQ_INIT(gzFile, gzread)
+      | ^~~~~~~~~
+io.c:453:21: warning: passing argument 1 of ‘kseq_init’ from incompatible pointer type [-Wincompatible-pointer-types]
+  453 |   block = kseq_init(fp);
+      |                     ^~
+      |                     |
+      |                     struct gzFile_s **
+In file included from io.c:12:
+/tmp/tmp/built/Rhtslib/include/htslib/kseq.h:165:33: note: expected ‘gzFile’ {aka ‘struct gzFile_s *’} but argument is of type ‘struct gzFile_s **’
+  165 |  SCOPE kseq_t *kseq_init(type_t fd)         \
+/tmp/tmp/built/Rhtslib/include/htslib/kseq.h:237:2: note: in expansion of macro ‘__KSEQ_BASIC’
+  237 |  __KSEQ_BASIC(SCOPE, type_t)     \
+      |  ^~~~~~~~~~~~
+/tmp/tmp/built/Rhtslib/include/htslib/kseq.h:240:35: note: in expansion of macro ‘KSEQ_INIT2’
+  240 | #define KSEQ_INIT(type_t, __read) KSEQ_INIT2(static, type_t, __read)
+      |                                   ^~~~~~~~~~
+io.c:35:1: note: in expansion of macro ‘KSEQ_INIT’
+   35 | KSEQ_INIT(gzFile, gzread)
+      | ^~~~~~~~~
+io.c:454:14: warning: passing argument 1 of ‘gzclose’ from incompatible pointer type [-Wincompatible-pointer-types]
+  454 |   FILE_CLOSE(fp);
+      |              ^~
+      |              |
+      |              struct gzFile_s **
+io.c:34:32: note: in definition of macro ‘FILE_CLOSE’
+   34 | #define FILE_CLOSE(x) (gzclose(x))
+      |                                ^
+In file included from /usr/include/zlib.h:34,
+                 from io.c:31:
+/usr/include/zlib.h:1631:32: note: expected ‘gzFile’ {aka ‘struct gzFile_s *’} but argument is of type ‘struct gzFile_s **’
+ 1631 | ZEXTERN int ZEXPORT    gzclose OF((gzFile file));
+      |                                ^~
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o qrqc.so R_init_io.o io.o /tmp/tmp/built/Rhtslib/usrlib/libhts.a -lcurl -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-qrqc/00new/qrqc/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘qrqc’ as ‘qrqc_1.52.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (qrqc)
+
+The downloaded source packages are in
+	‘/tmp/RtmpYZPkBU/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BH', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'processx',
+  'progressr', 'ps', 'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl',
+  'readr', 'readxl', 'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2',
+  'RSQLite', 'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny',
+  'SingleCellExperiment', 'sourcetools', 'sp', 'spatial', 'spatstat.data',
+  'spatstat.explore', 'spatstat.geom', 'spatstat.random', 'spatstat.sparse',
+  'spatstat.utils', 'statmod', 'stringi', 'survival', 'testthat', 'tibble',
+  'tidyr', 'tidyverse', 'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom',
+  'xfun', 'XML', 'yaml', 'zip', 'zoo'
+
+real	0m44.212s
+user	0m41.352s
+sys	0m2.691s

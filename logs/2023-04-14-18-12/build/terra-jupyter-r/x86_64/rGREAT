@@ -1,0 +1,292 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''rGREAT'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'rGREAT'
+also installing the dependencies ‘shape’, ‘iterators’, ‘GetoptLong’, ‘GlobalOptions’, ‘GO.db’, ‘circlize’, ‘TxDb.Hsapiens.UCSC.hg19.knownGene’, ‘TxDb.Hsapiens.UCSC.hg38.knownGene’, ‘org.Hs.eg.db’, ‘foreach’, ‘doParallel’
+
+trying URL 'https://cloud.r-project.org/src/contrib/shape_1.4.6.tar.gz'
+Content type 'application/x-gzip' length 677262 bytes (661 KB)
+==================================================
+downloaded 661 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/iterators_1.0.14.tar.gz'
+Content type 'application/x-gzip' length 300266 bytes (293 KB)
+==================================================
+downloaded 293 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/GetoptLong_1.0.5.tar.gz'
+Content type 'application/x-gzip' length 767681 bytes (749 KB)
+==================================================
+downloaded 749 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/GlobalOptions_0.1.2.tar.gz'
+Content type 'application/x-gzip' length 305898 bytes (298 KB)
+==================================================
+downloaded 298 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/data/annotation/src/contrib/GO.db_3.16.0.tar.gz'
+Content type 'application/x-gzip' length 29540685 bytes (28.2 MB)
+==================================================
+downloaded 28.2 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/circlize_0.4.15.tar.gz'
+Content type 'application/x-gzip' length 2497140 bytes (2.4 MB)
+==================================================
+downloaded 2.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.16/data/annotation/src/contrib/TxDb.Hsapiens.UCSC.hg19.knownGene_3.2.2.tar.gz'
+Content type 'application/x-gzip' length 18669702 bytes (17.8 MB)
+==================================================
+downloaded 17.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.16/data/annotation/src/contrib/TxDb.Hsapiens.UCSC.hg38.knownGene_3.16.0.tar.gz'
+Content type 'application/x-gzip' length 46059936 bytes (43.9 MB)
+==================================================
+downloaded 43.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.16/data/annotation/src/contrib/org.Hs.eg.db_3.16.0.tar.gz'
+Content type 'application/x-gzip' length 88437137 bytes (84.3 MB)
+==================================================
+downloaded 84.3 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/foreach_1.5.2.tar.gz'
+Content type 'application/x-gzip' length 89758 bytes (87 KB)
+==================================================
+downloaded 87 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/doParallel_1.0.17.tar.gz'
+Content type 'application/x-gzip' length 164254 bytes (160 KB)
+==================================================
+downloaded 160 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/rGREAT_2.0.2.tar.gz'
+Content type 'application/x-gzip' length 3809587 bytes (3.6 MB)
+==================================================
+downloaded 3.6 MB
+
+* installing *source* package ‘shape’ ...
+** package ‘shape’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘shape’ as ‘shape_1.4.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shape)
+* installing *source* package ‘iterators’ ...
+** package ‘iterators’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘iterators’ as ‘iterators_1.0.14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (iterators)
+* installing *source* package ‘GlobalOptions’ ...
+** package ‘GlobalOptions’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GlobalOptions’ as ‘GlobalOptions_0.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GlobalOptions)
+* installing *source* package ‘GO.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GO.db’ as ‘GO.db_3.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GO.db)
+* installing *source* package ‘TxDb.Hsapiens.UCSC.hg19.knownGene’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TxDb.Hsapiens.UCSC.hg19.knownGene’ as ‘TxDb.Hsapiens.UCSC.hg19.knownGene_3.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TxDb.Hsapiens.UCSC.hg19.knownGene)
+* installing *source* package ‘TxDb.Hsapiens.UCSC.hg38.knownGene’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TxDb.Hsapiens.UCSC.hg38.knownGene’ as ‘TxDb.Hsapiens.UCSC.hg38.knownGene_3.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TxDb.Hsapiens.UCSC.hg38.knownGene)
+* installing *source* package ‘org.Hs.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Hs.eg.db’ as ‘org.Hs.eg.db_3.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Hs.eg.db)
+* installing *source* package ‘GetoptLong’ ...
+** package ‘GetoptLong’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GetoptLong’ as ‘GetoptLong_1.0.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GetoptLong)
+* installing *source* package ‘circlize’ ...
+** package ‘circlize’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘circlize’ as ‘circlize_0.4.15_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (circlize)
+* installing *source* package ‘foreach’ ...
+** package ‘foreach’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘foreach’ as ‘foreach_1.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (foreach)
+* installing *source* package ‘doParallel’ ...
+** package ‘doParallel’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘doParallel’ as ‘doParallel_1.0.17_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (doParallel)
+* installing *source* package ‘rGREAT’ ...
+** using staged installation
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c reduce_by_start_and_end.cpp -o reduce_by_start_and_end.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o rGREAT.so RcppExports.o reduce_by_start_and_end.o -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-rGREAT/00new/rGREAT/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘rGREAT’ as ‘rGREAT_2.0.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rGREAT)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp8XxLC0/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BH', 'BiocFileCache',
+  'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom', 'bslib', 'cachem',
+  'class', 'cli', 'codetools', 'colorspace', 'commonmark', 'curl',
+  'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr', 'edgeR',
+  'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats', 'formatR',
+  'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'processx',
+  'progressr', 'ps', 'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl',
+  'readr', 'readxl', 'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2',
+  'RSQLite', 'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny',
+  'SingleCellExperiment', 'sourcetools', 'sp', 'spatial', 'spatstat.data',
+  'spatstat.explore', 'spatstat.geom', 'spatstat.random', 'spatstat.sparse',
+  'spatstat.utils', 'statmod', 'stringi', 'survival', 'testthat', 'tibble',
+  'tidyr', 'tidyverse', 'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom',
+  'xfun', 'XML', 'yaml', 'zip', 'zoo'
+
+real	8m1.184s
+user	7m48.472s
+sys	0m11.259s

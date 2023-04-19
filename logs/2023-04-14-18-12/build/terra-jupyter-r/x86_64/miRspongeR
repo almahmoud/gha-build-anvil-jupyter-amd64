@@ -1,0 +1,212 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''miRspongeR'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'miRspongeR'
+also installing the dependencies ‘dynamicTreeCut’, ‘corpcor’, ‘MCL’, ‘linkcomm’, ‘org.Hs.eg.db’
+
+trying URL 'https://cloud.r-project.org/src/contrib/dynamicTreeCut_1.63-1.tar.gz'
+Content type 'application/x-gzip' length 24027 bytes (23 KB)
+==================================================
+downloaded 23 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/corpcor_1.6.10.tar.gz'
+Content type 'application/x-gzip' length 22678 bytes (22 KB)
+==================================================
+downloaded 22 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/MCL_1.0.tar.gz'
+Content type 'application/x-gzip' length 3520 bytes
+==================================================
+downloaded 3520 bytes
+
+trying URL 'https://cloud.r-project.org/src/contrib/linkcomm_1.0-14.tar.gz'
+Content type 'application/x-gzip' length 612752 bytes (598 KB)
+==================================================
+downloaded 598 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/data/annotation/src/contrib/org.Hs.eg.db_3.16.0.tar.gz'
+Content type 'application/x-gzip' length 88437137 bytes (84.3 MB)
+==================================================
+downloaded 84.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/miRspongeR_2.2.0.tar.gz'
+Content type 'application/x-gzip' length 661751 bytes (646 KB)
+==================================================
+downloaded 646 KB
+
+* installing *source* package ‘dynamicTreeCut’ ...
+** package ‘dynamicTreeCut’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘dynamicTreeCut’ as ‘dynamicTreeCut_1.63-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dynamicTreeCut)
+* installing *source* package ‘corpcor’ ...
+** package ‘corpcor’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘corpcor’ as ‘corpcor_1.6.10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (corpcor)
+* installing *source* package ‘MCL’ ...
+** package ‘MCL’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MCL’ as ‘MCL_1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MCL)
+* installing *source* package ‘org.Hs.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Hs.eg.db’ as ‘org.Hs.eg.db_3.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Hs.eg.db)
+* installing *source* package ‘linkcomm’ ...
+** package ‘linkcomm’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c OCG_algorithm.c -o OCG_algorithm.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c edge_duplicates.cpp -o edge_duplicates.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c linkcomm_edgesims.cpp -o linkcomm_edgesims.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c linkcomm_edgesims_all.cpp -o linkcomm_edgesims_all.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c linkcomm_functions.cpp -o linkcomm_functions.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c linkcomm_hclust.cpp -o linkcomm_hclust.o
+gcc -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c linkcomm_init.c -o linkcomm_init.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c linkcomm_linkdensities.cpp -o linkcomm_linkdensities.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c linkcommhclust_order.cpp -o linkcommhclust_order.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c read_OCG.cpp -o read_OCG.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o linkcomm.so OCG_algorithm.o edge_duplicates.o linkcomm_edgesims.o linkcomm_edgesims_all.o linkcomm_functions.o linkcomm_hclust.o linkcomm_init.o linkcomm_linkdensities.o linkcommhclust_order.o read_OCG.o -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-linkcomm/00new/linkcomm/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘linkcomm’ as ‘linkcomm_1.0-14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (linkcomm)
+* installing *source* package ‘miRspongeR’ ...
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG `/usr/lib/R/bin/Rscript -e "Rcpp:::CxxFlags()"`     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c complex.c -o complex.o
+gcc -I"/usr/share/R/include" -DNDEBUG `/usr/lib/R/bin/Rscript -e "Rcpp:::CxxFlags()"`     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c registerDynamicSymbol.c -o registerDynamicSymbol.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o miRspongeR.so complex.o registerDynamicSymbol.o -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-miRspongeR/00new/miRspongeR/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+[0;1;31mSystem has not been booted with systemd as init system (PID 1). Can't operate.[0m
+[0;1;31mFailed to create bus connection: Host is down[0m
+Warning in system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1
+Warning: replacing previous import ‘biomaRt::select’ by ‘dplyr::select’ when loading ‘SPONGE’
+Warning: replacing previous import ‘Biobase::combine’ by ‘dplyr::combine’ when loading ‘SPONGE’
+Warning: replacing previous import ‘cvms::font’ by ‘ggpubr::font’ when loading ‘SPONGE’
+Warning: replacing previous import ‘ggplot2::margin’ by ‘randomForest::margin’ when loading ‘SPONGE’
+Warning: replacing previous import ‘dplyr::combine’ by ‘randomForest::combine’ when loading ‘SPONGE’
+Warning: replacing previous import ‘Biobase::exprs’ by ‘rlang::exprs’ when loading ‘SPONGE’
+Warning: replacing previous import ‘rlang::exprs’ by ‘Biobase::exprs’ when loading ‘SPONGE’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+[0;1;31mSystem has not been booted with systemd as init system (PID 1). Can't operate.[0m
+[0;1;31mFailed to create bus connection: Host is down[0m
+Warning in system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1
+Warning: replacing previous import ‘biomaRt::select’ by ‘dplyr::select’ when loading ‘SPONGE’
+Warning: replacing previous import ‘Biobase::combine’ by ‘dplyr::combine’ when loading ‘SPONGE’
+Warning: replacing previous import ‘cvms::font’ by ‘ggpubr::font’ when loading ‘SPONGE’
+Warning: replacing previous import ‘ggplot2::margin’ by ‘randomForest::margin’ when loading ‘SPONGE’
+Warning: replacing previous import ‘dplyr::combine’ by ‘randomForest::combine’ when loading ‘SPONGE’
+Warning: replacing previous import ‘Biobase::exprs’ by ‘rlang::exprs’ when loading ‘SPONGE’
+Warning: replacing previous import ‘rlang::exprs’ by ‘Biobase::exprs’ when loading ‘SPONGE’
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+[0;1;31mSystem has not been booted with systemd as init system (PID 1). Can't operate.[0m
+[0;1;31mFailed to create bus connection: Host is down[0m
+Warning in system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1
+Warning: replacing previous import ‘biomaRt::select’ by ‘dplyr::select’ when loading ‘SPONGE’
+Warning: replacing previous import ‘Biobase::combine’ by ‘dplyr::combine’ when loading ‘SPONGE’
+Warning: replacing previous import ‘cvms::font’ by ‘ggpubr::font’ when loading ‘SPONGE’
+Warning: replacing previous import ‘ggplot2::margin’ by ‘randomForest::margin’ when loading ‘SPONGE’
+Warning: replacing previous import ‘dplyr::combine’ by ‘randomForest::combine’ when loading ‘SPONGE’
+Warning: replacing previous import ‘Biobase::exprs’ by ‘rlang::exprs’ when loading ‘SPONGE’
+Warning: replacing previous import ‘rlang::exprs’ by ‘Biobase::exprs’ when loading ‘SPONGE’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘miRspongeR’ as ‘miRspongeR_2.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (miRspongeR)
+
+The downloaded source packages are in
+	‘/tmp/RtmpyTno7K/downloaded_packages’
+Old packages: 'parameters', 'qtl', 'AnnotationDbi', 'AnVIL', 'beachmat', 'BH',
+  'BiocFileCache', 'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom',
+  'bslib', 'cachem', 'class', 'cli', 'codetools', 'colorspace', 'commonmark',
+  'curl', 'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr',
+  'edgeR', 'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats',
+  'formatR', 'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'processx',
+  'progressr', 'ps', 'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl',
+  'readr', 'readxl', 'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2',
+  'RSQLite', 'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny',
+  'SingleCellExperiment', 'sourcetools', 'sp', 'spatial', 'spatstat.data',
+  'spatstat.explore', 'spatstat.geom', 'spatstat.random', 'spatstat.sparse',
+  'spatstat.utils', 'statmod', 'stringi', 'survival', 'testthat', 'tibble',
+  'tidyr', 'tidyverse', 'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom',
+  'xfun', 'XML', 'yaml', 'zip', 'zoo'
+
+real	4m59.659s
+user	4m50.018s
+sys	0m7.847s

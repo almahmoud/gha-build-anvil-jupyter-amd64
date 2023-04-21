@@ -1,0 +1,349 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''Rdisop'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'Rdisop'
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/Rdisop_1.58.0.tar.gz'
+Content type 'application/x-gzip' length 833876 bytes (814 KB)
+==================================================
+downloaded 814 KB
+
+* installing *source* package ‘Rdisop’ ...
+** using staged installation
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c disop.cpp -o disop.o
+In file included from disop.cpp:22:
+./imslib/src/ims/composedelement.h:204:58: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  204 |   void initializeElements(const Alphabet& alphabet, std::auto_ptr<sequence_parser_type> parser)
+      |                                                          ^~~~~~~~
+In file included from /usr/include/c++/9/bits/locale_conv.h:41,
+                 from /usr/include/c++/9/locale:43,
+                 from /usr/include/c++/9/iomanip:43,
+                 from disop.cpp:5:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from disop.cpp:26:
+./imslib/src/ims/decomp/realmassdecomposer.h:103:8: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  103 |   std::auto_ptr<integer_decomposer_type> decomposer;
+      |        ^~~~~~~~
+In file included from /usr/include/c++/9/bits/locale_conv.h:41,
+                 from /usr/include/c++/9/locale:43,
+                 from /usr/include/c++/9/iomanip:43,
+                 from disop.cpp:5:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/element.cpp -o imslib/src/ims/element.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/composedelement.cpp -o imslib/src/ims/composedelement.o
+In file included from imslib/src/ims/composedelement.cpp:8:
+./imslib/src/ims/composedelement.h:204:58: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  204 |   void initializeElements(const Alphabet& alphabet, std::auto_ptr<sequence_parser_type> parser)
+      |                                                          ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/composedelement.h:6,
+                 from imslib/src/ims/composedelement.cpp:8:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+imslib/src/ims/composedelement.cpp: In constructor ‘ims::ComposedElement::ComposedElement(const name_type&, const ims::Alphabet&, unsigned int)’:
+imslib/src/ims/composedelement.cpp:26:7: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   26 |  std::auto_ptr<sequence_parser_type> parser;
+      |       ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/composedelement.h:6,
+                 from imslib/src/ims/composedelement.cpp:8:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+imslib/src/ims/composedelement.cpp:28:17: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   28 |   parser = std::auto_ptr<sequence_parser_type>(new StandardMoleculeSequenceParser);
+      |                 ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/composedelement.h:6,
+                 from imslib/src/ims/composedelement.cpp:8:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+imslib/src/ims/composedelement.cpp:30:17: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   30 |   parser = std::auto_ptr<sequence_parser_type>(new MoleculeSequenceParser);
+      |                 ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/composedelement.h:6,
+                 from imslib/src/ims/composedelement.cpp:8:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+imslib/src/ims/composedelement.cpp: At global scope:
+imslib/src/ims/composedelement.cpp:116:73: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  116 | void ComposedElement::initializeElements(const Alphabet& alphabet, std::auto_ptr<sequence_parser_type> parser)
+      |                                                                         ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/composedelement.h:6,
+                 from imslib/src/ims/composedelement.cpp:8:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/isotopedistribution.cpp -o imslib/src/ims/isotopedistribution.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/alphabet.cpp -o imslib/src/ims/alphabet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/weights.cpp -o imslib/src/ims/weights.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/distributedalphabet.cpp -o imslib/src/ims/distributedalphabet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/transformation.cpp -o imslib/src/ims/transformation.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/isotopespecies.cpp -o imslib/src/ims/isotopespecies.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/base/parser/alphabettextparser.cpp -o imslib/src/ims/base/parser/alphabettextparser.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/base/parser/distributedalphabettextparser.cpp -o imslib/src/ims/base/parser/distributedalphabettextparser.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/base/parser/massestextparser.cpp -o imslib/src/ims/base/parser/massestextparser.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/base/parser/moleculesequenceparser.cpp -o imslib/src/ims/base/parser/moleculesequenceparser.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/base/parser/standardmoleculesequenceparser.cpp -o imslib/src/ims/base/parser/standardmoleculesequenceparser.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/base/parser/keggligandcompoundsparser.cpp -o imslib/src/ims/base/parser/keggligandcompoundsparser.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/base/parser/moleculeionchargemodificationparser.cpp -o imslib/src/ims/base/parser/moleculeionchargemodificationparser.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/calib/linepairstabber.cpp -o imslib/src/ims/calib/linepairstabber.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/calib/matchmatrix.cpp -o imslib/src/ims/calib/matchmatrix.o
+In file included from imslib/src/ims/calib/matchmatrix.cpp:1:
+./imslib/src/ims/calib/matchmatrix.h:61:7: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   61 |  std::auto_ptr<std::map<int,int> > countMatches();
+      |       ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/calib/matchmatrix.h:4,
+                 from imslib/src/ims/calib/matchmatrix.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from imslib/src/ims/calib/matchmatrix.cpp:1:
+./imslib/src/ims/calib/matchmatrix.h:65:7: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   65 |  std::auto_ptr<std::map<int,int> > countMatchesRestrictive();
+      |       ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/calib/matchmatrix.h:4,
+                 from imslib/src/ims/calib/matchmatrix.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+imslib/src/ims/calib/matchmatrix.cpp:81:6: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   81 | std::auto_ptr<std::map<int,int> > MatchMatrix::countMatches() {
+      |      ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/calib/matchmatrix.h:4,
+                 from imslib/src/ims/calib/matchmatrix.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+imslib/src/ims/calib/matchmatrix.cpp: In member function ‘std::auto_ptr<std::map<int, int> > ims::MatchMatrix::countMatches()’:
+imslib/src/ims/calib/matchmatrix.cpp:82:7: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   82 |  std::auto_ptr<std::map<int,int> > m(new std::map<int,int>);
+      |       ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/calib/matchmatrix.h:4,
+                 from imslib/src/ims/calib/matchmatrix.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+imslib/src/ims/calib/matchmatrix.cpp: At global scope:
+imslib/src/ims/calib/matchmatrix.cpp:102:6: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  102 | std::auto_ptr<std::map<int,int> > MatchMatrix::countMatchesRestrictive() {
+      |      ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/calib/matchmatrix.h:4,
+                 from imslib/src/ims/calib/matchmatrix.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+imslib/src/ims/calib/matchmatrix.cpp: In member function ‘std::auto_ptr<std::map<int, int> > ims::MatchMatrix::countMatchesRestrictive()’:
+imslib/src/ims/calib/matchmatrix.cpp:103:7: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  103 |  std::auto_ptr<std::map<int,int> > m(new std::map<int,int>);
+      |       ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/calib/matchmatrix.h:4,
+                 from imslib/src/ims/calib/matchmatrix.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/calib/linearpointsetmatcher.cpp -o imslib/src/ims/calib/linearpointsetmatcher.o
+In file included from ./imslib/src/ims/calib/linearpointsetmatcher.h:13,
+                 from imslib/src/ims/calib/linearpointsetmatcher.cpp:11:
+./imslib/src/ims/calib/matchmatrix.h:61:7: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   61 |  std::auto_ptr<std::map<int,int> > countMatches();
+      |       ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/calib/linearpointsetmatcher.h:8,
+                 from imslib/src/ims/calib/linearpointsetmatcher.cpp:11:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from ./imslib/src/ims/calib/linearpointsetmatcher.h:13,
+                 from imslib/src/ims/calib/linearpointsetmatcher.cpp:11:
+./imslib/src/ims/calib/matchmatrix.h:65:7: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   65 |  std::auto_ptr<std::map<int,int> > countMatchesRestrictive();
+      |       ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/calib/linearpointsetmatcher.h:8,
+                 from imslib/src/ims/calib/linearpointsetmatcher.cpp:11:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from imslib/src/ims/calib/linearpointsetmatcher.cpp:11:
+./imslib/src/ims/calib/linearpointsetmatcher.h:146:7: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  146 |  std::auto_ptr<std::map<int,int> > getMapping() const;
+      |       ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/calib/linearpointsetmatcher.h:8,
+                 from imslib/src/ims/calib/linearpointsetmatcher.cpp:11:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from imslib/src/ims/calib/linearpointsetmatcher.cpp:11:
+./imslib/src/ims/calib/linearpointsetmatcher.h:169:8: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  169 |   std::auto_ptr<std::map<int,int> > mapping;
+      |        ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/calib/linearpointsetmatcher.h:8,
+                 from imslib/src/ims/calib/linearpointsetmatcher.cpp:11:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from imslib/src/ims/calib/linearpointsetmatcher.cpp:11:
+./imslib/src/ims/calib/linearpointsetmatcher.h: In member function ‘void ims::LinearPointSetMatcher::countMatchesOneToOne(RandomAccessIterator, RandomAccessIterator, RandomAccessIterator, RandomAccessIterator, const std::vector<ims::RepresentativeScale>&, int, int, float)’:
+./imslib/src/ims/calib/linearpointsetmatcher.h:281:8: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  281 |   std::auto_ptr<std::map<int,int> > mapping(0);
+      |        ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/calib/linearpointsetmatcher.h:8,
+                 from imslib/src/ims/calib/linearpointsetmatcher.cpp:11:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from imslib/src/ims/calib/linearpointsetmatcher.cpp:11:
+./imslib/src/ims/calib/linearpointsetmatcher.h: In member function ‘int ims::LinearPointSetMatcher::match(RandomAccessIterator, RandomAccessIterator, RandomAccessIterator, RandomAccessIterator)’:
+./imslib/src/ims/calib/linearpointsetmatcher.h:324:26: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  324 |   results.mapping = std::auto_ptr<std::map<int,int> >(new std::map<int,int>);
+      |                          ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/calib/linearpointsetmatcher.h:8,
+                 from imslib/src/ims/calib/linearpointsetmatcher.cpp:11:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from imslib/src/ims/calib/linearpointsetmatcher.cpp:11:
+./imslib/src/ims/calib/linearpointsetmatcher.h:326:26: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  326 |   results.mapping = std::auto_ptr<std::map<int,int> >(0);
+      |                          ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/calib/linearpointsetmatcher.h:8,
+                 from imslib/src/ims/calib/linearpointsetmatcher.cpp:11:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+imslib/src/ims/calib/linearpointsetmatcher.cpp: At global scope:
+imslib/src/ims/calib/linearpointsetmatcher.cpp:84:6: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   84 | std::auto_ptr<std::map<int,int> > LinearPointSetMatcher::getMapping() const {
+      |      ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/calib/linearpointsetmatcher.h:8,
+                 from imslib/src/ims/calib/linearpointsetmatcher.cpp:11:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+imslib/src/ims/calib/linearpointsetmatcher.cpp: In member function ‘std::auto_ptr<std::map<int, int> > ims::LinearPointSetMatcher::getMapping() const’:
+imslib/src/ims/calib/linearpointsetmatcher.cpp:86:15: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   86 |   return std::auto_ptr<std::map<int,int> >(0); // TODO throw sth. instead
+      |               ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/calib/linearpointsetmatcher.h:8,
+                 from imslib/src/ims/calib/linearpointsetmatcher.cpp:11:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+imslib/src/ims/calib/linearpointsetmatcher.cpp:89:15: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   89 |   return std::auto_ptr<std::map<int,int> >(new std::map<int,int>(*(results.mapping)));
+      |               ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/calib/linearpointsetmatcher.h:8,
+                 from imslib/src/ims/calib/linearpointsetmatcher.cpp:11:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/decomp/realmassdecomposer.cpp -o imslib/src/ims/decomp/realmassdecomposer.o
+In file included from imslib/src/ims/decomp/realmassdecomposer.cpp:8:
+./imslib/src/ims/decomp/realmassdecomposer.h:103:8: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  103 |   std::auto_ptr<integer_decomposer_type> decomposer;
+      |        ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/decomp/realmassdecomposer.h:5,
+                 from imslib/src/ims/decomp/realmassdecomposer.cpp:8:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+imslib/src/ims/decomp/realmassdecomposer.cpp: In constructor ‘ims::RealMassDecomposer::RealMassDecomposer(const ims::Weights&)’:
+imslib/src/ims/decomp/realmassdecomposer.cpp:21:20: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   21 |  decomposer = std::auto_ptr<integer_decomposer_type>(
+      |                    ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/decomp/realmassdecomposer.h:5,
+                 from imslib/src/ims/decomp/realmassdecomposer.cpp:8:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/utils/distribution.cpp -o imslib/src/ims/utils/distribution.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/distributionprobabilityscorer.cpp -o imslib/src/ims/distributionprobabilityscorer.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/characteralphabet.cpp -o imslib/src/ims/characteralphabet.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'   -I./imslib/src/ -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c imslib/src/ims/nitrogenrulefilter.cpp -o imslib/src/ims/nitrogenrulefilter.o
+In file included from ./imslib/src/ims/nitrogenrulefilter.h:4,
+                 from imslib/src/ims/nitrogenrulefilter.cpp:5:
+./imslib/src/ims/composedelement.h:204:58: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+  204 |   void initializeElements(const Alphabet& alphabet, std::auto_ptr<sequence_parser_type> parser)
+      |                                                          ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from ./imslib/src/ims/composedelement.h:6,
+                 from ./imslib/src/ims/nitrogenrulefilter.h:4,
+                 from imslib/src/ims/nitrogenrulefilter.cpp:5:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o Rdisop.so disop.o imslib/src/ims/element.o imslib/src/ims/composedelement.o imslib/src/ims/isotopedistribution.o imslib/src/ims/alphabet.o imslib/src/ims/weights.o imslib/src/ims/distributedalphabet.o imslib/src/ims/transformation.o imslib/src/ims/isotopespecies.o imslib/src/ims/base/parser/alphabettextparser.o imslib/src/ims/base/parser/distributedalphabettextparser.o imslib/src/ims/base/parser/massestextparser.o imslib/src/ims/base/parser/moleculesequenceparser.o imslib/src/ims/base/parser/standardmoleculesequenceparser.o imslib/src/ims/base/parser/keggligandcompoundsparser.o imslib/src/ims/base/parser/moleculeionchargemodificationparser.o imslib/src/ims/calib/linepairstabber.o imslib/src/ims/calib/matchmatrix.o imslib/src/ims/calib/linearpointsetmatcher.o imslib/src/ims/decomp/realmassdecomposer.o imslib/src/ims/utils/distribution.o imslib/src/ims/distributionprobabilityscorer.o imslib/src/ims/characteralphabet.o imslib/src/ims/nitrogenrulefilter.o -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-Rdisop/00new/Rdisop/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Rdisop’ as ‘Rdisop_1.58.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Rdisop)
+
+The downloaded source packages are in
+	‘/tmp/RtmpYm8C9x/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BH', 'bigrquery',
+  'BiocFileCache', 'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom',
+  'bslib', 'cachem', 'class', 'cli', 'codetools', 'colorspace', 'commonmark',
+  'curl', 'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr',
+  'edgeR', 'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats',
+  'formatR', 'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'processx',
+  'progressr', 'ps', 'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl',
+  'readr', 'readxl', 'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2',
+  'RSQLite', 'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny',
+  'SingleCellExperiment', 'sourcetools', 'sp', 'spatial', 'spatstat.data',
+  'spatstat.explore', 'spatstat.geom', 'spatstat.random', 'spatstat.sparse',
+  'spatstat.utils', 'statmod', 'stringi', 'survival', 'testthat', 'tibble',
+  'tidyr', 'tidyverse', 'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom',
+  'xfun', 'XML', 'yaml', 'zip', 'zoo'
+
+real	0m44.728s
+user	0m39.946s
+sys	0m3.210s

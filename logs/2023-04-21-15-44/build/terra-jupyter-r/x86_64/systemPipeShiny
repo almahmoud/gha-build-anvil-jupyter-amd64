@@ -1,0 +1,728 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''systemPipeShiny'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cloud.r-project.org
+
+Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 Patched (2022-11-10
+  r83330)
+Installing package(s) 'systemPipeShiny'
+also installing the dependencies ‘R.methodsS3’, ‘R.oo’, ‘R.utils’, ‘anytime’, ‘fresh’, ‘waiter’, ‘R.cache’, ‘spsUtil’, ‘spsComps’, ‘drawer’, ‘bsplus’, ‘shinyAce’, ‘shinyFiles’, ‘shinyWidgets’, ‘shinydashboard’, ‘shinydashboardPlus’, ‘shinyjqui’, ‘shinyjs’, ‘shinytoastr’, ‘styler’
+
+trying URL 'https://cloud.r-project.org/src/contrib/R.methodsS3_1.8.2.tar.gz'
+Content type 'application/x-gzip' length 24131 bytes (23 KB)
+==================================================
+downloaded 23 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/R.oo_1.25.0.tar.gz'
+Content type 'application/x-gzip' length 384384 bytes (375 KB)
+==================================================
+downloaded 375 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/R.utils_2.12.2.tar.gz'
+Content type 'application/x-gzip' length 365876 bytes (357 KB)
+==================================================
+downloaded 357 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/anytime_0.3.9.tar.gz'
+Content type 'application/x-gzip' length 348903 bytes (340 KB)
+==================================================
+downloaded 340 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/fresh_0.2.0.tar.gz'
+Content type 'application/x-gzip' length 1937770 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/waiter_0.2.5.tar.gz'
+Content type 'application/x-gzip' length 377113 bytes (368 KB)
+==================================================
+downloaded 368 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/R.cache_0.16.0.tar.gz'
+Content type 'application/x-gzip' length 35287 bytes (34 KB)
+==================================================
+downloaded 34 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/spsUtil_0.2.2.tar.gz'
+Content type 'application/x-gzip' length 18235 bytes (17 KB)
+==================================================
+downloaded 17 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/spsComps_0.3.2.1.tar.gz'
+Content type 'application/x-gzip' length 106468 bytes (103 KB)
+==================================================
+downloaded 103 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/drawer_0.2.0.1.tar.gz'
+Content type 'application/x-gzip' length 171794 bytes (167 KB)
+==================================================
+downloaded 167 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/bsplus_0.1.4.tar.gz'
+Content type 'application/x-gzip' length 31024 bytes (30 KB)
+==================================================
+downloaded 30 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/shinyAce_0.4.2.tar.gz'
+Content type 'application/x-gzip' length 1742427 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/shinyFiles_0.9.3.tar.gz'
+Content type 'application/x-gzip' length 356560 bytes (348 KB)
+==================================================
+downloaded 348 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/shinyWidgets_0.7.6.tar.gz'
+Content type 'application/x-gzip' length 789970 bytes (771 KB)
+==================================================
+downloaded 771 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/shinydashboard_0.7.2.tar.gz'
+Content type 'application/x-gzip' length 239254 bytes (233 KB)
+==================================================
+downloaded 233 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/shinydashboardPlus_2.0.3.tar.gz'
+Content type 'application/x-gzip' length 1158828 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/shinyjqui_0.4.1.tar.gz'
+Content type 'application/x-gzip' length 3419238 bytes (3.3 MB)
+==================================================
+downloaded 3.3 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/shinyjs_2.1.0.tar.gz'
+Content type 'application/x-gzip' length 1019936 bytes (996 KB)
+==================================================
+downloaded 996 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/shinytoastr_2.1.1.tar.gz'
+Content type 'application/x-gzip' length 64809 bytes (63 KB)
+==================================================
+downloaded 63 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/styler_1.9.1.tar.gz'
+Content type 'application/x-gzip' length 317784 bytes (310 KB)
+==================================================
+downloaded 310 KB
+
+trying URL 'https://bioconductor.org/packages/3.16/bioc/src/contrib/systemPipeShiny_1.8.1.tar.gz'
+Content type 'application/x-gzip' length 4495145 bytes (4.3 MB)
+==================================================
+downloaded 4.3 MB
+
+* installing *source* package ‘R.methodsS3’ ...
+** package ‘R.methodsS3’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘R.methodsS3’ as ‘R.methodsS3_1.8.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.methodsS3)
+* installing *source* package ‘anytime’ ...
+** package ‘anytime’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/BH/include'   -DRCPP_NO_RTTI -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/usr/local/lib/R/site-library/BH/include'   -DRCPP_NO_RTTI -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c anytime.cpp -o anytime.o
+g++ -std=gnu++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o anytime.so RcppExports.o anytime.o -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-anytime/00new/anytime/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+[0;1;31mSystem has not been booted with systemd as init system (PID 1). Can't operate.[0m
+[0;1;31mFailed to create bus connection: Host is down[0m
+Warning in system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+[0;1;31mSystem has not been booted with systemd as init system (PID 1). Can't operate.[0m
+[0;1;31mFailed to create bus connection: Host is down[0m
+Warning in system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘anytime’ as ‘anytime_0.3.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (anytime)
+* installing *source* package ‘fresh’ ...
+** package ‘fresh’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘fresh’ as ‘fresh_0.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fresh)
+* installing *source* package ‘waiter’ ...
+** package ‘waiter’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘waiter’ as ‘waiter_0.2.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (waiter)
+* installing *source* package ‘spsUtil’ ...
+** package ‘spsUtil’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘spsUtil’ as ‘spsUtil_0.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spsUtil)
+* installing *source* package ‘bsplus’ ...
+** package ‘bsplus’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+[0;1;31mSystem has not been booted with systemd as init system (PID 1). Can't operate.[0m
+[0;1;31mFailed to create bus connection: Host is down[0m
+Warning in system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+[0;1;31mSystem has not been booted with systemd as init system (PID 1). Can't operate.[0m
+[0;1;31mFailed to create bus connection: Host is down[0m
+Warning in system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1
+** testing if installed package can be loaded from final location
+[0;1;31mSystem has not been booted with systemd as init system (PID 1). Can't operate.[0m
+[0;1;31mFailed to create bus connection: Host is down[0m
+Warning in system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘bsplus’ as ‘bsplus_0.1.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bsplus)
+* installing *source* package ‘shinyAce’ ...
+** package ‘shinyAce’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘shinyAce’ as ‘shinyAce_0.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyAce)
+* installing *source* package ‘shinyFiles’ ...
+** package ‘shinyFiles’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘shinyFiles’ as ‘shinyFiles_0.9.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyFiles)
+* installing *source* package ‘shinydashboard’ ...
+** package ‘shinydashboard’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘shinydashboard’ as ‘shinydashboard_0.7.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinydashboard)
+* installing *source* package ‘shinyjqui’ ...
+** package ‘shinyjqui’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘shinyjqui’ as ‘shinyjqui_0.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyjqui)
+* installing *source* package ‘shinyjs’ ...
+** package ‘shinyjs’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘shinyjs’ as ‘shinyjs_2.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyjs)
+* installing *source* package ‘shinytoastr’ ...
+** package ‘shinytoastr’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘shinytoastr’ as ‘shinytoastr_2.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinytoastr)
+* installing *source* package ‘R.oo’ ...
+** package ‘R.oo’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Warning in setGenericS3.default(name, export = exportGeneric, envir = envir,  :
+  Renamed the preexisting function getMethods to getMethods.default, which was defined in environment R.oo.
+Warning in setGenericS3.default(name, export = exportGeneric, envir = envir,  :
+  Renamed the preexisting function getClasses to getClasses.default, which was defined in environment R.oo.
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘R.oo’ as ‘R.oo_1.25.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.oo)
+* installing *source* package ‘spsComps’ ...
+** package ‘spsComps’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘spsComps’ as ‘spsComps_0.3.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spsComps)
+* installing *source* package ‘drawer’ ...
+** package ‘drawer’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘drawer’ as ‘drawer_0.2.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (drawer)
+* installing *source* package ‘shinyWidgets’ ...
+** package ‘shinyWidgets’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘shinyWidgets’ as ‘shinyWidgets_0.7.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyWidgets)
+* installing *source* package ‘shinydashboardPlus’ ...
+** package ‘shinydashboardPlus’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘shinydashboardPlus’ as ‘shinydashboardPlus_2.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinydashboardPlus)
+* installing *source* package ‘R.utils’ ...
+** package ‘R.utils’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Warning in setGenericS3.default(name, export = exportGeneric, envir = envir,  :
+  Renamed the preexisting function warnings to warnings.default, which was defined in environment R.utils.
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘R.utils’ as ‘R.utils_2.12.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.utils)
+* installing *source* package ‘R.cache’ ...
+** package ‘R.cache’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘R.cache’ as ‘R.cache_0.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.cache)
+* installing *source* package ‘styler’ ...
+** package ‘styler’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘styler’ as ‘styler_1.9.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (styler)
+* installing *source* package ‘systemPipeShiny’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘systemPipeShiny’ as ‘systemPipeShiny_1.8.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (systemPipeShiny)
+
+The downloaded source packages are in
+	‘/tmp/RtmpsvW4Ay/downloaded_packages’
+Old packages: 'AnnotationDbi', 'AnVIL', 'beachmat', 'BH', 'bigrquery',
+  'BiocFileCache', 'BiocManager', 'BiocParallel', 'biomaRt', 'blob', 'broom',
+  'bslib', 'cachem', 'class', 'cli', 'codetools', 'colorspace', 'commonmark',
+  'curl', 'data.table', 'dbplyr', 'DESeq2', 'digest', 'dplyr', 'DT', 'dtplyr',
+  'edgeR', 'evaluate', 'fansi', 'fastmap', 'FNN', 'fontawesome', 'forcats',
+  'formatR', 'fs', 'future', 'gargle', 'GenomeInfoDb', 'GenomicAlignments',
+  'GenomicFeatures', 'GenomicRanges', 'ggplot2', 'ggrepel', 'gh',
+  'googleAuthR', 'googledrive', 'googlesheets4', 'gtable', 'haven', 'highr',
+  'hms', 'htmltools', 'htmlwidgets', 'httpuv', 'httr', 'igraph', 'interp',
+  'IRkernel', 'isoband', 'knitr', 'lattice', 'limma', 'listenv', 'locfit',
+  'lubridate', 'MASS', 'Matrix', 'mgcv', 'modelr', 'nlme', 'openssl',
+  'parallelly', 'pbapply', 'pbdZMQ', 'pillar', 'pkgdown', 'processx',
+  'progressr', 'ps', 'purrr', 'ragg', 'RcppArmadillo', 'RcppTOML', 'RCurl',
+  'readr', 'readxl', 'repr', 'reticulate', 'rlang', 'rmarkdown', 'roxygen2',
+  'RSQLite', 'S4Vectors', 'sass', 'scran', 'scuttle', 'shiny',
+  'SingleCellExperiment', 'sourcetools', 'sp', 'spatial', 'spatstat.data',
+  'spatstat.explore', 'spatstat.geom', 'spatstat.random', 'spatstat.sparse',
+  'spatstat.utils', 'statmod', 'stringi', 'survival', 'testthat', 'tibble',
+  'tidyr', 'tidyverse', 'timechange', 'tinytex', 'utf8', 'vctrs', 'vroom',
+  'xfun', 'XML', 'yaml', 'zip', 'zoo'
+
+real	1m40.501s
+user	1m28.595s
+sys	0m11.691s
+* installing *source* package ‘cicerone’ ...
+** package ‘cicerone’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘cicerone’ as ‘cicerone_1.0.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cicerone)
+* installing *source* package ‘reactR’ ...
+** package ‘reactR’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘reactR’ as ‘reactR_0.4.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reactR)
+* installing *source* package ‘openxlsx’ ...
+** package ‘openxlsx’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c helper_functions.cpp -o helper_functions.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c load_workbook.cpp -o load_workbook.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c read_workbook.cpp -o read_workbook.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c write_data.cpp -o write_data.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c write_file.cpp -o write_file.o
+g++ -std=gnu++14 -I"/usr/share/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c write_file_2.cpp -o write_file_2.o
+g++ -std=gnu++14 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o openxlsx.so RcppExports.o helper_functions.o load_workbook.o read_workbook.o write_data.o write_file.o write_file_2.o -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-openxlsx/00new/openxlsx/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘openxlsx’ as ‘openxlsx_4.2.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (openxlsx)
+* installing *source* package ‘shinybusy’ ...
+** package ‘shinybusy’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘shinybusy’ as ‘shinybusy_0.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinybusy)
+* installing *source* package ‘writexl’ ...
+** package ‘writexl’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c write_xlsx.c -o write_xlsx.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c libxlsxwriter/app.c -o libxlsxwriter/app.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c libxlsxwriter/format.c -o libxlsxwriter/format.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c libxlsxwriter/theme.c -o libxlsxwriter/theme.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c libxlsxwriter/chart.c -o libxlsxwriter/chart.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c libxlsxwriter/hash_table.c -o libxlsxwriter/hash_table.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c libxlsxwriter/utility.c -o libxlsxwriter/utility.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c libxlsxwriter/content_types.c -o libxlsxwriter/content_types.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c libxlsxwriter/packager.c -o libxlsxwriter/packager.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c libxlsxwriter/workbook.c -o libxlsxwriter/workbook.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c libxlsxwriter/core.c -o libxlsxwriter/core.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c libxlsxwriter/relationships.c -o libxlsxwriter/relationships.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c libxlsxwriter/worksheet.c -o libxlsxwriter/worksheet.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c libxlsxwriter/custom.c -o libxlsxwriter/custom.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c libxlsxwriter/shared_strings.c -o libxlsxwriter/shared_strings.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c libxlsxwriter/xmlwriter.c -o libxlsxwriter/xmlwriter.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c libxlsxwriter/drawing.c -o libxlsxwriter/drawing.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c libxlsxwriter/styles.c -o libxlsxwriter/styles.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c tmpfileplus/tmpfileplus.c -o tmpfileplus/tmpfileplus.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c libxlsxwriter/chartsheet.c -o libxlsxwriter/chartsheet.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c minizip/ioapi.c -o minizip/ioapi.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c minizip/zip.c -o minizip/zip.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c libxlsxwriter/comment.c -o libxlsxwriter/comment.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c libxlsxwriter/vml.c -o libxlsxwriter/vml.o
+gcc -I"/usr/share/R/include" -DNDEBUG -Iinclude -DUSE_R_LANG    -fvisibility=hidden -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-ZLat0n/r-base-4.2.2.20221110=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -c md5/md5.c -o md5/md5.o
+ar rcs libxlsxwriter/libstatxlsxwriter.a libxlsxwriter/app.o libxlsxwriter/format.o libxlsxwriter/theme.o libxlsxwriter/chart.o libxlsxwriter/hash_table.o libxlsxwriter/utility.o libxlsxwriter/content_types.o libxlsxwriter/packager.o libxlsxwriter/workbook.o libxlsxwriter/core.o libxlsxwriter/relationships.o libxlsxwriter/worksheet.o libxlsxwriter/custom.o libxlsxwriter/shared_strings.o libxlsxwriter/xmlwriter.o libxlsxwriter/drawing.o libxlsxwriter/styles.o tmpfileplus/tmpfileplus.o libxlsxwriter/chartsheet.o minizip/ioapi.o minizip/zip.o libxlsxwriter/comment.o libxlsxwriter/vml.o md5/md5.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o writexl.so write_xlsx.o -Llibxlsxwriter -lstatxlsxwriter -lz -L/usr/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-writexl/00new/writexl/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘writexl’ as ‘writexl_1.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (writexl)
+* installing *source* package ‘phosphoricons’ ...
+** package ‘phosphoricons’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘phosphoricons’ as ‘phosphoricons_0.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (phosphoricons)
+* installing *source* package ‘reactable’ ...
+** package ‘reactable’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘reactable’ as ‘reactable_0.4.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reactable)
+* installing *source* package ‘rio’ ...
+** package ‘rio’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘rio’ as ‘rio_0.5.29_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rio)
+* installing *source* package ‘datamods’ ...
+** package ‘datamods’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘datamods’ as ‘datamods_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (datamods)
+* installing *source* package ‘esquisse’ ...
+** package ‘esquisse’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘esquisse’ as ‘esquisse_1.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (esquisse)
+* installing *source* package ‘pushbar’ ...
+** package ‘pushbar’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pushbar’ as ‘pushbar_0.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pushbar)

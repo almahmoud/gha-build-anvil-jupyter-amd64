@@ -566,7 +566,6 @@
         "SingleCellExperiment",
         "SummarizedExperiment"
     ],
-    "baySeq": [],
     "BBCAnalyzer": [
         "AnnotationDbi",
         "BSgenome",
@@ -1571,9 +1570,7 @@
         "GOSemSim",
         "enrichplot"
     ],
-    "clusterSeq": [
-        "baySeq"
-    ],
+    "clusterSeq": [],
     "clustifyr": [
         "SingleCellExperiment",
         "SummarizedExperiment"
@@ -4990,7 +4987,6 @@
         "ShortRead",
         "SummarizedExperiment",
         "annotate",
-        "baySeq",
         "biomaRt",
         "bsseq",
         "genefilter",
@@ -6866,8 +6862,7 @@
     "Rcade": [
         "GenomicAlignments",
         "Rsamtools",
-        "SummarizedExperiment",
-        "baySeq"
+        "SummarizedExperiment"
     ],
     "RCAS": [
         "AnnotationDbi",
@@ -7209,8 +7204,7 @@
         "rtracklayer"
     ],
     "riboSeqR": [
-        "Rsamtools",
-        "baySeq"
+        "Rsamtools"
     ],
     "ribosomeProfilingQC": [
         "AnnotationDbi",
@@ -7925,8 +7919,7 @@
         "GenomicAlignments",
         "Rsamtools",
         "ShortRead",
-        "SummarizedExperiment",
-        "baySeq"
+        "SummarizedExperiment"
     ],
     "selectKSigs": [
         "AnnotationDbi",
@@ -8524,7 +8517,6 @@
         "SummarizedExperiment",
         "VariantAnnotation",
         "annotate",
-        "baySeq",
         "biomaRt",
         "biovizBase",
         "ensembldb",
@@ -8746,7 +8738,6 @@
         "DESeq2",
         "SummarizedExperiment",
         "annotate",
-        "baySeq",
         "geneplotter"
     ],
     "TCGAbiolinks": [

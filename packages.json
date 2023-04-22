@@ -138,7 +138,6 @@
         "rtracklayer"
     ],
     "airpart": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "apeglm",
@@ -198,7 +197,6 @@
         "geneplotter"
     ],
     "ANCOMBC": [
-        "BiocSingular",
         "DECIPHER",
         "MultiAssayExperiment",
         "SingleCellExperiment",
@@ -597,7 +595,6 @@
         "rtracklayer"
     ],
     "BASiCS": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "scran",
@@ -605,7 +602,6 @@
     ],
     "BASiCStan": [
         "BASiCS",
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "glmGamPoi",
@@ -618,7 +614,6 @@
         "SummarizedExperiment"
     ],
     "batchelor": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "scuttle"
@@ -631,7 +626,6 @@
         "sva"
     ],
     "BayesSpace": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "scater",
@@ -684,7 +678,6 @@
         "ALDEx2",
         "ANCOMBC",
         "AnnotationDbi",
-        "BiocSingular",
         "DECIPHER",
         "DESeq2",
         "KEGGREST",
@@ -805,7 +798,6 @@
         "AnnotationDbi",
         "KEGGREST"
     ],
-    "BiocSingular": [],
     "BiocSklearn": [
         "SummarizedExperiment"
     ],
@@ -863,7 +855,6 @@
         "ropls"
     ],
     "BioTIP": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "scran",
@@ -1221,7 +1212,6 @@
         "rtracklayer"
     ],
     "CATALYST": [
-        "BiocSingular",
         "FlowSOM",
         "SingleCellExperiment",
         "SummarizedExperiment",
@@ -1309,7 +1299,6 @@
         "SummarizedExperiment"
     ],
     "celda": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "scater",
@@ -1339,7 +1328,6 @@
         "genefilter"
     ],
     "CelliD": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "scater",
@@ -1351,7 +1339,6 @@
         "topGO"
     ],
     "CellMixS": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "scater",
@@ -1605,7 +1592,6 @@
         "biomaRt"
     ],
     "ChromSCape": [
-        "BiocSingular",
         "GenomicAlignments",
         "Rsamtools",
         "SingleCellExperiment",
@@ -1695,7 +1681,6 @@
         "rtracklayer"
     ],
     "CiteFuse": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "scran",
@@ -1744,7 +1729,6 @@
     "CluMSID": [],
     "clusterExperiment": [
         "AnnotationDbi",
-        "BiocSingular",
         "KEGGREST",
         "SingleCellExperiment",
         "SummarizedExperiment",
@@ -1955,7 +1939,6 @@
         "rtracklayer"
     ],
     "compartmap": [
-        "BiocSingular",
         "GenomicAlignments",
         "RaggedExperiment",
         "Rsamtools",
@@ -1985,7 +1968,6 @@
     ],
     "conclus": [
         "AnnotationDbi",
-        "BiocSingular",
         "DOSE",
         "GOSemSim",
         "KEGGREST",
@@ -1999,7 +1981,6 @@
         "scuttle"
     ],
     "condiments": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "TrajectoryUtils",
@@ -2035,7 +2016,6 @@
     ],
     "consensusOV": [
         "AnnotationDbi",
-        "BiocSingular",
         "GSEABase",
         "GSVA",
         "KEGGREST",
@@ -2608,9 +2588,7 @@
         "annotate",
         "geneplotter"
     ],
-    "DelayedTensor": [
-        "BiocSingular"
-    ],
+    "DelayedTensor": [],
     "deltaCaptureC": [
         "AnnotationDbi",
         "DESeq2",
@@ -2791,7 +2769,6 @@
         "rtracklayer"
     ],
     "Dino": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "scran",
@@ -2801,7 +2778,6 @@
         "SummarizedExperiment"
     ],
     "distinct": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "scater",
@@ -3041,7 +3017,6 @@
     ],
     "EGSEA": [
         "AnnotationDbi",
-        "BiocSingular",
         "GSEABase",
         "GSVA",
         "KEGGREST",
@@ -3387,7 +3362,6 @@
     ],
     "escape": [
         "AnnotationDbi",
-        "BiocSingular",
         "GSEABase",
         "GSVA",
         "KEGGREST",
@@ -3622,7 +3596,6 @@
         "AnnotationDbi",
         "AnnotationFilter",
         "BSgenome",
-        "BiocSingular",
         "DropletUtils",
         "GenomicAlignments",
         "GenomicFeatures",
@@ -4402,7 +4375,6 @@
     ],
     "GSVA": [
         "AnnotationDbi",
-        "BiocSingular",
         "GSEABase",
         "KEGGREST",
         "SingleCellExperiment",
@@ -4888,7 +4860,6 @@
     ],
     "IRISFGM": [
         "AnnotationDbi",
-        "BiocSingular",
         "DOSE",
         "GOSemSim",
         "KEGGREST",
@@ -5734,7 +5705,6 @@
         "biomaRt"
     ],
     "mia": [
-        "BiocSingular",
         "DECIPHER",
         "MultiAssayExperiment",
         "SingleCellExperiment",
@@ -5749,7 +5719,6 @@
         "TreeSummarizedExperiment"
     ],
     "miaViz": [
-        "BiocSingular",
         "DECIPHER",
         "MultiAssayExperiment",
         "SingleCellExperiment",
@@ -5779,7 +5748,6 @@
         "ALDEx2",
         "ANCOMBC",
         "AnnotationDbi",
-        "BiocSingular",
         "DECIPHER",
         "DESeq2",
         "KEGGREST",
@@ -5822,7 +5790,6 @@
         "genefilter"
     ],
     "miloR": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment"
     ],
@@ -6185,7 +6152,6 @@
         "rtracklayer"
     ],
     "msImpute": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "scran",
@@ -6306,7 +6272,6 @@
         "ropls"
     ],
     "mumosa": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "batchelor",
@@ -6327,7 +6292,6 @@
     ],
     "muscat": [
         "AnnotationDbi",
-        "BiocSingular",
         "DESeq2",
         "KEGGREST",
         "SingleCellExperiment",
@@ -6421,7 +6385,6 @@
     "NanoMethViz": [
         "AnnotationDbi",
         "BSgenome",
-        "BiocSingular",
         "GenomicAlignments",
         "KEGGREST",
         "Rsamtools",
@@ -6509,7 +6472,6 @@
     ],
     "netSmooth": [
         "AnnotationDbi",
-        "BiocSingular",
         "KEGGREST",
         "SingleCellExperiment",
         "SummarizedExperiment",
@@ -6546,7 +6508,6 @@
         "SummarizedExperiment"
     ],
     "NewWave": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment"
     ],
@@ -6614,7 +6575,6 @@
     "octad": [
         "AnnotationDbi",
         "AnnotationHub",
-        "BiocSingular",
         "DESeq2",
         "EDASeq",
         "ExperimentHub",
@@ -6771,7 +6731,6 @@
     ],
     "oppar": [
         "AnnotationDbi",
-        "BiocSingular",
         "GSEABase",
         "GSVA",
         "KEGGREST",
@@ -6946,9 +6905,7 @@
         "geneplotter",
         "topGO"
     ],
-    "PCAtools": [
-        "BiocSingular"
-    ],
+    "PCAtools": [],
     "PDATK": [
         "AnnotationDbi",
         "CoreGx",
@@ -6977,7 +6934,6 @@
         "genefilter"
     ],
     "peco": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "scater",
@@ -7087,7 +7043,6 @@
         "rtracklayer"
     ],
     "pipeComp": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "scater",
@@ -8487,7 +8442,6 @@
         "SummarizedExperiment"
     ],
     "scater": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "scuttle"
@@ -8529,7 +8483,6 @@
         "flowCore"
     ],
     "scDblFinder": [
-        "BiocSingular",
         "GenomicAlignments",
         "Rsamtools",
         "SingleCellExperiment",
@@ -8540,7 +8493,6 @@
         "scuttle"
     ],
     "scDD": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "scran",
@@ -8582,7 +8534,6 @@
         "SummarizedExperiment"
     ],
     "scMerge": [
-        "BiocSingular",
         "M3Drop",
         "SingleCellExperiment",
         "SummarizedExperiment"
@@ -8669,7 +8620,6 @@
         "scuttle"
     ],
     "scran": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "scuttle"
@@ -8702,7 +8652,6 @@
         "rtracklayer"
     ],
     "scry": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment"
     ],
@@ -8739,7 +8688,6 @@
     "scTreeViz": [
         "AnnotationDbi",
         "AnnotationFilter",
-        "BiocSingular",
         "GenomicAlignments",
         "GenomicFeatures",
         "KEGGREST",
@@ -8969,7 +8917,6 @@
     "signifinder": [
         "AnnotationDbi",
         "AnnotationFilter",
-        "BiocSingular",
         "GSEABase",
         "GSVA",
         "GenomicAlignments",
@@ -9039,7 +8986,6 @@
         "SummarizedExperiment"
     ],
     "SingleCellSignalR": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "scran",
@@ -9049,7 +8995,6 @@
         "AnnotationDbi",
         "AnnotationFilter",
         "AnnotationHub",
-        "BiocSingular",
         "DESeq2",
         "DropletUtils",
         "ExperimentHub",
@@ -9100,7 +9045,6 @@
         "rtracklayer"
     ],
     "SingleR": [
-        "BiocSingular",
         "SummarizedExperiment"
     ],
     "singscore": [
@@ -9112,7 +9056,6 @@
     ],
     "SISPA": [
         "AnnotationDbi",
-        "BiocSingular",
         "GSEABase",
         "GSVA",
         "KEGGREST",
@@ -9228,7 +9171,6 @@
         "iPAC"
     ],
     "Spaniel": [
-        "BiocSingular",
         "DropletUtils",
         "SingleCellExperiment",
         "SummarizedExperiment",
@@ -9286,7 +9228,6 @@
     ],
     "spatialHeatmap": [
         "AnnotationDbi",
-        "BiocSingular",
         "KEGGREST",
         "SingleCellExperiment",
         "SummarizedExperiment",
@@ -9353,7 +9294,6 @@
         "rtracklayer"
     ],
     "splatter": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "scater",
@@ -9678,7 +9618,6 @@
     "TBSignatureProfiler": [
         "ASSIGN",
         "AnnotationDbi",
-        "BiocSingular",
         "DESeq2",
         "GSEABase",
         "GSVA",
@@ -9906,7 +9845,6 @@
     ],
     "TNBC.CMS": [
         "AnnotationDbi",
-        "BiocSingular",
         "GSEABase",
         "GSVA",
         "KEGGREST",
@@ -10057,7 +9995,6 @@
     ],
     "tricycle": [
         "AnnotationDbi",
-        "BiocSingular",
         "KEGGREST",
         "SingleCellExperiment",
         "SummarizedExperiment",
@@ -10216,7 +10153,6 @@
     "universalmotif": [],
     "uSORT": [],
     "VAExprs": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "scater",
@@ -10320,7 +10256,6 @@
         "biomaRt"
     ],
     "velociraptor": [
-        "BiocSingular",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "scuttle",

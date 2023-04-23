@@ -11,7 +11,6 @@
     ],
     "affycoretools": [
         "BSgenome",
-        "DESeq2",
         "GenomicFeatures",
         "Glimma",
         "OrganismDbi",
@@ -28,7 +27,6 @@
     ],
     "AgiMicroRna": [
         "BSgenome",
-        "DESeq2",
         "GenomicFeatures",
         "Glimma",
         "OrganismDbi",
@@ -66,9 +64,7 @@
     "amplican": [
         "ShortRead"
     ],
-    "Anaquin": [
-        "DESeq2"
-    ],
+    "Anaquin": [],
     "ANCOMBC": [
         "MultiAssayExperiment",
         "SingleCellExperiment",
@@ -79,7 +75,6 @@
     ],
     "AneuFinder": [],
     "animalcules": [
-        "DESeq2",
         "MultiAssayExperiment"
     ],
     "AnnotationHubData": [
@@ -93,12 +88,9 @@
         "regioneR",
         "rtracklayer"
     ],
-    "anota2seq": [
-        "DESeq2"
-    ],
+    "anota2seq": [],
     "APAlyzer": [
         "BSgenome",
-        "DESeq2",
         "GenomicFeatures",
         "VariantAnnotation",
         "rtracklayer"
@@ -272,7 +264,6 @@
     "benchdamic": [
         "ALDEx2",
         "ANCOMBC",
-        "DESeq2",
         "MAST",
         "MultiAssayExperiment",
         "SingleCellExperiment",
@@ -355,7 +346,6 @@
     ],
     "BitSeq": [],
     "blacksheepr": [
-        "DESeq2",
         "DEXSeq"
     ],
     "BloodGen3Module": [],
@@ -397,7 +387,6 @@
     ],
     "breakpointR": [],
     "BRGenomics": [
-        "DESeq2",
         "rtracklayer"
     ],
     "BSgenome": [
@@ -551,9 +540,7 @@
     "Cepo": [
         "SingleCellExperiment"
     ],
-    "CeTF": [
-        "DESeq2"
-    ],
+    "CeTF": [],
     "CexoR": [
         "BSgenome",
         "genomation",
@@ -624,7 +611,6 @@
     ],
     "ChIPQC": [
         "BSgenome",
-        "DESeq2",
         "DiffBind",
         "GenomicFeatures",
         "GreyListChIP",
@@ -683,7 +669,6 @@
     ],
     "circRNAprofiler": [
         "BSgenome",
-        "DESeq2",
         "GenomicFeatures",
         "VariantAnnotation",
         "gwascat",
@@ -848,7 +833,6 @@
         "flowMerge"
     ],
     "consensusDE": [
-        "DESeq2",
         "EDASeq",
         "GenomicFeatures",
         "RUVSeq",
@@ -899,16 +883,13 @@
         "SingleCellExperiment"
     ],
     "coseq": [
-        "DESeq2",
         "HTSFilter"
     ],
     "cosmiq": [
         "MsFeatures",
         "xcms"
     ],
-    "countsimQC": [
-        "DESeq2"
-    ],
+    "countsimQC": [],
     "CoverageView": [
         "rtracklayer"
     ],
@@ -1067,7 +1048,6 @@
         "rtracklayer"
     ],
     "DaMiRseq": [
-        "DESeq2",
         "EDASeq",
         "GenomicFeatures",
         "ShortRead",
@@ -1087,15 +1067,11 @@
         "ncdfFlow"
     ],
     "debCAM": [],
-    "debrowser": [
-        "DESeq2"
-    ],
+    "debrowser": [],
     "deco": [
         "made4"
     ],
-    "DEComplexDisease": [
-        "DESeq2"
-    ],
+    "DEComplexDisease": [],
     "decompTumor2Sig": [
         "BSgenome",
         "GenomicFeatures",
@@ -1118,19 +1094,13 @@
         "VariantAnnotation",
         "rtracklayer"
     ],
-    "DEFormats": [
-        "DESeq2"
-    ],
+    "DEFormats": [],
     "DegNorm": [
         "GenomicFeatures",
         "rtracklayer"
     ],
-    "DEGreport": [
-        "DESeq2"
-    ],
-    "deltaCaptureC": [
-        "DESeq2"
-    ],
+    "DEGreport": [],
+    "deltaCaptureC": [],
     "DeMixT": [
         "BSgenome",
         "DSS",
@@ -1168,22 +1138,14 @@
         "regioneR",
         "rtracklayer"
     ],
-    "DESeq2": [],
     "destiny": [
         "SingleCellExperiment"
     ],
-    "DEsubs": [
-        "DESeq2"
-    ],
-    "DEWSeq": [
-        "DESeq2"
-    ],
-    "DEXSeq": [
-        "DESeq2"
-    ],
+    "DEsubs": [],
+    "DEWSeq": [],
+    "DEXSeq": [],
     "DiffBind": [
         "BSgenome",
-        "DESeq2",
         "GreyListChIP",
         "ShortRead",
         "rtracklayer",
@@ -1204,7 +1166,6 @@
         "rtracklayer"
     ],
     "diffUTR": [
-        "DESeq2",
         "DEXSeq",
         "GenomicFeatures",
         "ensembldb",
@@ -1295,23 +1256,18 @@
         "rtracklayer"
     ],
     "easier": [
-        "DESeq2",
         "quantiseqr"
     ],
     "easyRNASeq": [
         "ShortRead"
     ],
-    "EBSEA": [
-        "DESeq2"
-    ],
+    "EBSEA": [],
     "EDASeq": [
         "GenomicFeatures",
         "ShortRead",
         "rtracklayer"
     ],
-    "eegc": [
-        "DESeq2"
-    ],
+    "eegc": [],
     "EGSEA": [
         "GSVA",
         "SingleCellExperiment"
@@ -1369,7 +1325,6 @@
         "BRGenomics",
         "BSgenome",
         "ChIPseeker",
-        "DESeq2",
         "GenomicFeatures",
         "genomation",
         "rtracklayer"
@@ -1444,9 +1399,7 @@
         "VariantAnnotation",
         "rtracklayer"
     ],
-    "ERSSA": [
-        "DESeq2"
-    ],
+    "ERSSA": [],
     "esATAC": [
         "BSgenome",
         "CNEr",
@@ -1480,7 +1433,6 @@
     ],
     "exomePeak2": [
         "BSgenome",
-        "DESeq2",
         "GenomicFeatures",
         "rtracklayer"
     ],
@@ -1685,7 +1637,6 @@
     ],
     "FRASER": [
         "BSgenome",
-        "DESeq2",
         "GenomicFeatures",
         "OUTRIDER",
         "rtracklayer"
@@ -1716,7 +1667,6 @@
         "rtracklayer"
     ],
     "GARS": [
-        "DESeq2",
         "DaMiRseq",
         "EDASeq",
         "GenomicFeatures",
@@ -1734,9 +1684,7 @@
         "BSgenome",
         "rtracklayer"
     ],
-    "GDCRNATools": [
-        "DESeq2"
-    ],
+    "GDCRNATools": [],
     "gemma.R": [],
     "genbankr": [
         "BSgenome",
@@ -1757,9 +1705,7 @@
         "ensembldb",
         "rtracklayer"
     ],
-    "GeneTonic": [
-        "DESeq2"
-    ],
+    "GeneTonic": [],
     "geneXtendeR": [
         "rtracklayer"
     ],
@@ -1837,9 +1783,7 @@
     "girafe": [
         "ShortRead"
     ],
-    "Glimma": [
-        "DESeq2"
-    ],
+    "Glimma": [],
     "glmGamPoi": [
         "SingleCellExperiment"
     ],
@@ -1869,9 +1813,7 @@
         "ShortRead",
         "rtracklayer"
     ],
-    "GRaNIE": [
-        "DESeq2"
-    ],
+    "GRaNIE": [],
     "GreyListChIP": [
         "BSgenome",
         "rtracklayer"
@@ -1933,7 +1875,6 @@
         "rtracklayer"
     ],
     "hermes": [
-        "DESeq2",
         "MultiAssayExperiment"
     ],
     "hiAnnotator": [
@@ -1999,14 +1940,11 @@
         "gmapR",
         "rtracklayer"
     ],
-    "HTSFilter": [
-        "DESeq2"
-    ],
+    "HTSFilter": [],
     "HumanTranscriptomeCompendium": [],
     "iasva": [],
     "icetea": [
         "BSgenome",
-        "DESeq2",
         "GenomicFeatures",
         "ShortRead",
         "VariantAnnotation",
@@ -2026,7 +1964,6 @@
         "rtracklayer"
     ],
     "ideal": [
-        "DESeq2",
         "GenomicFeatures",
         "goseq",
         "pcaExplorer",
@@ -2082,7 +2019,6 @@
         "rtracklayer"
     ],
     "INSPEcT": [
-        "DESeq2",
         "GenomicFeatures",
         "rtracklayer"
     ],
@@ -2102,7 +2038,6 @@
     ],
     "InteractionSet": [],
     "IntEREst": [
-        "DESeq2",
         "DEXSeq",
         "GenomicFeatures",
         "rtracklayer"
@@ -2142,7 +2077,6 @@
     "ISLET": [],
     "IsoformSwitchAnalyzeR": [
         "BSgenome",
-        "DESeq2",
         "DEXSeq",
         "GenomicFeatures",
         "ensembldb",
@@ -2150,8 +2084,7 @@
         "tximeta"
     ],
     "isomiRs": [
-        "DEGreport",
-        "DESeq2"
+        "DEGreport"
     ],
     "ITALICS": [
         "oligo",
@@ -2180,7 +2113,6 @@
     ],
     "kissDE": [
         "BSgenome",
-        "DESeq2",
         "DSS",
         "bsseq",
         "rtracklayer"
@@ -2383,7 +2315,6 @@
     ],
     "metaseqR2": [
         "BSgenome",
-        "DESeq2",
         "DSS",
         "EDASeq",
         "GenomicFeatures",
@@ -2505,13 +2436,10 @@
         "scuttle"
     ],
     "microbiomeDASim": [],
-    "microbiomeExplorer": [
-        "DESeq2"
-    ],
+    "microbiomeExplorer": [],
     "microbiomeMarker": [
         "ALDEx2",
         "ANCOMBC",
-        "DESeq2",
         "MultiAssayExperiment",
         "SingleCellExperiment",
         "TreeSummarizedExperiment",
@@ -2581,9 +2509,7 @@
         "rtracklayer"
     ],
     "MLInterfaces": [],
-    "MLSeq": [
-        "DESeq2"
-    ],
+    "MLSeq": [],
     "MMAPPR2": [
         "BSgenome",
         "GenomicFeatures",
@@ -2708,7 +2634,6 @@
     ],
     "multiOmicsViz": [],
     "multiSight": [
-        "DESeq2",
         "MultiAssayExperiment",
         "MultiDataSet",
         "biosigner",
@@ -2727,7 +2652,6 @@
         "rtracklayer"
     ],
     "muscat": [
-        "DESeq2",
         "SingleCellExperiment",
         "scater",
         "scuttle"
@@ -2779,9 +2703,7 @@
         "bsseq",
         "rtracklayer"
     ],
-    "NBAMSeq": [
-        "DESeq2"
-    ],
+    "NBAMSeq": [],
     "NBSplice": [],
     "ncdfFlow": [
         "cytolib",
@@ -2799,9 +2721,7 @@
     "Nebulosa": [
         "SingleCellExperiment"
     ],
-    "NetActivity": [
-        "DESeq2"
-    ],
+    "NetActivity": [],
     "netDx": [
         "MultiAssayExperiment"
     ],
@@ -2854,7 +2774,6 @@
         "rtracklayer"
     ],
     "octad": [
-        "DESeq2",
         "EDASeq",
         "GSVA",
         "GenomicFeatures",
@@ -2943,7 +2862,6 @@
     ],
     "ORFik": [
         "BSgenome",
-        "DESeq2",
         "GenomicFeatures",
         "rtracklayer"
     ],
@@ -2959,7 +2877,6 @@
         "ShortRead"
     ],
     "OUTRIDER": [
-        "DESeq2",
         "GenomicFeatures",
         "rtracklayer"
     ],
@@ -2979,12 +2896,8 @@
     "PAST": [
         "rtracklayer"
     ],
-    "PathoStat": [
-        "DESeq2"
-    ],
-    "pcaExplorer": [
-        "DESeq2"
-    ],
+    "PathoStat": [],
+    "pcaExplorer": [],
     "PDATK": [
         "CoreGx",
         "MultiAssayExperiment"
@@ -3008,9 +2921,7 @@
         "BSgenome",
         "rtracklayer"
     ],
-    "phantasus": [
-        "DESeq2"
-    ],
+    "phantasus": [],
     "PharmacoGx": [
         "CoreGx",
         "MultiAssayExperiment"
@@ -3063,9 +2974,7 @@
     "pogos": [
         "ontoProc"
     ],
-    "POMA": [
-        "DESeq2"
-    ],
+    "POMA": [],
     "POWSC": [
         "MAST",
         "SingleCellExperiment"
@@ -3093,7 +3002,6 @@
     ],
     "PrInCE": [],
     "proActiv": [
-        "DESeq2",
         "GenomicFeatures",
         "rtracklayer"
     ],
@@ -3290,9 +3198,7 @@
         "regioneR",
         "rtracklayer"
     ],
-    "RegEnrich": [
-        "DESeq2"
-    ],
+    "RegEnrich": [],
     "regioneR": [
         "BSgenome",
         "rtracklayer"
@@ -3305,7 +3211,6 @@
     "regionReport": [
         "BSgenome",
         "DEFormats",
-        "DESeq2",
         "GenomicFeatures",
         "GenomicFiles",
         "VariantAnnotation",
@@ -3336,7 +3241,6 @@
     ],
     "ReportingTools": [
         "BSgenome",
-        "DESeq2",
         "GenomicFeatures",
         "OrganismDbi",
         "VariantAnnotation",
@@ -3368,7 +3272,6 @@
         "rtracklayer"
     ],
     "rgsepd": [
-        "DESeq2",
         "GenomicFeatures",
         "goseq",
         "rtracklayer"
@@ -3380,13 +3283,11 @@
     ],
     "RiboCrypt": [
         "BSgenome",
-        "DESeq2",
         "GenomicFeatures",
         "ORFik",
         "rtracklayer"
     ],
     "RiboDiPA": [
-        "DESeq2",
         "GenomicFeatures",
         "rtracklayer"
     ],
@@ -3444,7 +3345,6 @@
         "rtracklayer"
     ],
     "Rmmquant": [
-        "DESeq2",
         "GenomicFeatures",
         "rtracklayer"
     ],
@@ -3507,7 +3407,6 @@
     ],
     "RNAsense": [],
     "RNASeqR": [
-        "DESeq2",
         "ShortRead",
         "ballgown",
         "rtracklayer",
@@ -3619,7 +3518,6 @@
         "scuttle"
     ],
     "scBFA": [
-        "DESeq2",
         "SingleCellExperiment",
         "zinbwave"
     ],
@@ -3659,7 +3557,6 @@
         "SingleCellExperiment"
     ],
     "scGPS": [
-        "DESeq2",
         "SingleCellExperiment"
     ],
     "schex": [
@@ -3799,15 +3696,12 @@
         "rtracklayer"
     ],
     "SeqGate": [],
-    "SeqGSEA": [
-        "DESeq2"
-    ],
+    "SeqGSEA": [],
     "seqsetvis": [
         "rtracklayer"
     ],
     "sesame": [],
     "SEtools": [
-        "DESeq2",
         "sechm"
     ],
     "sevenC": [
@@ -3872,7 +3766,6 @@
         "scuttle"
     ],
     "singleCellTK": [
-        "DESeq2",
         "DropletUtils",
         "GSVA",
         "GenomicFeatures",
@@ -3938,7 +3831,6 @@
     "snapcount": [],
     "SNPhood": [
         "BSgenome",
-        "DESeq2",
         "GenomicFeatures",
         "VariantAnnotation",
         "rtracklayer"
@@ -4074,7 +3966,6 @@
     "sRACIPE": [],
     "srnadiff": [
         "BSgenome",
-        "DESeq2",
         "GenomicFeatures",
         "Gviz",
         "VariantAnnotation",
@@ -4154,9 +4045,7 @@
     "systemPipeR": [
         "ShortRead"
     ],
-    "systemPipeTools": [
-        "DESeq2"
-    ],
+    "systemPipeTools": [],
     "TADCompare": [
         "HiCcompare",
         "InteractionSet"
@@ -4168,14 +4057,11 @@
     ],
     "TarSeqQC": [],
     "TBSignatureProfiler": [
-        "DESeq2",
         "GSVA",
         "SingleCellExperiment",
         "singscore"
     ],
-    "TCC": [
-        "DESeq2"
-    ],
+    "TCC": [],
     "TCGAbiolinks": [],
     "TCGAbiolinksGUI": [
         "BSgenome",
@@ -4198,9 +4084,7 @@
     ],
     "TCseq": [],
     "TDARACNE": [],
-    "TEKRABber": [
-        "DESeq2"
-    ],
+    "TEKRABber": [],
     "TENxIO": [
         "SingleCellExperiment"
     ],
@@ -4226,7 +4110,6 @@
     ],
     "TFHAZ": [
         "BSgenome",
-        "DESeq2",
         "GenomicFeatures",
         "ORFik",
         "rtracklayer"
@@ -4291,9 +4174,7 @@
         "SingleCellExperiment",
         "glmGamPoi"
     ],
-    "tRanslatome": [
-        "DESeq2"
-    ],
+    "tRanslatome": [],
     "TraRe": [],
     "traseR": [
         "BSgenome",
@@ -4377,7 +4258,6 @@
     ],
     "UMI4Cats": [
         "BSgenome",
-        "DESeq2",
         "GenomicFeatures",
         "ShortRead",
         "regioneR",
@@ -4454,9 +4334,7 @@
         "scuttle",
         "zellkonverter"
     ],
-    "vidger": [
-        "DESeq2"
-    ],
+    "vidger": [],
     "Voyager": [
         "DropletUtils",
         "SingleCellExperiment",
@@ -4478,7 +4356,6 @@
     "vulcan": [
         "BSgenome",
         "ChIPpeakAnno",
-        "DESeq2",
         "DiffBind",
         "GenomicFeatures",
         "GreyListChIP",
